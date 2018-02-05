@@ -1,0 +1,61 @@
+/*
+	Template Name: Ionize
+	Author: ThemeItems
+	Description: Responsive Multipurpose HTML Template
+	Version: 1.0
+
+*/
+
+/******************************
+
+INDEX:
+
+	c00 - Base - Global
+	c01 - Base - Typography
+	c02 - Base - Placeholders
+
+	c10 - Components Section
+
+	c20 - Layout - header
+	c21 - Layout - Slider
+	c22 - layout - Page Titile
+	c23 - layout - parallax
+	c24 - Layout - Home 01
+	c25 - Layout - Home 02
+	c26 - Layout - Home 03
+	c27 - Layout - Home 04
+	c28 - layout - Footer
+	c29 - layout - About Page
+	c30 - layout - Contact Page
+	c31 - layout - Services Page
+	c32 - layout - Portfolio Page
+	c33 - layout - Blog Page
+	c34 - Layout - FAQ page
+
+******************************/
+
+/*
+	Deafult Primary Color: 		#1ca5b8; //Teal
+	Default Secondary Color: 	#ff646c; //Redish
+	Default Tertiary Color: 	#0b4249; // Dark Teal
+	Default Offset Color: 		#f3f3f3; //Offwhite
+	Default Border Color: 		#ccc;    // light Grey
+	Default Body Font: 			'Open Sans', sans-serif;
+	Default Heading Font: 		'PT Sans', sans-serif;
+*/
+
+@charset "UTF-8";
+
+
+
+//Abstracts
+@import "abstracts/__abstracts-dir";
+
+//Base Styles
+@import "base/__base-dir";
+
+//Components
+@import "components/__components-dir";
+
+//Layout
+@import "layouts/__layouts-dir";
