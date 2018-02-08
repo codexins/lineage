@@ -18,6 +18,18 @@
 	}
 }
 
+// Hide an element
+%visuallyhidden {
+	margin: -1px;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
+	position: absolute;
+}
+
 
 %clearfix {
 	&::before,
@@ -34,12 +46,12 @@
 
 %default-heading {
 	line-height: 1.2em;
-    margin-top:0;
-    margin-bottom:$cx-heading-margin-bottom;
+    margin-top: 0;
+    margin-bottom: $cx-heading-margin-bottom;
 }
 
 %overlay{
-	@include cx-overlay();
+	@include cx-overlay;
 }
 
 %cx-transition{

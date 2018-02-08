@@ -9,18 +9,14 @@ INDEX:
 	s04 - Full Screen Header
 	s05 - Header Background Video
 	s06 - Header Background Slider
-	s07 - Superfish Menu
-	s08 - Intelligent Header Space
-	s09 - Headroom Js for Auto Hide the header on scroll
-	s10 - Animated Counter
-	s11 - Isotope Js for Portfolio Section
-	s12 - Slide left action for Mobile Menu
+	s07 - Main Navigation Menu
 	s13 - Reasons to Choose Carousel
 	s14 - Testimonial Carousel
 	s15 - Client Carousel
 	s16 - Smooth Scroll to anchor tags
 	s17 - Scroll to Top JS
 	s18 - Placeholder JS
+	s19 - Parallax JS
 
 
 ******************************/
@@ -39,12 +35,12 @@ INDEX:
 
     var $window 			= $(window),
         $document 			= $(document),
-        $owlSlider			= $(".primary-slider"),
-        $owlSliderSlide		= $(".slider-section .slide-single"),
-        $fillscreen 		= $(".fill-screen"),
+        $slider	 			= $("#primary-slider"),
+        $fullscreen 		= $(".sp-slide"),
         $fullscreenVideo 	= $("#header_full_screen_video"),
+        $parallax 			= $(".jarallax"),
         $bgSlide 			= $("#header_bg_slide"),
-        $sfMenu 			= $(".sf-menu"),
+        $mainMenu 			= $(".stellarnav"),
         $pageloader 		= $(".cx-pageloader"),
         $intelHeader 		= $(".intelligent-header"),
         $counter 			= $(".counter"),
@@ -77,21 +73,23 @@ INDEX:
     *************************************************************/
 
 	CODEXIN.primarySlider = function() {
-		if ($owlSlider.cxExists()) {
-		    $owlSlider.owlCarousel({
-		        smartSpeed:1000,
-		        margin:0,
-		        animateOut: 'fadeOut',
-		        animateIn: 'fadeIn',
-		        items: 1,
-		        nav:true,
-		        autoplay:true,
-		        autoplayTimeout:5000,
-		        loop:true,
-		        mouseDrag: false,
-		        dots: true,
-		        navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
-		    });
+		if ($slider.cxExists()) {
+			$slider.sliderPro({
+				width: '100%',
+				height: '100vh',
+				arrows: true,
+				buttons: false,
+				waitForLayers: true,
+				slideDistance: 0,
+				autoplay: false,
+				fade: true,
+				breakpoints: {
+					768: {
+						arrows: false
+					}
+				}
+			});
+			$(".sp-slide").append('<div class="section-overlay"></div>');
 		}
 	};
 
@@ -101,12 +99,12 @@ INDEX:
     *************************************************************/
 
 	CODEXIN.primarySliderBgSetting = function() {
-        if ($owlSliderSlide.cxExists()) {
-            $owlSliderSlide.each(function() {
+        if ($slider.cxExists()) {
+            $("#primary-slider .sp-slide").each(function() {
                 var $this = $(this);
                 var img = $this.find(".slider-image").attr("src");
 
-                $this.css({
+                $this.find(".image-placeholder").css({
                     backgroundImage: "url("+ img +")",
                     backgroundSize: "cover",
                     backgroundPosition: "center center"
@@ -121,11 +119,11 @@ INDEX:
     *************************************************************/
 
     CODEXIN.fullscreenHeader = function() {
-	    if ( $window.width() > 991) {      
-			$fillscreen.css("height", window.innerHeight);
+	    if ( $window.width() > 991) {   
+			$fullscreen.css("height", window.innerHeight);
 	    } 
 	    else {
-	      	$fillscreen.css("height", "500px");
+	      	$fullscreen.css("height", "500px");
 	    }
     };
 
@@ -172,26 +170,22 @@ INDEX:
 
 
     /************************************************************
-        s07 - Superfish Menu
+        s07 - Main Navigation Menu
     *************************************************************/
 
     CODEXIN.mainNav = function() {
-	    $sfMenu.superfish({
-	        delay: 0, // one second delay on mouseout
-	        animation: {
-	            opacity: 'show',
-	            height: 'show'
-	        },
-	        animationOut: {
-	            opacity: 'hide'
-	        },
-	        speed: 'fast', // faster animation speed
-	        autoArrows: false,
-	        disableHI: true
-	    });
+		$mainMenu.stellarNav({
+			theme     : 'plain',
+			breakpoint: 768,
+			phoneBtn: '+1234567890',
+			position: 'right',
+			showArrows: true,
+			closeBtn     : false,
+			scrollbarFix: false
+		});
 
 	    // Submenu Intelligent hover functionality
-	    $sfMenu.on('mouseover', ".sub-menu", function() {
+	    $mainMenu.on('mouseover', ".sub-menu", function() {
 	        var menu = $(this);
 	        var child_menu = $(this).find('ul');
 	        if ($(menu).offset().left + $(menu).width() + $(child_menu).width() > $window.width()) {
@@ -540,33 +534,47 @@ INDEX:
     };
 
 
+    /************************************************************
+        s19 - Parallax JS
+    *************************************************************/
+
+    CODEXIN.parallaxInit = function() {
+    	if ( $window.width() > 768) {
+	        $parallax.jarallax({
+				speed: 0.2
+			});
+	    }
+    };
+
+
     // Window load functions
     $window.on('load', function() {
         CODEXIN.preloader(),
         CODEXIN.primarySliderBgSetting(),
+        CODEXIN.parallaxInit(),
         CODEXIN.portfolioIsotope();
     });
 
     // Document ready functions
     $document.on('ready', function() {
     	CODEXIN.primarySlider(),
-    	CODEXIN.fullscreenVideoHeader(),
-    	CODEXIN.backgroundSliderHeader(),
+    	// CODEXIN.fullscreenVideoHeader(),
+    	// CODEXIN.backgroundSliderHeader(),
     	CODEXIN.mainNav(),
     	CODEXIN.headerAutoHide(),
-    	CODEXIN.animatedCounter(),
-    	CODEXIN.responsiveMenu(),
-    	CODEXIN.reasonsCarousel(),
-    	CODEXIN.testimonialCarousel(),
-    	CODEXIN.clientCarousel(),
-    	CODEXIN.explore(),
+    	// CODEXIN.animatedCounter(),
+    	// CODEXIN.responsiveMenu(),
+    	// CODEXIN.reasonsCarousel(),
+    	// CODEXIN.testimonialCarousel(),
+    	// CODEXIN.clientCarousel(),
+    	// CODEXIN.explore(),
     	CODEXIN.scrollToTop(),
     	CODEXIN.placeHolders();
     });
 
     // Window load and resize functions
     $window.on('load resize', function() {
-        CODEXIN.fullscreenHeader(),
+        // CODEXIN.fullscreenHeader(),
         CODEXIN.headerPlaceholder();
     });
 

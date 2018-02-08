@@ -7,40 +7,42 @@ body {
 }
 
 body {
-    font-family: $cx-body-font ;
-    line-height:$cx-body-line-height;
+    font-family: $cx-body-font;
+    line-height: $cx-body-line-height;
     color: $cx-text-color;
     font-weight: $cx-body-font-weight;
     background: $cx-body-bg-color;
 }
 
-
 h1 { 
-    font-size: 2*$cx-body-font-size;
-}
-h2 { 
-    font-size: 1.75*$cx-body-font-size;
-}
-h3 { 
-    font-size: 1.5*$cx-body-font-size;
-}
-h4 { 
-    font-size: 1.3125*$cx-body-font-size; 
-}
-h5 { 
-    font-size: 1.125*$cx-body-font-size; 
-}
-h6 { 
-    font-size: 1*$cx-body-font-size; 
+    font-size: $cx-h1-font-size;
 }
 
-h1,h2,h3,h4,h5,h6{
+h2 { 
+    font-size: $cx-h2-font-size;
+}
+
+h3 { 
+    font-size: $cx-h3-font-size;
+}
+
+h4 { 
+    font-size: $cx-h4-font-size; 
+}
+
+h5 { 
+    font-size: $cx-h5-font-size; 
+}
+
+h6 { 
+    font-size: $cx-h6-font-size; 
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: $cx-heading-font;
     font-weight: 700;
-    @extend %default-heading;
-    
+    @extend %default-heading;    
 }
-
 
 p {
     margin-top: 0;
@@ -50,10 +52,10 @@ p {
 }
 
 ul, ol, table, dl, dd {
-    margin-bottom:  $cx-heading-margin-bottom;
+    margin-bottom: $cx-heading-margin-bottom;
 }
 
-address ,blockquote  {
+address, blockquote {
     font-style: italic;
 }
 
@@ -66,17 +68,17 @@ td, th {
 }
 
 img {
-    max-width:100%;
-    height:auto
+    max-width: 100%;
+    height: auto;
 }
 
 a {
     @extend %cx-transition ;
-    text-decoration:none;
-    color:$cx-link-color;
+    text-decoration: none;
+    color: $cx-link-color;
 }
 
-a:hover ,a:focus {
+a:hover, a:focus {
   text-decoration: none;
 }
 
@@ -94,8 +96,6 @@ a:focus {
     color: initial  ;
 }
 
-
-
 textarea,
 select,
 input[type="text"],
@@ -106,8 +106,8 @@ input[type="reset"],
 input[type="password"],
 input[type="search"],
 input[type="tel"] {
-    padding:8px 10px;
-    border:1px solid darken($cx-border-color, 10%);
+    padding: 8px 10px;
+    border: 1px solid darken($cx-border-color, 10%);
     margin-bottom: 15px;
     min-height: 40px;
     @include border-radius(0);
@@ -120,7 +120,7 @@ textarea {
 input[type="reset"],
 input[type="button"],
 input[type="submit"] {
-    border:1px solid $cx-primary-color;
+    border: 1px solid $cx-primary-color;
     min-height: 40px;
     background: $cx-primary-color;
     color: lighten($cx-text-color, 100%);
@@ -146,29 +146,35 @@ input[placeholder] {
 button:focus,
 input:focus,
 textarea:focus {
-    border-color:  $cx-primary-color;
+    border-color: $cx-primary-color;
     outline: 0;
 }
 
 button:hover,
 input[type="submit"]:hover,
-input[type="button"]:hover{
+input[type="button"]:hover {
     border-color: $cx-secondary-color;
     background-color: $cx-secondary-color;
 }
 
-
-
-
+::-webkit-selection {
+    background: $cx-primary-color;
+    text-shadow: none;
+    color: #fff;
+}
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: $cx-primary-color;
     text-shadow: none;
+    color: #fff;
 }
+
 ::selection {
-    background: #b3d4fc;
+    background: $cx-primary-color;
     text-shadow: none;
+    color: #fff;
 }
+
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;

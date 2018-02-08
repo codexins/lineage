@@ -1,65 +1,80 @@
-// typography 
-$cx-body-font: 							'Open Sans', sans-serif !default;
-$cx-heading-font: 						'PT Sans', sans-serif !default;
+
+//-------------------- Base Typography --------------------//
+
+$cx-body-font: 					'Lato', sans-serif !default;
+$cx-heading-font: 				'Raleway', sans-serif;
 
 
-// Colors
-$cx-text-color: 						#333 !default; // black
-$cx-body-bg-color: 						#fff !default; // white 
+//-------------------- Font Sizes --------------------//
 
-$cx-primary-color:  					#1ca5b8 !default; // teal
-$cx-secondary-color: 					#ff646c !default; // light red
-$cx-tertiary-color:						#0b4249 !default; // dark teal
-$cx-fourth-color: 						#f9b808 !default;  // Yellow type
-
-$cx-offset-color:						#f3f3f3 !default; // offwhite
-//$cx-offset-color:						lighten($cx-primary-color,52%); // offwhite
+$cx-body-font-size: 			16px !default;
+$cx-h1-font-size: 				2 * $cx-body-font-size !default;
+$cx-h2-font-size: 				1.75 * $cx-body-font-size !default;
+$cx-h3-font-size: 				1.5 * $cx-body-font-size !default;
+$cx-h4-font-size: 				1.3125 * $cx-body-font-size !default;
+$cx-h5-font-size: 				1.125 * $cx-body-font-size !default;
+$cx-h6-font-size: 				1 * $cx-body-font-size !default;
 
 
-$cx-border-color:						#ccc !default; // light gray
+//-------------------- Base Color --------------------//
 
-$cx-link-color: 						$cx-primary-color !default;
-$cx-link-hover-color: 					$cx-secondary-color !default;
+$cx-text-color: 				#555 !default;
+$cx-body-bg-color: 				#fff !default;
 
-// line height  
-$cx-body-font-size: 					16px !default;
-$cx-body-line-height: 					1.6em !default;
-$cx-body-font-weight : 					400 !default;
+$cx-primary-color:  			#947cb0 !default;
+$cx-secondary-color: 			#d7706d !default;
+$cx-tertiary-color:				#ffcb5e !default;
+$cx-fourth-color: 				#c6e7e5 !default;
 
-$cx-social-icon-size-small: 			26px !default;
-$cx-social-icon-size-large: 			34px !default;
+$cx-link-color: 				$cx-primary-color !default;
+$cx-link-hover-color: 			$cx-secondary-color !default;
 
-
-// default speacing 
-$cx-heading-margin-bottom : 			25px !default;
-
-$cx-section-spacing:	 				90px !default;
-$cx-col-spacing:						0.5*$cx-section-spacing !default; // will be used as bottom margin/padding
+$cx-offset-color:				#f6f6f6 !default;
+$cx-border-color:				#ccc !default;
 
 
-// mobile spacing support
-$shrink-factor:							0.75 !default; // shrink spacing for mobile
-$cx-col-spacing-mob:					$shrink-factor*$cx-col-spacing !default; // shrink col spacing for mobile
-$cx-section-spacing-mob:				$shrink-factor*$cx-section-spacing !default; // shrink col spacing for mobile
+//-------------------- Line Height --------------------//
 
-// default transition 
-$cx-transition: 						all 0.3s ease !default;
+$cx-body-line-height: 			1.8em !default;
+$cx-body-font-weight : 			400 !default;
 
-//* screen size */
-//* screen min width */
 
-$cx-lg-screen:							1200px !default;
-$cx-md-screen: 							992px !default;
-$cx-sm-screen:							768px !default;
-$cx-vsm-screen:							480px !default;
+//-------------------- Default Spacing --------------------//
+
+$cx-heading-margin-bottom: 		25px !default;
+$cx-section-spacing:	 		90px !default;
+$cx-col-spacing:				0.5 * $cx-section-spacing !default; // will be used as bottom margin/padding
+
+
+//-------------------- Default Mobile Spacing --------------------//
+
+$shrink-factor:					0.75 !default; // shrink spacing for mobile
+$cx-col-spacing-mob:			$shrink-factor*$cx-col-spacing !default; // shrink col spacing for mobile
+$cx-section-spacing-mob:		$shrink-factor*$cx-section-spacing !default; // shrink col spacing for mobile
+
+
+//-------------------- Default Transition --------------------//
+
+$cx-transition: 				all 0.3s ease !default;
+
+
+//-------------------- Default Breakpoint / Screen Size --------------------//
+
+$cx-lg-screen:					1200px !default;
+$cx-md-screen: 					992px !default;
+$cx-sm-screen:					768px !default;
+$cx-vsm-screen:					480px !default;
 
 $cx-breakpoints: (
-    "wide":    							$cx-lg-screen,
-    "notebook":    						$cx-md-screen,
-    "tablet":    						$cx-sm-screen,
-    "small-mobile": 					$cx-vsm-screen, 
+    "wide":    					$cx-lg-screen,
+    "notebook":    				$cx-md-screen,
+    "tablet":    				$cx-sm-screen,
+    "small-mobile": 			$cx-vsm-screen, 
 );
 
 
+//-------------------- Social Icon Sizes --------------------//
 
+$cx-social-icon-size-small: 	26px !default;
+$cx-social-icon-size-large: 	34px !default;
 
