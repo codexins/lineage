@@ -38,11 +38,13 @@ INDEX:
         $slider	 			= $("#primary-slider"),
         $fullscreen 		= $(".sp-slide"),
         $fullscreenVideo 	= $("#header_full_screen_video"),
-        $parallax 			= $(".jarallax"),
+        $parallax 			= $(".jarallax-default"),
+        $parallaxSlow		= $(".jarallax-slow"),
         $bgSlide 			= $("#header_bg_slide"),
         $mainMenu 			= $(".stellarnav"),
         $pageloader 		= $(".cx-pageloader"),
         $intelHeader 		= $(".intelligent-header"),
+        $footer 			= $("#colophon"),
         $counter 			= $(".counter"),
         $isoContainer 		= $(".portfolio-wrapper"),
         $isoFilter	 		= $(".portfolio-filter li"),
@@ -202,9 +204,11 @@ INDEX:
         s08 - Intelligent Header Space
     *************************************************************/
 
-	CODEXIN.headerPlaceholder = function() {
-        var intHeight = $intelHeader.outerHeight();
-        $(".intelligent-header-space").height(intHeight);
+	CODEXIN.elementHeights = function() {
+        var headerHeight = $intelHeader.outerHeight();
+        // var footerHeight = $footer.outerHeight();
+        $(".intelligent-header-space").height(headerHeight);
+        // $("#whole").css('margin-bottom', footerHeight);
     };
 
 
@@ -237,10 +241,12 @@ INDEX:
 
     CODEXIN.animatedCounter = function() {
     	if ($counter.cxExists()) {
-	        $counter.counterUp({
-	            delay: 100,
-	            time: 3000
-	        });
+        	$counter.each(function () {
+         		var $elem = $(this);                 
+           		$elem.appear(function () {
+             		$elem.find('.timer').countTo();
+          		});                  
+        	});
 	    }
     };
 
@@ -254,7 +260,8 @@ INDEX:
 	        $isoContainer.imagesLoaded(function() {
 	            $isoContainer.isotope({
 	                itemSelector: ".portfolio",
-	                layoutMode: 'masonry'
+	                layoutMode: 'masonry',
+	                stagger: 60
 	            });
 	        });
 
@@ -541,6 +548,10 @@ INDEX:
     CODEXIN.parallaxInit = function() {
     	if ( $window.width() > 768) {
 	        $parallax.jarallax({
+				speed: 0.6
+			});
+
+	        $parallaxSlow.jarallax({
 				speed: 0.2
 			});
 	    }
@@ -562,7 +573,7 @@ INDEX:
     	// CODEXIN.backgroundSliderHeader(),
     	CODEXIN.mainNav(),
     	CODEXIN.headerAutoHide(),
-    	// CODEXIN.animatedCounter(),
+    	CODEXIN.animatedCounter(),
     	// CODEXIN.responsiveMenu(),
     	// CODEXIN.reasonsCarousel(),
     	// CODEXIN.testimonialCarousel(),
@@ -575,7 +586,7 @@ INDEX:
     // Window load and resize functions
     $window.on('load resize', function() {
         // CODEXIN.fullscreenHeader(),
-        CODEXIN.headerPlaceholder();
+        CODEXIN.elementHeights();
     });
 
 })(jQuery);

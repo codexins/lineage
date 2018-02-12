@@ -1,0 +1,17 @@
+/**
+ * layout cta/ cta
+ *
+ */
+
+.cta-section {
+	@extend %mb0;
+	&.has-bg {
+		@include cx-background("../img/slider/home-1/slide-2.jpg");
+		@include cx-overlay(rgba(0, 0, 0, 0.65));
+		color: lighten($cx-text-color, 100%);
+		h1, h2, h3, h4, h5, h6 {
+			color: lighten($cx-text-color, 100%);
+			text-transform: uppercase;
+		}
+	}
+}

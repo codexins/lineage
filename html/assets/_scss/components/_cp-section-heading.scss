@@ -1,0 +1,144 @@
+/**
+ * Components Section heading
+ *
+ */
+
+.section-heading {
+	text-align:center;
+	display: block;
+    max-width: 70%;
+    margin: 0 auto $cx-col-spacing;
+    position: relative;
+    @include respond-to(tablet) {
+    	max-width:85%;
+    }
+    @include respond-to(mobile) {
+    	max-width:95%;
+        margin-bottom: $cx-col-spacing-mob;
+    }
+
+    h4 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.85em;
+        margin: 0 auto;
+        font-weight: 700;
+        color: lighten($cx-text-color, 10%);
+        margin-bottom: 0.4 * $cx-heading-margin-bottom;
+        @include respond-to(mobile) {
+            font-size: 0.95em;
+        }
+        @include respond-to(small-mobile) {
+            font-size: 0.85em;
+        }
+        &::before {
+            content: '';
+            width: 2rem;
+            background: lighten($cx-text-color, 30%);
+            height: .15rem;
+            margin: 0 .5rem;
+            display: inline-block;
+            position: relative;
+            top: -.2rem;
+        }
+        &::after {
+            content: '';
+            width: 2rem;
+            background: lighten($cx-text-color, 30%);
+            height: .15rem;
+            margin: 0 .5rem;
+            display: inline-block;
+            position: relative;
+            top: -.2rem;
+        }
+    }
+
+    h2 {
+    	@extend .primary-title;
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+        @extend %mb0;
+        margin-top: $cx-heading-margin-bottom;
+        font-size: 1.4em;
+        color: lighten($cx-text-color, 10%);
+        font-weight: 300;
+    }
+
+    &.white-text {
+        h2,
+        h4,
+        p {
+            @extend %color-white;
+        }
+    }
+
+    &.left-aligned {
+        margin: 0;
+        margin-bottom: $cx-col-spacing;
+        max-width: 100%;
+        h2,
+        h4,
+        p {
+            text-align: left;
+        }
+        h4 {
+            &::before {
+                @extend .visually-hidden;
+            }
+        }
+    }
+
+    &.white-text {
+        
+    }
+}
+
+
+// .section-heading-left {
+//     @extend .section-heading;
+//     max-width:100%;
+//     text-align: left;
+//     @include respond-to(tablet) {
+//         max-width:100%;
+//     }
+
+//     @include respond-to(mobile) {
+//         max-width:100%;
+//     }
+// }
+
+// .title-bar {
+//     position:  relative ;
+//     &::after{
+//         @include  abs-position(auto,0,0,0);
+//         background:$cx-secondary-color;
+//         margin: auto;
+//         width: 45px;
+//         height: 2px;
+//         transform: translateY(-50%);
+//     }
+
+//     &.white-skin {
+//         &::after {
+//             background-color: #fff;
+//         }
+//     }
+// }
+
+
+// .title-bar-left {
+//     @extend .title-bar;
+//     &::after {
+//         margin-left: 0;
+//     }
+// }
+
+
+// .title-bar-right {
+//     @extend .title-bar;
+//     &::after {
+//         margin-right: 0;
+//     }
+// }

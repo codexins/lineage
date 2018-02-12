@@ -1,0 +1,25 @@
+/**
+ * Components Section description
+ *
+ */
+
+
+.section-description {
+	width: 58%;
+	text-align: center;
+	margin-bottom: -$cx-heading-margin-bottom / 4;
+	position: relative;
+	@include push-center;
+	z-index: 0;
+	p {
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	@include respond-to(tablet) {
+		width: 80%;
+	}
+	@include respond-to(mobile) {
+		width: 100%;
+	}
+}

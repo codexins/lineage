@@ -4,6 +4,10 @@
  */
 
 #colophon {
+	.footer-top {
+	    z-index: 1;
+	    position: relative;
+	}
 	nav {
 	    float: right;
 	    width: calc(100% - 200px);
@@ -12,6 +16,7 @@
 	    text-transform: uppercase;
 	    letter-spacing: 2px;
 	    text-align: right;
+	    padding-top: 7px;
 		li {
 		    list-style: none;
 		    text-align: right;
@@ -53,6 +58,7 @@
 			    text-transform: uppercase;
 			    letter-spacing: 2px;
 			    margin-bottom: 25px;
+			    line-height: 1em;
 			}
 		}
 		p {
@@ -95,6 +101,12 @@
 					line-height: 38px;
 				}
 			}
+			@include respond-to(mobile) {
+				width: 100%;
+			}
+			@include respond-to(small-mobile) {
+				width: auto;
+			}
 		}
 		.actions,
 		.socials {
@@ -113,7 +125,7 @@
 	position:relative;
 	text-align: center;
     padding: 20px 15px;
-    background: $cx-text-color;
+    background: $cx-tertiary-color;
     p{
     	margin: 0;
     	color: lighten($cx-text-color, 100%);

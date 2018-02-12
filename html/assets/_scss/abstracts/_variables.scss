@@ -7,7 +7,7 @@ $cx-heading-font: 				'Raleway', sans-serif;
 
 //-------------------- Font Sizes --------------------//
 
-$cx-body-font-size: 			16px !default;
+$cx-body-font-size: 			17px !default;
 $cx-h1-font-size: 				2 * $cx-body-font-size !default;
 $cx-h2-font-size: 				1.75 * $cx-body-font-size !default;
 $cx-h3-font-size: 				1.5 * $cx-body-font-size !default;
@@ -18,24 +18,25 @@ $cx-h6-font-size: 				1 * $cx-body-font-size !default;
 
 //-------------------- Base Color --------------------//
 
-$cx-text-color: 				#555 !default;
+$cx-text-color: 				#545454 !default;
 $cx-body-bg-color: 				#fff !default;
 
 $cx-primary-color:  			#947cb0 !default;
 $cx-secondary-color: 			#d7706d !default;
-$cx-tertiary-color:				#ffcb5e !default;
+// $cx-tertiary-color:				#ffcb5e !default;
+$cx-tertiary-color:				#3e3e3e !default;
 $cx-fourth-color: 				#c6e7e5 !default;
 
 $cx-link-color: 				$cx-primary-color !default;
 $cx-link-hover-color: 			$cx-secondary-color !default;
 
 $cx-offset-color:				#f6f6f6 !default;
-$cx-border-color:				#ccc !default;
+$cx-border-color:				#ddd !default;
 
 
 //-------------------- Line Height --------------------//
 
-$cx-body-line-height: 			1.8em !default;
+$cx-body-line-height: 			1.6 !default;
 $cx-body-font-weight : 			400 !default;
 
 

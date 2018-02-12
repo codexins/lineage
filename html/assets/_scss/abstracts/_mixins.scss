@@ -67,11 +67,11 @@
 
 
 //-------------------- Block Element centering --------------------//
-// Usage @include push--auto;
+// Usage @include push-center;
 
 @mixin push-center {
+    display: block;
     margin: {
-        display: block;
         left: auto;
         right: auto;
     }
@@ -236,7 +236,7 @@
 // Usage @include button(20px 30px);
 
 @mixin button($padding: 12px 32px){
-    min-width: 180px;
+    min-width: 165px;
     padding: $padding;
     display: inline-block;
     background: transparent;

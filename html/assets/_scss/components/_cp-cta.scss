@@ -1,0 +1,40 @@
+/**
+ * Components Call to action
+ *
+ */
+
+.cta-centered {
+	text-align: center;
+	@extend %vpadding;
+
+	p {
+		font-size: 21px;
+		font-weight: 300;
+		margin-bottom: 1.2 * $cx-heading-margin-bottom; 
+		a {
+			font-weight: 600;
+			font-size: 1.1em;
+			color: $cx-secondary-color;
+			&:hover {
+				color: $cx-primary-color;
+			}
+		}
+	}
+
+	h2 {
+		@include respond-to(mobile) {
+			font-size: 24px;
+		}
+	}
+
+	.default-btn {
+		z-index: 2;
+		border-color: $cx-secondary-color;
+		background: $cx-secondary-color;
+		color: lighten($cx-text-color, 100%);
+		&:hover {
+			border-color: $cx-primary-color;
+		}
+
+	}
+}

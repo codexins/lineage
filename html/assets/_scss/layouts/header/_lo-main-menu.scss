@@ -17,8 +17,16 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             text-shadow: 1px 1px 1px rgba(0,0,0,.1);
-            color: #fff;
+            color: lighten($cx-text-color, 100%);
             padding-bottom: $cx-heading-margin-bottom;
+            @include respond-to(notebook) {
+                padding: 39px 13px;
+            }
+            @include respond-to(tablet) {
+                padding: 39px 4px;
+                font-size: 12px;
+                letter-spacing: 0;
+            }
         }
         &.has-sub {
             > a {

@@ -1,0 +1,73 @@
+/**
+ * Components Team Member
+ *
+ */
+
+.team-member {
+	
+	.team-media {
+		position: relative;
+		.team-social-wrapper {
+		    width: 100%;
+		    height: 100%;
+		    opacity: 0;
+		    @include abs-position(0, auto, auto, 0);
+		    @extend %cx-transition;
+		    @extend %overlay;
+		    &::before {
+		    	background: rgba(0, 0, 0, 0.7);
+		    }
+		}		
+	}
+
+	.team-details {
+		padding: 0.3 * $cx-section-spacing;
+		position: relative;
+		opacity: 1;
+		height: auto;
+	    text-align: center;
+	    @extend %bgc-white;
+		h2 {
+			text-transform: uppercase;
+			font-size: 1.2rem;
+			margin-bottom: 0.5 * $cx-heading-margin-bottom;
+		}
+		p {
+			font-size: 0.9rem;
+			margin-bottom: 0;
+			font-style: italic;
+		}
+	}
+
+	.social-icon {
+		width:100%;
+		text-align: center;
+		@extend %cx-transition;
+		@include cx-centered(both);
+		a {
+			float: none;
+			margin-right: 2px;
+			margin-left: 2px;
+			color: $cx-offset-color;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			border: 0;
+			@include border-radius(50%);
+			i {
+				font-size: 0.92rem;
+			}
+		}
+
+	}
+	&:hover {
+		.team-social-wrapper {
+			opacity:1;
+		}
+	}
+	@include cx-prefix('box-shadow', '0px 2px 5px 0px rgba(0,0,0,0.15)')
+}
+
+
+
+

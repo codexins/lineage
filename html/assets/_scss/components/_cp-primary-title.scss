@@ -1,0 +1,22 @@
+/**
+ * Components Primary Titile
+ *
+ */
+
+.primary-title{
+	color: darken($cx-text-color, 5%);
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	font-size: 2.3 * $cx-body-font-size;
+	margin-bottom: $cx-heading-margin-bottom;
+	@include respond-to(tablet){
+		font-size: 2 * $cx-body-font-size;
+	}
+	@include respond-to(mobile){
+		font-size: 1.8*$cx-body-font-size;
+	}
+	@include respond-to(small-mobile){
+		font-size: 1.5*$cx-body-font-size;
+	}
+}
