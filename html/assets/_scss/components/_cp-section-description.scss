@@ -10,7 +10,6 @@
 	margin-bottom: -$cx-heading-margin-bottom / 4;
 	position: relative;
 	@include push-center;
-	z-index: 0;
 	p {
 		&:last-of-type {
 			margin-bottom: 0;

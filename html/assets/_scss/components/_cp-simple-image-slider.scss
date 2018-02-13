@@ -1,0 +1,24 @@
+/**
+ * Components Simple Image Slider
+ *
+ */
+
+.simple-slider-container {
+	position: relative;
+	&::before {
+		z-index: 2;
+		@include abs-position(0, 0, 0, 0);
+		@include bcg-linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.85))
+	}
+
+	.swiper-pagination-bullet {
+		background: lighten($cx-secondary-color, 5%);
+		width: 15px;
+		@include border-radius(0);
+		@extend %cx-transition;
+		&.swiper-pagination-bullet-active {
+			width: 26px;
+			background: $cx-secondary-color;
+		}
+	}
+}

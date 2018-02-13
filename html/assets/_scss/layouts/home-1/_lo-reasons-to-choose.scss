@@ -1,0 +1,17 @@
+/**
+ * layout home-1 / reasons to choose
+ *
+ */
+
+.reasons-choose-section {
+	@extend %mt-full;
+	p:not(.subtitle) {
+		margin-bottom: 0.5 * $cx-section-spacing;
+	}
+	
+	@include respond-to(tablet) {
+		.row > div:first-child {
+			margin-bottom: $cx-col-spacing-mob;
+		}
+	}
+}

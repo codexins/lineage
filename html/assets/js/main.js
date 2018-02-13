@@ -36,8 +36,8 @@ INDEX:
     var $window 			= $(window),
         $document 			= $(document),
         $slider	 			= $("#primary-slider"),
-        $fullscreen 		= $(".sp-slide"),
-        $fullscreenVideo 	= $("#header_full_screen_video"),
+        // $fullscreen 		= $(".sp-slide"),
+        // $fullscreenVideo 	= $("#header_full_screen_video"),
         $parallax 			= $(".jarallax-default"),
         $parallaxSlow		= $(".jarallax-slow"),
         $bgSlide 			= $("#header_bg_slide"),
@@ -581,6 +581,25 @@ INDEX:
     	// CODEXIN.explore(),
     	CODEXIN.scrollToTop(),
     	CODEXIN.placeHolders();
+
+
+  var mySwiper = new Swiper ('.simple-slider-container', {
+
+    loop: true,
+    effect: "fade",
+    roundLengths: true,
+	autoplay: {
+    	delay: 3000,
+	},
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+  })
+
+
     });
 
     // Window load and resize functions

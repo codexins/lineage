@@ -410,7 +410,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 
-a, .default-btn, .default-btn.white-btn, .social-icon a, .social-icon-large a, .info-item, .info-item .thumb-icon i, .info-item .thumb-icon::after, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .team-member .team-media .team-social-wrapper, .team-member .social-icon, .team-member .social-icon-large, .logo img, header .intelligent-header.scrolling-up img {
+a, .default-btn, .default-btn.white-btn, .social-icon a, .social-icon-large a, .info-item, .info-item .thumb-icon i, .info-item .thumb-icon::after, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .team-member .team-media .team-social-wrapper, .team-member .social-icon, .team-member .social-icon-large, .simple-slider-container .swiper-pagination-bullet, .logo img, header .intelligent-header.scrolling-up img {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -570,12 +570,12 @@ a, .default-btn, .default-btn.white-btn, .social-icon a, .social-icon-large a, .
   }
 }
 
-.mt-full {
+.mt-full, .reasons-choose-section {
   margin-top: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mt-full {
+  .mt-full, .reasons-choose-section {
     margin-top: 67.5px;
   }
 }
@@ -673,6 +673,7 @@ to a reusable component.
   transition: border-color 0.3s, color 0.3s;
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  z-index: 1;
 }
 
 .default-btn::before {
@@ -720,7 +721,6 @@ to a reusable component.
 }
 
 .default-btn.white-btn:hover {
-  border-color: #fff;
   color: #545454;
 }
 
@@ -941,7 +941,6 @@ to a reusable component.
   display: block;
   margin-left: auto;
   margin-right: auto;
-  z-index: 0;
 }
 
 .section-description p:last-of-type {
@@ -1158,7 +1157,6 @@ to a reusable component.
 }
 
 .cta-centered .default-btn {
-  z-index: 2;
   border-color: #d7706d;
   background: #d7706d;
   color: white;
@@ -1511,9 +1509,8 @@ to a reusable component.
 .portfolio-mini-desc p {
   margin: 0;
   text-transform: capitalize;
-  font-size: 14px;
+  font-size: 0.85rem;
   letter-spacing: .05em;
-  font-weight: 300;
 }
 
 .portfolio-mini-desc p span {
@@ -1636,6 +1633,46 @@ to a reusable component.
   opacity: 1;
 }
 
+/**
+ * Components Simple Image Slider
+ *
+ */
+.simple-slider-container {
+  position: relative;
+}
+
+.simple-slider-container::before {
+  z-index: 2;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent 30%;
+  background: -webkit-linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.85));
+  background: -moz-linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.85));
+  background: -ms-linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.85));
+  background: -o-linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.85));
+  background: linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.85));
+}
+
+.simple-slider-container .swiper-pagination-bullet {
+  background: #dc8481;
+  width: 15px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+.simple-slider-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 26px;
+  background: #d7706d;
+}
+
 /************************************************************
 	c20 - Layout - header
 *************************************************************/
@@ -1710,6 +1747,11 @@ to a reusable component.
   text-align: left;
   font-size: 12px;
   color: #b3b3b3;
+}
+
+#main-nav .sub-menu li > a:hover {
+  padding-left: 18px;
+  background: #333;
 }
 
 #main-nav .sub-menu li.has-sub > a::after {
@@ -2120,5 +2162,18 @@ header .intelligent-header.scrolling-up img {
  * layout team/ team
  *
  */
+/**
+ * layout home-1 / reasons to choose
+ *
+ */
+.reasons-choose-section p:not(.subtitle) {
+  margin-bottom: 45px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .reasons-choose-section .row > div:first-child {
+    margin-bottom: 33.75px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
