@@ -42,7 +42,7 @@
         border: 1px solid;
         border-top: 2px solid $cx-primary-color;
         border-color: $cx-primary-color lighten(rgb(0, 0, 0), 15%) lighten(rgb(0, 0, 0), 15%);
-        background: #3e3e3e;
+        background: $cx-tertiary-color;
         li {
             > a {
                 padding-top: 9px;

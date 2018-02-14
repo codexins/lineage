@@ -31,6 +31,18 @@
 }
 
 
+//-------------------- Flex --------------------//
+// Usage @include flex(inline-flex);
+
+@mixin flex($property: flex) {
+    display: #{"-webkit-" + $property};
+    display: #{"-moz-" + $property};
+    display: #{"-ms-" + $property};
+    display: #{"-o-" + $property};
+    display: #{$property};
+}
+
+
 //-------------------- Border Radius --------------------//
 // Usage @include border-radius(50%);
 
@@ -44,6 +56,14 @@
 
 @mixin cx-transition($transition) {
     @include cx-prefix('transition', $transition);
+}
+
+
+//-------------------- Box Shadow --------------------//
+// Usage @include box-shadow('0px 2px 5px 0px rgba(0,0,0,0.15)');
+
+@mixin cx-box-shadow($value: '0px 2px 5px 0px rgba(0,0,0,0.15)') {
+    @include cx-prefix('box-shadow', $value);
 }
 
 
@@ -188,7 +208,7 @@
 
 
 //-------------------- Equal Height Columns --------------------//
-// Usage @eqheight;
+// Usage @include eqheight;
 
 @mixin eqheight {
     display: table;

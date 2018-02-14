@@ -1,0 +1,29 @@
+/**
+ * layout home-1 / testimonial
+ *
+ */
+
+.testimonial-section {
+	@extend %vpadding;
+	@extend %mb0;
+	@include cx-background("../img/background/testimonial.jpg");
+	@include cx-overlay( linear-gradient(to left , $cx-primary-color, rgba($cx-text-color,0.8)));
+
+	.testimonial-container {
+		overflow: hidden;
+		position: relative;
+	}
+
+	.swiper-pagination {
+	    line-height: 0;
+	    bottom: 0;
+
+	    .swiper-pagination-bullet {
+	    	border: 4px solid lighten($cx-text-color, 100%);
+	    }
+
+	    .swiper-pagination-bullet-active {
+			background: lighten($cx-text-color, 100%);
+	    }
+	}
+}

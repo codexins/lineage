@@ -65,7 +65,8 @@
 	&.boxed {
 		padding:30px 20px;
 		background: lighten($cx-text-color, 100%);
-		@include cx-prefix('box-shadow', '0px 2px 5px 0px rgba(0,0,0,0.15)');
+		border: 1px solid $cx-border-color;
+		@include cx-box-shadow;
 	}
 
 	&.left-edged-icon {

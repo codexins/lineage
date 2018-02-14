@@ -10,13 +10,14 @@ INDEX:
 	s05 - Header Background Video
 	s06 - Header Background Slider
 	s07 - Main Navigation Menu
-	s13 - Reasons to Choose Carousel
+	s13 - Simple Image Slider
 	s14 - Testimonial Carousel
 	s15 - Client Carousel
 	s16 - Smooth Scroll to anchor tags
 	s17 - Scroll to Top JS
 	s18 - Placeholder JS
 	s19 - Parallax JS
+	s20 - Blog Grid Background Settings
 
 
 ******************************/
@@ -48,12 +49,13 @@ INDEX:
         $counter 			= $(".counter"),
         $isoContainer 		= $(".portfolio-wrapper"),
         $isoFilter	 		= $(".portfolio-filter li"),
-        $slickOne 			= $(".reasons-to-choose"),
-        $slickTwo 			= $(".testimonial-carousel"),
+        $simpleSlider 		= $(".simple-slider-container"),
+        $testimonial 		= $(".testimonial-container"),
         $slickNav 			= $(".testimonial-nav"),
         $slickThree 		= $(".testimonial-carousel-type-02"),
         $slickFour 			= $(".client-carousel"),
-        $toTop 				= $("#toTop");
+        $toTop 				= $("#toTop"),
+        $blogGrid 			= $(".blog-item-grid");
         
     // Check if element exists
     $.fn.cxExists = function() {
@@ -312,36 +314,24 @@ INDEX:
 
 
     /************************************************************
-        s13 - Reasons to Choose Carousel
+        s13 - Simple Image Slider
     *************************************************************/
 
-    CODEXIN.reasonsCarousel = function() {
-	    if ($slickOne.cxExists()) {
-	        $slickOne.slick({
-	            infinite: true,
-	            slidesToShow: 3,
-	            slidesToScroll: 1,
-	            dots: true,
-	            arrows: false,
-	            responsive: [{
-	                    breakpoint: 992,
-	                    settings: {
-	                        slidesToShow: 2,
-	                        slidesToScroll: 1,
-	                        infinite: true
-	                    }
-	                },
-	                {
-	                    breakpoint: 500,
-	                    settings: {
-	                        slidesToShow: 1,
-	                        slidesToScroll: 1,
-	                        infinite: true
-	                    }
-	                }
-	            ]
-
-	        });
+    CODEXIN.simpleImageSlider = function() {
+	    if ($simpleSlider.cxExists()) {
+  			var imageSlider = new Swiper ($simpleSlider, {
+				loop: true,
+    			effect: "fade",
+    			speed: 2000,
+    			roundLengths: true,
+				autoplay: {
+	    			delay: 3000
+				},
+    			pagination: {
+      				el: '.swiper-pagination',
+      				clickable: true
+			    }
+		  	})
 	    }
 	};
 
@@ -351,40 +341,16 @@ INDEX:
     *************************************************************/
 
 	CODEXIN.testimonialCarousel = function() {
-		if ($slickTwo.cxExists()) {
-	        $slickTwo.slick({
-	            slidesToShow: 1,
-	            slidesToScroll: 1,
-	            arrows: false,
-	            asNavFor: ".testimonial-nav"
-	        });
-
-	        $slickNav.slick({
-	            slidesToShow: 3,
-	            slidesToScroll: 1,
-	            asNavFor: ".testimonial-carousel",
-	            centerMode: true,
-	            focusOnSelect: true,
-	            responsive: [
-	                {
-	                    breakpoint: 480,
-	                    settings: {
-	                        slidesToShow: 3,
-	                        slidesToScroll: 1
-	                    }
-	                }
-	            ]
-	        });
-	    }
-
-	    //Testimonial Carousel Type 02
-	    if ($slickThree.cxExists()) {
-	        $slickThree.slick({
-	            slidesToShow: 1,
-	            slidesToScroll: 1,
-	            arrows: false,
-	            dots: true
-	        });
+		if ($testimonial.cxExists()) {
+  			var testimonial = new Swiper ($testimonial, {
+			    loop: true,
+			    spaceBetween: 40,
+			    grabCursor: true,
+			    pagination: {
+			      	el: '.swiper-pagination',
+			      	clickable: true
+			    }
+			})
 	    }
 	};
 
@@ -558,10 +524,31 @@ INDEX:
     };
 
 
+    /************************************************************
+        s20 - Blog Grid Background Settings
+    *************************************************************/
+
+	CODEXIN.blogGridBgSetting = function() {
+        if ($blogGrid.cxExists()) {
+            $blogGrid.each(function() {
+                var $this = $(this);
+                var img = $this.find(".post-image img").attr("src");
+
+                $this.find(".post-image").css({
+                    backgroundImage: "url("+ img +")",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center center"
+                })
+            });
+        }
+	};
+
+
     // Window load functions
     $window.on('load', function() {
         CODEXIN.preloader(),
         CODEXIN.primarySliderBgSetting(),
+        CODEXIN.blogGridBgSetting(),
         CODEXIN.parallaxInit(),
         CODEXIN.portfolioIsotope();
     });
@@ -575,29 +562,12 @@ INDEX:
     	CODEXIN.headerAutoHide(),
     	CODEXIN.animatedCounter(),
     	// CODEXIN.responsiveMenu(),
-    	// CODEXIN.reasonsCarousel(),
-    	// CODEXIN.testimonialCarousel(),
+    	CODEXIN.simpleImageSlider(),
+    	CODEXIN.testimonialCarousel(),
     	// CODEXIN.clientCarousel(),
     	// CODEXIN.explore(),
     	CODEXIN.scrollToTop(),
     	CODEXIN.placeHolders();
-
-
-  var mySwiper = new Swiper ('.simple-slider-container', {
-
-    loop: true,
-    effect: "fade",
-    roundLengths: true,
-	autoplay: {
-    	delay: 3000,
-	},
-
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-
-  })
 
 
     });
