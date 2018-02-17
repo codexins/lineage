@@ -41,7 +41,7 @@
 <body>
 
     <!--[if lt IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
     <![endif]-->
 
     <!-- Site Loader started-->
@@ -57,8 +57,61 @@
     </div> -->
     <!-- Site Loader Finished-->
 
-    <!-- Start of Whole Site Wrapper -->
-    <div id="whole" class="whole-site-wrapper">
+    <!-- Start of Mobile Menu -->
+    <div class="mobile-menu">
+        <nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+            <button class="c-menu__close">&larr; Close Menu</button>
+            <ul class="c-menu__items">
+                <li class="c-menu__item"><a class="c-menu__link" href="index.html">Home</a>
+                    <ul>
+                        <li class="c-menu__item"><a class="c-menu__link" href="index.html">Home Version 01</a></li>
+                        <li class="c-menu__item"><a class="c-menu__link" href="index-02.html">Home Version 02</a></li>
+                        <li class="c-menu__item"><a class="c-menu__link" href="index-03.html">Home Version 03</a></li>
+                        <li class="c-menu__item"><a class="c-menu__link" href="index-04.html">Home Version 04</a></li>
+                    </ul>
+                </li>
+                <li class="c-menu__item"><a class="c-menu__link" href="about.html">About</a></li>
+                <li class="c-menu__item"><a class="c-menu__link" href="services.html">Services</a></li>
+                <li class="c-menu__item"><a class="c-menu__link" href="portfolio.html">Portfolio</a>
+                    <ul>
+                        <li class="c-menu__item"><a class="c-menu__link" href="portfolio.html">Portfolio</a></li>
+                        <li class="c-menu__item"><a class="c-menu__link" href="portfolio-single-01.html">Portfolio Single 01</a></li>
+                        <li class="c-menu__item"><a class="c-menu__link" href="portfolio-single-02.html">Portfolio Single 02</a></li>
+                    </ul>
+                </li>
+                <li class="c-menu__item"><a class="c-menu__link" href="faq.html">FAQ</a></li>
+                <li class="c-menu__item"><a class="c-menu__link" href="blog-list-right-sidebar.html">Blog</a>
+                    <ul>
+                        <li class="c-menu__item"><a class="c-menu__link" href="blog-grid.html">Blog Grid</a></li>
+                        <li class="c-menu__item"><a class="c-menu__link" href="blog-list-right-sidebar.html">Blog List</a>
+                            <ul>
+                                <li class="c-menu__item"><a class="c-menu__link" href="blog-list-no-sidebar.html">Blog List No Sidebar</a></li>
+                                <li class="c-menu__item"><a class="c-menu__link" href="blog-list-left-sidebar.html">Blog List Left Sidebar</a></li>
+                                <li class="c-menu__item"><a class="c-menu__link" href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li class="c-menu__item"><a class="c-menu__link" href="single-post-right-sidebar.html">Single Blog</a>
+                            <ul>
+                                <li class="c-menu__item"><a class="c-menu__link" href="single-post-no-sidebar.html">Single Post No Sidebar</a></li>
+                                <li class="c-menu__item"><a class="c-menu__link" href="single-post-left-sidebar.html">Single Post Left Sidebar</a></li>
+                                <li class="c-menu__item"><a class="c-menu__link" href="single-post-right-sidebar.html">Single Post RIght Sidebar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-menu__item"><a class="c-menu__link" href="contact-us-01.html">Contact</a>
+                    <ul>
+                        <li class="c-menu__item"><a class="c-menu__link" href="contact-us-01.html">Contact Us 01</a></li>
+                        <li class="c-menu__item"><a class="c-menu__link" href="contact-us-02.html">Contact Us 02</a></li>
+                    </ul>
+                </li>
+            </ul>  <!-- end of c-menu__items -->
+        </nav><!-- /c-menu slide-left --> 
+    </div>
+    <!-- End of Mobile Menu -->
+
+    <!-- Start of Whole Site Wrapper with mobile menu support -->
+    <div id="whole o-wrapper" class="whole-site-wrapper o-wrapper">
 
         <!-- Start of Header -->
         <header class="header bgc-transparent">
@@ -73,10 +126,10 @@
                                     </div>
                                 </div> <!-- end of col -->
 
-                                <div class="col-xs-4 col-sm-8 col-md-9">
+                                <div class="col-xs-4 col-md-9">
 
                                     <!-- Start of Main Navigation -->
-                                    <nav id="main-nav" class="stellarnav">
+                                    <nav id="main-nav" class="stellarnav hidden-xs hidden-sm">
                                         <ul>
                                             <li><a href="index.html">Home</a>
                                                 <ul class="sub-menu">
@@ -125,6 +178,15 @@
                                     </nav>
                                     <!-- End of Main Navigation -->
 
+                                    <div class="mobile-menu-button">
+                                        <button id="c-button--slide-left"  type="button" class="c-button visible-xs visible-sm navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div> <!-- end of mobile-menu-button -->
+
                                 </div> <!-- end of col -->
                             </div> <!-- end of row -->
                         </div> <!-- end of container -->
@@ -137,7 +199,7 @@
         <div class="intelligent-header-space"></div> <!-- empty placeholder div for header height-->
 
         <!-- Start of Slider Section -->
-        <section class="slider-section">
+        <section class="slider-section bgc-white">
             <div id="primary-slider" class="slider-pro">
                 <div class="sp-slides">
                     <div class="sp-slide">
@@ -267,14 +329,18 @@
                     </div>
                 </div>
             </div> <!-- end of primary-slider -->
+
+            <a href="#about" class="scroll-down">
+                <span></span>
+            </a>
         </section>
         <!-- End of Slider Section -->
         
         <!-- Start of Main Content Wrapper -->
-        <main id="content" class="main-content-wrapper">
+        <main id="content" class="main-content-wrapper bt-shadow">
 
             <!-- Start of About Section -->
-            <section class="about-section">
+            <section id="about" class="about-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
@@ -291,6 +357,126 @@
                 </div> <!-- end of container -->
             </section>
             <!-- End of About Section -->
+
+            <!-- Start of Features Section -->
+            <section class="features-section bgc-offset">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="section-heading">
+                                <h4>Features</h4>
+                                <h2>Beautiful, elegant and top notch</h2>
+                                <p class="subtitle">Proactively restore interoperable imperatives whereas standardized applications. Progressively monetize business core competencies.</p>
+                            </div>
+                        </div>
+                    </div> <!-- end of row -->
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="info-item">
+                                <div class="thumb-icon">                              
+                                    <span class="icon-border">
+                                        <i class="fi flaticon-pie-chart" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="item-name">
+                                    <h3 class="secondary-title">ConsulTancy</h3>
+                                </div>
+                                <div class="info-content">
+                                    <p>Corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow world view of disruptive innovation &amp; technology. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="info-item">
+                                <div class="thumb-icon">                              
+                                    <span class="icon-border">
+                                        <i class="fi flaticon-processing" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="item-name">
+                                    <h3  class="secondary-title">Branding &amp; Rebranding</h3>
+                                </div>
+                                <div class="info-content">
+                                    <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Heading towards a solution. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix visible-sm"></div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="info-item">
+                                <div class="thumb-icon">                              
+                                    <span class="icon-border">
+                                        <i class="fi flaticon-startup" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="item-name">
+                                    <h3  class="secondary-title" >Marketing &amp; Social Media</h3>
+                                </div>
+                                <div class="info-content">
+                                    <p>Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services edge deliverables contents. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix visible-md visible-lg"></div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="info-item">
+                                <div class="thumb-icon">                              
+                                    <span class="icon-border">
+                                        <i class="fi flaticon-gear" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="item-name">
+                                    <h3 class="secondary-title">Business Plans</h3>
+                                </div>
+                                <div class="info-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, omnis. Vivamus suscipit tortor eget felis porttitor volutpat. Holisticly simplify effective.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix visible-sm"></div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="info-item">
+                                <div class="thumb-icon">                              
+                                    <span class="icon-border">
+                                        <i class="fi flaticon-responsive" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="item-name">
+                                    <h3  class="secondary-title">Website &amp; Online Prescence</h3>
+                                </div>
+                                <div class="info-content">
+                                    <p>Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Worldwide methodologies with web-enabled technological trend. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="info-item">
+                                <div class="thumb-icon">                              
+                                    <span class="icon-border">
+                                        <i class="fi flaticon-people" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="item-name">
+                                    <h3  class="secondary-title" >Organizational Structure</h3>
+                                </div>
+                                <div class="info-content">
+                                    <p>Corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow world view of disruptive innovation &amp; technology. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section>
+            <!-- End of Features Section -->
 
             <!-- Start of Work Process Section -->
             <section class="split-section bgc-white">
@@ -332,7 +518,7 @@
             <!-- End of Work Process Section -->
 
             <!-- Start of Service Section -->
-            <section class="service-section bgc-offset pb-half">
+            <section class="service-section bgc-offset">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
@@ -617,20 +803,6 @@
             </section>
             <!-- End of Recent Projects Section -->
 
-            <!-- Start of CTA Section -->
-            <section class="cta-section cta-centered has-bg jarallax-default">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-8 col-lg-offset-2">
-                            <h2>Need a Quality &amp; Perfect Service?</h2>
-                            <p>Our team thrives on new projects and challenges. If you have a project in mind that you think we could add value to - then please do get in touch - we’d love to hear from you. Please call <a href="tel:+1234567890">(123) 456 7890</a> or</p>
-                            <a href="#" class="default-btn">Contact Us</a>
-                        </div>
-                    </div> <!-- end of row -->
-                </div> <!-- end of container -->
-            </section>
-            <!-- End of CTA Section -->
-
             <!-- Start of Team Section -->
             <section class="team-section bgc-offset">
                 <div class="container">
@@ -730,6 +902,20 @@
             </section>
             <!-- End of Team Section -->
 
+            <!-- Start of CTA Section -->
+            <section class="cta-section cta-centered has-bg jarallax-default">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8 col-lg-offset-2">
+                            <h2>Need a Quality &amp; Perfect Service?</h2>
+                            <p>Our team thrives on new projects and challenges. If you have a project in mind that you think we could add value to - then please do get in touch - we’d love to hear from you. Please call <a href="tel:+1234567890">(123) 456 7890</a> or</p>
+                            <a href="#" class="default-btn">Contact Us</a>
+                        </div>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section>
+            <!-- End of CTA Section -->
+
             <!-- Start of Reasons to Choose -->
             <section class="reasons-choose-section bgc-white">
                 <div class="container">
@@ -766,7 +952,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="section-heading white-text">
-                                <h4>It's worth a conversation</h4>
+                                <h4>Free updates</h4>
                                 <h2>Subscribe to Our Newsletter</h2>
                                 <p class="subtitle">Want awesome content like this all the time? We provides our friends &amp; clients with helpful information to help grow your business online.</p>
                             </div>
@@ -844,9 +1030,10 @@
                         </div>
                         <div class="clearfix visible-sm"></div>
                         <div class="col-xs-12 col-sm-12 col-md-4">
-                            <div class="pricing-table">
+                            <div class="pricing-table on-sale">
                                 <div class="pricing-header">
                                     <div class="pricing-title">Professional</div>
+                                    <span class="featured-ribbon">Sale</span>
                                     <div class="pricing-amount-wrapper"><span class="pricing-amount">$200</span><span class="pricing-duration">Per Month</span></div>
                                 </div>
                                 <ul class="pricing-features">
@@ -1035,11 +1222,95 @@
             </section>
             <!-- End of Blog Section -->
 
+            <!-- Start of Client Section -->
+            <section class="client-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="client-carousel">
+                                <div class="swiper-wrapper">
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/img/brand/client-logo-01.png" alt="Client Logo">
+                                    </div>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/img/brand/client-logo-02.png" alt="Client Logo">
+                                    </div>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/img/brand/client-logo-03.png" alt="Client Logo">
+                                    </div>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/img/brand/client-logo-04.png" alt="Client Logo">
+                                    </div>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/img/brand/client-logo-05.png" alt="Client Logo">
+                                    </div>
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/img/brand/client-logo-06.png" alt="Client Logo">
+                                    </div>
+
+                                    <div class="item-brand swiper-slide">
+                                        <img src="assets/img/brand/client-logo-07.png" alt="Client Logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section>
+            <!-- End of Client Section -->
+
+            <!-- Start of Support Section -->
+            <section class="support-section bgc-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="info-box-wrapper tilt-element">
+                                <div class="img-thumb">
+                                    <img class="img-responsive" src="assets/img/support/support-1.jpg" alt="Information Image">
+                                </div>
+                                <div class="info-content tilt-child">
+                                    <h3>Need Advice?</h3>
+                                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                    <a href="#" class="btn-icon">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="info-box-wrapper tilt-element">
+                                <div class="img-thumb">
+                                    <img class="img-responsive" src="assets/img/support/support-2.jpg" alt="Information Image">
+                                </div>
+                                <div class="info-content tilt-child">
+                                    <h3>Any Questions?</h3>
+                                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                    <a href="#" class="btn-icon">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-sm"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <div class="info-box-wrapper tilt-element">
+                                <div class="img-thumb">
+                                    <img class="img-responsive" src="assets/img/support/support-3.jpg" alt="Information Image">
+                                </div>
+                                <div class="info-content tilt-child">
+                                    <h3>Need Location?</h3>
+                                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                    <a href="#" class="btn-icon">Location</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section>
+            <!-- End of Support Section -->
+
         </main>
         <!-- End of Main Content Wrapper -->
 
         <!-- Start of Footer -->
-        <footer id="colophon" class="bgc-offset">
+        <footer id="colophon" class="footer-dark fixed-footer">
             <div class="container">
                 <div class="footer-top clearfix vpadding">
                     <nav>

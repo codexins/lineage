@@ -4,6 +4,7 @@
  */
 
 .service-section {
-	@extend %vpadding;
+	@extend %pt-full;
+	@extend %pb-half;
 	@extend %mb0;
 }

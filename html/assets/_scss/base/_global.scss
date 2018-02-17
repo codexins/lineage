@@ -257,3 +257,25 @@ section {
     @include bcg-linear-gradient(110deg, #9586a6, #d7706d);
 }
 
+// Flex\
+
+.flex-eq-height {
+	@extend %display-flex;
+}
+
+// shadow
+
+.bt-shadow {
+    @include cx-box-shadow('0 27px 60px -25px rgba(0, 0, 0, 0.3)');
+}
+
+// tilt
+
+.tilt-element {
+	@include cx-prefix('transform-style', 'preserve-3d');
+}
+
+.tilt-child {
+	@include cx-prefix('transform', 'translateZ(20px)');
+}
+

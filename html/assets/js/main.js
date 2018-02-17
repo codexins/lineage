@@ -18,6 +18,7 @@ INDEX:
 	s18 - Placeholder JS
 	s19 - Parallax JS
 	s20 - Blog Grid Background Settings
+	s21 - Tilt Settings
 
 
 ******************************/
@@ -53,9 +54,10 @@ INDEX:
         $testimonial 		= $(".testimonial-container"),
         $slickNav 			= $(".testimonial-nav"),
         $slickThree 		= $(".testimonial-carousel-type-02"),
-        $slickFour 			= $(".client-carousel"),
+        $clients 			= $(".client-carousel"),
         $toTop 				= $("#toTop"),
-        $blogGrid 			= $(".blog-item-grid");
+        $blogGrid 			= $(".blog-item-grid"),
+        $tiltEl 			= $(".tilt-element");
         
     // Check if element exists
     $.fn.cxExists = function() {
@@ -208,9 +210,15 @@ INDEX:
 
 	CODEXIN.elementHeights = function() {
         var headerHeight = $intelHeader.outerHeight();
-        // var footerHeight = $footer.outerHeight();
+        var footerHeight = $footer.outerHeight();
+
         $(".intelligent-header-space").height(headerHeight);
-        // $("#whole").css('margin-bottom', footerHeight);
+
+        if ($(".fixed-footer").cxExists()) {
+	        if ( $window.width() > 767) {  
+		        $("#whole").css('margin-bottom', footerHeight);
+		    }
+		}
     };
 
 
@@ -361,78 +369,17 @@ INDEX:
 
     CODEXIN.clientCarousel = function() {
     	if ($(".client-section").cxExists()) {
-	        if ($(".client-section").hasClass("type-2")) {
-	        	//client carosel type-2
-	            $slickFour.slick({
-	                infinite: true,
-	                slidesToShow: 5,
-	                slidesToScroll: 1,
-	                dots: false,
-	                arrows: true,
-	                autoplay: true,
-	                responsive: [{
-	                        breakpoint: 992,
-	                        settings: {
-	                            slidesToShow: 4,
-	                            slidesToScroll: 1
-	                        }
-	                    },
-
-	                    {
-	                        breakpoint: 768,
-	                        settings: {
-	                            slidesToShow: 3,
-	                            slidesToScroll: 1
-	                        }
-	                    },
-
-	                    {
-	                        breakpoint: 481,
-	                        settings: {
-	                            slidesToShow: 2,
-	                            slidesToScroll: 1
-	                        }
-	                    }
-	                ]
-
-	            });
-	        } else {
-	            //client carosel type-1
-	            $slickFour.slick({
-	                infinite: true,
-	                slidesToShow: 5,
-	                slidesToScroll: 1,
-	                dots: true,
-	                arrows: false,
-	                autoplay: true,
-	                responsive: [{
-	                        breakpoint: 992,
-	                        settings: {
-	                            slidesToShow: 4,
-	                            slidesToScroll: 1
-	                        }
-	                    },
-
-	                    {
-	                        breakpoint: 768,
-	                        settings: {
-	                            slidesToShow: 3,
-	                            slidesToScroll: 1
-	                        }
-	                    },
-
-	                    {
-	                        breakpoint: 481,
-	                        settings: {
-	                            slidesToShow: 2,
-	                            slidesToScroll: 1
-	                        }
-	                    }
-	                ]
-
-	            });
-	        }
-	    }
+  			var client = new Swiper ($clients, {
+			    loop: true,
+				slidesPerView: 5,
+				spaceBetween: 30,
+				centeredSlides: true,
+			    grabCursor: true,
+				autoplay: {
+	    			delay: 3000
+				}
+			})
+  		}
 	};
 
 
@@ -544,6 +491,21 @@ INDEX:
 	};
 
 
+    /************************************************************
+        s21 - Tilt Settings
+    *************************************************************/
+
+	CODEXIN.tiltSetting = function() {
+        if ($tiltEl.cxExists()) {
+			$tiltEl.tilt({
+				maxTilt:        18,
+				perspective:    2200,
+				easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+			});
+        }
+	};
+
+
     // Window load functions
     $window.on('load', function() {
         CODEXIN.preloader(),
@@ -564,9 +526,10 @@ INDEX:
     	// CODEXIN.responsiveMenu(),
     	CODEXIN.simpleImageSlider(),
     	CODEXIN.testimonialCarousel(),
-    	// CODEXIN.clientCarousel(),
+    	CODEXIN.clientCarousel(),
     	// CODEXIN.explore(),
     	CODEXIN.scrollToTop(),
+    	CODEXIN.tiltSetting(),
     	CODEXIN.placeHolders();
 
 

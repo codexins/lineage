@@ -4,7 +4,8 @@
  */
 
 .recent-projects {
-	@extend %mt-full;
+	@extend %vpadding;
+	@extend %mb0;
 	.portfolio {
 		padding:0;
 	}

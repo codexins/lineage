@@ -150,3 +150,19 @@
     }
 }
 
+.btn-icon {
+	position: relative;
+	text-transform: capitalize;
+	color: lighten($cx-text-color, 50%);
+	&::after {
+		@include abs-position(-2px, -15px);
+        content: "\f105";
+	    font-family: FontAwesome;
+	}
+
+	&:focus,
+	&:hover {
+		color: lighten($cx-text-color, 100%);
+	}
+}
+

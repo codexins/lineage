@@ -119,12 +119,69 @@
 			text-align: center;
 		}
 	}
+
+	&.footer-dark {
+		@extend %bgc-tertiary;
+
+		nav {
+	        a {
+	            color: darken($cx-offset-color, 8%);
+	            &:focus,
+	            &:hover {
+	                color: $cx-secondary-color;
+	            }
+	        }
+		}
+
+		.contact {
+			a {
+                color: darken($cx-offset-color, 8%);
+                &:focus,
+                &:hover {
+                    color: $cx-secondary-color;
+                }
+			}
+
+			p {
+				color: $cx-offset-color;
+				font-weight: 300;
+			}
+		}
+
+		.actions {
+			.default-btn {
+                border-color: darken($cx-offset-color, 8%);
+                color: darken($cx-offset-color, 8%);
+                &:focus,
+                &:hover {
+                	color: darken($cx-offset-color, 8%);
+                    border-color: $cx-secondary-color;
+                    &::before {
+                        background: $cx-secondary-color;
+                    }
+                }
+			}
+		}
+
+		.socials {
+			a {
+                border-color: darken($cx-offset-color, 8%);
+                color: darken($cx-offset-color, 8%);
+                &:focus,
+                &:hover {
+                	color: darken($cx-offset-color, 8%);
+                    border-color: $cx-secondary-color;
+                    background: $cx-secondary-color;
+                }
+			}
+		}
+	}
 }
 
 .copyright-section {
-	position:relative;
+	position: relative;
 	text-align: center;
-    padding: 20px 15px;
+    padding: 15px;
     background: $cx-tertiary-color;
     p{
     	margin: 0;
@@ -134,4 +191,34 @@
     a {
     	color: lighten($cx-secondary-color, 10%);
     }
+}
+
+
+.fixed-footer {
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    z-index: -1;
+
+    @include media-only(tablet, max) {
+        position: relative;
+    }
+}
+
+.footer-dark {
+	.copyright-section {
+		background: darken($cx-tertiary-color, 10%);
+	    a,
+	    p {
+	        font-weight: 300;
+	    }
+	    p{
+	        margin: 0;
+	        color: lighten($cx-text-color, 100%);
+	    }
+
+	    a {
+	        color: lighten($cx-secondary-color, 10%);
+	    }
+	}
 }

@@ -16,7 +16,8 @@
 		i {
 			padding-top: 6px;
 			font-size: 50px;
-	    	color: lighten($cx-text-color, 10%);
+	    	// color: lighten($cx-text-color, 10%);
+	    	color: darken($cx-secondary-color, 10%);
 	    	text-align: center;
 			@extend %cx-transition;
 	    	@include box(64px,64px);
@@ -24,36 +25,7 @@
 			@include respond-to(mobile) {
 				padding-top: 6px;
 			}
-		}
-	    &::after{
-	    	@extend %cx-transition;
-			@include abs-position(0, auto, auto, 10px);
-			background-image: url('../img/service/circle.png');
-			background-size: contain;
-			background-repeat: no-repeat;	
-			opacity: 0.3;
-			width: 80px;
-			height: 80px;
-			@include respond-to(mobile) {
-				top: 20px;
-				left: 50%;
-				@include transform-translateX(-50%);
-			}
-	    }	
-	}
-
-	@include media-only(768px, min) {
-		&:hover {
-			.thumb-icon {
-				&::after{
-					opacity: 0.1;
-					@include cx-prefix('transform', 'scale(0.8)');
-				}
-			}
-			i {
-				@include cx-prefix('transform', 'scale(1.4)');
-			}
-		}
+		}	
 	}
 
 	.info-content {
@@ -77,22 +49,70 @@
 			vertical-align: top;
 		}
 
-		.thumb-icon {
-			position: relative;
-			min-width: 100px;
-		    text-align: center;
+		.thumb-icon {			
 			i {
-				font-size: 50px;
-				@include respond-to(notebook) {
-					font-size: 44px;
-				}
+				position: relative;	
+				margin: 0 10px;
+				padding: 0;
+			    font-size: 48px;
+			    background: rgba($cx-secondary-color,0.1);
+			    @include box(80px);
+			    @include border-radius(50%);
+			    @include cx-transition('transform ease-out 0.1s, background 0.2s')
+
+			    &::after {
+				    opacity: 0;
+				    @include abs-position(0, 0, 0, 0);
+				    @include border-radius(50%);
+				    @include cx-prefix('transform', 'scale(0.9)');
+				    @include cx-box-shadow('0 0 0 2px rgba($cx-secondary-color, 0.3)');
+			    }
+
 			}
 
-			@include respond-to(mobile) {
-				margin-bottom: 0;
-				padding: 20px;
-			}
+
+			// i {
+			// 	font-size: 50px;
+			// 	@include respond-to(notebook) {
+			// 		font-size: 44px;
+			// 	}
+			// }
+
+			// @include respond-to(mobile) {
+			// 	margin-bottom: 0;
+			// 	padding: 20px;
+			// }
+
+		  //   &::after{
+		  //   	@extend %cx-transition;
+				// @include abs-position(0, auto, auto, 10px);
+				// background-image: url('../img/service/circle.png');
+				// background-size: contain;
+				// background-repeat: no-repeat;	
+				// opacity: 0.3;
+				// width: 80px;
+				// height: 80px;
+				// @include respond-to(mobile) {
+				// 	top: 20px;
+				// 	left: 50%;
+				// 	@include transform-translateX(-50%);
+				// }
+		  //   }
 		}
+
+		// @include media-only(768px, min) {
+		// 	&:hover {
+		// 		.thumb-icon {
+		// 			&::after{
+		// 				opacity: 0.1;
+		// 				@include cx-prefix('transform', 'scale(0.8)');
+		// 			}
+		// 		}
+		// 		i {
+		// 			@include cx-prefix('transform', 'scale(1.4)');
+		// 		}
+		// 	}
+		// }
 
 		.info-content-wrapper {
 			padding-left: 20px;
@@ -101,6 +121,33 @@
 		@include respond-to(mobile) {
 			text-align: center;
 		}
+
+		&:hover {
+			i {
+				border-color: transoparent;
+			    background: rgba($cx-secondary-color, 0.05);
+			    @include cx-prefix('transform', 'scale(0.92)');
+
+			    &::after {
+				    @include animation(sonarEffect 1.2s ease-out 100ms);
+			    }
+			}
+		}
+
+	    @include keyframes(sonarEffect) {
+			0% {
+				opacity: 0.3;
+			}
+			40% {
+				opacity: 0.5;
+				@include cx-box-shadow('0 0 0 2px ' + rgba($cx-secondary-color,0.1) + ', 0 0 10px 10px #fff, 0 0 0 10px ' + rgba($cx-secondary-color,0.5) + '');
+			}
+			100% {
+				opacity: 0;
+				@include cx-prefix('transform', 'scale(1.4)');
+				@include cx-box-shadow('0 0 0 2px ' + rgba($cx-secondary-color,0.1) + ', 0 0 10px 10px #fff, 0 0 0 10px ' + rgba($cx-secondary-color,0.5) + '');
+			}
+	    }
 
 	}
 

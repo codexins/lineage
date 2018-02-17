@@ -1,0 +1,16 @@
+/**
+ * layout home-1 / testimonial
+ *
+ */
+
+.client-section {
+	padding-top:$cx-section-spacing;
+	padding-bottom:$cx-section-spacing;
+	@include cx-background("../img/background/counter-up.jpg");
+	@include cx-overlay(rgba(0,0,0, 0.5));
+	@extend %mb0;
+	@include respond-to(mobile) {
+		padding-top: $cx-section-spacing-mob;
+		padding-bottom: $cx-section-spacing-mob;
+	}
+}

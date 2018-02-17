@@ -1,0 +1,53 @@
+/**
+ * Components Info Box
+ *
+ */
+
+.info-box-wrapper {
+    @include cx-overlay;
+    @include respond-to(mobile) {
+		margin-bottom: $cx-col-spacing-mob;
+    }
+
+    &::before {
+    	z-index: 1;
+	    // @include bcg-linear-gradient(to top, rgba(46,46,51,1), rgba(46,46,51,0.2));
+	    @include bcg-linear-gradient(to top, darken($cx-tertiary-color, 10%), rgba($cx-tertiary-color, 0.2));
+    }
+
+    .img-thumb {
+	    overflow: hidden;
+	    width: 100%;
+	    height: 100%;
+	    display: block;
+	    // @extend %cx-transition;
+	    // img {
+	    // 	@extend %cx-transition;
+	    // 	@include cx-prefix('backface-visibility', 'hidden');
+	    // }
+    }
+
+    .info-content {
+	    padding: 30px;
+	    width: 100%;
+	    color: lighten($cx-text-color, 100%);
+	    z-index: 2;
+	    @include abs-position(auto, auto, 0, 0);
+
+	    h3,
+	    p {
+		    font-weight: 300;
+		    margin-bottom: 1em;
+	    }
+	    h3 {
+	    	font-weight: 400;
+	    	font-size: calculateRem(20px);
+	    }
+    }
+
+    // &:hover {
+    // 	img {
+    // 		@include cx-prefix('transform', 'scale(1.1)');
+    // 	}
+    // }
+}

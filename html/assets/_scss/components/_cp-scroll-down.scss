@@ -1,0 +1,45 @@
+/**
+ * Components Scroll Down
+ *
+ */
+
+.scroll-down {
+    width: 24px;
+    height: 35px;
+    font-weight: 400;
+    border: 2px solid lighten($cx-text-color, 100%);
+    cursor: pointer;
+    @include border-radius(23px);
+    @include abs-position(auto, auto, 30px, 50%);
+    @include transform-translateX(-50%);
+
+    span {
+	    width: 8px;
+	    height: 8px;
+	    margin: -4px 0 0 -4px;
+	    background: lighten($cx-text-color, 100%);
+	    animation: ani-mouse 2.5s linear infinite;
+	    @include animation(animated-mouse 2.5s linear infinite);
+	    @include abs-position(29%, auto, auto, 50%);
+	    @include border-radius(50%);
+	    }
+
+    @include keyframes(animated-mouse) {
+		0% {
+			opacity: 1;
+			top: 29%;
+		}
+		15% {
+			opacity: 1;
+			top: 50%;
+		}
+		50% {
+			opacity: 0;
+			top: 50%;
+		}
+		100% {
+			opacity: 0;
+			top: 29%;
+		}
+    }
+}

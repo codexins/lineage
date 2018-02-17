@@ -1,0 +1,42 @@
+/**
+ * Layout clients/ clients
+ *
+ */
+
+.client-carousel {
+	position: relative;
+	overflow: hidden;
+
+	.item-brand {
+		padding: 20px;
+		opacity:0.8;
+		@extend %bgc-white;
+		@extend %cx-transition;
+
+		img {
+			max-width: 100%;
+			max-height: 80px;
+			height: 100%;
+			@include push-center;
+			@include respond-to(notebook) {
+				max-height: 60px;
+			}
+			
+			@include respond-to(tablet) {
+				max-height:60px;
+			}
+
+			@include respond-to(mobile) {
+				max-height:50px;
+			}	
+
+			@include respond-to(small-mobile) {
+				max-height:40px;
+			}
+		}
+
+		&:hover {
+			opacity: 1;;
+		}
+	}
+}

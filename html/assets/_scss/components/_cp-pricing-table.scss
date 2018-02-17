@@ -117,6 +117,22 @@
 		}
 	}
 
+	&.on-sale {
+		.pricing-header {
+		    @include bcg-linear-gradient(-225deg, $cx-tertiary-color, lighten($cx-tertiary-color, 10%));
+		}
+
+		.pricing-button {
+			a {
+			    background-color: $cx-tertiary-color;
+
+			    &:hover {
+					background: darken($cx-tertiary-color, 10%);
+			    }
+			}
+		}
+	}
+
 	@include media-only(tablet, max) {
 		margin-bottom: $cx-col-spacing-mob;
 	}
