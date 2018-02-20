@@ -3,12 +3,34 @@
  *
  */
 
+// .newsletter-form-wrapper {
+// 	form {
+// 		div[class^="col-"] {
+// 			padding-left:8px;
+// 			padding-right: 8px;
+// 		}
+
+// 		select,
+// 		textarea,
+// 		input {
+// 			color: $cx-text-color;
+// 		}
+
+// 		input[type="submit"] {
+// 			color: lighten($cx-text-color, 100%);
+// 		}
+// 	}
+
+// }
+
 .newsletter-form-wrapper {
-	form {
-		div[class^="col-"] {
-			padding-left:8px;
-			padding-right: 8px;
-		}
+	@extend %vhcenter;
+
+    form {
+	    max-width: 520px;
+	    padding: 20px;
+	    background-color: rgba(0,0,0,0.25);
+	    @extend %vhcenter;
 
 		select,
 		textarea,
@@ -16,9 +38,14 @@
 			color: $cx-text-color;
 		}
 
+	    input[type="email"] {
+			width: 280px;
+		    margin-right: 10px;
+		    margin-bottom: 0;
+	    }
+
 		input[type="submit"] {
 			color: lighten($cx-text-color, 100%);
 		}
-	}
-
+    }
 }

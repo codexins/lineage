@@ -12,6 +12,12 @@
 	position: relative;
 	top: -101px;
 	margin-bottom: -101px;
+	.sp-mask {
+		min-height: 500px;
+		@include respond-to(mobile) {
+			min-height: 300px;
+		}
+	}
 	h2,
 	p {
 		&.sp-layer {

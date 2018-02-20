@@ -64,6 +64,10 @@
         font-size: 1.4em;
         color: lighten($cx-text-color, 10%);
         font-weight: 300;
+        @include respond-to(notebook) {
+            font-size: 1.2em;
+            color: $cx-text-color;
+        }
     }
 
     &.white-text {
@@ -92,6 +96,32 @@
 
     &.white-text {
         
+    }
+
+    &.type-2 {
+        h2 {
+            font-weight: 600;
+            padding-bottom: $cx-heading-margin-bottom;
+            font-size: calculateRem(32px);
+            text-align: center;
+            &::before {
+                width: 70px;
+                height: 8px;
+                background-image: url(../img/wave.png);
+                background-size: 100% 100%;
+                @include abs-position(auto, auto, 0, 50%);
+                @include transform-translateX(-50%);
+            }
+        }
+        &.left-aligned {
+            h2 {
+                text-align: left;
+                &::before {
+                    left: 0;
+                    @include transform-translateX(0);
+                }
+            }
+        }
     }
 }
 

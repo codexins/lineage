@@ -35,26 +35,17 @@
 	}
 
 	&.boxed {
-		padding:30px 20px;
+		padding: 30px;
 		background: lighten($cx-text-color, 100%);
 		border: 1px solid $cx-border-color;
 		@include cx-box-shadow;
-	}
 
-	&.left-edged-icon {
-		text-align: left;
-		@include eqheight;
-		.info-content-wrapper,
-		.thumb-icon {
-			vertical-align: top;
-		}
-
-		.thumb-icon {			
+		.thumb-icon {		
 			i {
 				position: relative;	
 				margin: 0 10px;
 				padding: 0;
-			    font-size: 48px;
+			    font-size: 40px;
 			    background: rgba($cx-secondary-color,0.1);
 			    @include box(80px);
 			    @include border-radius(50%);
@@ -70,6 +61,47 @@
 
 			}
 
+		}
+
+
+		&:hover {
+			i {
+				border-color: transoparent;
+			    background: rgba($cx-secondary-color, 1);
+			    color: #fff;
+			    @include cx-prefix('transform', 'scale(0.92)');
+
+			    &::after {
+				    @include animation(sonarEffect 1.2s ease-out);
+			    }
+			}
+		}
+
+	    @include keyframes(sonarEffect) {
+			0% {
+				opacity: 0.3;
+			}
+			40% {
+				opacity: 0.5;
+				@include cx-box-shadow('0 0 0 2px ' + rgba($cx-secondary-color,0.5) + ', 0 0 10px 10px #fff, 0 0 0 10px ' + rgba($cx-secondary-color,0.7) + '');
+			}
+			100% {
+				opacity: 0;
+				@include cx-prefix('transform', 'scale(1.4)');
+				@include cx-box-shadow('0 0 0 2px ' + rgba($cx-secondary-color,0.5) + ', 0 0 10px 10px #fff, 0 0 0 10px ' + rgba($cx-secondary-color,0.7) + '');
+			}
+	    }
+	}
+
+	&.left-edged-icon {
+		text-align: left;
+		@include eqheight;
+		.info-content-wrapper,
+		.thumb-icon {
+			vertical-align: top;
+		}
+
+		.thumb-icon {		
 
 			// i {
 			// 	font-size: 50px;
@@ -121,33 +153,6 @@
 		@include respond-to(mobile) {
 			text-align: center;
 		}
-
-		&:hover {
-			i {
-				border-color: transoparent;
-			    background: rgba($cx-secondary-color, 0.05);
-			    @include cx-prefix('transform', 'scale(0.92)');
-
-			    &::after {
-				    @include animation(sonarEffect 1.2s ease-out 100ms);
-			    }
-			}
-		}
-
-	    @include keyframes(sonarEffect) {
-			0% {
-				opacity: 0.3;
-			}
-			40% {
-				opacity: 0.5;
-				@include cx-box-shadow('0 0 0 2px ' + rgba($cx-secondary-color,0.1) + ', 0 0 10px 10px #fff, 0 0 0 10px ' + rgba($cx-secondary-color,0.5) + '');
-			}
-			100% {
-				opacity: 0;
-				@include cx-prefix('transform', 'scale(1.4)');
-				@include cx-box-shadow('0 0 0 2px ' + rgba($cx-secondary-color,0.1) + ', 0 0 10px 10px #fff, 0 0 0 10px ' + rgba($cx-secondary-color,0.5) + '');
-			}
-	    }
 
 	}
 

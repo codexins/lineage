@@ -6,4 +6,20 @@
 .features-section {
 	@extend %mb0;
 	@extend %vpadding;
+
+	.info-item,
+	.secondary-title {
+		@extend %mb0;
+	}
+
+	.info-item {
+		@include media-only(notebook, max) {
+			margin-bottom: $cx-col-spacing-mob;
+		}
+	}
+
+	.secondary-title {
+		font-size: calculateRem(14px);
+		text-transform: uppercase;
+	}
 }

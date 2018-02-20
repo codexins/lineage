@@ -17,7 +17,7 @@
 		padding:0 20px;
 	}
 
-	@include respond-to(tablet) {
+	@include respond-to(mobile) {
 		width:50%;
 		float: left;
 		margin-bottom: $cx-col-spacing;

@@ -52,7 +52,10 @@
 }
 
 
-#c-menu--slide-left {
+#c-menu--slide-left,
+#c-menu--push-left,
+#c-menu--slide-right,
+#c-menu--push-right {
     .c-menu__items {
         ul {
             background-color: lighten($cx-tertiary-color, 12%);

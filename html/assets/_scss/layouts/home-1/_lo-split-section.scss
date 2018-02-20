@@ -8,6 +8,16 @@
     z-index: 10;
 	@extend %mb0;
 	@extend %vpadding;
+	@include respond-to(tablet) {
+		.image-container {
+			> div {
+			    display: block;
+			    width: 100%;
+			    float: none;
+			    clear: both;
+			}
+		}
+	}
 	.img-left {
 		right: 0;
 		left: 0;
@@ -32,5 +42,10 @@
 	    background-size: cover;
 	    background-repeat: no-repeat;
 	    background-position: center;
+	}
+
+	@include media-only(768px, max) {
+		padding-top: $cx-col-spacing;
+		padding-bottom: $cx-col-spacing;
 	}
 }

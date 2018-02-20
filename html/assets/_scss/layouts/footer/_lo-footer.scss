@@ -200,7 +200,7 @@
     width: 100%;
     z-index: -1;
 
-    @include media-only(tablet, max) {
+    @include media-only(notebook, max) {
         position: relative;
     }
 }

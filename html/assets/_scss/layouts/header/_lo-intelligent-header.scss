@@ -12,6 +12,10 @@ header {
 				height: 75px;
 				@extend %cx-transition;
 			}
+
+			.c-button {
+				margin-top: 20.5px;
+			}
 		}
 	}
 }

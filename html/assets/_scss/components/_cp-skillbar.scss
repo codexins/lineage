@@ -1,0 +1,43 @@
+/**
+ * Components Skillbar
+ *
+ */
+
+.skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 40px 0 10px;
+    background: rgba($cx-grey-color, 0.5);
+    height: 7px;
+    width: 88%;
+    text-align: left;
+    @include border-radius(4px);
+
+	.skillbar-title {
+	    font-weight: 700;
+	    position: absolute;
+	    text-align: left;
+	    margin-left: 0;
+	    margin-top: -35px;
+	}
+	
+	.skillbar-bar {
+	    height: 7px;
+	    width: 0px;
+	    background: $cx-secondary-color;
+	    display: inline-block;
+	    position: absolute;
+	    top: 0;
+	    margin: 0;
+	    @include border-radius(4px);
+	}
+
+	.skill-bar-percent {
+    color: $cx-tertiary-color;
+    float: right;
+    margin-top: -35px;
+    position: absolute;
+    right: 0;
+    font-weight: 600;
+	}
+}

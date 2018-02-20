@@ -62,17 +62,16 @@
 ///* Vertically and Horizantally Centering */
 
 %display-flex {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+	@include flex;
 }
 
 %vhcenter {
 	@extend %display-flex ;
 	align-items: center;
-	justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 

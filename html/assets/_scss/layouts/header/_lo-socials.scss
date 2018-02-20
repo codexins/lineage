@@ -1,0 +1,51 @@
+/**
+ * Layout header/ socials
+ *
+ */
+
+.header-socials {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+	li {
+		display: inline-block;
+		a {
+			display: block;
+			color: #fff;
+			font-size: 14px;
+			line-height: 22px;
+			padding: 39px 8px;
+			padding-bottom: 25px;
+			&:hover {
+				color: lighten($cx-text-color, 50%);
+			}
+		}
+		&.header-search {
+			a {
+				padding-right: 20px;
+			}
+		}
+	}
+}
+
+
+.intelligent-header {
+    &.scrolling-up {
+        .header-socials {
+            li {
+                &.header-search {
+                	a {
+	                    padding-top: 26px;
+	                    padding-bottom: 26px;
+                	}
+
+                }
+                > a {
+                    padding-top: 26px;
+                    padding-bottom: 26px;
+                }
+            }
+        }
+    }
+}

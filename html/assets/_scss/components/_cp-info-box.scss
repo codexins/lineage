@@ -25,6 +25,10 @@
 	    // 	@extend %cx-transition;
 	    // 	@include cx-prefix('backface-visibility', 'hidden');
 	    // }
+
+	    img {
+	    	width: 100%;
+	    }
     }
 
     .info-content {
@@ -50,4 +54,11 @@
     // 		@include cx-prefix('transform', 'scale(1.1)');
     // 	}
     // }
+	@include respond-to(tablet) {
+		margin-bottom: $cx-col-spacing;
+	}
+
+	&.last {
+		margin-bottom: 0;
+	}
 }

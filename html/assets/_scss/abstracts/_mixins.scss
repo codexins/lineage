@@ -482,7 +482,7 @@
 
 
 //-------------------- Background Image --------------------//
-// Usage @include cx-background(1px, 0, 0, 0);
+// Usage @include cx-background('img/abc.jpg');
 
 @mixin cx-background($url) {
     background-image: url($url);

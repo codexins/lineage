@@ -1,0 +1,41 @@
+/**
+ * Components Feature Box
+ *
+ */
+
+.feature-box {
+	.feature-title {
+		margin-bottom: 15px;
+		display: table;
+	}
+
+	h3,
+	span {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	h3 {
+		color: $cx-secondary-color;
+		font-weight: 700;
+		font-size: calculateRem(48px);
+		line-height: 54px;
+		font-family: lato;
+		@extend %mb0;
+	}
+
+	span {
+		width: 100%;
+	    padding-left: 20px;
+	    line-height: 24px;
+	    font-size: calculateRem(18px);
+	    font-weight: 500;
+	    color: $cx-tertiary-color;
+	}
+
+	p {
+		width: 90%;
+		font-size: calculateRem(15px);
+		@extend %mb0;
+	}
+}

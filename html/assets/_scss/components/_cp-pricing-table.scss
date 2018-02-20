@@ -133,7 +133,11 @@
 		}
 	}
 
-	@include media-only(tablet, max) {
-		margin-bottom: $cx-col-spacing-mob;
+	@include respond-to(tablet) {
+		margin-bottom: $cx-col-spacing;
+	}
+
+	&.last {
+		margin-bottom: 0;
 	}
 }

@@ -18,10 +18,11 @@
 	position: relative;
 }
 
-.mobile-menu-button{
-	overflow:hidden ;
+.c-button{
+	overflow:hidden;
+	@extend %cx-transition;
 	@include media-only(notebook, max) {
-		margin-top: 11px;
+		margin-top: 29px;
 	}
 
 	@include media-only(tablet, max) {

@@ -19,6 +19,9 @@
             text-shadow: 1px 1px 1px rgba(0,0,0,.1);
             color: lighten($cx-text-color, 100%);
             padding-bottom: $cx-heading-margin-bottom;
+            &:hover {
+                color: lighten($cx-text-color, 50%);
+            }
             @include respond-to(notebook) {
                 padding: 39px 13px;
             }
@@ -68,6 +71,36 @@
                     }
                 }
             }
+        }
+    }
+
+    &.header-type-2 {
+        ul {
+            text-align: center;
+        }
+        li {
+            & > a:not(.dd-toggle) {
+                padding-left: 10px;
+                padding-right: 10px;
+                // font-weight: 700;
+                // font-size: 12px;
+                // @include respond-to(notebook) {
+                //     padding: 39px 13px;
+                // }
+                // @include respond-to(tablet) {
+                //     padding: 39px 4px;
+                //     font-size: 12px;
+                //     letter-spacing: 0;
+                // }
+            }
+            // &.has-sub {
+            //     > a {
+            //         &::after {
+            //             content: "\f107";
+            //             font-weight: normal;
+            //         }
+            //     }
+            // }
         }
     }
 }

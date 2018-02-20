@@ -6,4 +6,14 @@
 .team-section {
 	@extend %mb0;
 	@extend %vpadding;
+
+	.member-wrapper {
+		@include respond-to(small-mobile) {
+			max-width:100%;
+			width:100%;
+			margin-left: auto;
+			margin-right: auto;
+	        @include box-sizing(border-box);
+	    }
+	}
 }

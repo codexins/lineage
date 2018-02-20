@@ -166,3 +166,40 @@
 	}
 }
 
+.fancy-btn {
+	min-width: 165px;
+	padding: 12px 32px;
+    height: 44px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+	overflow: hidden;
+	position: relative;
+	background: $cx-primary-color;
+	&::before {
+	    width: 0%;
+	    height: 100%;
+	    background: $cx-tertiary-color;
+	    @extend %cx-transition;
+	    @include abs-position(0, auto,auto, 50%);
+	}
+
+	span {
+		color: lighten($cx-text-color, 100%);
+	    display: block;
+	    position: relative;
+	}
+
+	&:hover {
+		&::before {
+	        width: 100%;
+		    left: 0%;
+		    @include cx-prefix('transform', 'skewX(30deg)');
+		}
+	}
+}
+

@@ -14,6 +14,45 @@
 			color: lighten($cx-text-color, 100%);
 			text-transform: capitalize;
 			font-weight: 600;
+			@include respond-to(tablet) {
+				font-size: 2 * $cx-body-font-size;
+			}
+		}
+	}
+
+	&.cta-split {
+		padding-top: $cx-col-spacing;
+		padding-bottom: $cx-col-spacing;
+		.row {
+			@include eqheight;
+		}
+
+		h2,
+		p {
+			color: $cx-text-color;
+			margin-bottom: 0;
+		}
+
+		h2 {
+			font-size: 2em;
+			margin-bottom: 10px;
+		}
+
+		&.has-bg {
+			background-image: url("../img/cta/cta-bg-1.png");
+			background-repeat: repeat;
+			@extend %bgc-white;
+			&::before {
+				content: none;
+			}
+
+		}
+
+		.cta-action {
+			text-align: right;
+			.fancy-btn {
+				margin-right: -30px;
+			}
 		}
 	}
 }

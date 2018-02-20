@@ -110,6 +110,7 @@ input[type="tel"] {
     border: 1px solid darken($cx-border-color, 10%);
     margin-bottom: 15px;
     min-height: 40px;
+    height: 44px;
     @include border-radius(0);
 }
 
@@ -122,6 +123,7 @@ input[type="button"],
 input[type="submit"] {
     border: 1px solid $cx-primary-color;
     min-height: 40px;
+    height: 44px;
     background: $cx-primary-color;
     color: lighten($cx-text-color, 100%);
 }
@@ -130,10 +132,12 @@ input[type="submit"] {
 button,
 input[type="submit"],
 input[type="button"] {
-    font-size: 85%;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: 2px;
     padding: 8px 20px;
     text-transform: uppercase;
-    letter-spacing: 1px;
     transition: all 0.3s;
 }
 

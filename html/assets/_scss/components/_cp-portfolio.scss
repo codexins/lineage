@@ -150,17 +150,33 @@
 
 .portfolio-filter {
 	ul {
+		margin-bottom: 0.33 * $cx-section-spacing;
+
 		li {
 			cursor: pointer;
-			padding: 7px 15px;
-			margin:2px;
-			border:1px solid $cx-border-color;
+			position: relative;
+			padding: 7px 0;
+			margin: 0 15px;
+		    font-size: calculateRem(13px);
+		    font-weight: 700;
+		    letter-spacing: 0.5px;
+		    text-transform: uppercase;
 			@extend %cx-transition;
+
+			&::before {
+			    background: $cx-secondary-color;
+			    height: 2px;
+			    width: 0;
+			    @include abs-position(auto, auto, -2px, 0);
+			    @extend %cx-transition;
+			}
+
 			&.active,
 			&:hover {
-				border-color: $cx-secondary-color;
-				background: $cx-secondary-color;
-				color: lighten($cx-text-color, 100%);
+				color: $cx-secondary-color;
+				&::before {
+					width: 100%;
+				}
 			}
 
 			@include respond-to(mobile) {

@@ -9,7 +9,9 @@ INDEX:
 	s04 - Full Screen Header
 	s05 - Header Background Video
 	s06 - Header Background Slider
-	s07 - Main Navigation Menu
+    s07 - Main Navigation Menu
+	s08 - Skill Bars
+    s12 - Slide left action for Mobile Menu
 	s13 - Simple Image Slider
 	s14 - Testimonial Carousel
 	s15 - Client Carousel
@@ -18,7 +20,8 @@ INDEX:
 	s18 - Placeholder JS
 	s19 - Parallax JS
 	s20 - Blog Grid Background Settings
-	s21 - Tilt Settings
+    s21 - Tilt Settings
+	s22 - Animation Settings
 
 
 ******************************/
@@ -54,10 +57,11 @@ INDEX:
         $testimonial 		= $(".testimonial-container"),
         $slickNav 			= $(".testimonial-nav"),
         $slickThree 		= $(".testimonial-carousel-type-02"),
-        $clients 			= $(".client-carousel"),
+        $clients            = $(".client-carousel"),
+        $skillBar 			= $(".skillbar"),
         $toTop 				= $("#toTop"),
         $blogGrid 			= $(".blog-item-grid"),
-        $tiltEl 			= $(".tilt-element");
+        $tiltEl             = $(".tilt-element");
         
     // Check if element exists
     $.fn.cxExists = function() {
@@ -82,11 +86,12 @@ INDEX:
 		if ($slider.cxExists()) {
 			$slider.sliderPro({
 				width: '100%',
-				height: '100vh',
+				// height: '100%',
 				arrows: true,
 				buttons: false,
 				waitForLayers: true,
 				slideDistance: 0,
+                forceSize: 'fullWindow',
 				autoplay: false,
 				fade: true,
 				breakpoints: {
@@ -301,24 +306,131 @@ INDEX:
 
 
     /************************************************************
+        s08 - Skill Bars
+    *************************************************************/
+
+    CODEXIN.skillBars = function() {
+        // $('.skillbar').appear();
+        // $('.skillbar').skillBars({
+        //     from: 0,
+        //     speed: 4000,
+        //     interval: 100,
+        //     decimals: 0
+        // });
+
+        if ($skillBar.cxExists()) {
+            $skillBar.each(function () {
+                var $elem = $(this);                 
+                $elem.appear(function () {
+                    $elem.skillBars({
+                        from: 0,
+                        speed: 4000,
+                        interval: 100,
+                        decimals: 0
+                    });
+                });                  
+            });
+        }
+    };
+
+
+    /************************************************************
         s12 - Slide left action for Mobile Menu
     *************************************************************/
 
+    // Initializing mobile menu
     CODEXIN.responsiveMenu = function() {
-	    var slideLeft = new Menu({
-	        wrapper: "#o-wrapper",
-	        type: "slide-left",
-	        menuOpenerClass: ".c-button",
-	        maskId: "#c-mask"
-	    });
 
-	    var slideLeftBtn = document.querySelector("#c-button--slide-left");
+        /**
+         * Slide left instantiation and action.
+         */
+        if ($("#c-button--slide-left").cxExists()) {
+            var $slideBtnLeft = document.querySelector("#c-button--slide-left");
+            var slideMenuLeft = new Menu({
+                wrapper: "#whole",
+                type: "slide-left",
+                menuOpenerClass: ".c-button",
+                maskId: "#c-mask"
+            });
 
-	    slideLeftBtn.addEventListener('click', function(e) {
-	        e.preventDefault;
-	        slideLeft.open();
-	    });
-	};
+            $slideBtnLeft.addEventListener('click', function(e) {
+                e.preventDefault;
+                slideMenuLeft.open();
+                });
+        }
+
+        /**
+         * Push left instantiation and action.
+         */
+        if ($("#c-button--push-left").cxExists()) {
+            var pushBtnLeft   = document.querySelector("#c-button--push-left");
+            var pushMenuLeft = new Menu({
+                wrapper: "#whole",
+                type: "push-left",
+                menuOpenerClass: ".c-button",
+                maskId: "#c-mask"
+            });
+
+            pushBtnLeft.addEventListener('click', function(e) {
+                e.preventDefault;
+                pushMenuLeft.open();
+            });
+        }
+
+        /**
+         * Slide right instantiation and action.
+         */
+        if ($("#c-button--slide-right").cxExists()) {
+            var slideBtnRight = document.querySelector("#c-button--slide-right");
+            var slideMenuRight = new Menu({
+                wrapper: "#whole",
+                type: "slide-right",
+                menuOpenerClass: ".c-button",
+                maskId: "#c-mask"
+            });
+
+            slideBtnRight.addEventListener('click', function(e) {
+                e.preventDefault;
+                slideMenuRight.open();
+            });
+        }
+
+        /**
+         * Push right instantiation and action.
+         */
+        if ($("#c-button--push-right").cxExists()) {
+            var pushBtnRight  = document.querySelector("#c-button--push-right");
+            var pushMenuRight = new Menu({
+                wrapper: "#whole",
+                type: "push-right",
+                menuOpenerClass: ".c-button",
+                maskId: "#c-mask"
+            });
+
+            pushBtnRight.addEventListener('click', function(e) {
+                e.preventDefault;
+                pushMenuRight.open();
+            });
+        }
+    };
+
+    // Mobile menu sub-menu actions
+    CODEXIN.responsiveSubMenu = function() {
+        var nav = $(".mobile-menu");
+        // adds toggle button to li items that have children
+        nav.find('li a').each(function() {
+            if ($(this).next().length > 0) {
+                $(this).parent('li').addClass('has-child').append('<a class="drawer-toggle" href="#"><i class="fa fa-angle-down"></i></a>');
+            }
+        });
+
+        // expands the dropdown menu on each click 
+        nav.find('li .drawer-toggle').on('click', function(e) {
+            e.preventDefault();
+            $(this).parent('li').children('ul').stop(true, true).slideToggle(250);
+            $(this).parent('li').toggleClass('open');
+        });
+    }
 
 
     /************************************************************
@@ -330,7 +442,7 @@ INDEX:
   			var imageSlider = new Swiper ($simpleSlider, {
 				loop: true,
     			effect: "fade",
-    			speed: 2000,
+    			speed: 1000,
     			roundLengths: true,
 				autoplay: {
 	    			delay: 3000
@@ -377,7 +489,24 @@ INDEX:
 			    grabCursor: true,
 				autoplay: {
 	    			delay: 3000
-				}
+				},
+
+                // Responsive breakpoints
+                breakpoints: {
+                    992: {
+                        slidesPerView: 4,
+                        centeredSlides: false,
+                        spaceBetween: 40
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 50
+                    },
+                    481: {
+                        centeredSlides: false,
+                        slidesPerView: 2,
+                    }
+                }
 			})
   		}
 	};
@@ -387,13 +516,16 @@ INDEX:
         s16 - Smooth Scroll to anchor tags
     *************************************************************/
 
-	CODEXIN.explore = function() {
-	    $(".explore").on('click', function() {
-	        $("html, body").stop().animate({
-	            scrollTop: $($(this).attr('href')).offset().top + 30
-	        }, 1000, 'easeOutCubic');
-	        event.preventDefault ? event.preventDefault() : (event.returnValue = false);
-	    });
+	CODEXIN.smoothScroll = function() {
+        $('.explore').on('click', function(event) {
+            var target = $(this.getAttribute('href'));
+            if( target.length ) {
+                event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top + 30
+                }, 1500, 'easeInOutQuint');
+            }
+        });
 	};
 
 
@@ -506,6 +638,31 @@ INDEX:
 	};
 
 
+    /************************************************************
+        s22 - Animation Settings
+    *************************************************************/
+
+    CODEXIN.animationSetting = function() {
+        if ( $window.width() > 991) {   
+            window.sr = ScrollReveal({ reset: true, scale: 1 });
+            sr.reveal('.animation-left', { origin: 'left', delay: 100 } );
+            sr.reveal('.animation-right', { origin: 'right', delay: 150 } );
+            sr.reveal('.animation-bottom', { origin: 'bottom', delay: 200 } );
+            sr.reveal('.section-heading h4', { origin: 'left', delay: 100 } );
+            sr.reveal('.section-heading h2', { origin: 'right', delay: 150 } );
+            sr.reveal('.section-heading .subtitle', { origin: 'bottom', delay: 200 } );
+            sr.reveal('.info-item', { origin: 'right' }, 100);
+            sr.reveal('.info-item.boxed', { origin: 'bottom' }, 200);
+            sr.reveal('.counter-item', { origin: 'right' }, 200);
+            sr.reveal('.team-member', { origin: 'bottom' }, 150);
+            sr.reveal('.pricing-table', { origin: 'bottom' }, 200);
+            sr.reveal('.blog-item-grid', { origin: 'bottom' }, 200);
+            sr.reveal('.info-box-wrapper', { origin: 'bottom' }, 200);
+            sr.reveal('.tab .nav-tabs li', { origin: 'right' }, 200);
+        }
+    };
+
+
     // Window load functions
     $window.on('load', function() {
         CODEXIN.preloader(),
@@ -523,22 +680,29 @@ INDEX:
     	CODEXIN.mainNav(),
     	CODEXIN.headerAutoHide(),
     	CODEXIN.animatedCounter(),
-    	// CODEXIN.responsiveMenu(),
+        CODEXIN.responsiveMenu(),
+    	CODEXIN.responsiveSubMenu(),
     	CODEXIN.simpleImageSlider(),
     	CODEXIN.testimonialCarousel(),
     	CODEXIN.clientCarousel(),
-    	// CODEXIN.explore(),
+        CODEXIN.smoothScroll(),
+    	CODEXIN.skillBars(),
     	CODEXIN.scrollToTop(),
     	CODEXIN.tiltSetting(),
-    	CODEXIN.placeHolders();
-
-
+        CODEXIN.placeHolders(),
+    	CODEXIN.animationSetting();
     });
 
     // Window load and resize functions
     $window.on('load resize', function() {
         // CODEXIN.fullscreenHeader(),
         CODEXIN.elementHeights();
+
+
+
+
     });
+
+
 
 })(jQuery);

@@ -10,6 +10,9 @@
 	text-transform: capitalize;
 	font-size: 2.3 * $cx-body-font-size;
 	margin-bottom: $cx-heading-margin-bottom;
+	@include respond-to(notebook){
+		font-size: 2 * $cx-body-font-size;
+	}
 	@include respond-to(tablet){
 		font-size: 2 * $cx-body-font-size;
 	}
