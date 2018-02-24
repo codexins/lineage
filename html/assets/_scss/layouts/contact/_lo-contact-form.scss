@@ -3,22 +3,65 @@
  *
  */
 
-// .primary-form {
-// 	div[class*='col-'] {
-// 		padding-bottom: 0;
-// 	}
-// }
+.primary-form {
+	div[class*='col-'] {
+		padding-bottom: 0;
+	}
+}
 
-// .full-width-input {
-// 	textarea,
-// 	select,
-// 	input {
-// 		width: 100%;
-// 		background: lighten($cx-border-color, 18%);
-// 	}
+.full-width-input {
+	textarea,
+	select,
+	input {
+		width: 100%;
+	}
 
-// }
+}
 
-// .full-width {
-// 	width:100%;
-// }
+.full-width {
+	width:100%;
+}
+
+.transparent-input {
+	textarea,
+	select,
+	input:not([type="submit"]) {
+		background: transparent;
+		border-color: darken($cx-border-color, 30%);
+		color: darken($cx-border-color, 25%);
+		font-size: calculateRem(14px);
+		height: 42px;
+		margin-bottom: 20px;
+
+		&:focus,
+		&:active {
+			border-color: darken($cx-border-color, 5%);
+		}
+	}
+
+	.select-wrapper {
+
+		select {
+			border: none;
+			margin: 0;
+			outline: 0;
+		}
+		border: 1px solid darken($cx-border-color, 30%);
+		margin-bottom: 15px;
+		height: 42px;
+		line-height: 42px;
+	}
+
+	::-webkit-input-placeholder {
+	  color: darken($cx-border-color, 25%);
+	}
+	::-moz-placeholder {
+	  color: darken($cx-border-color, 25%);
+	}
+	:-ms-input-placeholder {
+	  color: darken($cx-border-color, 25%);
+	}
+	:-moz-placeholder {
+	  color: darken($cx-border-color, 25%);
+	}
+}

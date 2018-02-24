@@ -14,7 +14,9 @@ INDEX:
     s12 - Slide left action for Mobile Menu
 	s13 - Simple Image Slider
 	s14 - Testimonial Carousel
-	s15 - Client Carousel
+    s15 - Client Carousel
+    s15 - Services Carousel
+	s15 - Team Carousel
 	s16 - Smooth Scroll to anchor tags
 	s17 - Scroll to Top JS
 	s18 - Placeholder JS
@@ -40,7 +42,8 @@ INDEX:
 
     var $window 			= $(window),
         $document 			= $(document),
-        $slider	 			= $("#primary-slider"),
+        $slider             = $("#primary-slider"),
+        $vslider 			= $("#primary-slider-with-video"),
         // $fullscreen 		= $(".sp-slide"),
         // $fullscreenVideo 	= $("#header_full_screen_video"),
         $parallax 			= $(".jarallax-default"),
@@ -54,10 +57,13 @@ INDEX:
         $isoContainer 		= $(".portfolio-wrapper"),
         $isoFilter	 		= $(".portfolio-filter li"),
         $simpleSlider 		= $(".simple-slider-container"),
-        $testimonial 		= $(".testimonial-container"),
-        $slickNav 			= $(".testimonial-nav"),
-        $slickThree 		= $(".testimonial-carousel-type-02"),
+        $testimonial        = $(".testimonial-container"),
+        $testimonialTwo		= $(".testimonial-container-type-2"),
+        // $slickNav 			= $(".testimonial-nav"),
+        // $slickThree 		= $(".testimonial-carousel-type-02"),
         $clients            = $(".client-carousel"),
+        $services           = $(".services-carousel"),
+        $team               = $(".team-carousel"),
         $skillBar 			= $(".skillbar"),
         $toTop 				= $("#toTop"),
         $blogGrid 			= $(".blog-item-grid"),
@@ -102,6 +108,26 @@ INDEX:
 			});
 			$(".sp-slide").append('<div class="section-overlay"></div>');
 		}
+
+        if ($vslider.cxExists()) {
+            $vslider.sliderPro({
+                width: '100%',
+                arrows: true,
+                buttons: false,
+                waitForLayers: true,
+                slideDistance: 0,
+                forceSize: 'fullWindow',
+                autoplay: false,
+                fade: true,
+                reachVideoAction: 'playVideo',
+                breakpoints: {
+                    768: {
+                        arrows: false
+                    }
+                }
+            });
+            $(".sp-slide").append('<div class="video-section-overlay"></div>');
+        }
 	};
 
 
@@ -310,21 +336,13 @@ INDEX:
     *************************************************************/
 
     CODEXIN.skillBars = function() {
-        // $('.skillbar').appear();
-        // $('.skillbar').skillBars({
-        //     from: 0,
-        //     speed: 4000,
-        //     interval: 100,
-        //     decimals: 0
-        // });
-
         if ($skillBar.cxExists()) {
             $skillBar.each(function () {
                 var $elem = $(this);                 
                 $elem.appear(function () {
                     $elem.skillBars({
                         from: 0,
-                        speed: 4000,
+                        speed: 2500,
                         interval: 100,
                         decimals: 0
                     });
@@ -470,8 +488,34 @@ INDEX:
 			      	el: '.swiper-pagination',
 			      	clickable: true
 			    }
-			})
-	    }
+			});
+        }
+
+
+        if ($testimonialTwo.cxExists()) {
+            var testimonialTwo = new Swiper ($testimonialTwo, {
+                loop: true,
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 30,
+                grabCursor: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+
+                // Responsive breakpoints
+                breakpoints: {
+                    992: {
+                        slidesPerView: 2,
+                        centeredSlides: false,
+                    },
+                    481: {
+                        slidesPerView: 1,
+                    }
+                }
+            });
+        }
 	};
 
 
@@ -480,7 +524,7 @@ INDEX:
     *************************************************************/
 
     CODEXIN.clientCarousel = function() {
-    	if ($(".client-section").cxExists()) {
+    	if ($clients.cxExists()) {
   			var client = new Swiper ($clients, {
 			    loop: true,
 				slidesPerView: 5,
@@ -510,6 +554,77 @@ INDEX:
 			})
   		}
 	};
+
+
+    /************************************************************
+        s15 - Services Carousel
+    *************************************************************/
+
+    CODEXIN.servicesCarousel = function() {
+        if ($services.cxExists()) {
+            var service = new Swiper ($services, {
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: true,
+                grabCursor: true,
+
+                navigation: {
+                    nextEl: '.swiper-arrow.next',
+                    prevEl: '.swiper-arrow.prev',
+                },
+                // autoplay: {
+                //     delay: 3000
+                // },
+
+                // Responsive breakpoints
+                breakpoints: {
+                    992: {
+                        slidesPerView: 2,
+                        centeredSlides: false,
+                    },
+                    481: {
+                        slidesPerView: 1,
+                    }
+                }
+            })
+        }
+    };
+
+
+    /************************************************************
+        s15 - Team Carousel
+    *************************************************************/
+
+    CODEXIN.teamCarousel = function() {
+        if ($team.cxExists()) {
+            var people = new Swiper ($team, {
+                loop: true,
+                slidesPerView: 4,
+                spaceBetween: 30,
+                grabCursor: true,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                // autoplay: {
+                //     delay: 3000
+                // },
+
+                // Responsive breakpoints
+                // breakpoints: {
+                //     992: {
+                //         slidesPerView: 2,
+                //         centeredSlides: false,
+                //     },
+                //     481: {
+                //         slidesPerView: 1,
+                //     }
+                // }
+            })
+        }
+    };
 
 
     /************************************************************
@@ -654,7 +769,7 @@ INDEX:
             sr.reveal('.info-item', { origin: 'right' }, 100);
             sr.reveal('.info-item.boxed', { origin: 'bottom' }, 200);
             sr.reveal('.counter-item', { origin: 'right' }, 200);
-            sr.reveal('.team-member', { origin: 'bottom' }, 150);
+            sr.reveal('.member-wrapper .team-member', { origin: 'bottom' }, 150);
             sr.reveal('.pricing-table', { origin: 'bottom' }, 200);
             sr.reveal('.blog-item-grid', { origin: 'bottom' }, 200);
             sr.reveal('.info-box-wrapper', { origin: 'bottom' }, 200);
@@ -684,7 +799,9 @@ INDEX:
     	CODEXIN.responsiveSubMenu(),
     	CODEXIN.simpleImageSlider(),
     	CODEXIN.testimonialCarousel(),
-    	CODEXIN.clientCarousel(),
+        CODEXIN.clientCarousel(),
+        CODEXIN.servicesCarousel(),
+    	CODEXIN.teamCarousel(),
         CODEXIN.smoothScroll(),
     	CODEXIN.skillBars(),
     	CODEXIN.scrollToTop(),
@@ -697,11 +814,30 @@ INDEX:
     $window.on('load resize', function() {
         // CODEXIN.fullscreenHeader(),
         CODEXIN.elementHeights();
-
-
-
-
     });
+
+$("#modal-iframe").iziModal({
+    headerColor: '#000',
+    background: 'black',
+    // title: 'iziModal with iframe',
+    // subtitle: 'Video example using the Vimeo embed.',
+    icon: 'icon-settings_system_daydream',
+    overlayClose: true,
+    iframe : true,
+    iframeURL: 'https://www.youtube.com/embed/7e90gBu4pas?autoplay=1',
+    fullscreen: true,
+    openFullscreen: false,
+    borderBottom: false
+});
+
+
+$(document).on('click', '.trigger-iframe', function (event) {
+    event.preventDefault();
+    $('#modal-iframe').iziModal('open', event);
+});
+
+
+
 
 
 

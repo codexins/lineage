@@ -41,7 +41,11 @@
 		&.has-bg {
 			background-image: url("../img/cta/cta-bg-1.png");
 			background-repeat: repeat;
-			@extend %bgc-white;
+			background-color: rgba(darken($cx-tertiary-color, 20%), 0.8);
+			h2,
+			p {
+				@extend %color-offset;
+			}
 			&::before {
 				content: none;
 			}

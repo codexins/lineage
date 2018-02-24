@@ -59,4 +59,111 @@
 	.tab-pane p {
 		margin-bottom: 0;
 	}
+
+	&.iconic-tab {
+		> .nav-tabs {
+			li {
+				margin-right: 0;
+				padding-right: $cx-section-spacing;
+				position: relative;
+				a {
+					&.first {
+						background: $cx-primary-color;
+						border-color: $cx-primary-color;
+					}
+
+					&.second {
+						background: $cx-secondary-color;
+						border-color: $cx-secondary-color;
+					}
+
+					&.third {
+						background: $cx-grey-color;
+						border-color: $cx-grey-color;
+					}
+
+					&:hover,
+					&:focus {
+						background: inherit;
+						border-color: inherit;
+					}
+				}
+				&.active,
+				&:hover,
+				&:focus {
+					> a {
+					    min-width: auto;
+					    margin: 0;
+					    padding: 0;
+					    font-size: 30px;
+					    @include box(60px);
+					    @include border-radius(50%);
+					}
+				}
+
+				@extend .active;
+
+				&::before,
+				&::after {
+				    position: absolute;
+				    height: 3px;
+				    border-top: 3px dotted $cx-text-color;
+				    content: "";
+				    top: 50%;
+				    left: 60px;
+				    right: 7px;
+				}
+
+				&::before {
+					color: $cx-text-color;
+				    width: auto;
+				    height: auto;
+				    font-family: 'FontAwesome';
+				    content: "\f105";
+				    border: none;
+				    top: 18.5px;
+				    left: auto;
+				    right: 0;
+				    font-size: 24px;
+				    line-height: 24px;
+				}
+
+				&:last-child {
+					&::before,
+					&::after {
+						content: none;
+					}
+				}
+			}
+		}
+	}
+
+	h3 {
+		text-transform: Capitalize;
+	    font-weight: 600;
+	    font-size: calculateRem(20px);
+        text-decoration: underline;
+	}
+
+	&.white-text {
+		h3,
+		p {
+			color: $cx-offset-color;
+		}
+
+		&.iconic-tab {
+			> .nav-tabs {
+				li {
+					&::before,
+					&::after {
+						border-color: $cx-offset-color;
+					}
+
+					&::before {
+						color: $cx-offset-color;
+					}
+				}
+			}
+		}
+	}
 }

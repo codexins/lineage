@@ -46,3 +46,55 @@
 		}
 	}
 }
+
+#primary-slider-with-video {
+	// .sp-slide {
+	// 	position: relative;
+	// }
+
+	// .layer-wrapper {
+	// 	@include cx-centered(both);
+
+	// }
+
+	// h2 {
+	// 	z-index: 1;
+	// 	span {
+	// 		padding: 30px;
+	// 		// &::before {
+	// 			background: $cx-primary-color;
+	// 			z-index: 1;
+
+	// 		// }
+	// 	}
+	// }
+
+	a {
+		position: relative;
+	}
+
+
+	// .sp-layer {
+	// 	&:nth-child(2) {
+	// 		font-size: 2.5em;
+	// 		font-weight: bold;
+	// 		letter-spacing: 1px;
+	// 		line-height: 14px;
+	// 		padding: 30px 0;
+	// 		&::before {
+	// 			background: $cx-primary-color;
+	// 			@include abs-position;
+	// 			width: 100%;
+	// 			height: 100%;
+	// 			z-index: -1;
+	// 		}
+	// 	}
+
+	// 	&:nth-child(3) {
+	// 		font-size: 2em;
+	// 		font-weight: bold;
+	// 		letter-spacing: 1px;
+	// 		background: $cx-tertiary-color;
+	// 	}
+	// }
+}

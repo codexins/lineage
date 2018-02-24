@@ -123,30 +123,41 @@
 	&.footer-dark {
 		@extend %bgc-tertiary;
 
-		nav {
-	        a {
-	            color: darken($cx-offset-color, 8%);
-	            &:focus,
-	            &:hover {
-	                color: $cx-secondary-color;
-	            }
-	        }
+		h4,
+		p {
+			@extend %color-offset;
 		}
 
-		.contact {
-			a {
-                color: darken($cx-offset-color, 8%);
-                &:focus,
-                &:hover {
-                    color: $cx-secondary-color;
-                }
-			}
-
-			p {
-				color: $cx-offset-color;
-				font-weight: 300;
-			}
+		p {
+			font-weight: 300;
 		}
+
+		h4 {
+		    font-size: 1em;
+		    color: lighten($cx-text-color, 100%);
+		    text-transform: uppercase;
+		    letter-spacing: 0.5px;
+		    font-weight: 600;
+
+		    &::after {
+	            content: '';
+	            width: calculateRem(32px);
+	            background: lighten($cx-text-color, 40%);
+	            height: calculateRem(2px);
+	            margin: 0 9px;
+	            display: inline-block;
+	            position: relative;
+	            top: -.3rem;
+		    }
+		}
+
+        a {
+            @extend %color-offset;
+            &:focus,
+            &:hover {
+                color: $cx-secondary-color;
+            }
+        }
 
 		.actions {
 			.default-btn {
@@ -175,13 +186,62 @@
                 }
 			}
 		}
+
+		.recent-posts-single {
+			.post-brief {
+				p {
+					color: darken($cx-offset-color, 25%);
+				}
+			}
+		}
+	}
+
+	&.type-2 {
+		.footer-top {
+			padding-top: 0.8 * $cx-section-spacing;
+			padding-bottom: 0.77 * $cx-section-spacing;
+		}
+
+		.widget-container {
+			@extend %mb-half;
+			.recent-posts-single {
+				&:first-of-type {
+					@extend %pt0;
+				}
+			}
+		}
+
+		.widget-title {
+			@extend %mb-half;
+		}
+
+		.socials {
+			a {
+				margin-right: 10px;
+				@include box(40px);
+				@include border-radius(50%);
+				i {
+					line-height: 40px;
+				}
+			}
+		}
+
+		@include media-only(768px, min) {
+			div[class^='col'] {
+				.widget-container {
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
 	}
 }
 
 .copyright-section {
 	position: relative;
 	text-align: center;
-    padding: 15px;
+    padding: 0.9 * $cx-heading-margin-bottom;
     background: $cx-tertiary-color;
     p{
     	margin: 0;
@@ -190,6 +250,26 @@
 
     a {
     	color: lighten($cx-secondary-color, 10%);
+    }
+
+    .list-inline {
+    	li {
+    		position: relative;
+    		padding-right: 10px;
+    		padding-left: 10px;
+    		&::after {
+    			position: absolute;
+    			content: "|";
+    			right: -5px;
+    		}
+
+	    	&:last-child {
+	    		padding-right: 0;
+	    		&::after {
+	    			content: none;
+	    		}
+	    	}
+    	}
     }
 }
 

@@ -1,0 +1,72 @@
+/**
+ * layout home-2/ contact
+ *
+ */
+
+.contact-section {
+	@extend %mb0;
+
+	.row {
+		> div[class^='col'], 
+		> div[class*=' col'] {
+			padding: 0;
+		}
+	}
+	
+	#gmap {
+		height: 400px;
+	}
+
+	.contact-item-wrapper {
+		min-height: 400px;
+		padding: 10%;
+		text-align: center;
+		color: lighten($cx-text-color, 100%);
+		@include eqheight;
+		@include cx-background('../img/slider/home-4/slide-2.jpg');
+		@include cx-overlay(rgba(darken($cx-primary-color, 10%), 0.9));
+
+		.content-inner {
+			position: relative;
+		}
+
+		h2 {
+			font-size: calculateRem(24px);
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+
+		i {
+			font-size: 40px;
+			border: 2px solid lighten($cx-text-color, 100%);
+			margin-bottom: 0.8 * $cx-heading-margin-bottom;
+			@include box(80px);
+			@include border-radius(50%);
+			@include cx-prefix('backface-visibility', 'hidden');
+			@extend %cx-transition;
+		}
+
+		p {
+			@extend %mb0;
+		}
+
+		a {
+			@extend %color-white;
+
+			&:hover {
+				color: lighten($cx-text-color, 50%);
+			}
+		}
+
+		&.last {
+			@include cx-background('../img/slider/home-4/slide-1.jpg');
+			@include cx-overlay(rgba(darken($cx-secondary-color, 10%), 0.9));
+		}
+
+		&:hover {
+			i {
+			    @include cx-prefix('transform', 'scale(1.1)');
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+/**
+ * layout home-2/ values
+ *
+ */
+
+.values-section {
+	@extend %mb0;
+	@extend %mt-full;
+	.row {
+		> div[class^='col'], 
+		> div[class*=' col'] {
+			padding: 0;
+		}
+	}
+
+	$colors: (rgba(94, 46, 129, 0.9), rgba(201, 33, 39, 0.9), rgba(27, 118, 107, 0.9), rgba(199, 24, 125, 0.9), rgba(17, 156, 74, 0.9), rgba($cx-secondary-color, 0.9));
+	$colors-count: length($colors);
+
+	@for $i from 1 to $colors-count + 1 {
+		div[class^='col'] {
+			&:nth-child(#{$i}) {
+				.info-box-wrapper {
+					&::before {
+						background: nth($colors, $i);
+					}
+				}
+			}
+		}
+	}
+
+}

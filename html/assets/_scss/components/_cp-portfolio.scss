@@ -11,7 +11,7 @@
 		position:relative;
 		cursor: default;
 		&:before{
-			@include  abs-position(0,0,0,0);
+			@include abs-position(0,0,0,0);
 		    background: rgba(darken($cx-primary-color,100%), 0.70);
 		    color: lighten($cx-primary-color,100%);
 		    opacity: 0 ;
@@ -184,6 +184,17 @@
 				padding:6px 10px;
 			}
 
+		}
+	}
+}
+
+.portfolio-wrapper {
+	&.with-gutter {
+		margin-right: -15px;
+		margin-bottom: -15px;
+		.portfolio-item {
+			padding-right: 15px;
+			padding-bottom: 15px;
 		}
 	}
 }

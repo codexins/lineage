@@ -1,0 +1,30 @@
+/**
+ * Components widgetized menu
+ *
+ */
+
+.widgetized-menu {
+	padding: 0;
+	li {
+		list-style-type: none;
+		position: relative;
+		padding: 8px 0;
+	    font-weight: 300;
+		&::before {
+			height: 1px;
+			background: lighten($cx-text-color, 5%);
+			@include abs-position(auto, 30px, 0, 0);
+
+		}
+
+		&:first-child {
+			@extend %pt0;
+		}
+
+		&:last-child {
+			&::before {
+				content: none;
+			}
+		}
+	}
+}

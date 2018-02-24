@@ -1,0 +1,72 @@
+/**
+ * Components Team Carousel
+ *
+ */
+
+.team-carousel {
+	overflow: hidden;
+	.swiper-wrapper {
+		margin-bottom: 0.8 * $cx-section-spacing;
+	}
+
+	.swiper-pagination-bullet {
+		width: 15px;
+		@include border-radius(0);
+		@extend %cx-transition;
+	}
+
+	.swiper-pagination-bullet-active {
+		width: 26px;
+		background: $cx-secondary-color;
+	}
+}
+
+.team-member {
+	&.type-2 {
+		@include cx-prefix('box-shadow', 'none');
+
+		.team-social-wrapper {
+			opacity: 1;
+			&::before {
+				content: "";
+				top: 0;
+				height: 0;
+				background: rgba(darken($cx-secondary-color, 10%), 0.9);
+			    @include cx-transition(all 0.3s ease 0s);
+			}
+		}
+
+		.social-icon {
+			a {
+				@include transform-translateY(30px);
+				@include cx-transition(all 0.3s ease 0s);
+			}
+		}
+
+		.team-details {
+			padding: 0;
+			margin-top: 20px;
+			h2 {
+			    font-weight: 600;
+			    font-size: 1em;
+			    line-height: 20px;
+			    margin: 0;
+			}
+		}
+
+		&:hover {
+			.team-social-wrapper {
+				&::before {
+					height: 100%;
+					bottom: 0;
+				}
+			}
+
+			.social-icon {
+				a {
+					@include transform-translateY(0);
+				}
+			}
+		}
+	}
+}

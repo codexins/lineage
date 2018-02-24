@@ -82,4 +82,57 @@
 	    font-weight: bold;
 	}
 
+	&.white-text {
+		color: lighten($cx-text-color, 100%);
+	}
+
+	&.type-2 {
+
+	    display: block;
+	    padding: 0;
+		.counter-wrapper {
+			min-height: 200px;
+			padding: 5px;
+			text-align: center;
+			border: 1px solid $cx-border-color;
+			@extend %bgc-white;
+			@include eqheight;
+			@extend %cx-transition;
+			
+			.counter-content {
+				@extend %bgc-white;
+			}
+
+			i {
+				font-size: calculateRem(40px);
+				color: $cx-primary-color;
+				display: block;
+				@include cx-prefix('backface-visibility', 'hidden');
+				@extend %cx-transition;
+			}
+
+			.counter {
+				font-size: calculateRem(30px);
+			    margin-top: 10px;
+			}
+		}
+
+		@include respond-to(tablet) {
+			margin-bottom: $cx-col-spacing-mob;
+			&.last {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&:hover {
+		.counter-wrapper {
+			background-color: $cx-secondary-color;
+			i {
+				color: $cx-secondary-color;
+				@include cx-prefix('transform', 'scale(1.2)');
+			}
+		}
+	}
+
 }

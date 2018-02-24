@@ -183,7 +183,7 @@
 	&::before {
 	    width: 0%;
 	    height: 100%;
-	    background: $cx-tertiary-color;
+	    background: darken($cx-grey-color, 30%);
 	    @extend %cx-transition;
 	    @include abs-position(0, auto,auto, 50%);
 	}

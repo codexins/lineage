@@ -112,6 +112,7 @@ input[type="tel"] {
     min-height: 40px;
     height: 44px;
     @include border-radius(0);
+    @extend %cx-transition;
 }
 
 textarea {
@@ -126,6 +127,7 @@ input[type="submit"] {
     height: 44px;
     background: $cx-primary-color;
     color: lighten($cx-text-color, 100%);
+    @extend %cx-transition;
 }
 
 

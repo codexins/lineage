@@ -33,20 +33,20 @@
         }
         &::before {
             content: '';
-            width: 2rem;
+            width: calculateRem(32px);
             background: lighten($cx-text-color, 30%);
-            height: .15rem;
-            margin: 0 .5rem;
+            height: calculateRem(2.5px);
+            margin: 0 9px;
             display: inline-block;
             position: relative;
             top: -.2rem;
         }
         &::after {
             content: '';
-            width: 2rem;
+            width: calculateRem(32px);
             background: lighten($cx-text-color, 30%);
-            height: .15rem;
-            margin: 0 .5rem;
+            height: calculateRem(2.5px);
+            margin: 0 9px;
             display: inline-block;
             position: relative;
             top: -.2rem;
@@ -120,6 +120,14 @@
                     left: 0;
                     @include transform-translateX(0);
                 }
+            }
+        }
+    }
+
+    &.white-text {
+        h2 {
+            &::before {
+                background-image: url(../img/wave-white.png);
             }
         }
     }

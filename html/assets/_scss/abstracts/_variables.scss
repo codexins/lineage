@@ -58,7 +58,7 @@ $cx-section-spacing-mob:		$shrink-factor*$cx-section-spacing !default; // shrink
 
 //-------------------- Default Transition --------------------//
 
-$cx-transition: 				all 0.3s ease !default;
+$cx-transition: 				all .7s cubic-bezier(.2,1,.22,1) !default;
 
 
 //-------------------- Default Breakpoint / Screen Size --------------------//
@@ -81,3 +81,14 @@ $cx-breakpoints: (
 $cx-social-icon-size-small: 	26px !default;
 $cx-social-icon-size-large: 	34px !default;
 
+
+//-------------------- Social Icon Colors --------------------//
+
+$facebook-color:           		#3B5998;
+$twitter-color:                 #00ACEE;
+$gplus-color:                   #DD4B39;
+$pinterest-color:               #C8232C;
+$linkedin-color:                #0E76A8;
+$instagram-color:               #3F729B;
+$skype-color:                   #00AFF0;
+$youtube-color:                 #C4302B;

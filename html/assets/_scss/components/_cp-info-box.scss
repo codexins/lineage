@@ -61,4 +61,34 @@
 	&.last {
 		margin-bottom: 0;
 	}
+
+	&.type-2 {
+		&::before {
+		    opacity: 0;
+		    @include cx-transition(opacity .5s);
+		}
+		.info-content {
+		    padding: 0 10%;
+		    width: 100%;
+		    color: lighten($cx-text-color, 100%);
+		    font-weight: 300;
+		    opacity: 0;
+		    bottom: auto;
+			@include cx-transition(opacity .5s);
+		    @include cx-centered(vertical);
+
+		    p {
+		    	margin: 0;
+		    }
+		}
+	}
+
+	&:hover {
+		&::before,
+		.info-content {
+			opacity: 1;
+		}
+	}
+
+
 }

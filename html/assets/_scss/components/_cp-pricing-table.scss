@@ -141,3 +141,142 @@
 		margin-bottom: 0;
 	}
 }
+
+.pricing-table-type-2 {
+	position: relative;
+	margin-top: 14px;
+	.pricing-title,
+	.pricing-amount-wrapper {
+	    color: lighten($cx-text-color, 100%);
+	    text-align: center;
+	    border: 1px solid lighten($cx-primary-color, 5%);
+	}
+
+	.pricing-title {
+	    padding: 15px;
+	    margin: 0;
+	    border-bottom: 0;
+	    font-size: calculateRem(14px);
+	    letter-spacing: 1px;
+	    text-transform: uppercase;
+	    background-color: $cx-primary-color;
+	}
+
+	.pricing-amount-wrapper {
+	    background-color: darken($cx-primary-color, 10%);
+	    font-size: calculateRem(60px);
+	    line-height: 1.2em;
+	    padding: 25px 12px;
+	    font-weight: 600;
+	}
+
+	.pricing-amount {
+		margin-right: -10px;
+		text-shadow: 0 1px 1px #111;
+	}
+
+	.pricing-currency,
+	.pricing-duration {
+	    opacity: 0.4;
+	    color: lighten($cx-text-color, 100%);
+	    text-shadow: 0 1px 1px #111;
+	}
+
+	.pricing-currency {
+		font-size: calculateRem(32px);
+	    position: relative;
+	    top: -21px;
+	    line-height: 1em;
+	    font-weight: normal;
+	}
+
+	.pricing-duration {
+	    display: block;
+	    font-size: calculateRem(17px);
+	    font-style: italic;
+	    line-height: 1.4em;
+	    font-weight: normal;
+	    letter-spacing: 1px;
+	    text-transform: capitalize;
+	}
+
+	.pricing-features {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+		li {
+			border: 1px solid $cx-border-color;
+			border-top: 0;
+			padding: 12px 15px;
+			font-size: 15px;
+
+			&:nth-child(odd) {
+			    background: $cx-offset-color;
+			}
+
+			&:nth-child(even) {
+		        background-color: lighten($cx-text-color, 100%);
+			}
+		}
+
+		strike {
+			opacity: 0.6;
+		}
+	}
+
+	.pricing-button {
+		padding: 15px;
+		text-align: center;
+		border: 1px solid $cx-border-color;
+		border-top: 0;
+		@extend %bgc-white;
+		a {
+			margin: 30px 0 25px;
+		    min-width: 120px;
+		    padding: 12px 25px;
+		    height: auto;
+		}
+	}
+
+	&.featured {
+		top: -14px;
+		@include cx-box-shadow('0 4px 8px 0px rgba(46,61,73,0.2);')
+		.pricing-title {
+			padding-top: 22px;
+			padding-bottom: 22px;
+			background-color: $cx-secondary-color;
+			border-color: lighten($cx-secondary-color, 5%);
+		}
+
+		.pricing-amount-wrapper {
+			background-color: darken($cx-secondary-color, 10%);
+			border-color: lighten($cx-secondary-color, 5%)
+		}
+
+		.pricing-button {
+			padding-bottom: 26px;
+			a {
+				background: $cx-secondary-color;
+			}
+		}
+	}
+
+	&.on-sale {
+		.pricing-title {
+			background-color: $cx-grey-color;
+			border-color: lighten($cx-grey-color, 5%);
+		}
+
+		.pricing-amount-wrapper {
+			background-color: darken($cx-grey-color, 10%);
+			border-color: lighten($cx-grey-color, 5%)
+		}
+
+		.pricing-button {
+			a {
+				background: $cx-grey-color;
+			}
+		}
+	}
+}

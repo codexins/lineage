@@ -1,0 +1,119 @@
+/**
+ * Components Services Carousel
+ *
+ */
+
+.services-carousel {
+	overflow: hidden;
+	.media-wrapper {
+	    background: lighten($cx-text-color, 100%);
+	    padding: 30px;
+	    text-align: center;
+	    border: 1px solid $cx-border-color;
+
+	    .media-image {
+	    	overflow: hidden;
+	    }
+
+	    p {
+	    	@extend %mb0;
+	    }
+
+	    img {
+	    	// filter: grayscale(100%);
+	    	@extend %cx-transition;
+	    }
+	}
+
+	img,
+	.media-thumb {
+		@include cx-prefix('backface-visibility', 'hidden');
+	}
+
+	.media-content {
+	    position: relative;
+	    top: -43px;
+	    margin-bottom: -25px;
+	}
+
+	.media-thumb {
+	    background: lighten($cx-text-color, 100%);
+	    position: relative;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	    top: 0px;
+	    z-index: 0;
+		@include box(90px);
+		@include border-radius(50%);
+		@extend %cx-transition;
+
+	    &::before {
+		    background: transparent;
+		    margin: 0 auto;
+		    opacity: .65;
+		    border: 10px solid lighten($cx-text-color, 100%);
+		    z-index: -1;
+    		@include abs-position(0, 0, 0, 0);
+    		@include border-radius(50%);
+    		@include cx-prefix('transform', 'scale(1.2)');
+	    }
+
+	    i {
+	    	font-size: 40px;
+	    	color: darken($cx-secondary-color, 10%);
+	    }
+	}
+
+	.media-title {
+	    z-index: 1;
+	    position: relative;
+	    color: $cx-tertiary-color;
+	    text-transform: uppercase;
+	    font-size: calculateRem(18px);
+	    font-weight: 600;
+	}
+
+	.service-single {
+		&:hover {
+			img {
+				@include cx-prefix('transform', 'scale(1.1)');
+			}
+
+			.media-thumb {
+				@include cx-prefix('transform', 'scale(0.8)');
+			}
+
+			img {
+				filter: grayscale(0);
+			}
+		}
+	}
+}
+
+.swiper-arrow {
+	cursor: pointer;
+	@include abs-position(50%);
+	@include transform-translateY(-50%);
+
+	&.prev {
+		left: -50px;
+	}
+
+	&.next {
+		right: -50px;
+	}
+
+	i {
+		font-size: 30px;
+		color: lighten($cx-text-color, 100%);
+		background-color: rgba(0, 0, 0, 0.7);
+		line-height: 39px;
+		opacity: 0.7;
+		@include box(40px);
+		@extend %cx-transition;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

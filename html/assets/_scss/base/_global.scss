@@ -218,8 +218,17 @@ section {
 	@extend %bgc-offset;
 }
 
+.bgc-grey {
+	@extend %bgc-grey;
+}
+
 .bgc-white {
 	@extend %bgc-white;
+}
+
+.bgc-tertiary-textured {
+	background-color: rgba($cx-tertiary-color, 0.98);
+	@include cx-background('../img/cta/cta-bg-1.png');
 }
 
 
@@ -253,12 +262,29 @@ section {
 	@extend %color-white;
 }
 
+// Border-colors 
+
+$border-colors: ($cx-primary-color, $twitter-color, $gplus-color, $cx-secondary-color, $linkedin-color, $youtube-color);
+$border-colors-count: length($border-colors);
+
+@for $i from 1 to $border-colors-count + 1 {
+	.border-color-#{$i} {
+		border-color: lighten(nth($border-colors, $i), 10%);
+	}
+}
+
 // overlay
 
 .section-overlay {
+	opacity: 0.9;
 	@include abs-position(0, 0, 0, 0);
-    opacity: 0.9;
     @include bcg-linear-gradient(110deg, #9586a6, #d7706d);
+}
+
+.video-section-overlay {
+	opacity: 0.7;
+	@include abs-position(0, 0, 0, 0);
+    @include bcg-linear-gradient(110deg, darken($cx-tertiary-color, 10%), darken($cx-tertiary-color, 10%));
 }
 
 // Flex\
@@ -281,5 +307,11 @@ section {
 
 .tilt-child {
 	@include cx-prefix('transform', 'translateZ(20px)');
+}
+
+// Border-radius
+
+.rounded-corners {
+	@extend %rounded-corners;
 }
 

@@ -1,0 +1,12 @@
+/**
+ * layout home-2/ testimonial
+ *
+ */
+
+.testimonials-section {
+	// background-color: rgba(darken($cx-grey-color, 40%), 0.9);
+	@include cx-background('../img/background/counter-up.jpg');
+	@include cx-overlay(rgba(darken($cx-grey-color, 40%), 0.98));
+	@extend %mb0;	
+	@extend %vpadding;
+}

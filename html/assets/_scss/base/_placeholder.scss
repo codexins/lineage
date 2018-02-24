@@ -149,6 +149,10 @@
 	background-color: $cx-offset-color;
 }
 
+%bgc-grey {
+	background-color: $cx-grey-color;
+}
+
 %bgc-white {
 	background-color: #fff;
 }
@@ -271,4 +275,10 @@
 	@include respond-to(mobile) {
 		padding-top: $cx-col-spacing-mob;
 	}
+}
+
+// Border-radius
+
+%rounded-corners {
+	@include border-radius(8px);
 }
