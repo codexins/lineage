@@ -23,6 +23,7 @@ INDEX:
 	s19 - Parallax JS
 	s20 - Blog Grid Background Settings
     s21 - Tilt Settings
+    s21 - Typed js Settings
 	s22 - Animation Settings
 
 
@@ -67,7 +68,8 @@ INDEX:
         $skillBar 			= $(".skillbar"),
         $toTop 				= $("#toTop"),
         $blogGrid 			= $(".blog-item-grid"),
-        $tiltEl             = $(".tilt-element");
+        $tiltEl             = $(".tilt-element"),
+        $typedEl            = $(".typed-element");
         
     // Check if element exists
     $.fn.cxExists = function() {
@@ -112,8 +114,9 @@ INDEX:
         if ($vslider.cxExists()) {
             $vslider.sliderPro({
                 width: '100%',
-                arrows: true,
-                buttons: false,
+                arrows: false,
+                visibleSize: 'auto',
+                buttons: true,
                 waitForLayers: true,
                 slideDistance: 0,
                 forceSize: 'fullWindow',
@@ -121,6 +124,10 @@ INDEX:
                 fade: true,
                 reachVideoAction: 'playVideo',
                 breakpoints: {
+                    991: {
+                        height: 500,
+                        forceSize: 'none',
+                    },
                     768: {
                         arrows: false
                     }
@@ -302,7 +309,8 @@ INDEX:
 	            $isoContainer.isotope({
 	                itemSelector: ".portfolio",
 	                layoutMode: 'masonry',
-	                stagger: 60
+	                stagger: 60,
+                    percentPosition: true
 	            });
 	        });
 
@@ -566,7 +574,7 @@ INDEX:
                 loop: true,
                 slidesPerView: 3,
                 spaceBetween: 30,
-                centeredSlides: true,
+                // centeredSlides: true,
                 grabCursor: true,
 
                 navigation: {
@@ -747,10 +755,33 @@ INDEX:
 			$tiltEl.tilt({
 				maxTilt:        18,
 				perspective:    2200,
-				easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+				easing:         "cubic-bezier(.2,1,.22,1)",    // Easing on enter/exit.
 			});
         }
 	};
+
+
+    /************************************************************
+        s21 - Typed js Settings
+    *************************************************************/
+
+    CODEXIN.typedSetting = function() {
+        if ($typedEl.cxExists()) {
+              var typedElm = new Typed(".typed-element", {
+                    strings: ["Developers", "Designers", "People", "Leneage!^2000"],
+                    typeSpeed: 120,
+                    startDelay: 100,
+                    backSpeed: 30,
+                    backDelay: 500,
+                    loop: true,
+                    loopCount: Infinity,
+                    showCursor: true,
+                    cursorChar: "|",
+                    attr: null,
+                    contentType: 'html',
+                });
+        }
+    };
 
 
     /************************************************************
@@ -769,9 +800,10 @@ INDEX:
             sr.reveal('.info-item', { origin: 'right' }, 100);
             sr.reveal('.info-item.boxed', { origin: 'bottom' }, 200);
             sr.reveal('.counter-item', { origin: 'right' }, 200);
+            sr.reveal('.feature-box', { origin: 'right' }, 200);
             sr.reveal('.member-wrapper .team-member', { origin: 'bottom' }, 150);
-            sr.reveal('.pricing-table', { origin: 'bottom' }, 200);
-            sr.reveal('.blog-item-grid', { origin: 'bottom' }, 200);
+            sr.reveal('.pricing-table, .pricing-table-type-2', { origin: 'bottom' }, 200);
+            sr.reveal('.blog-item-grid, .blog-grid', { origin: 'bottom' }, 200);
             sr.reveal('.info-box-wrapper', { origin: 'bottom' }, 200);
             sr.reveal('.tab .nav-tabs li', { origin: 'right' }, 200);
         }
@@ -805,7 +837,8 @@ INDEX:
         CODEXIN.smoothScroll(),
     	CODEXIN.skillBars(),
     	CODEXIN.scrollToTop(),
-    	CODEXIN.tiltSetting(),
+        CODEXIN.tiltSetting(),
+    	CODEXIN.typedSetting(),
         CODEXIN.placeHolders(),
     	CODEXIN.animationSetting();
     });

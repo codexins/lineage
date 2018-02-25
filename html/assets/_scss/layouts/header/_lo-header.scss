@@ -32,3 +32,12 @@
 		@extend %bgc-white;
 	}
 }
+
+@include media-only(992px, max){
+	.nav-social-wrapper {
+		@include cx-centered(horizontal);
+		.header-socials {
+			text-align: center;
+		}
+	}
+}

@@ -13,7 +13,7 @@
 	top: -101px;
 	margin-bottom: -101px;
 	.sp-mask {
-		min-height: 500px;
+		// min-height: 500px;
 		@include respond-to(mobile) {
 			min-height: 300px;
 		}
@@ -29,6 +29,7 @@
 		&.sp-layer {
 			font-size: 64px;
 			line-height: 64px;
+			margin-bottom: 30px;
 			text-transform: uppercase;
 		}
 	}
@@ -36,6 +37,7 @@
 		&.sp-layer {
 			font-size: 24px;
 			line-height: 32px;
+			margin-bottom: 50px;
 			font-weight: 300;
 		}
 	}
@@ -48,53 +50,75 @@
 }
 
 #primary-slider-with-video {
-	// .sp-slide {
-	// 	position: relative;
-	// }
 
-	// .layer-wrapper {
-	// 	@include cx-centered(both);
+	.sp-video {
+		&::after {
+			display: none;
+		}
+	}
 
-	// }
+	h4 {
+		text-transform: uppercase;
+		margin-bottom: 5px;
+		@extend %color-white;
+	}
 
-	// h2 {
-	// 	z-index: 1;
-	// 	span {
-	// 		padding: 30px;
-	// 		// &::before {
-	// 			background: $cx-primary-color;
-	// 			z-index: 1;
+	h2 {
+		font-size: 2.5em;
+		margin-bottom: 20px;
+	}
 
-	// 		// }
-	// 	}
-	// }
+	p {
+		// width: 70%;
+		margin-bottom: 50px;
+	}
 
 	a {
 		position: relative;
 	}
-
-
-	// .sp-layer {
-	// 	&:nth-child(2) {
-	// 		font-size: 2.5em;
-	// 		font-weight: bold;
-	// 		letter-spacing: 1px;
-	// 		line-height: 14px;
-	// 		padding: 30px 0;
-	// 		&::before {
-	// 			background: $cx-primary-color;
-	// 			@include abs-position;
-	// 			width: 100%;
-	// 			height: 100%;
-	// 			z-index: -1;
-	// 		}
-	// 	}
-
-	// 	&:nth-child(3) {
-	// 		font-size: 2em;
-	// 		font-weight: bold;
-	// 		letter-spacing: 1px;
-	// 		background: $cx-tertiary-color;
-	// 	}
-	// }
 }
+
+
+.layer-wrapper {
+	position: absolute;
+	width: 1140px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	@include push-center;
+}
+
+.inner-wrapper {
+	display: block;
+	width: 70%;
+	@include cx-centered(both);
+}
+
+.sp-layer {
+	position: relative;
+}
+
+.sp-buttons {
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+
+	.sp-button {
+		border-color: lighten($cx-text-color, 100%);
+		background-color: lighten($cx-text-color, 100%);
+		width: 15px;
+		height: 8px;
+	    opacity: 0.2;
+		@include border-radius(0);
+		@extend %cx-transition;
+	}
+
+	.sp-selected-button {
+		width: 26px;
+		opacity: 1;
+	}
+}
+

@@ -137,7 +137,7 @@
 	p{
 	    margin: 0;
 	    text-transform: capitalize;
-	    font-size: 0.85rem;
+	    font-size: calculateRem(14.5px);
 	    letter-spacing: .05em;
 	    span {
 	    	transition-delay: 0.2s;
@@ -186,6 +186,30 @@
 
 		}
 	}
+
+	&.type-2 {
+		li {
+			padding: 3px 0;
+			&::before {
+				background: $cx-tertiary-color;
+			}
+			&::after {
+			    background: $cx-tertiary-color;
+			    height: 2px;
+			    width: 0;
+			    @include abs-position(-2px, 0, auto, auto);
+			    @extend %cx-transition;
+			}
+
+			&.active,
+			&:hover {
+				color: $cx-tertiary-color;
+				&::after {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 .portfolio-wrapper {
@@ -194,7 +218,64 @@
 		margin-bottom: -15px;
 		.portfolio-item {
 			padding-right: 15px;
-			padding-bottom: 15px;
+			margin-bottom: 15px;
+		}
+
+		.img {
+			&::before {
+				content: none;
+			}
+
+			i {
+				background: rgba($cx-tertiary-color, 0.95);
+				padding: 10px;
+				top: 15px;
+				right: 15px;
+				@include border-radius(50%);
+				@include transform-translateY(-100px);
+				@include respond-to(mobile) {
+					opacity: 1;
+					@include transform-translateY(0);
+				}
+			}
+		}
+
+		.portfolio-mini-desc {
+			opacity: 1;
+			width: 100%;
+			max-width: calc(100% - 15px);
+			min-height: 100px;
+			padding: 25px;
+			background: rgba($cx-tertiary-color, 0.95);
+			@include abs-position(auto, 0, 0, 0);
+			@include transform-translateY(101px);
+			@include respond-to(mobile) {
+				min-height: 60px;
+				padding: 10px;
+				@include transform-translateY(0);
+			}
+
+			h3 {
+				font-size: calculateRem(17px);
+				letter-spacing: 0.5px;
+				padding-top: 0;
+			}
+		}
+
+		figure {
+			overflow: hidden;
+			&:hover {
+				i {
+					@include transform-translateY(0);
+				}
+				.portfolio-mini-desc {
+					@include transform-translateY(0);
+				}
+			}
+		}
+
+		span {
+		    @include cx-prefix('transform', 'none');
 		}
 	}
 }
