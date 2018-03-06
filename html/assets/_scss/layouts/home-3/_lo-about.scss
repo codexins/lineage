@@ -1,0 +1,21 @@
+/**
+ * layout home-3/ about
+ *
+ */
+
+.about-us-section {
+	@extend %mb0;
+	@extend %vpadding;
+
+	// .image-placeholder {
+	// 	height: 400px;
+	// 	position: relative;
+		
+	// }
+
+	.trigger-iframe {
+		margin-top: -45px;
+		margin-left: -45px;
+		@include abs-position(50%, auto, auto, 50%);
+	}
+}

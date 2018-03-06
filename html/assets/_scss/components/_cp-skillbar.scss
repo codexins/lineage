@@ -13,31 +13,59 @@
     text-align: left;
     @include border-radius(4px);
 
-	.skillbar-title {
-	    font-weight: 700;
-	    position: absolute;
-	    text-align: left;
-	    margin-left: 0;
-	    margin-top: -35px;
-	}
-	
-	.skillbar-bar {
-	    height: 7px;
-	    width: 0px;
-	    background: $cx-secondary-color;
-	    display: inline-block;
-	    position: absolute;
-	    top: 0;
-	    margin: 0;
-	    @include border-radius(4px);
-	}
+    .skillbar-title {
+        font-weight: 700;
+        position: absolute;
+        text-align: left;
+        margin-left: 0;
+        margin-top: -35px;
+    }
 
-	.skill-bar-percent {
-    color: $cx-tertiary-color;
-    float: right;
-    margin-top: -35px;
-    position: absolute;
-    right: 0;
-    font-weight: 600;
+    .skillbar-bar {
+        height: 7px;
+        width: 0px;
+        background: $cx-secondary-color;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        margin: 0;
+        @include border-radius(4px);
+    }
+
+    .skill-bar-percent {
+        color: $cx-tertiary-color;
+        float: right;
+        margin-top: -35px;
+        position: absolute;
+        right: 0;
+        font-weight: 600;
+    }
+}
+
+.skillbar-wrapper {
+	&.with-stripes {
+	    .skillbar {
+	        margin-top: 30px;
+	    }
+
+	    .skill-bar-percent {
+	        @extend .visually-hidden;
+	    }
+
+	    .skillbar-bar {
+	    	@include bcg-linear-gradient2('-45deg, ' + lighten($cx-secondary-color, 15%) + ' 25%, ' + $cx-secondary-color + ' 25%, ' + $cx-secondary-color + ' 50%, ' + lighten($cx-secondary-color, 15%) + ' 50%, ' + lighten($cx-secondary-color, 15%) + ' 75%, ' + $cx-secondary-color + ' 75%, ' + $cx-secondary-color + '', lighten($cx-secondary-color, 15%));
+	    	background-size: 40px 40px;
+	    	@include cx-prefix('animation', 'stripe-animation 1s linear infinite');
+
+	    }
+
+		@include keyframes(stripe-animation) {
+	        0% {
+	            background-position: -39px 0
+	        }
+	        100% {
+	            background-position: 0 0
+	        }
+		}
 	}
 }

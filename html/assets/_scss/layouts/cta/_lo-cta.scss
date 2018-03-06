@@ -59,4 +59,41 @@
 			}
 		}
 	}
+
+	&.type-2 {
+		@extend %vpadding;
+		@include cx-background('../img/background/counter-up.jpg');
+		@extend %overlay;
+		&::before {
+			@include bcg-linear-gradient(to bottom right, rgba($cx-secondary-color, 0.95), rgba($cx-primary-color, 0.95));
+		}
+
+		.cta-content-wrapper {
+			@extend %vhcenter;
+			padding: 0.67 * $cx-section-spacing;
+			@extend %bgc-white;
+			@extend %rounded-corners;
+			@extend .spreaded-shadow;
+
+			i {
+				font-size: 50px;
+			    margin-right: 2.4 * $cx-heading-margin-bottom;
+			    @extend %color-secondary;
+			}
+
+			.cta-content {
+				padding-right: 50px;
+				min-width: 450px;
+
+				p {
+					@extend %mb0;
+				}
+			}
+
+			h2 {
+				font-weight: 400;
+				@extend %color-secondary;
+			}
+		}
+	}
 }

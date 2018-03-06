@@ -1,0 +1,23 @@
+/**
+ * layout home-3/ slider
+ *
+ */
+
+.slider-section {
+	position: relative;
+	@extend %mb0;
+
+	#particles-js {
+		height: 600px;
+	}
+
+	.explore {
+		z-index: 2;
+	}
+
+	#primary-slider-with-particle {
+		p {
+			margin: 0;
+		}
+	}
+}

@@ -10,7 +10,6 @@
 
 	.swiper-pagination {
 	    line-height: 0;
-	    // bottom: 0;
 
 	    .swiper-pagination-bullet {
 	    	border: 4px solid lighten($cx-text-color, 100%);
@@ -29,7 +28,7 @@
 	    display: block;
 	    width: 84px;
 	    height: 84px;
-	    margin: 0 auto 50px;
+	    margin: 0 auto 40px;
 
 	    &::before {
 		    width: 100%;
@@ -119,17 +118,172 @@
 		h3 {
 		    font-size: calculateRem(20px);
 		    font-weight: 300;
-		    margin: 0;
+		    @extend %mb0;
 		}
 		p {
 		    font-size: calculateRem(14px);
 		    font-style: italic;
-		    margin: 0;
 		    color: $cx-grey-color;
+		    @extend %mb0;
 		}
 	}
 
 	&.white-text {
 		color: lighten($cx-grey-color, 25%);
+	}
+}
+
+
+.testimonial-with-thumbs {
+	.testimonial-thumb {
+		min-height: 100px;
+
+		.swiper-slide {
+			padding: 20px 0 10px;
+		}
+
+		img,
+		.thumb-overlay {
+		    position: relative;
+		    padding: 5px;
+		    @include border-radius(50%);
+		    @include cx-transition('box-shadow .3s ease 0s');
+		}
+
+		.swiper-slide-active {
+			img {
+				@include cx-box-shadow('0 0 0 2px '+ lighten( $cx-text-color, 100%));
+			}
+			.thumb-overlay {
+			    height: 85px;
+			    margin-top: -90px;
+			    width: 85px;
+			    background: rgba($cx-secondary-color, 0.75);
+			    left: 5px;
+
+			    &::before {
+				    font-family: FontAwesome;
+				    content: "\f10d";
+				    color: lighten($cx-text-color, 100%);
+				    font-size: calculateRem(20px);
+				    @include cx-centered(both);
+			    }
+			}
+		}
+	}
+
+	.testimonial-content {
+		margin-top: 0.4 * $cx-section-spacing;
+		.swiper-slide {
+			margin-bottom: 0.8 * $cx-section-spacing;
+		}
+		.client-meta {
+			@extend %mt-half;
+			h3 {
+			    font-size: calculateRem(20px);
+			    font-weight: 500;
+			    margin-bottom: 5px;
+			}
+			p {
+			    font-size: calculateRem(14px);
+			    font-style: italic;
+			    color: $cx-grey-color;
+			    @extend %mb0;
+			}
+		}
+
+
+		&.white-text {
+			h3,
+			p {
+				color: lighten($cx-text-color, 100%);
+			}
+		}
+	}
+}
+
+.carousel-arrow {
+	bottom: 0;
+    color: lighten($cx-text-color, 100%);
+    font-size: calculateRem(16px);
+    cursor: pointer;
+	@include box(40px);
+    @include cx-centered(horizontal);
+
+    &::before {
+    	position: relative;
+    	z-index: 1;
+    }
+
+    &::after {
+    	content: "";
+    	background: rgba(#000, 0.35);
+    	z-index: 0;
+		@include abs-position(0, 0, 0, 0);
+		@extend %cx-transition;
+    }
+
+    &.arrow-left {
+    	left: 47%;
+    }
+
+    &.arrow-right {
+    	left: 53%;
+    }
+
+    &:hover {
+    	&::after {
+    		background: rgba(#000, 0.55);
+    	}
+    }
+}
+
+.testimonial-with-thumbs {
+	.carousel-arrow {
+	    &:hover {
+	    	&::after {
+		    	@extend .spreaded-shadow;
+	    	}
+	    }
+	}
+}
+
+.testimonial-simple-wrapper {
+	@include eqheight;
+	.thumb-img {
+		vertical-align: top;
+		width: 80px;
+		img {
+			width:100%;
+			@include border-radius(50%);
+		}
+
+		@include respond-to(mobile) {
+			margin-left: auto;
+		    margin-right: auto;
+		    margin-bottom: $cx-heading-margin-bottom;
+		}
+	}
+
+	.testimonial-simple-content {
+		vertical-align: top;
+		padding-left: 20px;
+		@include respond-to(mobile) {
+			padding-left: 0;
+		}
+	}
+
+	.author-desc {
+		// padding-left: 15px;
+		// border-left: 5px solid $cx-primary-color;
+		.author-name {
+			font-weight: bold;
+			display: block;
+		}
+
+		.author-desig {
+			display: block;
+			font-style: italic;
+		}
 	}
 }

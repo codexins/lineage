@@ -1,0 +1,31 @@
+/**
+ * layout home-3/ video section
+ *
+ */
+
+.background-video-section {
+	@extend %mb0;
+
+	.video-container {
+		min-height: 450px;
+		@include cx-overlay(rgba(#000, 0.75));
+	}
+
+	.video-content-wrapper {
+		@include cx-centered(both);
+
+		h2 {
+			font-size: 2.3 * $cx-body-font-size;
+		    text-transform: uppercase;
+		    font-weight: 600;
+		    color: $cx-secondary-color;
+		}
+
+		p {
+			font-size: calculateRem(20px);
+			font-weight: 300;
+			@extend %mb-half;
+			@extend %color-white;
+		}
+	}
+}

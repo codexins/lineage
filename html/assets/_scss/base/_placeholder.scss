@@ -280,5 +280,17 @@
 // Border-radius
 
 %rounded-corners {
-	@include border-radius(8px);
+	@include border-radius(4px);
+}
+
+// Equal height by display:table
+
+%eqheight {
+	@include eqheight;
+}
+
+// Overflow
+
+%overflow-hidden {
+	overflow: hidden;
 }

@@ -38,4 +38,11 @@
 		font-size: calculateRem(15px);
 		@extend %mb0;
 	}
+	
+	&.white-text {
+		span,
+		p {
+			color: lighten($cx-text-color, 100%);
+		}
+	}
 }

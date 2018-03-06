@@ -1,0 +1,40 @@
+/**
+ * Components Client List
+ *
+ */
+
+.client-single {
+	width:100%;
+	border:1px solid $cx-border-color;
+	margin-bottom: $cx-heading-margin-bottom;
+	opacity: 0.7;
+	@extend %cx-transition;
+	@extend %bgc-white;
+	a {
+		display: inline-block;
+		width:100%;
+		padding:15px;
+	}
+	img {
+		max-width:100%;
+		max-height:80px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		@include respond-to(mobile) {
+			max-height:50px;
+		}
+	}
+
+	&:hover {
+		opacity: 1;
+		border-color: $cx-primary-color;
+	}
+
+	&.shadowed {
+		&:hover {
+	    	@include transform-translateY(-4px);
+	    	@include cx-box-shadow('5px 5px 25px 0 rgba(46,61,73,.2)');
+		}
+	}
+}

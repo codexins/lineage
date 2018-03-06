@@ -1,0 +1,75 @@
+/**
+ * layout slider/ image slider
+ *
+ */
+
+.image-carousel-full-width {
+	.swiper-slide {
+		overflow: hidden;
+		a {
+			cursor: url(../img/openhand.cur), move;
+		}
+		.icon-wrapper {
+		    width: 100%;
+		    height: 100%;
+		    opacity: 0;
+		    @include abs-position(0, auto, auto, 0);
+		    @extend %cx-transition;
+		    @extend %overlay;
+		    &::before {
+				content: "";
+				bottom: 0;
+				height: 0;
+				background: rgba(darken($cx-secondary-color, 10%), 0.9);
+			    @include cx-transition(all 0.3s ease 0s);
+		    }
+
+		    span {
+				width:100%;
+				text-align: center;
+				z-index: 10;
+				opacity: 1;
+				@extend %color-white;
+				@include cx-transition('opacity 0s');
+				@include cx-centered(both);
+		    }
+
+		    i {
+		    	cursor: pointer;
+		    	@include box(40px);
+		    }
+		}
+
+		figcaption {
+			@include abs-position(auto, 0, 0, 0);
+
+			h3 {
+				font-size: calculateRem(14px);
+				font-weight: 500;
+				text-align: center;
+				padding: 15px;
+				text-transform: uppercase;
+				@extend %mb0;
+				@extend %cx-transition;
+				@extend %color-white;
+				@include transform-translateY(50px);
+			}
+		}
+
+		&:hover {
+			.icon-wrapper {
+				opacity: 1;
+				&::before {
+					top: 0;
+					height: 100%;
+				}
+			}
+
+			figcaption {
+				h3 {
+					@include transform-translateY(0);
+				}
+			}
+		}
+	}
+}

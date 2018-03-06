@@ -1,0 +1,128 @@
+/**
+ * layout page-title/ page-title
+ *
+ */
+
+.page-title-section {
+	@extend %vpadding;
+	@extend %color-white;
+
+	.page-title-container,
+	.breadcrumb-container {
+		position: relative;
+	}
+	.page-title-heading {
+		text-transform: capitalize;
+		font-weight: 600;
+		margin-bottom: 5px;
+		min-width: 75%;
+
+		span {
+			color: $cx-secondary-color;
+		}
+	}
+
+	.page-subtitle {
+		font-size: calculateRem(22px);
+		min-width: 80%;
+		font-weight: 300;
+		@extend %mb0;
+	}
+
+	.breadcrumb {
+		font-size: calculateRem(14px);
+		@extend %bgc-transparent;
+		@extend %mb0;
+
+		i {
+			padding-right: 10px;
+		}
+
+		a {
+			@extend %color-white;
+
+			&:hover {
+				color: $cx-secondary-color;
+			}
+		}
+
+		.active {
+			@extend %color-offset;
+
+			&::before {
+				content: "\f105";
+				font-family: FontAwesome;
+			}
+		}
+
+		li {
+			+ li {
+				&::before {
+					content: "\f105";
+					font-family: FontAwesome;
+				}
+			}
+		}
+	}
+
+	.page-title-overlay {
+		z-index: -1;
+	}
+
+	&.modern {
+		position: relative;
+		top: -101px;
+		margin-bottom: -101px;
+		padding: 200px 0 150px;
+		text-align: center;
+		overflow: hidden;
+		@extend %color-white;
+		@extend %bgc-white;
+
+		&::before,
+		&::after {
+		    width: 50%;
+		    height: 60px;
+		    background: lighten($cx-text-color, 100%);
+		    @include abs-position(auto, auto, 0, 50%);
+		    @include cx-prefix('transform', 'skew(-77deg)');
+		    @include cx-prefix('transform-origin', '0 100%');
+		}
+
+		&::after {
+		    left: auto;
+		    right: 50%;
+		    background: lighten($cx-text-color, 100%);
+		    @include cx-prefix('transform', 'skew(77deg)');
+		    @include cx-prefix('transform-origin', '100% 100%');
+		}
+
+		.page-title-container {
+			margin-bottom: $cx-section-spacing;
+		}
+
+		.page-title-heading {
+			font-size: calculateRem(50px);
+			text-transform: uppercase;
+			font-weight: 500;
+			@include push-center;
+		}
+
+		.page-subtitle {
+			font-size: calculateRem(24px);
+			font-weight: 300;
+			@include push-center;
+		}
+	}
+
+	&.left-aligned {
+		.page-title-wrapper {
+			@include eqheight;
+		}
+
+		.breadcrumb {
+			text-align: right;
+			padding-right: 0;
+		}
+	}
+}

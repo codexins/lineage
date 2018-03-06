@@ -36,7 +36,8 @@
 		}
 
 		&:hover {
-			opacity: 1;;
+			opacity: 1;
+			border-color: $cx-primary-color;
 		}
 	}
 
@@ -45,7 +46,8 @@
 			border: 1px solid $cx-border-color;
 			opacity: 0.7;
 			&:hover {
-				opacity: 1;;
+				opacity: 1;
+				border-color: $cx-primary-color;
 			}
 		}
 	}

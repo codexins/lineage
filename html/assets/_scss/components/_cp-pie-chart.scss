@@ -1,0 +1,74 @@
+/**
+ * Components Pie Chart
+ *
+ */
+
+.pie-chart,
+.pie-chart-type-2 {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @include box(110px);
+
+	.pie-percent {
+	    z-index: 2;
+
+	    &::after {
+		    content: '%';
+		    margin-left: 3px;
+		    font-size: calculateRem(13px);
+	    }
+	}
+
+    canvas {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+    }
+}
+
+.pie-chart {
+	color: lighten($cx-text-color, 100%);
+}
+
+.pie-chart-wrapper {
+    border-top: 0;
+    overflow: hidden;
+    @extend %cx-transition;
+    @extend %rounded-corners;
+
+    h6 {
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    margin: 0;
+	    color: lighten($cx-text-color, 100%);
+	    padding: $cx-heading-margin-bottom;
+	    @include bcg-linear-gradient(110deg, #d7706d, #9586a6);
+	    @extend %cx-transition;
+	    @extend %rounded-corners;
+    }
+
+    &:hover {
+    	@include transform-translateY(-4px);
+    	@extend .spreaded-shadow;
+    }
+
+    &.simple {
+		overflow: visible;
+		border: 1px solid $cx-border-color;
+		@include border-radius(0);
+		@extend %bgc-offset;
+		h6 {
+		    background: transparent;
+		    color: $cx-text-color;
+		    border: none;
+		    padding-top: 0;
+		}
+
+	    &:hover {
+	    	border-color: $cx-primary-color;
+	    	@include cx-box-shadow('none');
+	    	@include transform-translateY(0);
+	    }
+    }
+}

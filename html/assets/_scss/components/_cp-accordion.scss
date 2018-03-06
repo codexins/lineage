@@ -1,0 +1,105 @@
+/**
+ * Components Accordion
+ *
+ */
+
+#accordion {
+	border: 0;
+	
+	.panel,
+	.panel-body {
+		border: 0;
+		@extend %bgc-transparent;
+		@include cx-box-shadow('none');
+	}
+
+	.panel-heading {
+		padding: 0;
+		border: 1px solid $cx-border-color;
+		@extend %cx-transition;
+		@extend %bgc-white;
+		@extend %rounded-corners;
+
+		&.active {
+			@include cx-box-shadow('5px 5px 25px 0 rgba(46,61,73,.2)')
+
+			.accordion-toggle {
+				&::after {
+					@include cx-prefix('transform', 'rotate(180deg)');
+				}
+			}
+		}
+	}
+
+	.accordion-toggle {
+		font-family: lato;
+		font-size: calculateRem(20px);
+		font-weight: 500;
+		padding: 18px 28px;
+		display: block;
+	    letter-spacing: 0.5px;
+	    position: relative;
+	    color: $cx-text-color;
+	    &:hover {
+	    	color: $cx-text-color;
+	    }
+
+		&::after {
+			content: "\f078";
+		    font-family: FontAwesome;
+		    position: absolute;
+		    right: 20px;
+		    font-size: 14px;
+		    color: $cx-secondary-color;
+		    @extend %cx-transition;
+		}
+	}
+
+	.panel-body {
+		p {
+			margin: auto;
+		}
+	}
+
+	&.accordion-type-2 {
+		.panel {
+			border-bottom: 1px solid $cx-border-color;
+		}
+		.panel-heading {
+			border: 0;
+
+			a {
+				font-size: calculateRem(14px);
+				padding-left: 0;
+				font-weight: 600;
+				text-transform: uppercase;
+
+				&::after {
+					content: "\f067";
+					font-size: calculateRem(11px);
+					color: $cx-text-color;
+				}
+
+				&:hover {
+					@extend %color-secondary;
+				}
+			}
+
+			&.active {
+				@include cx-box-shadow('none')
+
+				a {
+					@extend %color-secondary;
+					&::after {
+						content: "\f068";
+						@extend %color-secondary;
+					}
+				}
+			}
+		}
+
+		.panel-body {
+			padding-left: 0;
+		}
+	}
+}

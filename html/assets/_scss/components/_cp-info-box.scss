@@ -4,7 +4,8 @@
  */
 
 .info-box-wrapper {
-    @include cx-overlay;
+    @extend %overlay;
+    @include cx-transition('transform 0.25s ease-out');
     @include respond-to(mobile) {
 		margin-bottom: $cx-col-spacing-mob;
     }

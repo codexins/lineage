@@ -21,4 +21,36 @@
 			width: 26px;
 		}
 	}
+
+	.carousel-arrow {
+		opacity: 0;
+		width: 34px;
+		z-index: 2;
+		@extend %cx-transition;
+
+		&.arrow-left {
+			left: 0;
+			top: 50%;
+			@include transform-translateY(-50%);
+		}
+
+		&.arrow-right {
+			left: auto;
+			right: 0;
+			top: 50%;
+			@include transform-translateY(-50%);
+		}
+	}
+
+	&:hover {
+		.carousel-arrow {
+			opacity: 1;
+		}
+	}
+
+	&.with-arrow {
+		&::before {
+			content: none;
+		}
+	}
 }

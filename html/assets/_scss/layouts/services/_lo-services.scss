@@ -1,0 +1,60 @@
+/**
+ * layout services/ services
+ *
+ */
+
+.page-service {
+	@include cx-background('../img/page-titles/contact-bg-1.jpg');
+}
+
+.our-features{
+	&.bcg-service {
+		@include cx-background('../img/page-titles/contact-bg-1.jpg');
+	}
+}
+
+.feature-title-wrapper {
+	padding: 30px 15px;
+	border: 1px solid $cx-offset-color;
+	border-top: 0;
+	p {
+		text-align: center;
+		@extend %color-white;
+		@extend %mb0;
+	}
+
+	h4 {
+		text-align: center;
+		margin-bottom: 0.5 * $cx-heading-margin-bottom;
+		@extend %color-secondary;
+	}
+
+	@include respond-to(mobile) {
+		margin-bottom: $cx-col-spacing-mob;
+	}
+}
+
+.cta-section {
+	&.cta-service {
+		@include cx-background('../img/page-titles/contact-bg-1.jpg');
+		@extend %overlay;
+	}
+}
+
+.service-section {
+	&.service-list {
+		.info-item {
+			@include cx-box-shadow(none);
+
+			&:hover {
+				border-color: $cx-secondary-color;
+			}
+		}
+	}
+}
+
+.about-section {
+	&.about-service {
+		@include cx-background('../img/page-titles/contact-bg-1.jpg');
+	}
+}

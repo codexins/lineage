@@ -1,0 +1,17 @@
+/**
+ * Layout about/ history
+ *
+ */
+
+.our-history {
+	@extend %mb0;
+	@extend %vpadding;
+
+	#tab_panel_five {
+		> .row {
+			&:last-child {
+				margin-bottom: -45px;
+			}
+		}
+	}
+}

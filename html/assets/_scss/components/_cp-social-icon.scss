@@ -46,7 +46,7 @@
 
 		i {
 			font-size: 1em;
-			// line-height: $cx-social-icon-size-large;
+			line-height: $cx-social-icon-size-large;
 			display: block;
 			@include respond-to(notebook) {
 				line-height: 28px;

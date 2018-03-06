@@ -208,6 +208,42 @@
 					width: 100%;
 				}
 			}
+
+			&.active {
+				color: $cx-secondary-color;
+
+				&::before,
+				&::after {
+					background: $cx-secondary-color;
+				}
+			}
+		}
+	}
+
+	&.type-3 {
+		li {
+			margin: 0 5px;
+			padding: 8px 12px;
+			background: $cx-grey-color;
+			color: lighten($cx-text-color, 100%);
+			font-size: calculateRem(12px);
+			@extend %rounded-corners;
+			@extend %cx-transition;
+
+			&::before {
+				content: none;
+			}
+
+			&.active,
+			&:hover {
+				background: $cx-secondary-color;
+				color: lighten($cx-text-color, 100%);
+			}
+
+			&:hover {
+				@include transform-translateY(-3px);
+				@extend .spreaded-shadow;
+			}
 		}
 	}
 }
@@ -276,6 +312,109 @@
 
 		span {
 		    @include cx-prefix('transform', 'none');
+		}
+	}
+
+	&.type-2 {
+		.portfolio-item {
+			.img {
+				&::before {
+					content: none;
+				}
+
+				i {
+					opacity: 0;
+				}
+			}
+		}
+
+		figcaption {
+		    top: auto;
+		    bottom: 0;
+		    left: 0;
+		    width: 100%;
+		    max-width: 100%;
+		    padding: 1.2 * $cx-heading-margin-bottom;
+		    opacity: 1;
+		    min-height: 70px;
+		    background: lighten($cx-text-color, 100%);
+		    color: $cx-text-color;
+		    margin-bottom: -1px;
+		    @include cx-prefix('transform', 'translate3d(0,110%,0)');
+		    @include cx-box-shadow('0 0 35px 0px rgba(0, 0, 0, 0.15);');
+
+		    h3 {
+	    	    display: inline-block;
+	    	    font-size: calculateRem(21px);
+    	        float: left;
+    	        margin: 0;
+	            word-spacing: -0.15em;
+			    font-weight: 400;
+			    padding-top: 3px;
+			    a {
+			    	color: $cx-text-color;
+			    }
+    	        span {
+    	        	font-weight: 700;
+    	        	display: inline-block;
+					color: $cx-secondary-color;
+    	        }
+		    }
+
+		    h3,
+		    span {
+    	        @include cx-transition('transform 0.35s');
+    	        @include cx-prefix('transform', 'translate3d(0,200%,0)');
+		    }
+
+		    .icon-links {
+				letter-spacing: 1px;
+			    float: right;
+			    display: inline-block;
+			    span {
+			    	display: inline-block;
+			    	font-size: calculateRem(14px);
+			    	margin-right: 20px;
+			    	cursor: pointer;
+					@include box(31px);
+					border: 1.2px solid $cx-text-color;
+					line-height: 30px;
+					@include border-radius(50%);
+			    	
+			    	&:last-child {
+			    		margin-right: 0;
+			    	}
+
+			    	a {
+			    		color: $cx-text-color;
+			    	}
+			    }
+		    }
+		}
+
+		.portfolio-item {
+			&:hover {
+				figcaption,
+				h3,
+				a {
+				    @include cx-prefix('transform', 'translate3d(0,0,0)');
+				}
+
+				h2 {
+				    @include cx-prefix('transition-delay', '0.05s');
+				}
+
+				.icon-links {
+					span {
+						&:first-child {
+							@include cx-prefix('transition-delay', '0.15s');
+						}
+						&:last-child {
+							@include cx-prefix('transition-delay', '0.25s');
+						}
+					}
+				}
+			}
 		}
 	}
 }

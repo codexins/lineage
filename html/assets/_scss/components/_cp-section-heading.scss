@@ -31,25 +31,25 @@
         @include respond-to(small-mobile) {
             font-size: 0.85em;
         }
-        &::before {
-            content: '';
-            width: calculateRem(32px);
-            background: lighten($cx-text-color, 30%);
-            height: calculateRem(2.5px);
-            margin: 0 9px;
-            display: inline-block;
-            position: relative;
-            top: -.2rem;
-        }
+
+        &::before,
         &::after {
             content: '';
-            width: calculateRem(32px);
+            width: 0;
             background: lighten($cx-text-color, 30%);
             height: calculateRem(2.5px);
             margin: 0 9px;
             display: inline-block;
             position: relative;
             top: -.2rem;
+            @extend %cx-transition;
+        }
+
+        @include respond-to(mobile) {
+            &::before,
+            &::after {
+                width: calculateRem(32px);
+            }
         }
     }
 
@@ -76,6 +76,13 @@
         p {
             @extend %color-white;
         }
+
+        h4 {
+            &::before,
+            &::after {
+                @extend %bgc-white;
+            }
+        }
     }
 
     &.left-aligned {
@@ -94,25 +101,18 @@
         }
     }
 
-    &.white-text {
-        
-    }
-
     &.type-2 {
         h2 {
-            font-weight: 600;
-            padding-bottom: $cx-heading-margin-bottom;
+            font-weight: 400;
             font-size: calculateRem(32px);
             text-align: center;
-            &::before {
-                width: 70px;
-                height: 8px;
-                background-image: url(../img/wave.png);
-                background-size: 100% 100%;
-                @include abs-position(auto, auto, 0, 50%);
-                @include transform-translateX(-50%);
+
+            span {
+                font-weight: 600;
+                color: $cx-secondary-color;
             }
         }
+
         &.left-aligned {
             h2 {
                 text-align: left;
@@ -127,7 +127,90 @@
     &.white-text {
         h2 {
             &::before {
-                background-image: url(../img/wave-white.png);
+                // background-image: url(../img/wave-white.png);
+            }
+        }
+    }
+
+    &.type-3 {
+        h2 {
+            text-transform: uppercase;
+            font-size: calculateRem(32px);
+            line-height: 46px;
+            font-weight: bold;
+            padding-bottom: 1.2 * $cx-heading-margin-bottom;
+            letter-spacing: 0.5px;
+            position: relative;
+
+            &::before,
+            &::after {
+                height: 5px;
+                width: 0;
+                margin-left: auto;
+                margin-right: auto;
+                @include border-radius(4px);
+                @extend %cx-transition;
+            }
+
+            &::before {
+                background-color: $cx-secondary-color;
+                @include abs-position(auto, 0, 10px, 0);
+            }
+
+            &::after {
+                background-color: $cx-primary-color;
+                @include abs-position(auto, 0, 0, 0);
+            }
+
+            @include respond-to(mobile) {
+                &::before {
+                    width: 20%;
+                }
+                &::after {
+                    width: 10%;
+                }
+            }
+        }
+
+        h2 + p {
+            margin-top: 25px;
+            // font-size: calculateRem(24px);
+        }
+
+        h4 {
+            &::before,
+            &::after {
+                content: none;
+            }
+        }
+
+        &.left-aligned {
+            text-align: left;
+            h2 {
+                &::after,
+                &::before {
+                    right: auto;
+                }
+            }
+        }
+
+        section:hover & {
+            h2 {
+                &::before {
+                    width: 20%;
+                }
+                &::after {
+                    width: 10%;
+                }
+            }
+        }
+    }
+
+    section:hover & {
+        h4 {
+            &::before,
+            &::after {
+                width: calculateRem(32px);
             }
         }
     }

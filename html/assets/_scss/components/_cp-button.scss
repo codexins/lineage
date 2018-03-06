@@ -205,3 +205,28 @@
 	}
 }
 
+.shadow-btn {
+	min-width: 165px;
+	padding: 12px 32px;
+    height: 44px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: -6px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+	overflow: hidden;
+	position: relative;
+	background: $cx-primary-color;
+	color: lighten($cx-text-color, 100%);
+
+	&:hover {
+		background: $cx-secondary-color;
+		color: lighten($cx-text-color, 100%);
+    	@include transform-translateY(-3px);
+    	@extend .spreaded-shadow;
+	}
+}
+

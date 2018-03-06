@@ -98,7 +98,7 @@
     <!-- End of Mobile Menu -->
 
     <!-- Start of Whole Site Wrapper with mobile menu support -->
-    <div id="whole" class="whole-site-wrapper o-wrapper">
+    <div id="whole" class="whole-site-wrapper o-wrapper animsition">
 
         <!-- Start of Header -->
         <header class="header bgc-transparent">
@@ -196,7 +196,7 @@
         <div class="intelligent-header-space"></div> <!-- empty placeholder div for header height-->
 
         <!-- Start of Slider Section -->
-        <section class="slider-section bgc-white">
+        <section class="full-screen-slider-section bgc-white">
             <div id="primary-slider-with-video" class="slider-pro">
                 <div class="sp-slides">
                     <div class="sp-slide">
@@ -222,7 +222,7 @@
                                 data-hide-transition="up" 
                                 data-show-delay="1000" 
                                 data-hide-delay="200">
-                                We are <span class="typed-element"></span></h2>
+                                We are <span class="typed-element" data-typed-strings="Developers^500, Designers^500, People^500, Lineage^2000"></span></h2>
 
                                 <!-- layer-2 -->
                                 <p class="sp-layer text-center" 
@@ -359,29 +359,32 @@
                         <div class="col-sm-12 col-md-6 col-lg-6 animation-left">
                             <div class="simple-slider-container">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="assets/img/extra/img-1.jpg" alt=""></div>
-                                    <div class="swiper-slide"><img src="assets/img/extra/img-2.jpg" alt=""></div>
-                                    <div class="swiper-slide"><img src="assets/img/extra/img-3.jpg" alt=""></div>
-                                    <div class="swiper-slide"><img src="assets/img/extra/img-4.jpg" alt=""></div>
-                                    <div class="swiper-slide"><img src="assets/img/extra/img-5.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="assets/img/extra/img-1.jpg" alt="Slider Image"></div>
+                                    <div class="swiper-slide"><img src="assets/img/extra/img-2.jpg" alt="Slider Image"></div>
+                                    <div class="swiper-slide"><img src="assets/img/extra/img-3.jpg" alt="Slider Image"></div>
+                                    <div class="swiper-slide"><img src="assets/img/extra/img-4.jpg" alt="Slider Image"></div>
+                                    <div class="swiper-slide"><img src="assets/img/extra/img-5.jpg" alt="Slider Image"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
 
-                        <div class="col-sm-12 col-md-6 col-lg-5 col-lg-offset-1 animation-right">
-                            <div class="section-heading left-aligned type-2">
-                                <h2>We are lineage</h2>
+                        <div class="col-sm-12 col-md-6 col-lg-6 animation-right">
+                            <div class="wrapper-with-left-padding">
+                                <div class="section-heading left-aligned type-2">
+                                    <h2>We are <span>lineage</span></h2>
+                                </div>
+                                <p>Businesses often struggle when working with both web design and digital marketing agencies. That’s because designers don’t think about conversions or SEO, and marketers don’t always understand the importance of visuals.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ratione.</p>
+                                <ul class="icon-check">
+                                    <li><i class="fa fa-check"></i>Web Design</li>
+                                    <li><i class="fa fa-check"></i>Web Development</li>
+                                    <li><i class="fa fa-check"></i>Graphics Design</li>
+                                    <li><i class="fa fa-check"></i>Web Consultancy</li>
+                                    <li><i class="fa fa-check"></i>Digital Marketing</li>
+                                    <li><i class="fa fa-check"></i>Social Marketing</li>
+                                </ul>
                             </div>
-                            <p>Businesses often struggle when working with both web design and digital marketing agencies. That’s because designers don’t think about conversions or SEO, and marketers don’t always understand the importance of visuals.</p>
-                            <ul>
-                                <li><i class="fa fa-check"></i>Web Design</li>
-                                <li><i class="fa fa-check"></i>Web Development</li>
-                                <li><i class="fa fa-check"></i>Graphics Design</li>
-                                <li><i class="fa fa-check"></i>Web Consultancy</li>
-                                <li><i class="fa fa-check"></i>Digital Marketing</li>
-                                <li><i class="fa fa-check"></i>Social Marketing</li>
-                            </ul>
                         </div>
                     </div> <!-- end of row -->
                     <div class="row animation-bottom">
@@ -455,7 +458,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="section-heading type-2 white-text">
-                                <h2>Services We offer</h2>
+                                <h2>Services <span>We offer</span></h2>
                             </div>
                         </div>
                     </div>
@@ -545,7 +548,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="section-heading type-2">
-                                <h2>Recent projects</h2>
+                                <h2>Recent <span>projects</span></h2>
                             </div>
                         </div> <!-- end of col -->
                         <div class="col-xs-12">
@@ -746,15 +749,16 @@
             <!-- Start of Work Process Section -->
             <section class="split-section bgc-tertiary">
                 <div class="image-container">
-                    <div class="col-xs-12 col-sm-4 col-md-6 img-left">
-                        <div class="img-wrapper jarallax-slow"></div>
+                    <div class="col-xs-12 col-sm-4 col-md-6 img-left bg-img-wrapper">
+                        <img class="visually-hidden" src="assets/img/slider/home-4/slide-1.jpg"/>
+                        <div class="image-placeholder img-wrapper jarallax-slow"></div>
                     </div>
                 </div> <!-- end of image-container -->
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-5 col-md-offset-7">
                             <div class="section-heading left-aligned white-text type-2">
-                                <h2>Our Work Process</h2>
+                                <h2>Our Work <span>Process</span></h2>
                                 <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, qui.</p>
                             </div>
                             <div class="tab iconic-tab white-text">
@@ -790,7 +794,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="section-heading type-2">
-                                <h2>Affordable price for all</h2>
+                                <h2>Affordable <span>price for all</span></h2>
                             </div>
                         </div>
                     </div> <!-- end of row -->
@@ -862,7 +866,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="section-heading type-2">
-                                <h2>Our Values</h2>
+                                <h2>Our <span>Values</span></h2>
                             </div>
                         </div>
                     </div> <!-- end of row -->
@@ -951,7 +955,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="section-heading type-2">
-                                <h2>We are a family</h2>
+                                <h2>We are a <span>family</span></h2>
                                 <p class="subtitle">Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
                             </div>
                         </div>
@@ -1096,7 +1100,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="section-heading type-2 white-text">
-                                <h2>read our testimonials</h2>
+                                <h2>read our <span>testimonials</span></h2>
                             </div>
                         </div>
                     </div> <!-- end of row -->
@@ -1200,7 +1204,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="section-heading type-2">
-                                <h2>Happy clients</h2>
+                                <h2>Happy <span>clients</span></h2>
                                 <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat architecto reiciendis officiis hic asperiores.</p>
                             </div>
                         </div>
@@ -1257,7 +1261,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="section-heading type-2">
-                                <h2>Our Blog</h2>
+                                <h2>Our <span>Blog</span></h2>
                             </div>
                         </div>
                     </div> <!-- end of row -->
@@ -1339,15 +1343,16 @@
             <!-- Start of Quote Section -->
             <section class="split-section bgc-tertiary-textured">
                 <div class="image-container">
-                    <div class="col-xs-12 col-sm-4 col-md-6 img-right">
-                        <div class="img-wrapper jarallax-slow"></div>
+                    <div class="col-xs-12 col-sm-4 col-md-6 img-right bg-img-wrapper">
+                        <img class="visually-hidden" src="assets/img/slider/home-3/slide-1.jpg"/>
+                        <div class="image-placeholder img-wrapper jarallax-slow"></div>
                     </div>
                 </div> <!-- end of image-container -->
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-5">
                             <div class="section-heading left-aligned white-text type-2">
-                                <h2>Request a quote</h2>
+                                <h2>Request a <span>quote</span></h2>
                             </div>
                             <div class="quote-form-wrapper transparent-input animation-left">
                                 <form action="sendquote.php" method="post" class="primary-form" id="primary_form">
@@ -1412,7 +1417,7 @@
                             </div> <!-- end of #map_location -->
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 eqheight">
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                             <div class="contact-item-wrapper">
                                 <div class="content-inner animation-bottom">
                                     <h2>Business Address</h2>
@@ -1421,7 +1426,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 eqheight">
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                             <div class="contact-item-wrapper last">
                                 <div class="content-inner animation-right">
                                     <h2>Get in touch</h2>

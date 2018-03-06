@@ -14,44 +14,44 @@
 	    font-weight: 500;
 		@extend %color-white;
 	}
+}
 
-	.trigger-iframe {
-	    position: relative;
-        margin: 30px;
-	    @include box(90px);
+.trigger-iframe {
+    position: relative;
+    margin: 30px;
+    @include box(90px);
 
-	    &::before {
-		    width: 100%;
-		    height: 100%;
-		    border: 6px solid lighten($cx-text-color, 100%);
-		    z-index: 10;
-		    @extend %cx-transition;
-		    @include cx-prefix('backface-visibility', 'hidden');
-		    @include abs-position(0, auto, auto, 0);
-		    @include border-radius(50%);
-	    }
+    &::before {
+	    width: 100%;
+	    height: 100%;
+	    border: 6px solid lighten($cx-text-color, 100%);
+	    z-index: 10;
+	    @extend %cx-transition;
+	    @include cx-prefix('backface-visibility', 'hidden');
+	    @include abs-position(0, auto, auto, 0);
+	    @include border-radius(50%);
+    }
 
-	    i {
-	    	font-size: 30px;
-		    display: block;
-		    height: 100%;
-		    width: 100%;
-	        line-height: inherit;
-	        margin-left: 2px;
-		    @include cx-prefix('backface-visibility', 'hidden');
-		    @extend %cx-transition;
-		    @extend %color-white;
-	    }
+    i {
+    	font-size: 30px;
+	    display: block;
+	    height: 100%;
+	    width: 100%;
+        line-height: inherit;
+        margin-left: 2px;
+	    @include cx-prefix('backface-visibility', 'hidden');
+	    @extend %cx-transition;
+	    @extend %color-white;
+    }
 
-	    &:hover {
-	    	&::before {
-			    opacity: 0.4;
-			    @include cx-prefix('transform', 'scale(1.1)');
-	    	}
+    &:hover {
+    	&::before {
+		    opacity: 0.4;
+		    @include cx-prefix('transform', 'scale(1.1)');
+    	}
 
-	    	i {
-				@include cx-prefix('transform', 'scale(1.3)');
-	    	}
-	    }
-	}
+    	i {
+			@include cx-prefix('transform', 'scale(1.3)');
+    	}
+    }
 }

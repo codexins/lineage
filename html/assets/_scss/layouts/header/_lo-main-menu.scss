@@ -39,6 +39,11 @@
                 }
             }
         }
+        &:last-child {
+            a {
+                padding-right: 0;
+            }
+        }
     }
 
     .sub-menu {
@@ -75,34 +80,46 @@
     }
 
     &.header-type-2 {
-        ul {
+        ul:not(.sub-menu) {
             text-align: center;
-        }
-        li {
-            & > a:not(.dd-toggle) {
-                padding-left: 10px;
-                padding-right: 10px;
-                // font-weight: 700;
-                // font-size: 12px;
-                @include respond-to(notebook) {
-                    padding-left: 6px;
-                    padding-right: 6px;
-                    font-size: calculateRem(11.4px);
+            > li {
+                & > a {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    // font-weight: 700;
+                    // font-size: 12px;
+                    @include respond-to(notebook) {
+                        padding-left: 6px;
+                        padding-right: 6px;
+                        font-size: calculateRem(11.4px);
+                    }
+                    // @include respond-to(tablet) {
+                    //     padding: 39px 4px;
+                    //     font-size: 12px;
+                    //     letter-spacing: 0;
+                    // }
                 }
-                // @include respond-to(tablet) {
-                //     padding: 39px 4px;
-                //     font-size: 12px;
-                //     letter-spacing: 0;
+                // &.has-sub {
+                //     > a {
+                //         &::after {
+                //             content: "\f107";
+                //             font-weight: normal;
+                //         }
+                //     }
                 // }
             }
-            // &.has-sub {
-            //     > a {
-            //         &::after {
-            //             content: "\f107";
-            //             font-weight: normal;
-            //         }
-            //     }
-            // }
+        }
+
+    }
+
+    .header-white & {
+        ul:not(.sub-menu) {
+            > li {
+                & > a {
+                    color: $cx-text-color;
+                    text-shadow: none;
+                }
+            }
         }
     }
 }

@@ -18,6 +18,14 @@ header {
 			}
 		}
 	}
+
+	&.header-white {
+		background: lighten($cx-text-color, 100%);
+		.intelligent-header {
+			border-bottom: 1px solid $cx-offset-color;
+			background: lighten($cx-text-color, 100%);
+		}
+	}
 }
 
 .header--fixed {

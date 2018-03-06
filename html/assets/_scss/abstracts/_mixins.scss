@@ -406,6 +406,19 @@
 }
 
 
+//-------------------- Background Gradient Pt 3 --------------------//
+// Usage @include bcg-linear-gradient2('45deg, #eee, #000', '#eee');
+
+@mixin bcg-linear-gradient2($grad, $start-color) { 
+    background: unquote($start-color);
+    background: -webkit-linear-gradient(unquote($grad));
+    background: -moz-linear-gradient(unquote($grad));
+    background: -ms-linear-gradient(unquote($grad));
+    background: -o-linear-gradient(unquote($grad));
+    background: linear-gradient(unquote($grad));
+}
+
+
 //-------------------- Responsive --------------------//
 // Possible $media Values: small-mobile, modile, large-mobile, tablet, notbook, wide
 // Usage @include respond-to(mobile);

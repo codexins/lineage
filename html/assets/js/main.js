@@ -2,29 +2,34 @@
 
 INDEX:
 
-	s00 - Predefined Variables
-	s01 - Preloader
-	s02 - Primary Slider Settings
-	s03 - Primary Slider Background Settings
-	s04 - Full Screen Header
-	s05 - Header Background Video
-	s06 - Header Background Slider
+    s00 - Predefined Variables
+    s01 - Preloader
+    s02 - Primary Slider Settings
+    s03 - Image Background Settings
+    s04 - Full Screen Header
+    s05 - Header Background Video
+    s06 - Header Background Slider
     s07 - Main Navigation Menu
-	s08 - Skill Bars
+    s08 - Skill Bars
+    s09 - Accordion Class
     s12 - Slide left action for Mobile Menu
-	s13 - Simple Image Slider
-	s14 - Testimonial Carousel
+    s13 - Simple Image Slider
+    s13 - Image Carousel
+    s14 - Tabbed Carousel
+    s14 - Testimonial Carousel
     s15 - Client Carousel
     s15 - Services Carousel
-	s15 - Team Carousel
-	s16 - Smooth Scroll to anchor tags
-	s17 - Scroll to Top JS
-	s18 - Placeholder JS
-	s19 - Parallax JS
-	s20 - Blog Grid Background Settings
+    s15 - Team Carousel
+    s16 - Smooth Scroll to anchor tags
+    s17 - Scroll to Top JS
+    s18 - Placeholder JS
+    s19 - Parallax JS
+    s20 - Blog Grid Background Settings
     s21 - Tilt Settings
     s21 - Typed js Settings
-	s22 - Animation Settings
+    s21 - Pie Chart Settings
+    s21 - Flip Settings
+    s22 - Animation Settings
 
 
 ******************************/
@@ -41,36 +46,45 @@ INDEX:
         s00 - Predefined Variables
     *************************************************************/
 
-    var $window 			= $(window),
-        $document 			= $(document),
+    var $window             = $(window),
+        $document           = $(document),
         $slider             = $("#primary-slider"),
-        $vslider 			= $("#primary-slider-with-video"),
-        // $fullscreen 		= $(".sp-slide"),
-        // $fullscreenVideo 	= $("#header_full_screen_video"),
-        $parallax 			= $(".jarallax-default"),
-        $parallaxSlow		= $(".jarallax-slow"),
-        $bgSlide 			= $("#header_bg_slide"),
-        $mainMenu 			= $(".stellarnav"),
-        $pageloader 		= $(".cx-pageloader"),
-        $intelHeader 		= $(".intelligent-header"),
-        $footer 			= $("#colophon"),
-        $counter 			= $(".counter"),
-        $isoContainer 		= $(".portfolio-wrapper"),
-        $isoFilter	 		= $(".portfolio-filter li"),
-        $simpleSlider 		= $(".simple-slider-container"),
+        $vslider            = $("#primary-slider-with-video"),
+        $pslider            = $("#primary-slider-with-particle"),
+        // $fullscreen         = $(".sp-slide"),
+        // $fullscreenVideo    = $("#header_full_screen_video"),
+        $parallax           = $(".jarallax-default"),
+        $parallaxSlow       = $(".jarallax-slow"),
+        $bgImage            = $(".bg-img-wrapper"),
+        $bgSlide            = $("#header_bg_slide"),
+        $mainMenu           = $(".stellarnav"),
+        $pageloader         = $(".animsition"),
+        $intelHeader        = $(".intelligent-header"),
+        $footer             = $("#colophon"),
+        $counter            = $(".counter"),
+        $isoContainer       = $(".portfolio-wrapper"),
+        $isoFilter          = $(".portfolio-filter li"),
+        $accordionEl        = $(".accordion-toggle"),
+        $simpleSlider       = $(".simple-slider-container"),
+        $imageCarousel      = $(".image-carousel-full-width"),
+        $tabbedCarousel     = $(".service-tabs"),
         $testimonial        = $(".testimonial-container"),
-        $testimonialTwo		= $(".testimonial-container-type-2"),
-        // $slickNav 			= $(".testimonial-nav"),
-        // $slickThree 		= $(".testimonial-carousel-type-02"),
+        $testimonialTwo     = $(".testimonial-container-type-2"),
+        $testimonialThree   = $(".testimonial-with-thumbs"),
+        // $slickNav           = $(".testimonial-nav"),
+        // $slickThree         = $(".testimonial-carousel-type-02"),
         $clients            = $(".client-carousel"),
         $services           = $(".services-carousel"),
         $team               = $(".team-carousel"),
-        $skillBar 			= $(".skillbar"),
-        $toTop 				= $("#toTop"),
-        $blogGrid 			= $(".blog-item-grid"),
+        $skillBar           = $(".skillbar"),
+        $toTop              = $("#toTop"),
+        $blogGrid           = $(".blog-item-grid"),
         $tiltEl             = $(".tilt-element"),
-        $typedEl            = $(".typed-element");
-        
+        $typedEl            = $(".typed-element"),
+        $pieChart           = $(".pie-chart"),
+        $pieChart2          = $(".pie-chart-type-2"),
+        $flipEl             = $(".flip-card");
+
     // Check if element exists
     $.fn.cxExists = function() {
         return this.length > 0;
@@ -82,7 +96,25 @@ INDEX:
     *************************************************************/
 
     CODEXIN.preloader = function() {
-		$pageloader.delay(300).fadeOut('fast');
+        $pageloader.animsition({
+            inClass: 'fade-in',
+            outClass: 'fade-out',
+            inDuration: 800,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            loading: true,
+            loadingParentElement: 'body',
+            loadingClass: 'cx-progress',
+            loadingInner: '<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>',
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+        });
     };
 
 
@@ -90,26 +122,26 @@ INDEX:
         s02 - Primary Slider Settings
     *************************************************************/
 
-	CODEXIN.primarySlider = function() {
-		if ($slider.cxExists()) {
-			$slider.sliderPro({
-				width: '100%',
-				// height: '100%',
-				arrows: true,
-				buttons: false,
-				waitForLayers: true,
-				slideDistance: 0,
+    CODEXIN.primarySlider = function() {
+        if ($slider.cxExists()) {
+            $slider.sliderPro({
+                width: '100%',
+                // height: '100%',
+                arrows: true,
+                buttons: false,
+                waitForLayers: true,
+                slideDistance: 0,
                 forceSize: 'fullWindow',
-				autoplay: false,
-				fade: true,
-				breakpoints: {
-					768: {
-						arrows: false
-					}
-				}
-			});
-			$(".sp-slide").append('<div class="section-overlay"></div>');
-		}
+                autoplay: false,
+                fade: true,
+                breakpoints: {
+                    768: {
+                        arrows: false
+                    }
+                }
+            });
+            $(".sp-slide").append('<div class="section-overlay"></div>');
+        }
 
         if ($vslider.cxExists()) {
             $vslider.sliderPro({
@@ -135,27 +167,38 @@ INDEX:
             });
             $(".sp-slide").append('<div class="video-section-overlay"></div>');
         }
-	};
+
+        if ($pslider.cxExists()) {
+            $pslider.sliderPro({
+                width: '100%',
+                height: '600px',
+                arrows: false,
+                buttons: false,
+                touchSwipe: false,
+            });
+            $(".sp-slide").append('<div class="particle-section-overlay"></div>');
+        }
+    };
 
 
     /************************************************************
-        s03 - Primary Slider Background Settings
+        s03 - Image Background Settings
     *************************************************************/
 
-	CODEXIN.primarySliderBgSetting = function() {
-        if ($slider.cxExists()) {
-            $("#primary-slider .sp-slide").each(function() {
+    CODEXIN.imageBgSettings = function() {
+        if ($slider.cxExists() || $pslider.cxExists() || $bgImage.cxExists()) {
+            $(".sp-slide, .bg-img-wrapper").each(function() {
                 var $this = $(this);
-                var img = $this.find(".slider-image").attr("src");
+                var img = $this.find("img.visually-hidden").attr("src");
 
                 $this.find(".image-placeholder").css({
-                    backgroundImage: "url("+ img +")",
+                    backgroundImage: "url(" + img + ")",
                     backgroundSize: "cover",
                     backgroundPosition: "center center"
                 })
             });
         }
-	};
+    };
 
 
     /************************************************************
@@ -163,12 +206,11 @@ INDEX:
     *************************************************************/
 
     CODEXIN.fullscreenHeader = function() {
-	    if ( $window.width() > 991) {   
-			$fullscreen.css("height", window.innerHeight);
-	    } 
-	    else {
-	      	$fullscreen.css("height", "500px");
-	    }
+        if ($window.width() > 991) {
+            $fullscreen.css("height", window.innerHeight);
+        } else {
+            $fullscreen.css("height", "500px");
+        }
     };
 
 
@@ -177,17 +219,17 @@ INDEX:
     *************************************************************/
 
     CODEXIN.fullscreenVideoHeader = function() {
-	    if ($fullscreenVideo.cxExists()) {
-	        $fullscreenVideo.wallpaper({
-	            source: {
-	                poster: "assets/img/slider/home-2/poster.jpg",
-	                webm: "assets/videos/video.webm",
-	                mp4: "assets/videos/video.mp4",
-	                ogg: "assets/videos/video.ogv"
-	            }
+        if ($fullscreenVideo.cxExists()) {
+            $fullscreenVideo.wallpaper({
+                source: {
+                    poster: "assets/img/slider/home-2/poster.jpg",
+                    webm: "assets/videos/video.webm",
+                    mp4: "assets/videos/video.mp4",
+                    ogg: "assets/videos/video.ogv"
+                }
 
-	        });
-	    }
+            });
+        }
     };
 
 
@@ -195,22 +237,21 @@ INDEX:
         s06 - Header Background Slider
     *************************************************************/
 
-	CODEXIN.backgroundSliderHeader = function() {
-	    if ($bgSlide.cxExists()) {
-	        $bgSlide.backstretch([
-	            "assets/img/slider/home-4/slide-1.jpg",
-	            "assets/img/slider/home-4/slide-2.jpg",
-	            "assets/img/slider/home-4/slide-3.jpg" 
-	        ], 
-	        {
-	            duration: 4000,
-	            fade: 750,
-	            preload: 0,
-	            start: 2
+    CODEXIN.backgroundSliderHeader = function() {
+        if ($bgSlide.cxExists()) {
+            $bgSlide.backstretch([
+                "assets/img/slider/home-4/slide-1.jpg",
+                "assets/img/slider/home-4/slide-2.jpg",
+                "assets/img/slider/home-4/slide-3.jpg"
+            ], {
+                duration: 4000,
+                fade: 750,
+                preload: 0,
+                start: 2
 
-	        });
-	    }
-	};
+            });
+        }
+    };
 
 
     /************************************************************
@@ -218,45 +259,60 @@ INDEX:
     *************************************************************/
 
     CODEXIN.mainNav = function() {
-		$mainMenu.stellarNav({
-			theme     : 'plain',
-			breakpoint: 768,
-			phoneBtn: '+1234567890',
-			position: 'right',
-			showArrows: true,
-			closeBtn     : false,
-			scrollbarFix: false
-		});
+        $mainMenu.stellarNav({
+            theme: 'plain',
+            breakpoint: 768,
+            phoneBtn: '+1234567890',
+            position: 'right',
+            showArrows: true,
+            closeBtn: false,
+            scrollbarFix: false
+        });
 
-	    // Submenu Intelligent hover functionality
-	    $mainMenu.on('mouseover', ".sub-menu", function() {
-	        var menu = $(this);
-	        var child_menu = $(this).find('ul');
-	        if ($(menu).offset().left + $(menu).width() + $(child_menu).width() > $window.width()) {
-	            $(child_menu).css({
-	                "left": "inherit",
-	                "right": "100%"
-	            });
-	        }
-	    });
-	};
+        // Submenu Intelligent hover functionality
+        $mainMenu.on('mouseover', ".sub-menu", function() {
+            var menu = $(this);
+            var child_menu = $(this).find('ul');
+            if ($(menu).offset().left + $(menu).width() + $(child_menu).width() > $window.width()) {
+                $(child_menu).css({
+                    "left": "inherit",
+                    "right": "100%"
+                });
+            }
+        });
+    };
 
 
     /************************************************************
         s08 - Intelligent Header Space
     *************************************************************/
 
-	CODEXIN.elementHeights = function() {
+    CODEXIN.elementHeights = function() {
         var headerHeight = $intelHeader.outerHeight();
         var footerHeight = $footer.outerHeight();
 
         $(".intelligent-header-space").height(headerHeight);
 
         if ($(".fixed-footer").cxExists()) {
-	        if ( $window.width() > 767) {  
-		        $("#whole").css('margin-bottom', footerHeight);
-		    }
-		}
+            if ($window.width() > 767) {
+                $("#whole").css('margin-bottom', footerHeight);
+            }
+        }
+    };
+
+
+    /************************************************************
+        s09 - Accordion Class
+    *************************************************************/
+
+    CODEXIN.accordionClass = function() {
+        $accordionEl.on('click', function(){
+            $(this).closest('.panel-group').children().each(function(){
+                $(this).find('>.panel-heading').removeClass('active');
+                });
+
+            $(this).closest('.panel-heading').toggleClass('active');
+        });
     };
 
 
@@ -265,22 +321,22 @@ INDEX:
     *************************************************************/
 
     CODEXIN.headerAutoHide = function() {
-	    var navContainer = document.querySelector(".intelligent-header");
-	    // construct an instance of Headroom, passing the element
-	    var headroom = new Headroom(navContainer);
-	    // initialise
-	    headroom.init();
+        var navContainer = document.querySelector(".intelligent-header");
+        // construct an instance of Headroom, passing the element
+        var headroom = new Headroom(navContainer);
+        // initialise
+        headroom.init();
 
-	    $window.on('scroll', function() {
-	        var height = $window.scrollTop();
+        $window.on('scroll', function() {
+            var height = $window.scrollTop();
 
-	        if (height < 200) {
-	            $intelHeader.removeClass('scrolling-up');
-	        } else {
-	            $intelHeader.addClass('scrolling-up');
-	        }
-	    });
-	};
+            if (height < 200) {
+                $intelHeader.removeClass('scrolling-up');
+            } else {
+                $intelHeader.addClass('scrolling-up');
+            }
+        });
+    };
 
 
     /************************************************************
@@ -288,14 +344,14 @@ INDEX:
     *************************************************************/
 
     CODEXIN.animatedCounter = function() {
-    	if ($counter.cxExists()) {
-        	$counter.each(function () {
-         		var $elem = $(this);                 
-           		$elem.appear(function () {
-             		$elem.find('.timer').countTo();
-          		});                  
-        	});
-	    }
+        if ($counter.cxExists()) {
+            $counter.each(function() {
+                var $elem = $(this);
+                $elem.appear(function() {
+                    $elem.find('.timer').countTo();
+                });
+            });
+        }
     };
 
 
@@ -304,39 +360,39 @@ INDEX:
     *************************************************************/
 
     CODEXIN.portfolioIsotope = function() {
-    	if ($isoContainer.cxExists()) {
-	        $isoContainer.imagesLoaded(function() {
-	            $isoContainer.isotope({
-	                itemSelector: ".portfolio",
-	                layoutMode: 'masonry',
-	                stagger: 60,
+        if ($isoContainer.cxExists()) {
+            $isoContainer.imagesLoaded(function() {
+                $isoContainer.isotope({
+                    itemSelector: ".portfolio",
+                    layoutMode: 'masonry',
+                    stagger: 60,
                     percentPosition: true
-	            });
-	        });
+                });
+            });
 
-	        $isoFilter.on('click', function(e) {
-	            var $this = $(this);
-	            var $filter = $this.attr('data-filter');
+            $isoFilter.on('click', function(e) {
+                var $this = $(this);
+                var $filter = $this.attr('data-filter');
 
-	            $isoContainer.isotope({
-	                filter: $filter
-	            });
+                $isoContainer.isotope({
+                    filter: $filter
+                });
 
-	            $isoFilter.removeClass('active');
-	            $this.addClass('active');
-	        });
+                $isoFilter.removeClass('active');
+                $this.addClass('active');
+            });
 
-		    //Targeting Portfolio a tag for click event
-		    $(".portfolio .primary-title").on('click', function(e) {
-		        $(this).find("a.clickable").first().click();
-		    });
+            //Targeting Portfolio a tag for click event
+            $(".portfolio").on('click', function(e) {
+                $(this).find("a.clickable").first().click();
+            });
 
-		    $(".portfolio .primary-title a.clickable").on('click', function(e) {
-		        e.stopPropagation();
-		    });
+            $(".portfolio a.clickable").on('click', function(e) {
+                e.stopPropagation();
+            });
 
-	    }
-	};
+        }
+    };
 
 
     /************************************************************
@@ -345,16 +401,16 @@ INDEX:
 
     CODEXIN.skillBars = function() {
         if ($skillBar.cxExists()) {
-            $skillBar.each(function () {
-                var $elem = $(this);                 
-                $elem.appear(function () {
+            $skillBar.each(function() {
+                var $elem = $(this);
+                $elem.appear(function() {
                     $elem.skillBars({
                         from: 0,
                         speed: 2500,
                         interval: 100,
                         decimals: 0
                     });
-                });                  
+                });
             });
         }
     };
@@ -382,14 +438,14 @@ INDEX:
             $slideBtnLeft.addEventListener('click', function(e) {
                 e.preventDefault;
                 slideMenuLeft.open();
-                });
+            });
         }
 
         /**
          * Push left instantiation and action.
          */
         if ($("#c-button--push-left").cxExists()) {
-            var pushBtnLeft   = document.querySelector("#c-button--push-left");
+            var pushBtnLeft = document.querySelector("#c-button--push-left");
             var pushMenuLeft = new Menu({
                 wrapper: "#whole",
                 type: "push-left",
@@ -425,7 +481,7 @@ INDEX:
          * Push right instantiation and action.
          */
         if ($("#c-button--push-right").cxExists()) {
-            var pushBtnRight  = document.querySelector("#c-button--push-right");
+            var pushBtnRight = document.querySelector("#c-button--push-right");
             var pushMenuRight = new Menu({
                 wrapper: "#whole",
                 type: "push-right",
@@ -464,44 +520,129 @@ INDEX:
     *************************************************************/
 
     CODEXIN.simpleImageSlider = function() {
-	    if ($simpleSlider.cxExists()) {
-  			var imageSlider = new Swiper ($simpleSlider, {
-				loop: true,
-    			effect: "fade",
-    			speed: 1000,
-    			roundLengths: true,
-				autoplay: {
-	    			delay: 3000
-				},
-    			pagination: {
-      				el: '.swiper-pagination',
-      				clickable: true
-			    }
-		  	})
-	    }
-	};
+        if ($simpleSlider.cxExists()) {
+            var imageSlider = new Swiper($simpleSlider, {
+                loop: true,
+                effect: "fade",
+                speed: 1000,
+                roundLengths: true,
+                autoplay: {
+                    delay: 3000
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                navigation: {
+                    nextEl: '.arrow-right',
+                    prevEl: '.arrow-left',
+                },
+            })
+        }
+    };
+
+
+    /************************************************************
+        s13 - Simple Image Carousel
+    *************************************************************/
+
+    CODEXIN.simpleImageCarousel = function() {
+        if ($imageCarousel.cxExists()) {
+            var imageSlider = new Swiper($imageCarousel, {
+                loop: true,
+                effect: "slide",
+                speed: 1000,
+                slidesPerView: 5,
+                centeredSlides : true,
+                grabCursor: true,
+                roundLengths: true,
+                autoplay: {
+                    delay: 3000
+                },
+
+                // Responsive breakpoints
+                breakpoints: {
+                    992: {
+                        slidesPerView: 3,
+                    },
+                    769: {
+                        slidesPerView: 2,
+                        centeredSlides : false,
+                    },
+                    481: {
+                        slidesPerView: 1,
+                    }
+                }
+            })
+        }
+    };
+
+
+    /************************************************************
+        s13 - Simple Image Slider
+    *************************************************************/
+
+    CODEXIN.tabbledSlider = function() {
+        if ($tabbedCarousel.cxExists()) {
+
+            function setCurrentSlide(ele,index){
+                $(".nav-swiper .swiper-slide").removeClass("selected");
+                ele.addClass("selected");
+            }
+
+            var navSwiper = new Swiper('.nav-swiper', {
+                slidesPerView: 6,
+                paginationClickable: true,
+                freeMode: true,
+                loop: false,
+                simulateTouch: false
+            });
+
+            navSwiper.slides.each(function(index,val){
+                var ele = $(this);
+                ele.on("click",function(){
+                    setCurrentSlide(ele,index);
+                    swiperContent.slideTo(index, 1000, false);
+                });
+            });
+
+            var swiperContent = new Swiper ('.swiper-content', {
+                direction: 'horizontal',
+                loop: false,
+                autoHeight: true,
+                simulateTouch: false
+            });
+        }
+    };
 
 
     /************************************************************
         s14 - Testimonial Carousel
     *************************************************************/
 
-	CODEXIN.testimonialCarousel = function() {
-		if ($testimonial.cxExists()) {
-  			var testimonial = new Swiper ($testimonial, {
-			    loop: true,
-			    spaceBetween: 40,
-			    grabCursor: true,
-			    pagination: {
-			      	el: '.swiper-pagination',
-			      	clickable: true
-			    }
-			});
+    CODEXIN.testimonialCarousel = function() {
+        if ($testimonial.cxExists()) {
+            var testimonial = new Swiper($testimonial, {
+                loop: true,
+                spaceBetween: 40,
+                grabCursor: true,
+                parallax: true,
+                speed: 700,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+
+                navigation: {
+                    nextEl: '.arrow-right',
+                    prevEl: '.arrow-left',
+                },
+            });
         }
 
 
         if ($testimonialTwo.cxExists()) {
-            var testimonialTwo = new Swiper ($testimonialTwo, {
+            var testimonialTwo = new Swiper($testimonialTwo, {
                 loop: true,
                 slidesPerView: 3,
                 slidesPerGroup: 3,
@@ -524,7 +665,60 @@ INDEX:
                 }
             });
         }
-	};
+
+        if ($testimonialThree.cxExists()) {
+            // Params
+            var mainSliderSelector = '.main-slider',
+                navSliderSelector = '.nav-slider';
+
+            // Main Slider
+            var mainSliderOptions = {
+                    loop: true,
+                    speed:1000,
+                    loopAdditionalSlides: 10,
+                    grabCursor: true,
+                    parallax: true,
+                    watchSlidesProgress: true,
+                    navigation: {
+                        nextEl: '.arrow-right',
+                        prevEl: '.arrow-left',
+                    },
+                };
+            var mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
+
+            // Navigation Slider
+            var navSliderOptions = {
+                    loop: true,
+                    loopAdditionalSlides: 10,
+                    speed:1000,
+                    slidesPerView: 5,
+                    centeredSlides : true,
+                    spaceBetween: 20,
+                    touchRatio: 0.2,
+                    slideToClickedSlide: true,
+                    // Responsive breakpoints
+                    breakpoints: {
+                        992: {
+                            slidesPerView: 3,
+                            centeredSlides : true
+                        },
+                        768: {
+                            slidesPerView: 1,
+                            centeredSlides : true
+                        }
+                    }
+
+                };
+            var navSlider = new Swiper(navSliderSelector, navSliderOptions);
+
+            // Matching sliders
+            mainSlider.controller.control = navSlider;
+            navSlider.controller.control = mainSlider;
+
+            // Overlay
+            $(".nav-slider .swiper-slide").append('<div class="thumb-overlay"></div>');
+        }
+    };
 
 
     /************************************************************
@@ -532,16 +726,16 @@ INDEX:
     *************************************************************/
 
     CODEXIN.clientCarousel = function() {
-    	if ($clients.cxExists()) {
-  			var client = new Swiper ($clients, {
-			    loop: true,
-				slidesPerView: 5,
-				spaceBetween: 30,
-				centeredSlides: true,
-			    grabCursor: true,
-				autoplay: {
-	    			delay: 3000
-				},
+        if ($clients.cxExists()) {
+            var client = new Swiper($clients, {
+                loop: true,
+                slidesPerView: 5,
+                spaceBetween: 30,
+                centeredSlides: true,
+                grabCursor: true,
+                autoplay: {
+                    delay: 3000
+                },
 
                 // Responsive breakpoints
                 breakpoints: {
@@ -559,9 +753,9 @@ INDEX:
                         slidesPerView: 2,
                     }
                 }
-			})
-  		}
-	};
+            })
+        }
+    };
 
 
     /************************************************************
@@ -570,7 +764,7 @@ INDEX:
 
     CODEXIN.servicesCarousel = function() {
         if ($services.cxExists()) {
-            var service = new Swiper ($services, {
+            var service = new Swiper($services, {
                 loop: true,
                 slidesPerView: 3,
                 spaceBetween: 30,
@@ -606,7 +800,7 @@ INDEX:
 
     CODEXIN.teamCarousel = function() {
         if ($team.cxExists()) {
-            var people = new Swiper ($team, {
+            var people = new Swiper($team, {
                 loop: true,
                 slidesPerView: 4,
                 spaceBetween: 30,
@@ -639,17 +833,17 @@ INDEX:
         s16 - Smooth Scroll to anchor tags
     *************************************************************/
 
-	CODEXIN.smoothScroll = function() {
+    CODEXIN.smoothScroll = function() {
         $('.explore').on('click', function(event) {
             var target = $(this.getAttribute('href'));
-            if( target.length ) {
+            if (target.length) {
                 event.preventDefault ? event.preventDefault() : (event.returnValue = false);
                 $('html, body').stop().animate({
                     scrollTop: target.offset().top + 30
-                }, 1500, 'easeInOutQuint');
+                }, 1500, 'easeInOutExpo');
             }
         });
-	};
+    };
 
 
     /************************************************************
@@ -657,20 +851,21 @@ INDEX:
     *************************************************************/
 
     CODEXIN.scrollToTop = function() {
-	    $window.on('scroll', function() {
-	        if ($window.scrollTop() > 200) {
-	            $toTop.fadeIn();
-	        } else {
-	            $toTop.fadeOut();
-	        }
-	    });
+        $toTop.hide();
+        $window.on('scroll', function() {
+            if ($window.scrollTop() > 200) {
+                $toTop.fadeIn();
+            } else {
+                $toTop.fadeOut();
+            }
+        });
 
-	    $toTop.on('click', function() {
-	        $("html,body").animate({
-	            scrollTop: 0
-	        }, 800)
-	    }); //scrollup finished
-	};
+        $toTop.on('click', function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 1500, 'easeInOutExpo')
+        }); //scrollup finished
+    };
 
 
     /************************************************************
@@ -714,15 +909,15 @@ INDEX:
     *************************************************************/
 
     CODEXIN.parallaxInit = function() {
-    	if ( $window.width() > 768) {
-	        $parallax.jarallax({
-				speed: 0.6
-			});
+        if ($window.width() > 768) {
+            $parallax.jarallax({
+                speed: 0.6
+            });
 
-	        $parallaxSlow.jarallax({
-				speed: 0.2
-			});
-	    }
+            $parallaxSlow.jarallax({
+                speed: 0.2
+            });
+        }
     };
 
 
@@ -730,35 +925,35 @@ INDEX:
         s20 - Blog Grid Background Settings
     *************************************************************/
 
-	CODEXIN.blogGridBgSetting = function() {
+    CODEXIN.blogGridBgSetting = function() {
         if ($blogGrid.cxExists()) {
             $blogGrid.each(function() {
                 var $this = $(this);
                 var img = $this.find(".post-image img").attr("src");
 
                 $this.find(".post-image").css({
-                    backgroundImage: "url("+ img +")",
+                    backgroundImage: "url(" + img + ")",
                     backgroundSize: "cover",
                     backgroundPosition: "center center"
                 })
             });
         }
-	};
+    };
 
 
     /************************************************************
         s21 - Tilt Settings
     *************************************************************/
 
-	CODEXIN.tiltSetting = function() {
+    CODEXIN.tiltSetting = function() {
         if ($tiltEl.cxExists()) {
-			$tiltEl.tilt({
-				maxTilt:        18,
-				perspective:    2200,
-				easing:         "cubic-bezier(.2,1,.22,1)",    // Easing on enter/exit.
-			});
+            $tiltEl.tilt({
+                maxTilt: 15,
+                perspective: 1140,
+                easing: "cubic-bezier(.2,1,.22,1)", // Easing on enter/exit.
+            });
         }
-	};
+    };
 
 
     /************************************************************
@@ -767,9 +962,14 @@ INDEX:
 
     CODEXIN.typedSetting = function() {
         if ($typedEl.cxExists()) {
-              var typedElm = new Typed(".typed-element", {
-                    strings: ["Developers", "Designers", "People", "Leneage!^2000"],
-                    typeSpeed: 120,
+
+            $typedEl.each(function() {
+                var $this = $(this);
+                var typedStrings = $this.attr("data-typed-strings") ? $this.attr("data-typed-strings").split(",") : [];
+
+                $this = new Typed(".typed-element", {
+                    strings: typedStrings,
+                    typeSpeed: 100,
                     startDelay: 100,
                     backSpeed: 30,
                     backDelay: 500,
@@ -780,24 +980,99 @@ INDEX:
                     attr: null,
                     contentType: 'html',
                 });
+            })
         }
     };
 
+
+    /************************************************************
+        s21 - Pie Chart Settings
+    *************************************************************/
+
+    CODEXIN.pieChartSetting = function() {
+        if ($pieChart.cxExists()) {
+            $pieChart.each(function() {
+                var $elem = $(this);
+                $elem.appear(function() {
+                    $elem.easyPieChart({
+                        easing: 'cubic-bezier(.2,1,.22,1)',
+                        scaleColor: false,
+                        animate: ({ duration: 2000, enabled: true }),
+                        lineWidth: 24,
+                        trackWidth: 16,
+                        trackColor: "#c6e7e5",
+                        lineCap: 'butt',
+                        barColor: function(percent) {
+                            var ctx = this.renderer.getCtx();
+                            var canvas = this.renderer.getCanvas();
+                            var gradient = ctx.createLinearGradient(0,0,canvas.width,0);
+                                gradient.addColorStop(0, "#d7706d");
+                                gradient.addColorStop(1, "#947cb0");
+                            return gradient;
+                        },
+                        onStep: function(from, to, percent) {
+                            $(this.el).find('.pie-percent').text(Math.round(percent));
+                        }
+                    });
+                });
+            });
+
+        }
+
+        if ($pieChart2.cxExists()) {
+
+            $pieChart2.each(function() {
+                var $elem = $(this);
+                $elem.appear(function() {
+                    $elem.easyPieChart({
+                        easing: 'cubic-bezier(.2,1,.22,1)',
+                        scaleColor: false,
+                        animate: ({ duration: 2000, enabled: true }),
+                        lineWidth: 5,
+                        trackWidth: 5,
+                        trackColor: "transparent",
+                        lineCap: 'butt',
+                        barColor: '#947cb0',
+                        onStep: function(from, to, percent) {
+                            $(this.el).find('.pie-percent').text(Math.round(percent));
+                        }
+                    });
+                });
+            });
+        }
+    };
+
+
+    /************************************************************
+        s21 - Flip Settings
+    *************************************************************/
+
+    CODEXIN.flipSetting = function() {
+        if ($flipEl.cxExists()) {
+            $flipEl.flip({
+                trigger: 'hover',
+                reverse: true
+            });
+        }
+    };
 
     /************************************************************
         s22 - Animation Settings
     *************************************************************/
 
     CODEXIN.animationSetting = function() {
-        if ( $window.width() > 991) {   
-            window.sr = ScrollReveal({ reset: true, scale: 1 });
-            sr.reveal('.animation-left', { origin: 'left', delay: 100 } );
-            sr.reveal('.animation-right', { origin: 'right', delay: 150 } );
-            sr.reveal('.animation-bottom', { origin: 'bottom', delay: 200 } );
-            sr.reveal('.section-heading h4', { origin: 'left', delay: 100 } );
-            sr.reveal('.section-heading h2', { origin: 'right', delay: 150 } );
-            sr.reveal('.section-heading .subtitle', { origin: 'bottom', delay: 200 } );
-            sr.reveal('.info-item', { origin: 'right' }, 100);
+        if ($window.width() > 991) {
+            window.sr = ScrollReveal({ scale: 1 });
+            sr.reveal('.animation-left', { origin: 'left', delay: 100 });
+            sr.reveal('.animation-right', { origin: 'right', delay: 150 });
+            sr.reveal('.animation-bottom', { origin: 'bottom', delay: 200 });
+            sr.reveal('.section-heading h4', { origin: 'left', delay: 100 });
+            sr.reveal('.section-heading h2', { origin: 'right', delay: 150 });
+            sr.reveal('.section-heading .subtitle', { origin: 'bottom', delay: 200 });
+            sr.reveal('.page-title-heading', { origin: 'bottom', delay: 400 });
+            sr.reveal('.page-subtitle', { origin: 'bottom', delay: 600 });
+            sr.reveal('.breadcrumb-container', { origin: 'bottom', delay: 800 });
+            sr.reveal('.info-item:not(.no-animation)', { origin: 'right' }, 100);
             sr.reveal('.info-item.boxed', { origin: 'bottom' }, 200);
             sr.reveal('.counter-item', { origin: 'right' }, 200);
             sr.reveal('.feature-box', { origin: 'right' }, 200);
@@ -812,35 +1087,43 @@ INDEX:
 
     // Window load functions
     $window.on('load', function() {
-        CODEXIN.preloader(),
-        CODEXIN.primarySliderBgSetting(),
+        CODEXIN.primarySlider(),
+        CODEXIN.imageBgSettings(),
         CODEXIN.blogGridBgSetting(),
         CODEXIN.parallaxInit(),
+        CODEXIN.typedSetting(),
+        CODEXIN.tabbledSlider(),
+        CODEXIN.skillBars(),
         CODEXIN.portfolioIsotope();
     });
 
     // Document ready functions
     $document.on('ready', function() {
-    	CODEXIN.primarySlider(),
-    	// CODEXIN.fullscreenVideoHeader(),
-    	// CODEXIN.backgroundSliderHeader(),
-    	CODEXIN.mainNav(),
-    	CODEXIN.headerAutoHide(),
-    	CODEXIN.animatedCounter(),
+        CODEXIN.preloader(),
+        // CODEXIN.primarySlider(),
+        // CODEXIN.fullscreenVideoHeader(),
+        // CODEXIN.backgroundSliderHeader(),
+        CODEXIN.mainNav(),
+        CODEXIN.headerAutoHide(),
+        CODEXIN.animatedCounter(),
         CODEXIN.responsiveMenu(),
-    	CODEXIN.responsiveSubMenu(),
-    	CODEXIN.simpleImageSlider(),
-    	CODEXIN.testimonialCarousel(),
+        CODEXIN.responsiveSubMenu(),
+        CODEXIN.simpleImageSlider(),
+        CODEXIN.simpleImageCarousel(),
+        CODEXIN.testimonialCarousel(),
         CODEXIN.clientCarousel(),
         CODEXIN.servicesCarousel(),
-    	CODEXIN.teamCarousel(),
+        CODEXIN.teamCarousel(),
         CODEXIN.smoothScroll(),
-    	CODEXIN.skillBars(),
-    	CODEXIN.scrollToTop(),
+        // CODEXIN.skillBars(),
+        CODEXIN.accordionClass(),
+        CODEXIN.pieChartSetting(),
+        CODEXIN.scrollToTop(),
         CODEXIN.tiltSetting(),
-    	CODEXIN.typedSetting(),
+        // CODEXIN.typedSetting(),
+        CODEXIN.flipSetting(),
         CODEXIN.placeHolders(),
-    	CODEXIN.animationSetting();
+        CODEXIN.animationSetting();
     });
 
     // Window load and resize functions
@@ -849,26 +1132,25 @@ INDEX:
         CODEXIN.elementHeights();
     });
 
-$("#modal-iframe").iziModal({
-    headerColor: '#000',
-    background: 'black',
-    // title: 'iziModal with iframe',
-    // subtitle: 'Video example using the Vimeo embed.',
-    icon: 'icon-settings_system_daydream',
-    overlayClose: true,
-    iframe : true,
-    iframeURL: 'https://www.youtube.com/embed/7e90gBu4pas?autoplay=1',
-    fullscreen: true,
-    openFullscreen: false,
-    borderBottom: false
-});
+    $("#modal-iframe").iziModal({
+        headerColor: '#000',
+        background: 'black',
+        // title: 'iziModal with iframe',
+        // subtitle: 'Video example using the Vimeo embed.',
+        icon: 'icon-settings_system_daydream',
+        overlayClose: true,
+        iframe: true,
+        iframeURL: 'https://www.youtube.com/embed/7e90gBu4pas?autoplay=1',
+        fullscreen: true,
+        openFullscreen: false,
+        borderBottom: false
+    });
 
 
-$(document).on('click', '.trigger-iframe', function (event) {
-    event.preventDefault();
-    $('#modal-iframe').iziModal('open', event);
-});
-
+    $(document).on('click', '.trigger-iframe', function(event) {
+        event.preventDefault();
+        $('#modal-iframe').iziModal('open', event);
+    });
 
 
 

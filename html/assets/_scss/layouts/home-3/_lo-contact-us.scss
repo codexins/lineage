@@ -1,0 +1,85 @@
+/**
+ * layout home-3/ contact us
+ *
+ */
+
+.contact-us-section {
+	@extend %mb0;
+	@extend %vpadding;
+
+	.box-wrapper {
+		position: relative;
+	    padding-bottom: 10px;
+	    margin-bottom: 35px;
+	    border-bottom: 1px solid darken($cx-border-color, 50%);
+		
+
+		i {
+			font-size: calculateRem(22px);
+			border: 1.2px solid $cx-text-color;
+			@include box(55px);
+			@include border-radius(50%);
+			@include abs-position(0, auto, auto, 0);
+			@extend %cx-transition;
+		}
+
+		.info-wrapper {
+			padding-left: $cx-section-spacing;
+
+			h4 {
+			    margin-bottom: 5px;
+			    font-weight: 400;
+			    font-size: calculateRem(18px);
+			    letter-spacing: 0.5px;
+			}
+
+			p,
+			a {
+				color: $cx-text-color;
+			}
+
+			a {
+				&:hover {
+					color: $cx-secondary-color;
+				}
+			}
+		}
+
+		&:last-child {
+			border: 0;
+			padding: 0;
+			margin: 0;
+		}
+
+		&:hover {
+			i {
+		    	@include transform-translateY(-4px);
+		    	@extend .spreaded-shadow;
+			}
+		}
+
+		&.white-text {
+			color: lighten($cx-text-color, 100%);
+
+			i {
+				border-color: lighten($cx-text-color, 100%);
+			}
+
+			p,
+			a {
+				font-weight: 300;
+				color: lighten($cx-text-color, 50%);
+			}
+
+			a {
+				&:hover {
+					color: lighten($cx-text-color, 100%);
+				}
+			}
+		}
+	}
+
+	#gmap {
+		height: 600px;
+	}
+}

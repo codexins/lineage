@@ -1,0 +1,14 @@
+/**
+ * layout home-3/ values
+ *
+ */
+
+.our-values-section {
+	@extend %mb0;
+	@extend %vpadding;
+
+	.image-placeholder {
+		height: 450px;
+	}
+
+}

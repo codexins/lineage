@@ -64,9 +64,10 @@ section {
 		padding: 0;
 	    font-size: 1em;
 	    font-weight: normal;
+	    @extend %color-white;
 
 		a {
-			color: lighten($cx-primary-color, 100%);
+			@extend %color-white;
 
 		}
 	}
@@ -119,6 +120,10 @@ section {
 
 .left-bordered {
 	@extend %cx-left-border;
+}
+
+.border-offset {
+	border-color: $cx-offset-color;
 }
 
 
@@ -190,6 +195,16 @@ section {
 
 .pb-half {
 	@extend %pb-half;
+}
+
+// padding 
+
+.wrapper-with-right-padding {
+	padding-right: $cx-heading-margin-bottom;
+}
+
+.wrapper-with-left-padding {
+	padding-left: $cx-heading-margin-bottom;
 }
 
 // Background Colors
@@ -273,6 +288,72 @@ $border-colors-count: length($border-colors);
 	}
 }
 
+// Social Media Colors
+
+.bg-facebook {
+	background: $facebook-color;
+	&:hover {
+		background: darken($facebook-color, 10%);
+	}
+}
+
+.bg-twitter {
+	background: $twitter-color;
+	&:hover {
+		background: darken($twitter-color, 10%);
+	}
+}
+
+.bg-gplus {
+	background: $gplus-color;
+	&:hover {
+		background: darken($gplus-color, 10%);
+	}
+}
+
+.bg-pinterest {
+	background: $pinterest-color;
+	&:hover {
+		background: darken($pinterest-color, 10%);
+	}
+}
+
+.bg-linkedin {
+	background: $linkedin-color;
+	&:hover {
+		background: darken($linkedin-color, 10%);
+	}
+}
+
+.bg-instagram {
+	background: $instagram-color;
+	&:hover {
+		background: darken($instagram-color, 10%);
+	}
+}
+
+.bg-skype {
+	background: $skype-color;
+	&:hover {
+		background: darken($skype-color, 10%);
+	}
+}
+
+.bg-youtube {
+	background: $youtube-color;
+	&:hover {
+		background: darken($youtube-color, 10%);
+	}
+}
+
+.bg-reddit {
+	background: $reddit-color;
+	&:hover {
+		background: darken($reddit-color, 10%);
+	}
+}
+
+
 // overlay
 
 .section-overlay {
@@ -287,6 +368,17 @@ $border-colors-count: length($border-colors);
     @include bcg-linear-gradient(110deg, darken($cx-tertiary-color, 10%), darken($cx-tertiary-color, 10%));
 }
 
+.page-title-overlay,
+.particle-section-overlay {
+	opacity: 0.7;
+	@include abs-position(0, 0, 0, 0);
+    @include bcg-linear-gradient(110deg, darken(#000, 10%), darken($cx-tertiary-color, 10%));
+}
+
+.default-overlay {
+	@include cx-overlay(rgba(#000, 0.45));
+}
+
 // Flex\
 
 .flex-eq-height {
@@ -299,6 +391,10 @@ $border-colors-count: length($border-colors);
     @include cx-box-shadow('0 27px 60px -25px rgba(0, 0, 0, 0.3)');
 }
 
+.spreaded-shadow {
+	@include cx-box-shadow('0 60px 135px rgba(0,0,0,0.15), 0 15px 65px rgba(0,0,0,0.15);');
+}
+
 // tilt
 
 .tilt-element {
@@ -306,7 +402,7 @@ $border-colors-count: length($border-colors);
 }
 
 .tilt-child {
-	@include cx-prefix('transform', 'translateZ(20px)');
+	@include cx-prefix('transform', 'translateZ(30px)');
 }
 
 // Border-radius
@@ -315,3 +411,32 @@ $border-colors-count: length($border-colors);
 	@extend %rounded-corners;
 }
 
+.circle {
+	@include border-radius(50%);
+}
+
+// equal height by display: table
+
+.eqheight {
+	@extend %eqheight;
+}
+
+
+// Overflow
+
+.overflow-hidden {
+	@extend %overflow-hidden;
+}
+
+// Icon style
+
+.icon-check {
+	i {
+		font-size: calculateRem(13px);
+		padding: 3px;
+		margin-right: 15px;
+		color: $cx-secondary-color;
+		border: 2px solid $cx-secondary-color;
+		@include border-radius(50%);
+	}
+}

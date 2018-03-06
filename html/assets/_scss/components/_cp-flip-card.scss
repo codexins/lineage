@@ -1,0 +1,17 @@
+/**
+ * Components Flip Card
+ *
+ */
+
+.flip-card {
+    min-height: 425px;
+
+    .front,
+    .back {
+    	position: relative;
+    }
+
+	.flip-img {
+		width: 100%;
+	}
+}

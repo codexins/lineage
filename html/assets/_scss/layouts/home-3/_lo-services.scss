@@ -1,0 +1,29 @@
+/**
+ * layout home-03/ Services
+ *
+ */
+
+.flex-eq-height {
+	@include media-only(993px, min) {
+		@include cx-prefix('display', 'flex');
+		@include cx-prefix('flex-wrap', 'wrap');
+	}
+}
+
+.no-flexbox .flex-eq-height {
+	display: block;
+}
+
+
+.our-services {
+	.flex-eq-height {
+		.rb-bordered,
+		.bottom-bordered,
+		.right-bordered,
+		.left-bordered {
+			@include media-only(notebook, max) {
+				border:0;
+			}
+		}
+	}
+}

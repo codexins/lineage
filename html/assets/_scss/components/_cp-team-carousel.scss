@@ -23,6 +23,7 @@
 
 .team-member {
 	&.type-2 {
+	    border-top: 4px solid $cx-secondary-color;
 		@include cx-prefix('box-shadow', 'none');
 
 		.team-social-wrapper {
