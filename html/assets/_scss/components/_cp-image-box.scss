@@ -36,6 +36,7 @@
 			}
 
 			h2 {
+				font-size: calculateRem(24px);
 				font-weight: 500;
 				@extend %mb0;
 				@extend %cx-transition;

@@ -52,6 +52,15 @@
 	    font-size: 12px;
 	    min-width: 135px;
 	}
+
+	&.secondary {
+		border-color: $cx-secondary-color;
+		background: $cx-secondary-color;
+		color: lighten($cx-text-color, 100%);
+		&:hover {
+			border-color: $cx-primary-color;
+		}
+	}
 }
 
 

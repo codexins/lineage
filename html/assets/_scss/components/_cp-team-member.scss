@@ -208,6 +208,7 @@
 		padding: $cx-heading-margin-bottom;
 		text-align: center;
 		border-top: 5px solid $gplus-color;
+		@include cx-prefix('backface-visibility', 'hidden');
 	}
 
 	.team-detail {

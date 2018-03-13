@@ -71,4 +71,18 @@
 	    	@include transform-translateY(0);
 	    }
     }
+
+    &.default {
+    	border: 1px solid $cx-text-color;
+    	@include border-radius(0);
+		h6 {
+			@include border-radius(0);
+		}
+
+    	&:hover {
+    		border-color: $cx-primary-color;
+	    	@include cx-box-shadow('none');
+	    	@include transform-translateY(0);
+    	}
+    }
 }

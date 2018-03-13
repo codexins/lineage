@@ -48,11 +48,52 @@
 		margin-top: -12px;
         width: 100%;
         min-height: 400px;
+
+        .row {
+			&.last {
+				.info-item {
+					@extend %mb0;
+				}
+			}
+        }
 	}
 
 	.icon-check {
 		list-style: none;
 		padding: 0;
 		margin: 0;
+
+		> li {
+			margin-bottom: 5px;
+
+			&:last-child {
+				@extend %mb0;
+			}
+		}
+	}
+
+	.tab-content-heading {
+		max-width: 100%;
+		@extend .section-heading;
+
+		&.white-text {
+			@extend %color-white;
+		}
+
+		&.left-aligned {
+			h2,
+			p {
+				text-align: left;
+			}
+		}
+	}
+
+	.tab-content {
+		&.white-text {
+			p,
+			li {
+				@extend %color-white;
+			}
+		}
 	}
 }

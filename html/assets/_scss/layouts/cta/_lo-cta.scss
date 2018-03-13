@@ -58,6 +58,13 @@
 				margin-right: -30px;
 			}
 		}
+
+		&.white-text {
+			h2,
+			p {
+				@extend %color-white;
+			}
+		}
 	}
 
 	&.type-2 {

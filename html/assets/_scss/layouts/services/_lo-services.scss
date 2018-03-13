@@ -58,3 +58,11 @@
 		@include cx-background('../img/page-titles/contact-bg-1.jpg');
 	}
 }
+
+.cta-split {
+	&.split-cta-service {
+		@extend %vpadding;
+		@include cx-background('../img/background/counter-up.jpg');
+		@extend %overlay;
+	}
+}
