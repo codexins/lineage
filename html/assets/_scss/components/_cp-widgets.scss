@@ -35,6 +35,23 @@
 			@extend %mb0;
 		}
 	}
+
+	::-webkit-input-placeholder {
+	  color: lighten($cx-text-color, 20%);
+	  font-size: 0.85em;
+	}
+	::-moz-placeholder {
+	  color: lighten($cx-text-color, 20%);
+	  font-size: 0.85em;
+	}
+	:-ms-input-placeholder {
+	  color: lighten($cx-text-color, 20%);
+	  font-size: 0.85em;
+	}
+	:-moz-placeholder {
+	  color: lighten($cx-text-color, 20%);
+	  font-size: 0.85em;
+	}
 }
 
 
@@ -42,15 +59,13 @@
 
 .search-widget {
 	form {
-		display: table;
-		width:100%;
-		overflow:hidden;
+		width: 100%;
+		overflow: hidden;
 		input {
 			display: table-cell;
 			vertical-align: middle;
 			margin-bottom: 0;
-			height: 43px;
-			border-width: 1x;
+			height: 44px;
 		}
 		
 		input[type="text"],
@@ -65,7 +80,7 @@
 		    outline: 0;
 		    width: 18% !important;
 		    float: right;
-		    height: 43px;
+		    height: 44px;
 		    text-indent: -99999px;
 		    line-height: 0;
 		    background-image: url(../img/search.png);
@@ -83,6 +98,41 @@
 .text-widget {
 	p {
 		font-size: calculateRem(15px);
+	}
+
+	.contact-no {
+		a {
+			padding: 10px 20px;
+			display: block;
+			font-size: calculateRem(20px);
+			letter-spacing: 0.5px;
+			text-align: center;
+			text-shadow: 0 1px 1px #111;
+			// border: 1px dashed darken($cx-primary-color, 10%);
+			@extend %bgc-primary;
+			@extend %color-white;
+
+			i {
+				font-size: calculateRem(18px);
+				margin-right: 15px;
+				border: 1.2px solid lighten($cx-text-color, 100%);
+				@include box(36px);
+				@include border-radius(50%);
+				@include cx-box-shadow('inset 0 0 30px ' + darken($cx-primary-color, 20%) );
+				@extend %cx-transition;
+				// background: darken($cx-primary-color, 10%);
+			}
+
+
+			&:hover {
+				@extend %bgc-secondary;
+
+				i {
+					@include cx-box-shadow('inset 0 0 30px ' + darken($cx-secondary-color, 20%) );
+					// background: darken($cx-secondary-color, 10%);
+				}
+			}
+		}
 	}
 }
 
@@ -380,11 +430,8 @@
 
 .instagram-widget {
 	@extend %clearfix;
-	ul {
-		margin: 0;
-		padding: 0;
-		li {
-			list-style-type: none;
+	.image-popup {
+		figure {
 			a {
 			    position: relative;
 			    display: block;
@@ -509,5 +556,25 @@
 			}
 		}
 	}
+}
 
+// Contact Widget
+
+.widget-form-wrapper {
+	input,
+	textarea {
+		@extend %mb0;
+	}
+
+	textarea {
+		min-height: 120px;
+	}
+
+	form {
+		> .form-group {
+			&:last-of-type {
+				margin-bottom: 9px;
+			}
+		}
+	}
 }

@@ -651,7 +651,7 @@ input[type="reset"],
 input[type="password"],
 input[type="search"],
 input[type="tel"],
-input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .animated-btn::before, .animated-btn::after, .animated-btn span::before, .animated-btn span::after, .fancy-btn::before, .social-icon a, .social-icon-large a, .section-heading h4::before, .service-tabs .tab-content-heading h4::before, .section-heading h4::after, .service-tabs .tab-content-heading h4::after, .section-heading.type-3 h2::before, .service-tabs .type-3.tab-content-heading h2::before, .section-heading.type-3 h2::after, .service-tabs .type-3.tab-content-heading h2::after, .info-item, .info-item .thumb-icon i, .info-item.border-collapsed h3, .info-item.border-collapsed h3::before, .services-carousel .media-wrapper img, .services-carousel .media-thumb, .swiper-arrow i, .counter-item.type-2 .counter-wrapper, .counter-item.type-2 .counter-wrapper i, .tab.type-2 .nav-tabs > li.active > a, .tab.type-2 .tab.iconic-tab > .nav-tabs > li > a, .tab.type-2 .tab-content, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .portfolio-filter ul li::before, .portfolio-filter.type-2 li::after, .portfolio-filter.type-3 li, .team-member .team-media .team-social-wrapper, .team-member .social-icon, .team-member .social-icon-large, .team-member.type-3 .team-media img, .team-carousel .swiper-pagination-bullet, .simple-slider-container .swiper-pagination-bullet, .simple-slider-container .carousel-arrow, .pricing-table-type-3, .carousel-arrow::after, .blog-item-grid .flex-wrapper::before, .blog-grid .post-image img, .blog-grid.type-2 .post-image::before, .blog-grid.type-2 .post-category a::before, .tab.widget-tab .nav-tabs > li, .posts-single .img-thumb img, .instagram-widget ul li a::before, .pie-chart-wrapper, .pie-chart-wrapper h6, #accordion .panel-heading, #accordion .accordion-toggle::after, .client-single, #toTop, #toTop i, .image-box-wrapper figure img, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .logo img, .c-button, header .intelligent-header.scrolling-up img, .top-content a, .sp-buttons .sp-button, .image-carousel-full-width .swiper-slide .icon-wrapper, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .nav-swiper .swiper-slide, #colophon nav li, .portfolio-list-wrapper .portfolio-media .media-container, .portfolio-list-wrapper .portfolio-content::before, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
+input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .animated-btn::before, .animated-btn::after, .animated-btn span::before, .animated-btn span::after, .fancy-btn::before, .social-icon a, .social-icon-large a, .section-heading h4::before, .service-tabs .tab-content-heading h4::before, .section-heading h4::after, .service-tabs .tab-content-heading h4::after, .section-heading.type-3 h2::before, .service-tabs .type-3.tab-content-heading h2::before, .section-heading.type-3 h2::after, .service-tabs .type-3.tab-content-heading h2::after, .info-item, .info-item .thumb-icon i, .info-item.border-collapsed h3, .info-item.border-collapsed h3::before, .services-carousel .media-wrapper img, .services-carousel .media-thumb, .swiper-arrow i, .counter-item.type-2 .counter-wrapper, .counter-item.type-2 .counter-wrapper i, .tab.type-2 .nav-tabs > li.active > a, .tab.type-2 .tab.iconic-tab > .nav-tabs > li > a, .tab.type-2 .tab-content, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .portfolio-filter ul li::before, .portfolio-filter.type-2 li::after, .portfolio-filter.type-3 li, .team-member .team-media .team-social-wrapper, .team-member .social-icon, .team-member .social-icon-large, .team-member.type-3 .team-media img, .team-carousel .swiper-pagination-bullet, .simple-slider-container .swiper-pagination-bullet, .simple-slider-container .carousel-arrow, .pricing-table-type-3, .carousel-arrow::after, .blog-item-grid .flex-wrapper::before, .blog-grid .post-image img, .blog-grid.type-2 .post-image::before, .blog-grid.type-2 .post-category a::before, .text-widget .contact-no a i, .tab.widget-tab .nav-tabs > li, .posts-single .img-thumb img, .instagram-widget .image-popup figure a::before, .pie-chart-wrapper, .pie-chart-wrapper h6, #accordion .panel-heading, #accordion .accordion-toggle::after, .client-single, #toTop, #toTop i, .image-box-wrapper figure img, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .logo img, .c-button, header .intelligent-header.scrolling-up img, .top-content a, .sp-buttons .sp-button, .image-carousel-full-width .swiper-slide .icon-wrapper, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .nav-swiper .swiper-slide, #colophon nav li, .portfolio-list-wrapper .portfolio-media .media-container, .portfolio-list-wrapper .portfolio-content::before, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category a,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content h3 a,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content p, .trigger-iframe::before, .trigger-iframe i, .contact-section .contact-item-wrapper i, .contact-us-section .box-wrapper i, .client-carousel .item-brand {
@@ -734,11 +734,11 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   border-left: 1px solid #ddd;
 }
 
-.bgc-primary, .pricing-table-type-3.featured .pricing-title, .image-box-wrapper figure, .service-tabs .nav-swiper .swiper-wrapper .selected {
+.bgc-primary, .pricing-table-type-3.featured .pricing-title, .text-widget .contact-no a, .image-box-wrapper figure, .service-tabs .nav-swiper .swiper-wrapper .selected {
   background-color: #947cb0;
 }
 
-.bgc-secondary, .pricing-table-type-3 .pricing-title {
+.bgc-secondary, .pricing-table-type-3 .pricing-title, .text-widget .contact-no a:hover {
   background-color: #d7706d;
 }
 
@@ -802,7 +802,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .cta-centered .white-text, .counter-item.type-3.white-text, .tab .nav-tabs > li.active > a, .tab.iconic-tab > .nav-tabs > li > a,
 .tab .nav-tabs > li.active a:focus, .tab.iconic-tab > .nav-tabs > li a:focus,
 .tab .nav-tabs > li.active a:hover, .tab.iconic-tab > .nav-tabs > li a:hover, .tab .nav-tabs > li.active > a:hover, .tab.iconic-tab > .nav-tabs > li > a:hover, .team-member-card .team-details h2,
-.team-member-card .team-details p, .pricing-table-type-3 .pricing-title, .image-box-wrapper figure figcaption,
+.team-member-card .team-details p, .pricing-table-type-3 .pricing-title, .text-widget .contact-no a, .image-box-wrapper figure figcaption,
 .image-box-wrapper figure figcaption > a, .slider-section h2.sp-layer,
 .slider-section p.sp-layer,
 .full-screen-slider-section h2.sp-layer,
@@ -839,7 +839,8 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 }
 
 .mb0, .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle, .info-item.left-edged-icon.last, .info-item.flip-card .back p:last-of-type, .services-carousel .media-wrapper p, .counter-item .counter-icon, .team-member-card .team-details h2,
-.team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .feature-box h3, .feature-box p, .sidebar-widget p:last-of-type, .testimonial-widget .client-meta .client-name h3, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .pagination-wrapper .pagination, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .about-section, .service-section, .achievement-counters, .split-section, .recent-projects, .portfolio-section, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .cta-section, .cta-section.type-2 .cta-content-wrapper .cta-content p, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .client-section, .support-section, .features-section, .features-section .info-item,
+.team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .feature-box h3, .feature-box p, .sidebar-widget p:last-of-type, .testimonial-widget .client-meta .client-name h3, .widget-form-wrapper input,
+.widget-form-wrapper textarea, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .pagination-wrapper .pagination, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .about-section, .service-section, .achievement-counters, .split-section, .recent-projects, .portfolio-section, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .cta-section, .cta-section.type-2 .cta-content-wrapper .cta-content p, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .client-section, .support-section, .features-section, .features-section .info-item,
 .features-section .secondary-title, .about-us, .services-section, .fun-facts, .values-section, .testimonials-section, .video-section, .contact-section, .contact-section .contact-item-wrapper p, .slider-section, .about-us-section, .our-features, .our-values-section, .background-video-section, .contact-us-section, .newsletter-section, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .fun-facts-section.facts-about, .values-promo.values-about, .our-history, .service-promo .focused-text, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container {
   margin-bottom: 0;
 }
@@ -5731,8 +5732,27 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   }
 }
 
+.sidebar-widget ::-webkit-input-placeholder {
+  color: #878787;
+  font-size: 0.85em;
+}
+
+.sidebar-widget ::-moz-placeholder {
+  color: #878787;
+  font-size: 0.85em;
+}
+
+.sidebar-widget :-ms-input-placeholder {
+  color: #878787;
+  font-size: 0.85em;
+}
+
+.sidebar-widget :-moz-placeholder {
+  color: #878787;
+  font-size: 0.85em;
+}
+
 .search-widget form {
-  display: table;
   width: 100%;
   overflow: hidden;
 }
@@ -5741,8 +5761,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   display: table-cell;
   vertical-align: middle;
   margin-bottom: 0;
-  height: 43px;
-  border-width: 1x;
+  height: 44px;
 }
 
 .search-widget form input[type="text"],
@@ -5757,7 +5776,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   outline: 0;
   width: 18% !important;
   float: right;
-  height: 43px;
+  height: 44px;
   text-indent: -99999px;
   line-height: 0;
   background-image: url(../img/search.png);
@@ -5776,6 +5795,44 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .text-widget p {
   font-size: 0.9375rem;
+}
+
+.text-widget .contact-no a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-shadow: 0 1px 1px #111;
+}
+
+.text-widget .contact-no a i {
+  font-size: 1.125rem;
+  margin-right: 15px;
+  border: 1.2px solid white;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 30px #614a7c;
+  -moz-box-shadow: inset 0 0 30px #614a7c;
+  -ms-box-shadow: inset 0 0 30px #614a7c;
+  -o-box-shadow: inset 0 0 30px #614a7c;
+  box-shadow: inset 0 0 30px #614a7c;
+}
+
+.text-widget .contact-no a:hover i {
+  -webkit-box-shadow: inset 0 0 30px #ae3330;
+  -moz-box-shadow: inset 0 0 30px #ae3330;
+  -ms-box-shadow: inset 0 0 30px #ae3330;
+  -o-box-shadow: inset 0 0 30px #ae3330;
+  box-shadow: inset 0 0 30px #ae3330;
 }
 
 .tab.widget-tab .nav-tabs {
@@ -6023,16 +6080,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   border-bottom: 0;
 }
 
-.instagram-widget ul {
-  margin: 0;
-  padding: 0;
-}
-
-.instagram-widget ul li {
-  list-style-type: none;
-}
-
-.instagram-widget ul li a {
+.instagram-widget .image-popup figure a {
   position: relative;
   display: block;
   float: left;
@@ -6041,12 +6089,12 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   margin-bottom: 2%;
 }
 
-.instagram-widget ul li a img {
+.instagram-widget .image-popup figure a img {
   width: 100%;
   height: auto;
 }
 
-.instagram-widget ul li a::before {
+.instagram-widget .image-popup figure a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -6055,12 +6103,12 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   background: rgba(204, 73, 69, 0.7);
 }
 
-.instagram-widget ul li a:hover::before {
+.instagram-widget .image-popup figure a:hover::before {
   height: 100%;
   top: 0;
 }
 
-.instagram-widget ul li:nth-child(3n) a {
+.instagram-widget .image-popup figure:nth-child(3n) a {
   margin-right: 0;
 }
 
@@ -6141,6 +6189,14 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .testimonial-widget .client-meta .client-name p {
   font-style: italic;
   font-size: 0.875rem;
+}
+
+.widget-form-wrapper textarea {
+  min-height: 120px;
+}
+
+.widget-form-wrapper form > .form-group:last-of-type {
+  margin-bottom: 9px;
 }
 
 /**
