@@ -23,6 +23,7 @@
 		    max-width: 150px;
 		    display: inline-block;
 		    margin-left: 3%;
+		    @extend %cx-transition;
 	    	&:first-of-type {
 				margin-left: 0;
 			}
@@ -46,6 +47,20 @@
 			width: 100%;
 			ul {
 				padding-left: 0;
+			}
+		}
+
+		ul {
+			&:hover {
+				li {
+					opacity: 0.5;
+				}
+			}
+
+			li {
+				&:hover {
+					opacity: 1;
+				}
 			}
 		}
 	}
@@ -157,6 +172,14 @@
             &:hover {
                 color: $cx-secondary-color;
             }
+        }
+
+        nav {
+        	a {
+        		&:hover {
+        			@extend %color-offset;
+        		}
+        	}
         }
 
 		.actions {

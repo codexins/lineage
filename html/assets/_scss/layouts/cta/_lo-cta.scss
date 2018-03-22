@@ -79,7 +79,7 @@
 			@extend %vhcenter;
 			padding: 0.67 * $cx-section-spacing;
 			@extend %bgc-white;
-			@extend %rounded-corners;
+			// @extend %rounded-corners;
 			@extend .spreaded-shadow;
 
 			i {

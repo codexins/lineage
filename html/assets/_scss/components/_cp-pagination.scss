@@ -1,0 +1,96 @@
+/**
+ * Components Pagination
+ *
+ */
+
+.pagination-wrapper {
+	margin-top: ($cx-section-spacing) - 20px;
+	// margin-bottom: ($cx-section-spacing)-20px;
+
+	.pagination {
+		@extend %mb0;
+		@extend %mt0;
+	}
+
+
+	.pagination-lg {
+		& > li {
+			&>span,
+			&>a {
+			margin-left: 5px;
+			margin-right: 5px;
+		    padding: 7px 13px;
+				@include respond-to(small-mobile) {
+					padding:6px 12px;
+				}
+			}
+		}
+		
+	}
+}
+
+.pagination {
+	.active {
+		a {
+			background-color: $cx-primary-color;
+			border-color: $cx-primary-color;
+			&:hover {
+				background-color: $cx-primary-color;
+				border-color: $cx-primary-color;
+			}
+		}
+
+		span {
+			background-color: $cx-primary-color;
+			border-color: $cx-primary-color;
+			&:hover {
+				background-color: $cx-primary-color;
+				border-color: $cx-primary-color;
+			}
+		}
+	}
+
+	li {
+		span,
+		a {
+			color: $cx-text-color;
+			border-width: 1.2px;
+			border-color: $cx-border-color;
+			&:hover,
+			&:focus {
+				color: lighten($cx-text-color, 100%);
+				background: $cx-primary-color;
+				border-color: $cx-primary-color;
+			}
+		}
+		&:first-child,
+		&:last-child {
+			span,
+			a {
+				@include border-radius(0);
+			}
+		}
+	}
+	
+}
+
+.cx-pagination {
+	padding-top:15px;
+	padding-bottom: 15px;
+	border-top: 1px solid $cx-border-color;
+	border-bottom: 1px solid $cx-border-color;
+	margin-bottom: $cx-col-spacing;
+	@extend %clearfix;
+	a {
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: $cx-text-color;
+		font-size: 90%;
+		&:hover {
+			color: $cx-link-hover-color;
+		}
+	}
+	@include respond-to(mobile) {
+		margin-bottom: $cx-col-spacing-mob;
+	}
+}

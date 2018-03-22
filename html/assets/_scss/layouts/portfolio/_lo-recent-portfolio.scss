@@ -4,12 +4,13 @@
  */
 
 .recent-projects {
+	overflow: hidden;
 	@extend %vpadding;
 	@extend %mb0;
 	.portfolio {
 		padding:0;
 	}
-	.col-xs-6{
+	.col-xs-6 {
 		@include media-only(small-mobile, $type: max){
 	    	width:100%;
 		}

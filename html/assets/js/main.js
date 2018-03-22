@@ -71,6 +71,7 @@ INDEX:
         $testimonial        = $(".testimonial-container"),
         $testimonialTwo     = $(".testimonial-container-type-2"),
         $testimonialThree   = $(".testimonial-with-thumbs"),
+        $testimonialWidget  = $(".testimonial-widget.swiper-container"),
         // $slickNav           = $(".testimonial-nav"),
         // $slickThree         = $(".testimonial-carousel-type-02"),
         $clients            = $(".client-carousel"),
@@ -100,8 +101,8 @@ INDEX:
             inClass: 'fade-in',
             outClass: 'fade-out',
             inDuration: 800,
-            outDuration: 800,
-            linkElement: '.animsition-link',
+            outDuration: 600,
+            linkElement: 'a:not([target="_blank"]):not([href^="#"]):not([href^="mailto:"]):not([href^="tel:"]):not(.img)',
             loading: true,
             loadingParentElement: 'body',
             loadingClass: 'cx-progress',
@@ -718,6 +719,17 @@ INDEX:
             // Overlay
             $(".nav-slider .swiper-slide").append('<div class="thumb-overlay"></div>');
         }
+
+
+        if ($testimonialWidget.cxExists()) {
+            var testimonialWidget = new Swiper($testimonialWidget, {
+                loop: true,
+                effect: "slide",
+                slidesPerView: 1,
+                spaceBetween: 30,
+                grabCursor: true,
+            });
+        }
     };
 
 
@@ -1050,6 +1062,7 @@ INDEX:
     CODEXIN.flipSetting = function() {
         if ($flipEl.cxExists()) {
             $flipEl.flip({
+                axis: 'y',
                 trigger: 'hover',
                 reverse: true
             });
@@ -1080,7 +1093,7 @@ INDEX:
             sr.reveal('.pricing-table, .pricing-table-type-2', { origin: 'bottom' }, 200);
             sr.reveal('.blog-item-grid, .blog-grid', { origin: 'bottom' }, 200);
             sr.reveal('.info-box-wrapper', { origin: 'bottom' }, 200);
-            sr.reveal('.tab .nav-tabs li', { origin: 'right' }, 200);
+            sr.reveal('.tab .nav-tabs:not(.no-animation) li', { origin: 'right' }, 200);
         }
     };
 
@@ -1100,9 +1113,6 @@ INDEX:
     // Document ready functions
     $document.on('ready', function() {
         CODEXIN.preloader(),
-        // CODEXIN.primarySlider(),
-        // CODEXIN.fullscreenVideoHeader(),
-        // CODEXIN.backgroundSliderHeader(),
         CODEXIN.mainNav(),
         CODEXIN.headerAutoHide(),
         CODEXIN.animatedCounter(),
@@ -1115,12 +1125,10 @@ INDEX:
         CODEXIN.servicesCarousel(),
         CODEXIN.teamCarousel(),
         CODEXIN.smoothScroll(),
-        // CODEXIN.skillBars(),
         CODEXIN.accordionClass(),
         CODEXIN.pieChartSetting(),
         CODEXIN.scrollToTop(),
         CODEXIN.tiltSetting(),
-        // CODEXIN.typedSetting(),
         CODEXIN.flipSetting(),
         CODEXIN.placeHolders(),
         CODEXIN.animationSetting();

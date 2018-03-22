@@ -66,3 +66,15 @@
 		@extend %overlay;
 	}
 }
+
+.testimonials-section {
+	&.service-testimonial {
+		@include cx-background('../img/page-titles/contact-bg-1.jpg');
+	}
+}
+
+.newsletter-section {
+	&.newsletter-service {
+	    background-image: url('../img/background/counter-up.jpg');
+	}
+}

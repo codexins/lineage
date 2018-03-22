@@ -12,6 +12,7 @@
 	.focused-text {
 		font-size: 2em;
 		line-height: 1.2em;
+		@extend %mb0;
 	}
 
 	.col-sm-8 {
@@ -22,5 +23,26 @@
 
 	.lead {
 		font-weight: normal;
+	}
+
+	.icon-check {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		> li {
+			margin-bottom: 5px;
+
+			&:last-child {
+				@extend %mb0;
+			}
+		}
+	}
+
+	.white-text {
+		p,
+		li {
+			@extend %color-white;
+		}
 	}
 }

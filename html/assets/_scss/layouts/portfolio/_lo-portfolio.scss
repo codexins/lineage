@@ -1,0 +1,39 @@
+/**
+ * layout portfolio / portfolio
+ *
+ */
+
+.page-title-section {
+	&.page-portfolio-cl-1 {
+		@include cx-background('../img/page-titles/contact-bg-1.jpg');
+	}
+}
+
+.portfolio-wrapper {
+	.col-lg-2 {
+		.portfolio-mini-desc {
+			@include media-only('991px', min) {
+				h3 {
+					font-size: calculateRem(14px);
+				}
+				p {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&.hover-effect-type-2 {
+		.col-lg-2 {
+			@include media-only('991px', min) {
+				.portfolio-mini-desc {
+					min-height: auto;
+					padding-top: 17px;
+					padding-bottom: 12px;
+				}
+			}
+		}
+	}
+}
+
+

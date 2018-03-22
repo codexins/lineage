@@ -14,4 +14,12 @@
 	.flip-img {
 		width: 100%;
 	}
+
+	&.info-item {
+		min-height: auto;
+		.front,
+		.back {
+			min-height: 280px;
+		}
+	}
 }

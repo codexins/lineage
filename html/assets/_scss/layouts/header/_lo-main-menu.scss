@@ -16,7 +16,7 @@
             font-size: 14px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
             color: lighten($cx-text-color, 100%);
             padding-bottom: $cx-heading-margin-bottom;
             &:hover {

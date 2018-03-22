@@ -5,7 +5,7 @@
 
 .portfolio-item {
 	position: relative;
-	overflow: hidden;
+	// overflow: hidden;
 	.img {
 		display: block;
 		position:relative;
@@ -111,7 +111,7 @@
 		margin-bottom: 5px;
 		padding-top: 15px;
 		padding-bottom: 0;
-		font-size: 17px;
+		font-size: 1rem;
 		letter-spacing: 2px;
 		font-weight: 700;
 		&:after{
@@ -190,6 +190,7 @@
 	&.type-2 {
 		li {
 			padding: 3px 0;
+			line-height: 1.4em;
 			&::before {
 				background: $cx-tertiary-color;
 			}
@@ -249,14 +250,7 @@
 }
 
 .portfolio-wrapper {
-	&.with-gutter {
-		margin-right: -15px;
-		margin-bottom: -15px;
-		.portfolio-item {
-			padding-right: 15px;
-			margin-bottom: 15px;
-		}
-
+	&.hover-effect-type-2 {
 		.img {
 			&::before {
 				content: none;
@@ -279,7 +273,7 @@
 		.portfolio-mini-desc {
 			opacity: 1;
 			width: 100%;
-			max-width: calc(100% - 15px);
+			max-width: 100%;
 			min-height: 100px;
 			padding: 25px;
 			background: rgba($cx-tertiary-color, 0.95);
@@ -315,7 +309,7 @@
 		}
 	}
 
-	&.type-2 {
+	&.hover-effect-type-3 {
 		.portfolio-item {
 			.img {
 				&::before {
@@ -415,6 +409,19 @@
 					}
 				}
 			}
+		}
+	}
+
+	&.with-gutter {
+		margin-right: -15px;
+		margin-bottom: -15px;
+		.portfolio-item {
+			padding-right: 15px;
+			margin-bottom: 15px;
+		}
+
+		.portfolio-mini-desc {
+			max-width: calc(100% - 15px);
 		}
 	}
 }

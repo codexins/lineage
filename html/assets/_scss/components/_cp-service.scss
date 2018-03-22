@@ -188,4 +188,37 @@
 		}
 	}
 
+	&.flip-card {
+		.front,
+		.back {
+			padding: 30px;
+			@include eqheight;
+		}
+
+		.front {
+			border: 1px solid $cx-border-color;
+		}
+
+		.image-placeholder {
+			@extend %overlay;
+			&::before {
+				@include bcg-linear-gradient(to bottom left, rgba($cx-primary-color, 0.9), rgba($cx-tertiary-color, 0.9));
+			}
+		}
+
+		.back {
+			h3,
+			p {
+				position: relative;
+				@extend %color-white;
+			}
+
+			p {
+				&:last-of-type {
+					@extend %mb0;
+				}
+			}
+		}
+	}
+
 }

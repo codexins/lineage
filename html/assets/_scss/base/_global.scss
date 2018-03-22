@@ -26,7 +26,7 @@ section {
 }
 
 .main-content-wrapper {
-	overflow-x: hidden;
+	// overflow-x: hidden;
 }
 
 .lead {
@@ -38,7 +38,7 @@ section {
 }
 
 #primary,
-#sidebar {
+#secondary {
 	margin-bottom: $cx-section-spacing;
 	@include respond-to(mobile) {
 		margin-bottom: $cx-section-spacing-mob;
@@ -363,7 +363,7 @@ $border-colors-count: length($border-colors);
 .section-overlay {
 	opacity: 0.9;
 	@include abs-position(0, 0, 0, 0);
-    @include bcg-linear-gradient(110deg, #9586a6, #d7706d);
+    @include bcg-linear-gradient(110deg, $cx-primary-color, $cx-secondary-color);
 }
 
 .video-section-overlay {
@@ -443,4 +443,10 @@ $border-colors-count: length($border-colors);
 		border: 2px solid $cx-secondary-color;
 		@include border-radius(50%);
 	}
+}
+
+// Flip 3d effect 
+
+.flip-effect {
+    @include cx-prefix('transform', 'translateZ(30px)');
 }
