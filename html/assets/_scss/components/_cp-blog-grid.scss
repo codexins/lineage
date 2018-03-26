@@ -8,7 +8,7 @@
 	margin-bottom: $cx-col-spacing;
 	border: 1px solid $cx-border-color;
 	@include cx-box-shadow;
-	.post-image {
+	.post-media {
 		width: 180px;
 		height: 180px;
 	    margin-right: 16px;
@@ -93,11 +93,11 @@
 	background: lighten($cx-text-color, 100%);
 	@include cx-box-shadow;
 	.content-wrapper,
-	.post-image {
+	.post-media {
 		position: relative;
 	}
 
-	.post-image {
+	.post-media {
 		display: block;
 		overflow: hidden;
 
@@ -194,7 +194,7 @@
 	}
 
 	&:hover {
-		.post-image {
+		.post-media {
 			img {
 				@include cx-prefix('transform', 'scale(1.1)');
 			}
@@ -204,7 +204,7 @@
 	&.type-2 {
 		overflow: hidden;
 		@include cx-box-shadow('5px 5px 25px 0 rgba(46,61,73,.2);')
-		.post-image {
+		.post-media {
 			&::before {
 			    background: $cx-secondary-color;
 			    height: 4px;
@@ -301,7 +301,7 @@
 		}
 
 		&:hover {
-			.post-image {
+			.post-media {
 				&::before {
 					width: 100%;
 				}

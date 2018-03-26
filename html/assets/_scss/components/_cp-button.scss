@@ -165,14 +165,18 @@
 	text-transform: capitalize;
 	color: lighten($cx-text-color, 50%);
 	&::after {
-		@include abs-position(-2px, -15px);
-        content: "\f105";
+		@include abs-position(-2px, -23px);
+        content: "\f178";
 	    font-family: FontAwesome;
+	    @include cx-transition('right 0.3s');
 	}
 
 	&:focus,
 	&:hover {
 		color: lighten($cx-text-color, 100%);
+		&::after {
+			right: -28px;
+		}
 	}
 }
 

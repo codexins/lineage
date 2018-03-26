@@ -941,9 +941,9 @@ INDEX:
         if ($blogGrid.cxExists()) {
             $blogGrid.each(function() {
                 var $this = $(this);
-                var img = $this.find(".post-image img").attr("src");
+                var img = $this.find(".post-media img").attr("src");
 
-                $this.find(".post-image").css({
+                $this.find(".post-media").css({
                     backgroundImage: "url(" + img + ")",
                     backgroundSize: "cover",
                     backgroundPosition: "center center"

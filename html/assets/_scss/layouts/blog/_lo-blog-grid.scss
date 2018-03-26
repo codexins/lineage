@@ -1,0 +1,16 @@
+/**
+ * layout blog / blog-grid
+ *
+ */
+
+.blog-posts-section {
+	@extend %mb0;
+	@extend %pt-full;
+}
+
+.blog-grid-wrapper {
+	margin-bottom: - $cx-col-spacing;
+	.blog-grid {
+		@extend %mb-half;
+	}
+}

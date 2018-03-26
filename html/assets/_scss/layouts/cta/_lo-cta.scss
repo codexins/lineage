@@ -21,8 +21,8 @@
 	}
 
 	&.cta-split {
-		padding-top: $cx-col-spacing;
-		padding-bottom: $cx-col-spacing;
+		padding-top: 1.5 * $cx-col-spacing;
+		padding-bottom: 1.5 * $cx-col-spacing;
 		.row {
 			@include eqheight;
 		}
