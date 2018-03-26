@@ -811,7 +811,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .service-tabs .tab-content.white-text li, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category a,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content h3 a,
-.portfolio-list-wrapper > .portfolio:hover .portfolio-content p, .single-portfolio-intro .portfolio-summary ul li a:hover, .portfolio-quote h3, .portfolio-quote p, .cta-section.cta-split.white-text h2,
+.portfolio-list-wrapper > .portfolio:hover .portfolio-content p, .single-portfolio-intro .portfolio-summary ul li a:hover, .portfolio-quote h3, .portfolio-quote p, .blog-grid-wrapper .quote-wrapper, .cta-section.cta-split.white-text h2,
 .cta-section.cta-split.white-text p, .video-section h3, .trigger-iframe i, .contact-section .contact-item-wrapper a, .background-video-section .video-content-wrapper p, .newsletter-section, .page-title-section, .page-title-section .breadcrumb a, .page-title-section.modern, .cta-section.cta-about.cta-split h2,
 .cta-section.cta-about.cta-split p, .service-promo .white-text p,
 .service-promo .white-text li, .feature-title-wrapper p {
@@ -841,7 +841,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .mb0, .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle, .info-item.left-edged-icon.last, .info-item.flip-card .back p:last-of-type, .services-carousel .media-wrapper p, .counter-item .counter-icon, .team-member-card .team-details h2,
 .team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .feature-box h3, .feature-box p, .sidebar-widget p:last-of-type, .testimonial-widget .client-meta .client-name h3, .widget-form-wrapper input,
 .widget-form-wrapper textarea, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .pagination-wrapper .pagination, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .about-section, .service-section, .achievement-counters, .split-section, .recent-projects, .portfolio-section, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
-.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-posts-section, .cta-section, .cta-section.type-2 .cta-content-wrapper .cta-content p, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .client-section, .support-section, .features-section, .features-section .info-item,
+.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-posts-section, .blog-grid-wrapper .quote-wrapper p, .cta-section, .cta-section.type-2 .cta-content-wrapper .cta-content p, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .client-section, .support-section, .features-section, .features-section .info-item,
 .features-section .secondary-title, .about-us, .services-section, .fun-facts, .values-section, .testimonials-section, .video-section, .contact-section, .contact-section .contact-item-wrapper p, .slider-section, .about-us-section, .our-features, .our-values-section, .background-video-section, .contact-us-section, .newsletter-section, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .fun-facts-section.facts-about, .values-promo.values-about, .our-history, .service-promo .focused-text, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container {
   margin-bottom: 0;
 }
@@ -5237,8 +5237,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .blog-grid.type-2 .post-content p {
   color: #545454;
-  max-height: calc(1.6em * 4);
-  -webkit-line-clamp: 4;
 }
 
 .blog-grid.type-2 .post-meta {
@@ -8605,6 +8603,89 @@ header.header-white .intelligent-header {
  */
 .blog-grid-wrapper {
   margin-bottom: -45px;
+}
+
+.blog-grid-wrapper .carousel-arrow {
+  opacity: 1;
+}
+
+.blog-grid-wrapper .post-media.quote-post > a {
+  display: table;
+  width: 100%;
+}
+
+.blog-grid-wrapper .post-media.quote-post > a > div {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  .blog-grid-wrapper .post-media.quote-post > a > div {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .blog-grid-wrapper .post-media.quote-post > a {
+    display: block;
+    width: auto;
+  }
+}
+
+.blog-grid-wrapper .quote-wrapper {
+  height: 203px;
+  padding: 20px 30px;
+  padding-left: 90px;
+  position: relative;
+  background: #3e3e3e;
+  background: -webkit-linear-gradient(45deg, #3e3e3e, #717171);
+  background: -moz-linear-gradient(45deg, #3e3e3e, #717171);
+  background: -ms-linear-gradient(45deg, #3e3e3e, #717171);
+  background: -o-linear-gradient(45deg, #3e3e3e, #717171);
+  background: linear-gradient(45deg, #3e3e3e, #717171);
+}
+
+.blog-grid-wrapper .quote-wrapper::before {
+  content: "\f128";
+  font-family: "Flaticon";
+  font-size: 2.125rem;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  opacity: 0.7;
+  line-height: 1em;
+}
+
+.blog-grid-wrapper .quote-wrapper p {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 0.8125rem;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.blog-grid-wrapper blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.embed {
+  position: relative;
+  padding: 0px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /**
