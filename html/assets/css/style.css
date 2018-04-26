@@ -651,7 +651,9 @@ input[type="reset"],
 input[type="password"],
 input[type="search"],
 input[type="tel"],
-input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .animated-btn::before, .animated-btn::after, .animated-btn span::before, .animated-btn span::after, .fancy-btn::before, .social-icon a, .social-icon-large a, .section-heading h4::before, .service-tabs .tab-content-heading h4::before, .section-heading h4::after, .service-tabs .tab-content-heading h4::after, .section-heading.type-3 h2::before, .service-tabs .type-3.tab-content-heading h2::before, .section-heading.type-3 h2::after, .service-tabs .type-3.tab-content-heading h2::after, .info-item, .info-item .thumb-icon i, .info-item.border-collapsed h3, .info-item.border-collapsed h3::before, .services-carousel .media-wrapper img, .services-carousel .media-thumb, .swiper-arrow i, .counter-item.type-2 .counter-wrapper, .counter-item.type-2 .counter-wrapper i, .tab.type-2 .nav-tabs > li.active > a, .tab.type-2 .tab.iconic-tab > .nav-tabs > li > a, .tab.type-2 .tab-content, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .portfolio-filter ul li::before, .portfolio-filter.type-2 li::after, .portfolio-filter.type-3 li, .team-member .team-media .team-social-wrapper, .team-member .social-icon, .team-member .social-icon-large, .team-member.type-3 .team-media img, .team-carousel .swiper-pagination-bullet, .simple-slider-container .swiper-pagination-bullet, .simple-slider-container .carousel-arrow, .pricing-table-type-3, .carousel-arrow::after, .blog-item-grid .flex-wrapper::before, .blog-grid .post-media img, .blog-grid.type-2 .post-media::before, .blog-grid.type-2 .post-category a::before, .text-widget .contact-no a i, .tab.widget-tab .nav-tabs > li, .posts-single .img-thumb img, .instagram-widget .image-popup figure a::before, .pie-chart-wrapper, .pie-chart-wrapper h6, #accordion .panel-heading, #accordion .accordion-toggle::after, .client-single, #toTop, #toTop i, .image-box-wrapper figure img, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .logo img, .c-button, header .intelligent-header.scrolling-up img, .top-content a, .sp-buttons .sp-button, .image-carousel-full-width .swiper-slide .icon-wrapper, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .nav-swiper .swiper-slide, #colophon nav li, .portfolio-list-wrapper .portfolio-media .media-container, .portfolio-list-wrapper .portfolio-content::before, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
+input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .animated-btn::before, .animated-btn::after, .animated-btn span::before, .animated-btn span::after, .fancy-btn::before, .social-icon a, .social-icon-large a, .section-heading h4::before, .service-tabs .tab-content-heading h4::before, .section-heading h4::after, .service-tabs .tab-content-heading h4::after, .section-heading.type-3 h2::before, .service-tabs .type-3.tab-content-heading h2::before, .section-heading.type-3 h2::after, .service-tabs .type-3.tab-content-heading h2::after, .info-item, .info-item .thumb-icon i, .info-item.border-collapsed h3, .info-item.border-collapsed h3::before, .services-carousel .media-wrapper img, .services-carousel .media-thumb, .swiper-arrow i, .counter-item.type-2 .counter-wrapper, .counter-item.type-2 .counter-wrapper i, .tab.type-2 .nav-tabs > li.active > a, .tab.type-2 .tab.iconic-tab > .nav-tabs > li > a, .tab.type-2 .tab-content, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .portfolio-filter ul li::before, .portfolio-filter.type-2 li::after, .portfolio-filter.type-3 li, .team-member .team-media .team-social-wrapper, .team-member .social-icon, .team-member .social-icon-large, .team-member.type-3 .team-media img, .team-carousel .swiper-pagination-bullet, .simple-slider-container .swiper-pagination-bullet, .simple-slider-container .carousel-arrow, .pricing-table-type-3, .carousel-arrow::after, .blog-item-grid .flex-wrapper::before, .blog-grid .post-media img, .blog-grid.type-2 .post-media::before, .blog-grid.type-2 .post-category a::before, .post-single .post-media img, .post-single .image-overlay, .post-single .post-like,
+.post-single .post-share,
+.post-single .post-comments, .text-widget .contact-no a i, .tab.widget-tab .nav-tabs > li, .posts-single .img-thumb img, .instagram-widget .image-popup figure a::before, .pie-chart-wrapper, .pie-chart-wrapper h6, #accordion .panel-heading, #accordion .accordion-toggle::after, .client-single, #toTop, #toTop i, .image-box-wrapper figure img, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .social-share-btn .popover .popover-content a.share-google-plus:after, .logo img, .c-button, header .intelligent-header.scrolling-up img, .top-content a, .sp-buttons .sp-button, .image-carousel-full-width .swiper-slide .icon-wrapper, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .nav-swiper .swiper-slide, #colophon nav li, .portfolio-list-wrapper .portfolio-media .media-container, .portfolio-list-wrapper .portfolio-content::before, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category a,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content h3 a,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content p, .portfolio-nav .inner-media img, .trigger-iframe::before, .trigger-iframe i, .contact-section .contact-item-wrapper i, .contact-us-section .box-wrapper i, .client-carousel .item-brand {
@@ -734,7 +736,8 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   border-left: 1px solid #ddd;
 }
 
-.bgc-primary, .pricing-table-type-3.featured .pricing-title, .text-widget .contact-no a, .image-box-wrapper figure, .service-tabs .nav-swiper .swiper-wrapper .selected, .portfolio-quote {
+.bgc-primary, .pricing-table-type-3.featured .pricing-title, .post-single .like-count,
+.post-single .comment-count, .text-widget .contact-no a, .image-box-wrapper figure, .service-tabs .nav-swiper .swiper-wrapper .selected, .portfolio-quote {
   background-color: #947cb0;
 }
 
@@ -811,7 +814,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .service-tabs .tab-content.white-text li, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category a,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content h3 a,
-.portfolio-list-wrapper > .portfolio:hover .portfolio-content p, .single-portfolio-intro .portfolio-summary ul li a:hover, .portfolio-quote h3, .portfolio-quote p, .blog-grid-wrapper .quote-wrapper, .cta-section.cta-split.white-text h2,
+.portfolio-list-wrapper > .portfolio:hover .portfolio-content p, .single-portfolio-intro .portfolio-summary ul li a:hover, .portfolio-quote h3, .portfolio-quote p, .blog-post .quote-wrapper, .cta-section.cta-split.white-text h2,
 .cta-section.cta-split.white-text p, .video-section h3, .trigger-iframe i, .contact-section .contact-item-wrapper a, .background-video-section .video-content-wrapper p, .newsletter-section, .page-title-section, .page-title-section .breadcrumb a, .page-title-section.modern, .cta-section.cta-about.cta-split h2,
 .cta-section.cta-about.cta-split p, .service-promo .white-text p,
 .service-promo .white-text li, .feature-title-wrapper p {
@@ -841,7 +844,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .mb0, .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle, .info-item.left-edged-icon.last, .info-item.flip-card .back p:last-of-type, .services-carousel .media-wrapper p, .counter-item .counter-icon, .team-member-card .team-details h2,
 .team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .feature-box h3, .feature-box p, .sidebar-widget p:last-of-type, .testimonial-widget .client-meta .client-name h3, .widget-form-wrapper input,
 .widget-form-wrapper textarea, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .pagination-wrapper .pagination, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .about-section, .service-section, .achievement-counters, .split-section, .recent-projects, .portfolio-section, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
-.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-posts-section, .blog-grid-wrapper .quote-wrapper p, .cta-section, .cta-section.type-2 .cta-content-wrapper .cta-content p, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .client-section, .support-section, .features-section, .features-section .info-item,
+.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-posts-section, .blog-post .quote-wrapper p, .cta-section, .cta-section.type-2 .cta-content-wrapper .cta-content p, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .client-section, .support-section, .features-section, .features-section .info-item,
 .features-section .secondary-title, .about-us, .services-section, .fun-facts, .values-section, .testimonials-section, .video-section, .contact-section, .contact-section .contact-item-wrapper p, .slider-section, .about-us-section, .our-features, .our-values-section, .background-video-section, .contact-us-section, .newsletter-section, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .fun-facts-section.facts-about, .values-promo.values-about, .our-history, .service-promo .focused-text, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container {
   margin-bottom: 0;
 }
@@ -886,12 +889,12 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.mb-half, .team-member.type-3, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .background-video-section .video-content-wrapper p {
+.mb-half, .team-member.type-3, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .background-video-section .video-content-wrapper p {
   margin-bottom: 45px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mb-half, .team-member.type-3, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .background-video-section .video-content-wrapper p {
+  .mb-half, .team-member.type-3, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .background-video-section .video-content-wrapper p {
     margin-bottom: 33.75px;
   }
 }
@@ -5285,6 +5288,159 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 /**
+ * Components blog-list
+ *
+ */
+.post-single {
+  -webkit-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);;
+  -moz-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);;
+  -ms-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);;
+  -o-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);;
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);;
+}
+
+.post-single .post-media {
+  position: relative;
+  overflow: hidden;
+}
+
+.post-single .post-media img {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.post-single .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(215, 112, 109, 0.6);
+  opacity: 0;
+}
+
+.post-single .image-overlay i {
+  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: white;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.post-single .post-content {
+  padding: 40.5px;
+}
+
+.post-single .post-content p {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.post-single .post-meta p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.post-single .post-meta p span {
+  margin-right: 10px;
+}
+
+.post-single .post-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.post-single .post-title a {
+  color: #545454;
+}
+
+.post-single .post-title a:hover {
+  color: #d7706d;
+}
+
+.post-single .post-footer {
+  text-align: left;
+  padding-top: 10px;
+}
+
+.post-single .post-footer .default-btn {
+  min-width: 130px;
+  padding: 12px 20px;
+}
+
+.post-single .post-like,
+.post-single .post-share,
+.post-single .post-comments {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+  float: right;
+  margin-left: 15px;
+  text-align: center;
+  display: table;
+  font-size: 20px;
+  border: 0;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  display: inline-block;
+}
+
+.post-single .post-share:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.post-single .like-count,
+.post-single .comment-count {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  font-weight: 700;
+  color: white;
+  font-size: 11px;
+  height: 20px;
+  padding: 0 7px;
+  line-height: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.post-single:hover .post-media img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.post-single:hover .image-overlay {
+  opacity: 1;
+}
+
+/**
  * Components Scroll Down
  *
  */
@@ -6828,6 +6984,106 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   }
 }
 
+/**
+ * Components Social Share
+ *
+ */
+.social-share-btn {
+  position: relative;
+  padding: 0;
+  border: 0;
+  margin-top: -5px;
+  font-size: inherit;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  display: inline-block;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+.social-share-btn:hover, .social-share-btn:focus, .social-share-btn:active {
+  background: none;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+.social-share-btn .popover {
+  padding: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+.social-share-btn .popover .popover-content {
+  width: 150px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.social-share-btn .popover .popover-content a {
+  float: left;
+  color: white;
+  text-align: center;
+  background: #9aabb8;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  display: inline-block;
+}
+
+.social-share-btn .popover .popover-content a.share-twitter {
+  border-left: 1px solid #a9b7c3;
+  border-right: 1px solid #a9b7c3;
+}
+
+.social-share-btn .popover .popover-content a.share-google-plus:after {
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 10px solid #9aabb8;
+  margin-top: -5.5px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  bottom: auto;
+  left: auto;
+}
+
+.social-share-btn .popover .popover-content a:hover, .social-share-btn .popover .popover-content a:focus {
+  background: #a9b7c3;
+}
+
+.social-share-btn .popover .popover-content a:hover.share-google-plus:after, .social-share-btn .popover .popover-content a:focus.share-google-plus:after {
+  border-top-color: #a9b7c3;
+}
+
 /************************************************************
 	c20 - Layout - header
 *************************************************************/
@@ -7020,6 +7276,11 @@ header.header-white {
 header.header-white .intelligent-header {
   border-bottom: 1px solid #F8F9FA;
   background: white;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 }
 
 .header--fixed {
@@ -8609,31 +8870,31 @@ header.header-white .intelligent-header {
   opacity: 1;
 }
 
-.blog-grid-wrapper .post-media.quote-post > a {
+.blog-post .post-media.quote-post > a {
   display: table;
   width: 100%;
 }
 
-.blog-grid-wrapper .post-media.quote-post > a > div {
+.blog-post .post-media.quote-post > a > div {
   float: none;
   display: table-cell;
   vertical-align: middle;
 }
 
 @media only screen and (max-width: 767px) {
-  .blog-grid-wrapper .post-media.quote-post > a > div {
+  .blog-post .post-media.quote-post > a > div {
     display: block;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .blog-grid-wrapper .post-media.quote-post > a {
+  .blog-post .post-media.quote-post > a {
     display: block;
     width: auto;
   }
 }
 
-.blog-grid-wrapper .quote-wrapper {
+.blog-post .quote-wrapper {
   height: 203px;
   padding: 20px 30px;
   padding-left: 90px;
@@ -8646,7 +8907,7 @@ header.header-white .intelligent-header {
   background: linear-gradient(45deg, #3e3e3e, #717171);
 }
 
-.blog-grid-wrapper .quote-wrapper::before {
+.blog-post .quote-wrapper::before {
   content: "\f128";
   font-family: "Flaticon";
   font-size: 2.125rem;
@@ -8657,7 +8918,7 @@ header.header-white .intelligent-header {
   line-height: 1em;
 }
 
-.blog-grid-wrapper .quote-wrapper p {
+.blog-post .quote-wrapper p {
   margin-top: 10px;
   text-align: right;
   font-size: 0.8125rem;
@@ -8665,7 +8926,7 @@ header.header-white .intelligent-header {
   opacity: 0.7;
 }
 
-.blog-grid-wrapper blockquote {
+.blog-post blockquote {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8686,6 +8947,26 @@ header.header-white .intelligent-header {
   border: 0;
   width: 100%;
   height: 100%;
+}
+
+/**
+ * layout blog / blog-grid
+ *
+ */
+.blog-list-wrapper {
+  margin-bottom: -45px;
+}
+
+.blog-list-wrapper .carousel-arrow {
+  width: 40px;
+}
+
+.blog-list-wrapper .blog-post .quote-wrapper {
+  height: 250px;
+}
+
+.blog-list-wrapper .blog-post .quote-wrapper::before {
+  top: 60px;
 }
 
 /**

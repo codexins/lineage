@@ -24,6 +24,7 @@ header {
 		.intelligent-header {
 			border-bottom: 1px solid $cx-offset-color;
 			background: lighten($cx-text-color, 100%);
+			@include cx-box-shadow('0 0 1px rgba(0, 0, 0, 0.15)');
 		}
 	}
 }

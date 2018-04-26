@@ -1,0 +1,25 @@
+/**
+ * layout blog / blog-grid
+ *
+ */
+
+.blog-list-wrapper {
+	margin-bottom: - $cx-col-spacing;
+	.post-single {
+		@extend %mb-half;
+	}
+
+	.carousel-arrow {
+		width: 40px;
+	}
+
+	.blog-post {
+		.quote-wrapper {
+			height: 250px;
+
+			&::before {
+				top: 60px;
+			}
+		}
+	}
+}

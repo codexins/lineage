@@ -4,6 +4,7 @@ INDEX:
 
     s00 - Predefined Variables
     s01 - Preloader
+    s01 - Tooltips
     s02 - Primary Slider Settings
     s03 - Image Background Settings
     s04 - Full Screen Header
@@ -48,6 +49,7 @@ INDEX:
 
     var $window             = $(window),
         $document           = $(document),
+        $socialShare        = $('[data-toggle="popover"]'),
         $slider             = $("#primary-slider"),
         $vslider            = $("#primary-slider-with-video"),
         $pslider            = $("#primary-slider-with-particle"),
@@ -116,6 +118,29 @@ INDEX:
             overlayParentElement : 'body',
             transition: function(url){ window.location.href = url; }
         });
+    };
+
+
+    /************************************************************
+        s01 - Tooltips
+    *************************************************************/
+
+    CODEXIN.socialShares = function() {
+        $socialShare.each(function() {
+            $(this).popover({
+                html : true,
+                trigger: 'focus',
+                container : '.social-share-btn',
+                content: function() {
+                    return $('.share-hidden-content').html();
+                },
+                template: '<div class="popover" role="tooltip"><div class="popover-content"></div></div>'
+            });
+        });
+
+        $(".share-hidden-content a.share-twitter").attr("href", "https://twitter.com/home?status=" + window.location.href);
+        $(".share-hidden-content a.share-facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + window.location.href);
+        $(".share-hidden-content a.share-google-plus").attr("href", "https://plus.google.com/share?url=" + window.location.href);
     };
 
 
@@ -1113,6 +1138,7 @@ INDEX:
     // Document ready functions
     $document.on('ready', function() {
         CODEXIN.preloader(),
+        CODEXIN.socialShares(),
         CODEXIN.mainNav(),
         CODEXIN.headerAutoHide(),
         CODEXIN.animatedCounter(),

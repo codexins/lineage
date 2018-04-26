@@ -18,6 +18,16 @@
 		opacity: 1;
 	}
 
+  //   .col-md-6 {
+		// .quote-wrapper {
+		// 	height: 203px;
+		// }
+  //   }
+
+
+}
+
+.blog-post {
 	.post-media {
 		&.quote-post {
 			> a {
@@ -25,13 +35,6 @@
 			}
 		}
 	}
-
-  //   .col-md-6 {
-		// .quote-wrapper {
-		// 	height: 203px;
-		// }
-  //   }
-
 	.quote-wrapper {
 	    height: 203px;
 	    padding: 20px 30px;
