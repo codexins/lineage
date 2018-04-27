@@ -3,19 +3,16 @@
  *
  */
 
-.social-share-btn {
+#social-share-btn {
     position: relative;
     padding: 0;
     border: 0;
-    margin-top: -5px;
-    font-size: inherit;
     @include box(44px);
     @include border-radius(0);
 
     &:hover,
     &:focus,
     &:active {
-        background: none;
         border: 0;
         outline: 0;
         @include cx-box-shadow('none');
@@ -33,34 +30,34 @@
             padding: 0;
             position: relative;
             a {
-                float: left;
+                float: right;
                 color: lighten($cx-text-color, 100%);
                 text-align: center;
                 background: $cx-grey-color;
+                border-right: 1px solid lighten($cx-grey-color, 5%);
                 @include box(44px);
-                &.share-twitter {
-                    border-left: 1px solid lighten($cx-grey-color, 5%);
-                    border-right: 1px solid lighten($cx-grey-color, 5%);
-                }
                 &.share-google-plus {
-                    &:after {
+                    &::after {
                         border-left: 11px solid transparent;
                         border-right: 11px solid transparent;
                         border-top: 10px solid $cx-grey-color;
                         margin-top: -5.5px;
                         @extend %cx-transition;
-                        @include cx-prefix('transform', 'rotate(-90deg)');
-                        @include abs-position(50%, 3px, auto, auto);
+                        @include cx-prefix('transform', 'rotate(90deg)');
+                        @include abs-position(50%, auto, auto, 3px);
                     }
                 }
                 &:hover,
                 &:focus {
                     background: lighten($cx-grey-color, 5%);
                     &.share-google-plus {
-                        &:after {
+                        &::after {
                             border-top-color: lighten($cx-grey-color, 5%);
                         }
                     }
+                }
+                &:first-child {
+                    border-right: 0;
                 }
             }
         }

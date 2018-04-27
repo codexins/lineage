@@ -1,0 +1,71 @@
+/**
+ * Components aurhor-box
+ *
+ */
+
+.author-box {
+	padding: 30px;
+	border: 1px dashed $cx-border-color;
+	@extend .posts-single;
+	@extend %bgc-offset;
+
+	.img-thumb {
+		width: 150px;
+		border: 0;
+		vertical-align: top;
+
+		img {
+			padding: 3px;
+			border: 1px solid $cx-border-color;
+			@include border-radius(50%);
+		}
+	}
+
+	.author-description {
+		padding-left: 30px;
+	}
+
+	h3 {
+		font-size: calculateRem(20px);
+		margin-bottom: 15px;
+	}
+
+	p {
+		font-size: calculateRem(15px);
+	}
+
+	.author-socials {
+		@extend .social-icon-large;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+		a {
+			width: 30px;
+			height: 30px;
+
+			i {
+				line-height: 30px;
+				font-size: calculateRem(14px);
+			}
+		}
+	}
+
+	&:hover {
+		.img-thumb {
+			img {
+				@include cx-prefix('transform', 'none');
+			}
+		}
+	}
+
+	&:last-child {
+		padding-bottom: 30px;
+		border-bottom: 1px dashed $cx-border-color;
+	}
+}

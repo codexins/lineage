@@ -1,0 +1,17 @@
+/**
+ * Components Tooltip
+ *
+ */
+
+.tooltip {
+    &.top {
+        .tooltip-arrow {
+            border-top-color: $cx-tertiary-color;
+        }
+    }
+
+    .tooltip-inner {
+        background-color: $cx-tertiary-color;
+        @include border-radius(0);
+    }
+}

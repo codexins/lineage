@@ -11,6 +11,7 @@ to a reusable component.
 @import 'cp-mobile-menu';
 @import 'cp-button';
 @import 'cp-pageloader';
+@import 'cp-tooltip';
 @import 'cp-social-icon';
 @import 'cp-primary-title';
 @import 'cp-secondary-title';
@@ -21,6 +22,7 @@ to a reusable component.
 @import 'cp-cta';
 @import 'cp-counter';
 @import 'cp-tabs';
+@import 'cp-widgets';
 @import 'cp-portfolio';
 @import 'cp-team-member';
 @import 'cp-team-carousel';
@@ -35,7 +37,6 @@ to a reusable component.
 @import 'cp-skillbar';
 @import 'cp-feature-box';
 @import 'cp-widgetized-menu';
-@import 'cp-widgets';
 @import 'cp-particle';
 @import 'cp-pie-chart';
 @import 'cp-accordion';
@@ -45,3 +46,5 @@ to a reusable component.
 @import 'cp-image-box';
 @import 'cp-pagination';
 @import 'cp-social-share';
+@import 'cp-author-box';
+@import 'cp-comments';

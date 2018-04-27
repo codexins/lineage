@@ -5,6 +5,7 @@ INDEX:
     s00 - Predefined Variables
     s01 - Preloader
     s01 - Tooltips
+    s01 - Social Share
     s02 - Primary Slider Settings
     s03 - Image Background Settings
     s04 - Full Screen Header
@@ -125,22 +126,30 @@ INDEX:
         s01 - Tooltips
     *************************************************************/
 
+    CODEXIN.toolTips = function() {
+        $('body').tooltip( {selector: '[data-toggle=tooltip]'} );
+    };
+
+
+    /************************************************************
+        s01 - Social Share
+    *************************************************************/
+
     CODEXIN.socialShares = function() {
         $socialShare.each(function() {
             $(this).popover({
                 html : true,
-                trigger: 'focus',
-                container : '.social-share-btn',
+                container : '#social-share-btn',
                 content: function() {
-                    return $('.share-hidden-content').html();
+                    return $('#share-hidden-content').html();
                 },
                 template: '<div class="popover" role="tooltip"><div class="popover-content"></div></div>'
             });
         });
 
-        $(".share-hidden-content a.share-twitter").attr("href", "https://twitter.com/home?status=" + window.location.href);
-        $(".share-hidden-content a.share-facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + window.location.href);
-        $(".share-hidden-content a.share-google-plus").attr("href", "https://plus.google.com/share?url=" + window.location.href);
+        $("#share-hidden-content a.share-twitter").attr("href", "https://twitter.com/home?status=" + window.location.href);
+        $("#share-hidden-content a.share-facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + window.location.href);
+        $("#share-hidden-content a.share-google-plus").attr("href", "https://plus.google.com/share?url=" + window.location.href);
     };
 
 
@@ -1138,6 +1147,7 @@ INDEX:
     // Document ready functions
     $document.on('ready', function() {
         CODEXIN.preloader(),
+        CODEXIN.toolTips(),
         CODEXIN.socialShares(),
         CODEXIN.mainNav(),
         CODEXIN.headerAutoHide(),

@@ -16,38 +16,8 @@
 	    }
 	}
 
-	.image-overlay {
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    background: rgba($cx-secondary-color, 0.6);
-	    opacity: 0;
-	    @extend %cx-transition;
-
-	    i {
-		    font-size: 50px;
-		    position: absolute;
-		    left: 50%;
-		    top: 50%;
-		    color: lighten($cx-text-color, 100%);
-		    @include cx-prefix('backface-visibility', 'hidden');
-		    @include cx-centered('both');
-	    }
-	}
-
 	.post-content {
 		padding: 0.45 * $cx-section-spacing;
-
-		p {
-		    display: -webkit-box;
-		    overflow: hidden;
-		    text-overflow: ellipsis;
-		    -webkit-line-clamp: 3;
-		    -webkit-box-orient: vertical;
-		}
-
 	}
 
 	.post-meta {
@@ -126,9 +96,6 @@
 			img {
 				@include cx-prefix('transform', 'scale(1.1)');
 			}
-		}
-		.image-overlay {
-			opacity: 1;
 		}
 	}
 }
