@@ -7045,8 +7045,8 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 #social-share-btn .popover .popover-content a.share-google-plus::after {
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
-  border-top: 10px solid #9aabb8;
-  margin-top: -5.5px;
+  border-top: 11px solid #9aabb8;
+  margin-top: -6px;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -7194,7 +7194,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   width: calc(100% - 120px);
   padding: 20px;
   float: right;
-  background: #f6f6f6;
+  background: #f2f4f6;
   position: relative;
 }
 
@@ -7206,7 +7206,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   height: 0;
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
-  border-right: 12px solid #f6f6f6;
+  border-right: 12px solid #f2f4f6;
   margin-left: -12px;
   left: 0;
   top: 30px;

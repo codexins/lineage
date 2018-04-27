@@ -42,10 +42,10 @@
 				width:calc(100% - 120px);
 				padding: 20px;
 				float: right;
-				background: #f6f6f6;
+				background: darken($cx-offset-color, 2%);
 				position: relative;
 				&::before {
-					@include cx-triangle(#f6f6f6, left, 12px);
+					@include cx-triangle(darken($cx-offset-color, 2%), left, 12px);
 					left: 0;
 					top: 30px;
 				}
