@@ -200,38 +200,74 @@
 	}
 }
 
-//support widget 
+// Contact Box widget 
 
-// .support-widget {
-// 	position: relative;
-// 	img{
-// 		width:100%;
-// 		display: block;
-// 	}
-// 	a {
-// 		position:absolute;
-// 		width:100%;
-// 		padding:15px;
-// 		display: block;
-// 		bottom:45px;
-// 		left:0;
-// 		text-align: center;
-// 		@extend %bgc-tertiary;
-// 		@extend %color-white;
-// 		span {
-// 			display: block;
-// 			font-size: 16px;
-// 		}
-// 		@include respond-to(mobile) {
-// 			bottom:30px;
-// 		}
-// 	}
+.contact-box-widget {
+	> a {
+		display: block;
+	    padding: 30px 25px;
+	    text-align: center;
+	    text-shadow: 0 1px 1px #111;
+		@extend %bgc-primary;
+	}
 
-// 	@include respond-to(large-mobile) {
-// 		width: 400px;
-// 	}
+	h3 {
+	    font-size: calculateRem(19px);
+	    @extend %color-white;
+	    @extend %mb0;
+	}
 
-// }
+	p {
+		font-size: calculateRem(15px);
+		@extend %color-white;
+	}
+
+	.icon-wrapper {
+	    text-align: center;
+	    margin: 0 auto;
+	    padding: 20px;
+
+		i {
+		    font-size: 60px;
+		    margin: 15px 0;
+		    border-radius: 50%;
+		    position: relative;
+		    z-index: 1;
+	        background: rgba(255,255,255,0.2);
+	        @extend %cx-transition;
+	        @extend %color-white;
+	        @include box(90px);
+	        @include border-radius(50%);
+
+	        &::after {
+			    width: 100%;
+			    height: 100%;
+			    padding: 8px;
+			    opacity: 0;
+			    @include border-radius(50%);
+			    @include abs-position(-8px, auto, auto, -8px);
+			    @include cx-box-shadow('0 0 0 5px #fff');
+			    @include cx-prefix('transform', 'scale(0.8)');
+			    @include cx-prefix('box-sizing', 'content-box');
+			    @extend %cx-transition;
+	        }
+		}
+	}
+
+	&:hover {
+		.icon-wrapper {
+			i {
+				@extend %bgc-white;
+			    @extend %color-primary;
+
+			    &::after {
+				    opacity: 1;
+				    @include cx-prefix('transform', 'scale(1)');
+			    }
+			}
+		}
+	}
+}
 
 
 
@@ -396,36 +432,6 @@
 	}
 }
 
-// service widget
-
-// .service-widget {
-// 	@extend .category-widget;
-// 	ul {
-// 		li {
-// 			a {
-// 			    padding: 8px 10px 8px 45px;
-// 			    margin-bottom: 5px;
-// 			    position: relative;
-// 			    &::before {
-// 				    content: "\f156";
-// 				    font-family: "Flaticon";
-// 				    position: absolute;
-// 				    left: 0;
-// 				    top: 0;
-// 				    right: auto;
-// 				    bottom: 0;
-// 				    margin: auto;
-// 				    display: block;
-// 				    padding-top: 8px;
-// 				    padding-bottom: 8px;
-// 				    padding-left: 15px;
-// 			    }
-// 			    @extend %bgc-offset;
-// 			}
-// 		}
-// 	}
-// }
-
 
 // Instagram Widget
 
@@ -471,42 +477,6 @@
 		}
 	}
 }
-
-// working hour widget
-// .working-hour-widget {
-// 	ul {
-// 		margin: 0;
-// 		padding: 0;
-// 		border:1px solid #fff;
-// 		display: block;
-// 		max-width:87%;
-// 		li {
-// 			list-style-type: none;
-// 			display: block;
-// 			border-bottom:1px solid #fff;
-// 			padding:5px 15px;
-// 			span {
-// 				text-align: right;
-// 				display: inline-block;
-// 				float: right;
-// 			}
-// 			&:last-child {
-// 				border-bottom:0;
-// 			}
-
-// 			@include respond-to(notebook) {
-// 				font-size: 14px;
-// 			}
-// 		}
-// 		@include respond-to(notebook) {
-// 			max-width:100%;
-// 		}
-
-// 		@include respond-to(large-mobile) {
-// 			max-width: 400px;
-// 		}
-// 	}
-// }
 
 
 // Testimonial Widget

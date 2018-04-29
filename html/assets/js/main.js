@@ -880,12 +880,12 @@ INDEX:
     *************************************************************/
 
     CODEXIN.smoothScroll = function() {
-        $('.explore').on('click', function(event) {
+        $('.explore, .sm-scroll').on('click', function(event) {
             var target = $(this.getAttribute('href'));
             if (target.length) {
                 event.preventDefault ? event.preventDefault() : (event.returnValue = false);
                 $('html, body').stop().animate({
-                    scrollTop: target.offset().top + 30
+                    scrollTop: target.offset().top
                 }, 1500, 'easeInOutExpo');
             }
         });

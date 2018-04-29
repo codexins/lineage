@@ -1,0 +1,85 @@
+/**
+ * Layout faq/ faq
+ *
+ */
+
+.faq-tabs {
+	.nav-tabs {
+		border-top: 1px solid $cx-border-color;
+	    border-bottom: 1px solid $cx-border-color;
+
+	    > li {
+	    	margin-right: 0;
+
+	    	> a {
+	    		margin: 0;
+	    		border: 0;
+	    		padding: 12px 15px;
+	    	}
+
+	    	&.active {
+	    		a {
+	    			border: 0;
+	    		}
+	    	}
+	    }
+	}
+
+	.accordion {
+		.panel-heading {
+			a {
+				font-size: 1rem;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+
+.icon-check {
+    padding: 0;
+    margin-bottom: $cx-col-spacing;
+    list-style: none;
+
+    li {
+    	margin-bottom: 10px;
+    }
+}
+
+.faq-list,
+.single-faq {
+	border-top: 1px dashed $cx-border-color;
+	@extend %pt-half;
+}
+
+.faq-list {
+	.icon-check {
+		a {
+			font-weight: bold;
+			color: $cx-text-color;
+
+			&:hover {
+				@extend %color-secondary;
+			}
+		}
+	}
+}
+
+.single-faq {
+	@extend %pb-half;
+	h4 {
+		font-weight: 600;
+	}
+	p {
+		&:last-of-type {
+			@extend %mb0;
+		}
+	}
+}
+
+.faq-description {
+	> .single-faq {
+		&:last-child {
+			@extend %pb0;
+		}
+	}
+}
