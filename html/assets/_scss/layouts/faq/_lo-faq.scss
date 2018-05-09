@@ -65,6 +65,7 @@
 }
 
 .single-faq {
+	position: relative;
 	@extend %pb-half;
 	h4 {
 		font-weight: 600;

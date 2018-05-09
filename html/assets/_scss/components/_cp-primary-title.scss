@@ -7,8 +7,7 @@
 	color: darken($cx-text-color, 5%);
 	font-weight: 300;
 	letter-spacing: 1px;
-	text-transform: capitalize;
-	font-size: 2.3 * $cx-body-font-size;
+	font-size: calculateRem(2.17 * $cx-body-font-size);
 	margin-bottom: $cx-heading-margin-bottom;
 	@include respond-to(notebook){
 		font-size: 2 * $cx-body-font-size;

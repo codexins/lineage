@@ -530,6 +530,7 @@ input[placeholder] {
   color: white;
 }
 
+select:focus,
 button:focus,
 input:focus,
 textarea:focus {
@@ -572,13 +573,13 @@ input[type="button"]:hover {
 /************************************************************
 	c02 - Base - Placeholders
 *************************************************************/
-.vpadding, .cta-centered, .about-section, .achievement-counters, .split-section, .recent-projects, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .support-section, .features-section, .about-us, .services-section, .fun-facts, .testimonials-section, .video-section, .about-us-section, .our-features, .our-values-section, .contact-us-section, .newsletter-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
+.vpadding, .cta-centered, .about-section, .achievement-counters, .split-section, .recent-projects, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .support-section, .features-section, .about-us, .services-section, .fun-facts, .testimonials-section, .video-section, .about-us-section, .our-features, .our-values-section, .contact-us-section, .newsletter-section, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .vpadding, .cta-centered, .about-section, .achievement-counters, .split-section, .recent-projects, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .support-section, .features-section, .about-us, .services-section, .fun-facts, .testimonials-section, .video-section, .about-us-section, .our-features, .our-values-section, .contact-us-section, .newsletter-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
+  .vpadding, .cta-centered, .about-section, .achievement-counters, .split-section, .recent-projects, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .support-section, .features-section, .about-us, .services-section, .fun-facts, .testimonials-section, .video-section, .about-us-section, .our-features, .our-values-section, .contact-us-section, .newsletter-section, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
     padding-top: 67.5px;
     padding-bottom: 67.5px;
   }
@@ -607,16 +608,16 @@ input[type="button"]:hover {
   position: absolute;
 }
 
-.whole-wrapper, .instagram-widget, .cx-pagination, .comments-area ol li, .single-portfolio-intro .portfolio-content, .single-portfolio-intro .portfolio-meta, .single-portfolio-intro .portfolio-images {
+.whole-wrapper, .instagram-widget, .cx-pagination, .comments-area ol li, .single-portfolio-intro .portfolio-content, .single-portfolio-intro .portfolio-meta, .single-portfolio-intro .portfolio-images, .error-404-wrapper {
   zoom: 1;
 }
 
-.whole-wrapper::before, .instagram-widget::before, .cx-pagination::before, .comments-area ol li::before, .single-portfolio-intro .portfolio-content::before, .single-portfolio-intro .portfolio-meta::before, .single-portfolio-intro .portfolio-images::before, .whole-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after {
+.whole-wrapper::before, .instagram-widget::before, .cx-pagination::before, .comments-area ol li::before, .single-portfolio-intro .portfolio-content::before, .single-portfolio-intro .portfolio-meta::before, .single-portfolio-intro .portfolio-images::before, .error-404-wrapper::before, .whole-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after, .error-404-wrapper::after {
   content: "";
   display: table;
 }
 
-.whole-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after {
+.whole-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after, .error-404-wrapper::after {
   clear: both;
 }
 
@@ -626,11 +627,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
 
-.info-item.flip-card .image-placeholder, .team-member .team-media .team-social-wrapper, .info-box-wrapper, .image-carousel-full-width .swiper-slide .icon-wrapper, .about-section, .cta-section.type-2, .video-section, .newsletter-section, .cta-section.cta-service, .cta-split.split-cta-service {
+.info-item.flip-card .image-placeholder, .team-member .team-media .team-social-wrapper, .info-box-wrapper, .image-carousel-full-width .swiper-slide .icon-wrapper, .about-section, .cta-section.type-2, .video-section, .newsletter-section, .social-section, .contacts-form-section, .cta-section.cta-service, .cta-split.split-cta-service {
   position: relative;
 }
 
-.info-item.flip-card .image-placeholder::before, .team-member .team-media .team-social-wrapper::before, .info-box-wrapper::before, .image-carousel-full-width .swiper-slide .icon-wrapper::before, .about-section::before, .cta-section.type-2::before, .video-section::before, .newsletter-section::before, .cta-section.cta-service::before, .cta-split.split-cta-service::before {
+.info-item.flip-card .image-placeholder::before, .team-member .team-media .team-social-wrapper::before, .info-box-wrapper::before, .image-carousel-full-width .swiper-slide .icon-wrapper::before, .about-section::before, .cta-section.type-2::before, .video-section::before, .newsletter-section::before, .social-section::before, .contacts-form-section::before, .cta-section.cta-service::before, .cta-split.split-cta-service::before {
   background: rgba(0, 0, 0, 0.55);
   content: "";
   display: block;
@@ -737,7 +738,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 }
 
 .bgc-primary, .text-widget .contact-no a, .contact-box-widget > a, .pricing-table-type-3.featured .pricing-title, .post-single .like-count,
-.post-single .comment-count, .image-box-wrapper figure, .service-tabs .nav-swiper .swiper-wrapper .selected, .portfolio-quote {
+.post-single .comment-count, .accordion.white-text .panel-heading.active, .accordion.white-text .tab.iconic-tab > .nav-tabs li.panel-heading, .tab.iconic-tab > .nav-tabs .accordion.white-text li.panel-heading, .image-box-wrapper figure, .service-tabs .nav-swiper .swiper-wrapper .selected, .portfolio-quote {
   background-color: #947cb0;
 }
 
@@ -772,11 +773,11 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   background-color: #fff;
 }
 
-.color-primary, .contact-box-widget:hover .icon-wrapper i, .single-portfolio-intro .portfolio-summary h3 {
+.color-primary, .contact-box-widget:hover .icon-wrapper i, .single-portfolio-intro .portfolio-summary h3, .contacts-form-section .contact-item h4 {
   color: #947cb0;
 }
 
-.color-secondary, .accordion.accordion-type-2 .panel-heading a:hover, .accordion.accordion-type-2 .panel-heading.active a, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a, .accordion.accordion-type-2 .panel-heading.active a::after, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a::after, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a::after, .single-portfolio-intro .portfolio-summary a:hover, .single-portfolio-intro .portfolio-meta .counter-item p a:hover, .cta-section.type-2 .cta-content-wrapper i, .cta-section.type-2 .cta-content-wrapper h2, .feature-title-wrapper h4, .faq-list .icon-check a:hover {
+.color-secondary, .accordion.accordion-type-2 .panel-heading a:hover, .accordion.accordion-type-2 .panel-heading.active a, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a, .accordion.accordion-type-2 .panel-heading.active a::after, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a::after, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a::after, .accordion.rounded-corners .panel-heading.active .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .panel-heading.active .accordion-toggle, .accordion.rounded-corners .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs .accordion.rounded-corners li.panel-heading .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs #colophon.type-3 .footer-newsletter input.accordion li.panel-heading .accordion-toggle, .single-portfolio-intro .portfolio-summary a:hover, .single-portfolio-intro .portfolio-meta .counter-item p a:hover, .cta-section.type-2 .cta-content-wrapper i, .cta-section.type-2 .cta-content-wrapper h2, .contacts-form-section .contact-item a:hover, .contacts-form-section .transparent-input input[type="submit"]:hover, .contacts-form-section .transparent-input input[type="submit"]:focus, .feature-title-wrapper h4, .faq-list .icon-check a:hover, .error-404-wrapper h2 {
   color: #d7706d;
 }
 
@@ -805,7 +806,16 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .cta-centered .white-text, .counter-item.type-3.white-text, .tab .nav-tabs > li.active > a, .tab.iconic-tab > .nav-tabs > li > a,
 .tab .nav-tabs > li.active a:focus, .tab.iconic-tab > .nav-tabs > li a:focus,
 .tab .nav-tabs > li.active a:hover, .tab.iconic-tab > .nav-tabs > li a:hover, .tab .nav-tabs > li.active > a:hover, .tab.iconic-tab > .nav-tabs > li > a:hover, .text-widget .contact-no a, .contact-box-widget h3, .contact-box-widget p, .contact-box-widget .icon-wrapper i, .team-member-card .team-details h2,
-.team-member-card .team-details p, .pricing-table-type-3 .pricing-title, .image-box-wrapper figure figcaption,
+.team-member-card .team-details p, .pricing-table-type-3 .pricing-title, .accordion.white-text h1,
+.accordion.white-text h2,
+.accordion.white-text h3,
+.accordion.white-text h4,
+.accordion.white-text h5,
+.accordion.white-text h6,
+.accordion.white-text p,
+.accordion.white-text .accordion-toggle,
+.accordion.white-text .accordion-toggle:hover,
+.accordion.white-text .accordion-toggle::after, .image-box-wrapper figure figcaption,
 .image-box-wrapper figure figcaption > a, .slider-section h2.sp-layer,
 .slider-section p.sp-layer,
 .full-screen-slider-section h2.sp-layer,
@@ -845,7 +855,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .widget-form-wrapper textarea, .team-member-card .team-details h2,
 .team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .feature-box h3, .feature-box p, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .pagination-wrapper .pagination, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .about-section, .service-section, .achievement-counters, .split-section, .recent-projects, .portfolio-section, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
 .single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-posts-section, .blog-grid-wrapper .quote-wrapper, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section, .cta-section.type-2 .cta-content-wrapper .cta-content p, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .client-section, .support-section, .features-section, .features-section .info-item,
-.features-section .secondary-title, .about-us, .services-section, .fun-facts, .values-section, .testimonials-section, .video-section, .contact-section, .contact-section .contact-item-wrapper p, .slider-section, .about-us-section, .our-features, .our-values-section, .background-video-section, .contact-us-section, .newsletter-section, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .fun-facts-section.facts-about, .values-promo.values-about, .our-history, .service-promo .focused-text, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type {
+.features-section .secondary-title, .about-us, .services-section, .fun-facts, .values-section, .testimonials-section, .video-section, .contact-section, .contact-section .contact-item-wrapper p, .slider-section, .about-us-section, .our-features, .our-values-section, .background-video-section, .contact-us-section, .newsletter-section, .social-section, .contacts-form-section, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .fun-facts-section.facts-about, .values-promo.values-about, .our-history, .service-promo .focused-text, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .error-404-wrapper {
   margin-bottom: 0;
 }
 
@@ -889,12 +899,12 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.mb-half, .team-member.type-3, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .background-video-section .video-content-wrapper p {
+.mb-half, .team-member.type-3, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p {
   margin-bottom: 45px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mb-half, .team-member.type-3, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .background-video-section .video-content-wrapper p {
+  .mb-half, .team-member.type-3, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p {
     margin-bottom: 33.75px;
   }
 }
@@ -931,7 +941,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.rounded-corners, #colophon.type-3 .footer-newsletter input, .portfolio-filter.type-3 li, .pie-chart-wrapper, .pie-chart-wrapper h6, .accordion .panel-heading {
+.rounded-corners, #colophon.type-3 .footer-newsletter input, .portfolio-filter.type-3 li, .pie-chart-wrapper, .pie-chart-wrapper h6, .accordion.rounded-corners .panel-heading, #colophon.type-3 .footer-newsletter input.accordion .panel-heading {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -1622,6 +1632,104 @@ to a reusable component.
   }
 }
 
+.social-icons p {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  line-height: 36px;
+}
+
+.social-icons ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.social-icons ul li a {
+  margin-right: 10px;
+  color: white;
+  font-size: 1.0625rem;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.social-icons ul li a.facebook {
+  background: #2D5F9A;
+}
+
+.social-icons ul li a.facebook:hover {
+  background: #244c7a;
+  color: white;
+}
+
+.social-icons ul li a.twitter {
+  background: #00C3F3;
+}
+
+.social-icons ul li a.twitter:hover {
+  background: #00a2ca;
+  color: white;
+}
+
+.social-icons ul li a.google-plus {
+  background: #d34836;
+}
+
+.social-icons ul li a.google-plus:hover {
+  background: #b83928;
+  color: white;
+}
+
+.social-icons ul li a.instagram {
+  background: #405de6;
+}
+
+.social-icons ul li a.instagram:hover {
+  background: #1d3fe0;
+  color: white;
+}
+
+.social-icons ul li a.pinterest {
+  background: #cd2029;
+}
+
+.social-icons ul li a.pinterest:hover {
+  background: #aa1a22;
+  color: white;
+}
+
+.social-icons ul li a.linkedin {
+  background: #0d77b7;
+}
+
+.social-icons ul li a.linkedin:hover {
+  background: #0a5e91;
+  color: white;
+}
+
+.social-icons ul li:last-child a {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 479px) {
+  .social-icons ul li {
+    margin-bottom: 10px;
+  }
+}
+
 /**
  * Components Primary Titile
  *
@@ -1630,8 +1738,7 @@ to a reusable component.
   color: #474747;
   font-weight: 300;
   letter-spacing: 1px;
-  text-transform: capitalize;
-  font-size: 39.1px;
+  font-size: 2.30563rem;
   margin-bottom: 25px;
 }
 
@@ -2639,6 +2746,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .counter-item .counter {
+  font-family: "Lato", sans-serif;
   font-size: 42px;
   margin-bottom: 2px;
   line-height: 100%;
@@ -3084,26 +3192,26 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   font-size: 0.85em;
 }
 
-.search-widget form {
+.search-widget form, .error-404-wrapper form {
   width: 100%;
   overflow: hidden;
 }
 
-.search-widget form input {
+.search-widget form input, .error-404-wrapper form input {
   display: table-cell;
   vertical-align: middle;
   margin-bottom: 0;
   height: 44px;
 }
 
-.search-widget form input[type="text"],
-.search-widget form input[type="search"] {
+.search-widget form input[type="text"], .error-404-wrapper form input[type="text"],
+.search-widget form input[type="search"], .error-404-wrapper form input[type="search"] {
   float: left;
   width: 82%;
   border-right: 0;
 }
 
-.search-widget form input[type="submit"] {
+.search-widget form input[type="submit"], .error-404-wrapper form input[type="submit"] {
   z-index: 9;
   outline: 0;
   width: 18% !important;
@@ -5214,8 +5322,8 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .testimonial-container .testimonial-media i {
   position: relative;
-  top: 11px;
-  left: 11px;
+  top: 9px;
+  left: 9px;
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -5223,6 +5331,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   background: #d7706d;
   font-size: 2.5em;
   text-align: center;
+  z-index: 1;
   color: white;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -6590,14 +6699,11 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .accordion .panel-heading {
   padding: 0;
   border: 1px solid #ddd;
-}
-
-.accordion .panel-heading.active, .accordion .tab.iconic-tab > .nav-tabs li.panel-heading, .tab.iconic-tab > .nav-tabs .accordion li.panel-heading {
-  -webkit-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
-  -moz-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
-  -ms-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
-  -o-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
-  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
 }
 
 .accordion .panel-heading.active .accordion-toggle::after, .accordion .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle::after, .tab.iconic-tab > .nav-tabs .accordion li.panel-heading .accordion-toggle::after {
@@ -6636,8 +6742,33 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   margin: auto;
 }
 
+.accordion.white-text .panel-heading {
+  background: transparent;
+}
+
+.accordion.white-text .panel-heading.active, .accordion.white-text .tab.iconic-tab > .nav-tabs li.panel-heading, .tab.iconic-tab > .nav-tabs .accordion.white-text li.panel-heading {
+  border-color: #947cb0;
+}
+
+.accordion.white-text .panel-heading + .panel-collapse > .panel-body {
+  border-top: 0;
+}
+
+.accordion.with-shadow .panel-heading.active, .accordion.with-shadow .tab.iconic-tab > .nav-tabs li.panel-heading, .tab.iconic-tab > .nav-tabs .accordion.with-shadow li.panel-heading {
+  -webkit-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  -moz-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  -ms-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  -o-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+}
+
 .accordion.accordion-type-2 .panel {
   border-bottom: 1px solid #ddd;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
 }
 
 .accordion.accordion-type-2 .panel-heading {
@@ -6671,6 +6802,18 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .accordion.accordion-type-2 .panel-body {
   padding-left: 0;
+}
+
+.accordion.accordion-type-2.white-text .panel-heading {
+  background: transparent;
+}
+
+.accordion.accordion-type-2.white-text .panel {
+  border-color: #aaa;
+}
+
+.accordion.rounded-corners .panel-heading + .panel-collapse > .panel-body, #colophon.type-3 .footer-newsletter input.accordion .panel-heading + .panel-collapse > .panel-body {
+  border-top: 0;
 }
 
 /**
@@ -10305,6 +10448,120 @@ blockquote {
 }
 
 /**
+ * Layout contact/ contact
+ *
+ */
+.social-section, .contacts-form-section {
+  background-image: url("../img/background/counter-up.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.social-section .default-btn, .contacts-form-section .default-btn {
+  margin-top: 49.5px;
+}
+
+.social-section::before, .contacts-form-section::before {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.intro-social-section .social-icons > p {
+  float: none;
+  margin-right: 0;
+}
+
+.contacts-form-section {
+  background-image: url("../img/background/counter-up.jpg");
+}
+
+.contacts-form-section::before {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.contacts-form-section .quote-form-wrapper,
+.contacts-form-section .contact-info-wrapper {
+  background-image: url(../img/cta/cta-bg-1.png);
+  background-repeat: repeat;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #c4c4c4;
+  min-height: 480px;
+}
+
+.contacts-form-section .contact-item {
+  margin-bottom: 40px;
+}
+
+.contacts-form-section .contact-item h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.contacts-form-section .contact-item > span {
+  display: block;
+}
+
+.contacts-form-section .contact-item a {
+  color: #c4c4c4;
+}
+
+.contacts-form-section .transparent-input textarea,
+.contacts-form-section .transparent-input select,
+.contacts-form-section .transparent-input input:not([type="submit"]) {
+  color: #c4c4c4;
+  border-color: #c4c4c4;
+}
+
+.contacts-form-section .transparent-input textarea:focus, .contacts-form-section .transparent-input textarea:active,
+.contacts-form-section .transparent-input select:focus,
+.contacts-form-section .transparent-input select:active,
+.contacts-form-section .transparent-input input:not([type="submit"]):focus,
+.contacts-form-section .transparent-input input:not([type="submit"]):active {
+  border-color: #d7706d;
+}
+
+.contacts-form-section .transparent-input input[type="submit"] {
+  background: transparent;
+  border-color: #c4c4c4;
+  color: #c4c4c4;
+}
+
+.contacts-form-section .transparent-input input[type="submit"]:hover, .contacts-form-section .transparent-input input[type="submit"]:focus {
+  border-color: #d7706d;
+}
+
+.contacts-form-section .transparent-input .select-wrapper {
+  border-color: #c4c4c4;
+}
+
+.contacts-form-section .transparent-input .select-wrapper option {
+  color: #545454;
+}
+
+.contacts-form-section ::-webkit-input-placeholder {
+  color: #c4c4c4;
+}
+
+.contacts-form-section ::-moz-placeholder {
+  color: #c4c4c4;
+}
+
+.contacts-form-section :-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.contacts-form-section :-moz-placeholder {
+  color: #c4c4c4;
+}
+
+.contact-section.h-600 #gmap {
+  height: 600px;
+}
+
+/**
  * Layout clients/ clients
  *
  */
@@ -10859,8 +11116,43 @@ blockquote {
   color: #545454;
 }
 
+.single-faq {
+  position: relative;
+}
+
 .single-faq h4 {
   font-weight: 600;
+}
+
+/**
+ * Layout 404/ 404
+ *
+ */
+.error-404-wrapper {
+  text-align: center;
+}
+
+.error-404-wrapper form {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-404-wrapper h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.625rem;
+}
+
+.error-404-wrapper p {
+  font-size: 1.125rem;
+}
+
+.error-404-wrapper i {
+  font-size: 5rem;
+  display: block;
+  margin-bottom: 31.5px;
+  color: #a1a1a1;
 }
 
 /*# sourceMappingURL=style.css.map */

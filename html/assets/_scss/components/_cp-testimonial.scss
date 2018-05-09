@@ -41,8 +41,8 @@
 
 	    i {
 		    position: relative;
-		    top: 11px;
-		    left: 11px;
+		    top: 9px;
+		    left: 9px;
 		    width: 80px;
 		    height: 80px;
 		    line-height: 80px;
@@ -50,6 +50,7 @@
 		    background: $cx-secondary-color;
 		    font-size: 2.5em;
 		    text-align: center;
+		    z-index: 1;
 		    color: lighten($cx-text-color, 100%);
 		    @include border-radius(50%);
 	    }

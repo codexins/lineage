@@ -16,12 +16,12 @@
 	.panel-heading {
 		padding: 0;
 		border: 1px solid $cx-border-color;
+		@include border-radius(0);
 		@extend %cx-transition;
 		@extend %bgc-white;
-		@extend %rounded-corners;
 
 		&.active {
-			@include cx-box-shadow('5px 5px 25px 0 rgba(46,61,73,.2)')
+			
 
 			.accordion-toggle {
 				&::after {
@@ -61,9 +61,47 @@
 		}
 	}
 
+	&.white-text {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		.accordion-toggle,
+		.accordion-toggle:hover,
+		.accordion-toggle::after {
+			@extend %color-white;
+		}
+
+		.panel-heading {
+			background: transparent;
+			&.active {
+				border-color: $cx-primary-color;
+				@extend %bgc-primary;
+			}
+			+ .panel-collapse {
+				> .panel-body {
+					border-top: 0;
+				}
+			}
+		}
+
+	}
+
+	&.with-shadow {
+		.panel-heading {
+			&.active {
+				@include cx-box-shadow('5px 5px 25px 0 rgba(46,61,73,.2)');
+			}
+		}
+	}
+
 	&.accordion-type-2 {
 		.panel {
 			border-bottom: 1px solid $cx-border-color;
+			@include border-radius(0);
 		}
 		.panel-heading {
 			border: 0;
@@ -100,6 +138,33 @@
 
 		.panel-body {
 			padding-left: 0;
+		}
+
+		&.white-text {
+			.panel-heading {
+				background: transparent;
+			}
+
+			.panel {
+				border-color: #aaa;
+			}
+		}
+	}
+
+	&.rounded-corners {
+		.panel-heading {
+			@extend %rounded-corners;
+			+ .panel-collapse {
+				> .panel-body {
+					border-top: 0;
+				}
+			}
+
+			&.active {
+				.accordion-toggle {
+					@extend %color-secondary;
+				}
+			}
 		}
 	}
 }

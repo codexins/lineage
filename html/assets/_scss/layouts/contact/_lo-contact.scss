@@ -1,0 +1,132 @@
+/**
+ * Layout contact/ contact
+ *
+ */
+
+
+.social-section {
+	background-image: url("../img/background/counter-up.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	.default-btn {
+		margin-top: 1.1 * $cx-col-spacing
+	}
+	@extend %mb0;
+	@extend %vpadding;
+	@extend %overlay;
+	&::before {
+		background: rgba(0, 0, 0, 0.75);
+	}
+}
+
+.intro-social-section {
+	.social-icons {
+		> p {
+		    float: none;
+		    margin-right: 0;
+		    @extend %mb-half;
+		}
+
+		li {
+			@extend %mb0;
+		}
+	}
+}
+
+.contacts-form-section {
+	@extend .social-section;
+	background-image: url("../img/background/counter-up.jpg");
+	&::before {
+		background: rgba(0, 0, 0, 0.55);
+	}
+	
+	.quote-form-wrapper,
+	.contact-info-wrapper {
+    background-image: url(../img/cta/cta-bg-1.png);
+    background-repeat: repeat;
+		padding: 30px;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: darken($cx-border-color, 10%);
+		min-height: 480px;
+	}
+
+	.contact-item {
+		margin-bottom: 40px;
+		h4 {
+		    font-size: 1rem;
+		    text-transform: uppercase;
+		    margin-bottom: 12px;
+		    @extend %color-primary;
+		}
+
+		> span {
+			display: block;
+		}
+
+		a {
+			color: darken($cx-border-color, 10%);
+			&:hover {
+				@extend %color-secondary;
+			}
+		}
+
+		&:last-child {
+			@extend %mb0;
+		}
+	}
+
+	.transparent-input {
+		textarea,
+		select,
+		input:not([type="submit"]) {
+			color: darken($cx-border-color, 10%);
+			border-color: darken($cx-border-color, 10%);
+			&:focus,
+			&:active {
+				border-color: $cx-secondary-color;
+			}
+		}
+
+		input[type="submit"] {
+			background: transparent;
+			border-color: darken($cx-border-color, 10%);
+			color: darken($cx-border-color, 10%);
+
+			&:hover,
+			&:focus {
+				border-color: $cx-secondary-color;
+				@extend %color-secondary;
+			}
+		}
+
+		.select-wrapper {
+			border-color: darken($cx-border-color, 10%);
+			option {
+				color: $cx-text-color;
+			}
+		}
+	}
+
+	::-webkit-input-placeholder {
+	  color: darken($cx-border-color, 10%);
+	}
+	::-moz-placeholder {
+	  color: darken($cx-border-color, 10%);
+	}
+	:-ms-input-placeholder {
+	  color: darken($cx-border-color, 10%);
+	}
+	:-moz-placeholder {
+	  color: darken($cx-border-color, 10%);
+	}
+}
+
+.contact-section {
+	&.h-600 {
+		#gmap {
+			height: 600px;
+		}
+	}
+}

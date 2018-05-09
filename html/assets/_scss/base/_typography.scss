@@ -149,6 +149,7 @@ input:-ms-input-placeholder,
 input[placeholder] {
     color: lighten($cx-text-color,100%) ;
 }
+select:focus,
 button:focus,
 input:focus,
 textarea:focus {

@@ -1,0 +1,34 @@
+/**
+ * Layout 404/ 404
+ *
+ */
+
+.error-404-wrapper {
+	text-align: center;
+	@extend %clearfix;
+	@extend %mb0;
+	@extend .search-widget;
+	form {
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h2 {
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    font-size: calculateRem(26px);
+	    @extend %color-secondary;
+	}
+
+	p {
+		font-size: calculateRem(18px);
+	}
+
+	i {
+	    font-size: calculateRem(80px);
+	    display: block;
+	    margin-bottom: 0.35 * $cx-section-spacing;
+	    color: lighten($cx-text-color, 30%);
+	}
+}
