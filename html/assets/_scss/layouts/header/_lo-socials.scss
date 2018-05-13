@@ -15,7 +15,7 @@
 			color: #fff;
 			font-size: 14px;
 			line-height: 22px;
-			padding: 39px 8px;
+			padding: 39px 10px;
 			padding-bottom: 25px;
 			&:hover {
 				color: lighten($cx-text-color, 50%);
@@ -33,6 +33,12 @@
                 @include respond-to(notebook) {
 				    padding-right: inherit;
                 }
+			}
+		}
+
+		&:last-child {
+			a {
+				padding-right: 0;
 			}
 		}
 	}

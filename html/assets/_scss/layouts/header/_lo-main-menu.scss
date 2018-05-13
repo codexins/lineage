@@ -11,7 +11,7 @@
         & > a:not(.dd-toggle) {
             display: block;
             line-height: 22px;
-            padding: 39px 15px;
+            padding: 39px 11px;
             font-weight: 700;
             font-size: 14px;
             letter-spacing: 1px;
@@ -36,6 +36,7 @@
                 &::after {
                     content: "\f107";
                     font-weight: normal;
+                    margin-left: 8px;
                 }
             }
         }
@@ -53,8 +54,7 @@
         background: $cx-tertiary-color;
         li {
             > a {
-                padding-top: 9px;
-                padding-bottom: 9px;
+                padding: 9px 15px;
                 text-shadow: none;
                 text-align: left;
                 font-size: 12px;

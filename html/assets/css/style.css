@@ -5069,7 +5069,8 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   background-color: white;
 }
 
-.pricing-table-type-2 .pricing-features strike {
+.pricing-table-type-2 .pricing-features .not-valid {
+  text-decoration: line-through;
   opacity: 0.6;
 }
 
@@ -7592,7 +7593,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 #main-nav li > a:not(.dd-toggle) {
   display: block;
   line-height: 22px;
-  padding: 39px 15px;
+  padding: 39px 11px;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 1px;
@@ -7623,6 +7624,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 #main-nav li.has-sub > a::after {
   content: "\f107";
   font-weight: normal;
+  margin-left: 8px;
 }
 
 #main-nav li:last-child a {
@@ -7637,8 +7639,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 #main-nav .sub-menu li > a {
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding: 9px 15px;
   text-shadow: none;
   text-align: left;
   font-size: 12px;
@@ -7782,7 +7783,7 @@ header.header-white .intelligent-header {
   color: #fff;
   font-size: 14px;
   line-height: 22px;
-  padding: 39px 8px;
+  padding: 39px 10px;
   padding-bottom: 25px;
 }
 
@@ -7805,6 +7806,10 @@ header.header-white .intelligent-header {
   .header-socials li.header-search a {
     padding-right: inherit;
   }
+}
+
+.header-socials li:last-child a {
+  padding-right: 0;
 }
 
 .intelligent-header.scrolling-up .header-socials li.header-search a {
@@ -7950,6 +7955,10 @@ header.header-white .intelligent-header {
   .full-screen-slider-section .sp-mask {
     min-height: 300px;
   }
+}
+
+.full-screen-slider-section .full-width-video {
+  width: 100%;
 }
 
 #primary-slider-with-particle .sp-video::after,
