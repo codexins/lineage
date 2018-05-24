@@ -8,7 +8,7 @@
 	padding-bottom: 0.7 * $cx-col-spacing;
 	border-bottom: 1px dashed $cx-border-color;
 
-	h2 {
+	.widgettitle {
 	    font-size: calculateRem(22px);
 	    font-weight: 500;
 	    text-transform: capitalize;
@@ -404,7 +404,7 @@
 			a {
 				color: $cx-text-color;
 				display: block;
-				padding: 8px 10px 8px 20px;
+				padding: 8px 0 8px 20px;
 				font-size: calculateRem(15px);
 				border-bottom: 1px solid lighten($cx-border-color, 5%);
 				position: relative;

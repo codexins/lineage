@@ -214,7 +214,7 @@
 			border-top: 0;
 			border-bottom: 0;
 			border-width: 1.2px;
-			@include bcg-linear-gradient(to right, $cx-offset-color, lighten($cx-text-color, 100%));
+			@include bcg-linear-gradient(to right, darken($cx-offset-color, 3%), lighten($cx-text-color, 100%));
 
 			h2 {
 				font-size: calculateRem(17px);

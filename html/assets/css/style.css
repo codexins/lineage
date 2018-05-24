@@ -3147,7 +3147,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   border-bottom: 1px dashed #ddd;
 }
 
-.sidebar-widget h2 {
+.sidebar-widget .widgettitle {
   font-size: 1.375rem;
   font-weight: 500;
   text-transform: capitalize;
@@ -3575,7 +3575,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .category-widget ul li a {
   color: #545454;
   display: block;
-  padding: 8px 10px 8px 20px;
+  padding: 8px 0 8px 20px;
   font-size: 0.9375rem;
   border-bottom: 1px solid #eaeaea;
   position: relative;
@@ -4284,6 +4284,10 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   max-width: calc(100% - 15px);
 }
 
+.portfolio-wrapper.single {
+  margin-left: -15px;
+}
+
 /**
  * Components Team Member
  *
@@ -4774,6 +4778,10 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   transform: translateY(-50%);
 }
 
+.simple-slider-container .carousel-arrow.arrow-left::before {
+  right: 2px;
+}
+
 .simple-slider-container .carousel-arrow.arrow-right {
   left: auto;
   right: 0;
@@ -4783,6 +4791,10 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.simple-slider-container .carousel-arrow.arrow-right::before {
+  left: 2px;
 }
 
 .simple-slider-container:hover .carousel-arrow {
@@ -8733,15 +8745,18 @@ header.header-white .intelligent-header {
 }
 
 @media only screen and (min-width: 991px) {
+  .portfolio-wrapper .col-lg-3 .portfolio-mini-desc h3,
   .portfolio-wrapper .col-lg-2 .portfolio-mini-desc h3 {
     font-size: 0.875rem;
   }
+  .portfolio-wrapper .col-lg-3 .portfolio-mini-desc p,
   .portfolio-wrapper .col-lg-2 .portfolio-mini-desc p {
     display: none;
   }
 }
 
 @media only screen and (min-width: 991px) {
+  .portfolio-wrapper.hover-effect-type-2 .col-lg-3 .portfolio-mini-desc,
   .portfolio-wrapper.hover-effect-type-2 .col-lg-2 .portfolio-mini-desc {
     min-height: auto;
     padding-top: 17px;
@@ -8841,6 +8856,30 @@ header.header-white .intelligent-header {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   letter-spacing: -0.2px;
+}
+
+.portfolio-list-wrapper .portfolio-content .portfolio-category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-list-wrapper .portfolio-content .portfolio-category ul li {
+  display: inline-block;
+  margin-right: 7px;
+  padding-right: 7px;
+  position: relative;
+}
+
+.portfolio-list-wrapper .portfolio-content .portfolio-category ul li::after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: -3px;
+}
+
+.portfolio-list-wrapper .portfolio-content .portfolio-category ul li:last-child::after {
+  content: none;
 }
 
 .portfolio-list-wrapper .portfolio-content h3 {
@@ -9079,12 +9118,12 @@ header.header-white .intelligent-header {
   border-top: 0;
   border-bottom: 0;
   border-width: 1.2px;
-  background: #F8F9FA;
-  background: -webkit-linear-gradient(to right, #F8F9FA, white);
-  background: -moz-linear-gradient(to right, #F8F9FA, white);
-  background: -ms-linear-gradient(to right, #F8F9FA, white);
-  background: -o-linear-gradient(to right, #F8F9FA, white);
-  background: linear-gradient(to right, #F8F9FA, white);
+  background: #eff1f4;
+  background: -webkit-linear-gradient(to right, #eff1f4, white);
+  background: -moz-linear-gradient(to right, #eff1f4, white);
+  background: -ms-linear-gradient(to right, #eff1f4, white);
+  background: -o-linear-gradient(to right, #eff1f4, white);
+  background: linear-gradient(to right, #eff1f4, white);
 }
 
 .single-portfolio-intro.type-2 .portfolio-summary-wrapper h2 {
@@ -9630,6 +9669,10 @@ blockquote {
 }
 
 .cta-section.cta-split .cta-action .fancy-btn {
+  margin-right: -30px;
+}
+
+.cta-section.cta-split .cta-action .default-btn {
   margin-right: -30px;
 }
 
@@ -10673,11 +10716,13 @@ blockquote {
 .page-title-section .breadcrumb .active::before, .page-title-section .breadcrumb .tab.iconic-tab > .nav-tabs li::before, .tab.iconic-tab > .nav-tabs .page-title-section .breadcrumb li::before {
   content: "\f105";
   font-family: FontAwesome;
+  padding: 0 8px 0 5px;
 }
 
 .page-title-section .breadcrumb li + li::before {
   content: "\f105";
   font-family: FontAwesome;
+  padding: 0 8px 0 5px;
 }
 
 .page-title-section .page-title-overlay {

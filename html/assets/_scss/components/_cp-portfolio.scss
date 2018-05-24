@@ -424,4 +424,8 @@
 			max-width: calc(100% - 15px);
 		}
 	}
+
+	&.single {
+		margin-left: -15px;
+	}
 }

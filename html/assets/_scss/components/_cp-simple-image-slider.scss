@@ -32,6 +32,10 @@
 			left: 0;
 			top: 50%;
 			@include transform-translateY(-50%);
+
+			&::before {
+				right: 2px;
+			}
 		}
 
 		&.arrow-right {
@@ -39,6 +43,10 @@
 			right: 0;
 			top: 50%;
 			@include transform-translateY(-50%);
+
+			&::before {
+				left: 2px;
+			}
 		}
 	}
 

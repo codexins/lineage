@@ -10,6 +10,7 @@
 }
 
 .portfolio-wrapper {
+	.col-lg-3,
 	.col-lg-2 {
 		.portfolio-mini-desc {
 			@include media-only('991px', min) {
@@ -24,6 +25,7 @@
 	}
 
 	&.hover-effect-type-2 {
+		.col-lg-3,
 		.col-lg-2 {
 			@include media-only('991px', min) {
 				.portfolio-mini-desc {
