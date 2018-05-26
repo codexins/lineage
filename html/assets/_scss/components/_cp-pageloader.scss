@@ -17,10 +17,7 @@
 
 	.cx-progress {
 	    height: 40px;
-	    position: absolute;
-	    top: 50%;
-	    left: 50%;
-	    margin: -20px 0 0 -50px;
+		@include cx-centered(both);
 	}
 
 	.cx-progress span {

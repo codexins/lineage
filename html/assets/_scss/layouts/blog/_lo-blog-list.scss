@@ -5,6 +5,7 @@
 
 .blog-list-wrapper {
 	margin-bottom: - $cx-col-spacing;
+	@extend %clearfix;
 	.post-single {
 		@extend %mb-half;
 	}

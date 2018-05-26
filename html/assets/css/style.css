@@ -608,16 +608,16 @@ input[type="button"]:hover {
   position: absolute;
 }
 
-.whole-wrapper, .instagram-widget, .cx-pagination, .comments-area ol li, .single-portfolio-intro .portfolio-content, .single-portfolio-intro .portfolio-meta, .single-portfolio-intro .portfolio-images, .error-404-wrapper {
+.whole-wrapper, .instagram-widget, .cx-pagination, .comments-area ol li, .single-portfolio-intro .portfolio-content, .single-portfolio-intro .portfolio-meta, .single-portfolio-intro .portfolio-images, .blog-list-wrapper, .error-404-wrapper {
   zoom: 1;
 }
 
-.whole-wrapper::before, .instagram-widget::before, .cx-pagination::before, .comments-area ol li::before, .single-portfolio-intro .portfolio-content::before, .single-portfolio-intro .portfolio-meta::before, .single-portfolio-intro .portfolio-images::before, .error-404-wrapper::before, .whole-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after, .error-404-wrapper::after {
+.whole-wrapper::before, .instagram-widget::before, .cx-pagination::before, .comments-area ol li::before, .single-portfolio-intro .portfolio-content::before, .single-portfolio-intro .portfolio-meta::before, .single-portfolio-intro .portfolio-images::before, .blog-list-wrapper::before, .error-404-wrapper::before, .whole-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after, .blog-list-wrapper::after, .error-404-wrapper::after {
   content: "";
   display: table;
 }
 
-.whole-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after, .error-404-wrapper::after {
+.whole-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after, .blog-list-wrapper::after, .error-404-wrapper::after {
   clear: both;
 }
 
@@ -1496,7 +1496,11 @@ to a reusable component.
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -20px 0 0 -50px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .cx-progress span {
