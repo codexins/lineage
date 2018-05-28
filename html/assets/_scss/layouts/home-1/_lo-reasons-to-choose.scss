@@ -4,8 +4,6 @@
  */
 
 .reasons-choose-section {
-	@extend %vpadding;
-	@extend %mb0;
 	p:not(.subtitle) {
 		margin-bottom: 0.5 * $cx-section-spacing;
 	}

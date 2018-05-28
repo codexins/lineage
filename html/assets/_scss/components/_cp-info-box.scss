@@ -5,6 +5,7 @@
 
 .info-box-wrapper {
     @extend %overlay;
+    @extend %mb-half;
     @include cx-transition('transform 0.25s ease-out');
     @include respond-to(mobile) {
 		margin-bottom: $cx-col-spacing-mob;
@@ -57,10 +58,6 @@
     // }
 	@include respond-to(tablet) {
 		margin-bottom: $cx-col-spacing;
-	}
-
-	&.last {
-		margin-bottom: 0;
 	}
 
 	&.type-2 {

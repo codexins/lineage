@@ -9,13 +9,13 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
-	.default-btn {
-		margin-top: 1.1 * $cx-col-spacing
-	}
-	@extend %mb0;
-	@extend %vpadding;
+
 	@extend %overlay;
 	&::before {
 		@include bcg-linear-gradient(to bottom, #fff, rgba(238, 238, 238, 0.92));
+	}
+
+	.default-btn {
+		margin-top: 1.1 * $cx-col-spacing
 	}
 }

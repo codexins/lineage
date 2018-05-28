@@ -4,6 +4,8 @@
  */
 
 .team-member {
+
+	@extend %mb-half;
 	
 	.team-media {
 		position: relative;
@@ -79,9 +81,6 @@
 		}
 	}
 	@include cx-prefix('box-shadow', '0px 2px 5px 0px rgba(0,0,0,0.15)')
-	@include media-only(tablet, max) {
-		margin-bottom: $cx-col-spacing;
-	}
 
 	&.type-3 {
 		@include cx-box-shadow('none');

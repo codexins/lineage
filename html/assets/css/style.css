@@ -383,7 +383,7 @@ body {
 @media only screen and (max-width: 767px) {
   html,
   body {
-    font-size: 14px;
+    font-size: 1rem;
   }
 }
 
@@ -573,13 +573,13 @@ input[type="button"]:hover {
 /************************************************************
 	c02 - Base - Placeholders
 *************************************************************/
-.vpadding, .cta-centered, .about-section, .achievement-counters, .split-section, .recent-projects, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .support-section, .features-section, .about-us, .services-section, .fun-facts, .testimonials-section, .video-section, .about-us-section, .our-features, .our-values-section, .contact-us-section, .newsletter-section, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
+.vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .about-us, .services-section, .fun-facts, .testimonials-section, .video-section, .about-us-section, .our-features, .our-values-section, .contact-us-section, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .vpadding, .cta-centered, .about-section, .achievement-counters, .split-section, .recent-projects, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .support-section, .features-section, .about-us, .services-section, .fun-facts, .testimonials-section, .video-section, .about-us-section, .our-features, .our-values-section, .contact-us-section, .newsletter-section, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
+  .vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .about-us, .services-section, .fun-facts, .testimonials-section, .video-section, .about-us-section, .our-features, .our-values-section, .contact-us-section, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
     padding-top: 67.5px;
     padding-bottom: 67.5px;
   }
@@ -853,9 +853,9 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 
 .mb0, .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle, .info-item.left-edged-icon.last, .info-item.flip-card .back p:last-of-type, .services-carousel .media-wrapper p, .counter-item .counter-icon, .sidebar-widget p:last-of-type, .contact-box-widget h3, .testimonial-widget .client-meta .client-name h3, .widget-form-wrapper input,
 .widget-form-wrapper textarea, .team-member-card .team-details h2,
-.team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .feature-box h3, .feature-box p, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .pagination-wrapper .pagination, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .about-section, .service-section, .achievement-counters, .split-section, .recent-projects, .portfolio-section, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
-.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-posts-section, .blog-grid-wrapper .quote-wrapper, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section, .cta-section.type-2 .cta-content-wrapper .cta-content p, .team-section, .reasons-choose-section, .pricing-section, .testimonial-section, .blog-section, .client-section, .support-section, .features-section, .features-section .info-item,
-.features-section .secondary-title, .about-us, .services-section, .fun-facts, .values-section, .testimonials-section, .video-section, .contact-section, .contact-section .contact-item-wrapper p, .slider-section, .about-us-section, .our-features, .our-values-section, .background-video-section, .contact-us-section, .newsletter-section, .social-section, .contacts-form-section, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .fun-facts-section.facts-about, .values-promo.values-about, .our-history, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .error-404-wrapper {
+.team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .feature-box h3, .feature-box p, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .pagination-wrapper .pagination, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .portfolio-section, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
+.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-posts-section, .blog-grid-wrapper .quote-wrapper, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section.type-2 .cta-content-wrapper .cta-content p, .features-section .info-item,
+.features-section .secondary-title, .about-us, .services-section, .fun-facts, .values-section, .testimonials-section, .video-section, .contact-section, .contact-section .contact-item-wrapper p, .slider-section, .about-us-section, .our-features, .our-values-section, .background-video-section, .contact-us-section, .social-section, .contacts-form-section, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .fun-facts-section.facts-about, .values-promo.values-about, .our-history, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .error-404-wrapper {
   margin-bottom: 0;
 }
 
@@ -889,22 +889,22 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.pt-full, .service-section, .blog-posts-section, .values-promo.values-about {
+.pt-full, .blog-posts-section, .values-promo.values-about {
   padding-top: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .pt-full, .service-section, .blog-posts-section, .values-promo.values-about {
+  .pt-full, .blog-posts-section, .values-promo.values-about {
     padding-top: 67.5px;
   }
 }
 
-.mb-half, .team-member.type-3, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p {
+.mb-half, .team-member, .team-member.type-3, .info-box-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p {
   margin-bottom: 45px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mb-half, .team-member.type-3, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p {
+  .mb-half, .team-member, .team-member.type-3, .info-box-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p {
     margin-bottom: 33.75px;
   }
 }
@@ -919,12 +919,12 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.pb-half, .pricing-table-type-3 .pricing-header, #colophon.type-3 .footer-top, .service-section, .single-post-wrapper, .values-promo.values-about, .single-faq {
+.pb-half, .pricing-table-type-3 .pricing-header, #colophon.type-3 .footer-top, .single-post-wrapper, .values-promo.values-about, .single-faq {
   padding-bottom: 45px;
 }
 
 @media only screen and (max-width: 767px) {
-  .pb-half, .pricing-table-type-3 .pricing-header, #colophon.type-3 .footer-top, .service-section, .single-post-wrapper, .values-promo.values-about, .single-faq {
+  .pb-half, .pricing-table-type-3 .pricing-header, #colophon.type-3 .footer-top, .single-post-wrapper, .values-promo.values-about, .single-faq {
     padding-bottom: 33.75px;
   }
 }
@@ -2702,6 +2702,19 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-item {
+    width: 50%;
+    float: left;
+    margin-bottom: 45px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .counter-item {
     width: 50%;
@@ -2719,13 +2732,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 @media only screen and (max-width: 767px) {
   .counter-item:nth-child(4) {
     margin-bottom: 0;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .counter-item {
-    width: 100%;
-    text-align: center;
   }
 }
 
@@ -4429,12 +4435,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0);
-}
-
-@media only screen and (max-width: 767px) {
-  .team-member {
-    margin-bottom: 45px;
-  }
 }
 
 .team-member.type-3 {
@@ -6358,10 +6358,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   .info-box-wrapper {
     margin-bottom: 45px;
   }
-}
-
-.info-box-wrapper.last {
-  margin-bottom: 0;
 }
 
 .info-box-wrapper.type-2::before {
@@ -8676,10 +8672,6 @@ header.header-white .intelligent-header {
   position: relative;
 }
 
-.about-section .default-btn {
-  margin-top: 49.5px;
-}
-
 .about-section::before {
   background: #fff;
   background: -webkit-linear-gradient(to bottom, #fff, rgba(238, 238, 238, 0.92));
@@ -8689,10 +8681,10 @@ header.header-white .intelligent-header {
   background: linear-gradient(to bottom, #fff, rgba(238, 238, 238, 0.92));
 }
 
-/**
- * layout home-1 / services
- *
- */
+.about-section .default-btn {
+  margin-top: 49.5px;
+}
+
 /**
  * Layout home-1/ counter section
  *
@@ -8740,6 +8732,39 @@ header.header-white .intelligent-header {
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .split-section .section-heading.left-aligned h4, .split-section .service-tabs .left-aligned.tab-content-heading h4, .service-tabs .split-section .left-aligned.tab-content-heading h4,
+  .split-section .section-heading.left-aligned h2,
+  .split-section .service-tabs .left-aligned.tab-content-heading h2, .service-tabs
+  .split-section .left-aligned.tab-content-heading h2,
+  .split-section .section-heading.left-aligned .subtitle,
+  .split-section .service-tabs .left-aligned.tab-content-heading .subtitle, .service-tabs
+  .split-section .left-aligned.tab-content-heading .subtitle {
+    text-align: center;
+  }
+  .split-section .section-heading.left-aligned h4::before, .split-section .service-tabs .left-aligned.tab-content-heading h4::before, .service-tabs .split-section .left-aligned.tab-content-heading h4::before {
+    background: #a1a1a1;
+    height: 0.15625rem;
+    margin: 0 9px;
+    position: relative;
+    top: -.2rem;
+    width: 2rem;
+  }
+  .split-section .tab {
+    text-align: center;
+  }
+  .split-section .tab .nav-tabs > li {
+    float: none;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .split-section .image-container {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -9777,10 +9802,6 @@ blockquote {
 }
 
 /**
- * Layout home-1/ pricing section
- *
- */
-/**
  * layout home-1 / testimonial
  *
  */
@@ -9807,16 +9828,10 @@ blockquote {
 }
 
 /**
- * layout home-01/ blog
- *
- */
-/**
  * layout home-1 / testimonial
  *
  */
 .client-section {
-  padding-top: 90px;
-  padding-bottom: 90px;
   background-image: url("../img/background/counter-up.jpg");
   background-position: center;
   background-size: cover;
@@ -9836,13 +9851,6 @@ blockquote {
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-@media only screen and (max-width: 767px) {
-  .client-section {
-    padding-top: 67.5px;
-    padding-bottom: 67.5px;
-  }
 }
 
 /**

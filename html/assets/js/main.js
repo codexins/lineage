@@ -158,6 +158,7 @@ INDEX:
         if ($slider.cxExists()) {
             $slider.sliderPro({
                 width: '100%',
+                visibleSize: '100%',
                 // height: '100%',
                 arrows: true,
                 buttons: false,

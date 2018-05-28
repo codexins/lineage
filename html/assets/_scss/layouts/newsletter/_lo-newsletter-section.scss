@@ -4,8 +4,6 @@
  */
 
 .newsletter-section {
-	@extend %vpadding;
-	@extend %mb0;
 	@include cx-background("../img/background/newsletter.jpg");
 	@extend %overlay;
 	@extend %color-white;

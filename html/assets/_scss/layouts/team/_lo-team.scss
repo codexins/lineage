@@ -4,8 +4,9 @@
  */
 
 .team-section {
-	@extend %mb0;
-	@extend %vpadding;
+	// @extend %mb0;
+	// @extend %pt-full;
+	// @extend %pb-half;
 
 	.member-wrapper {
 		@include respond-to(small-mobile) {

@@ -6,8 +6,8 @@
 .split-section {
     position: relative;
     z-index: 10;
-	@extend %mb0;
-	@extend %vpadding;
+	// @extend %mb0;
+	// @extend %vpadding;
 	@include respond-to(tablet) {
 		.image-container {
 			> div {
@@ -41,7 +41,46 @@
 
 	}
 
-	@include media-only(768px, max) {
+	@include media-only(notebook, max) {
+		.section-heading {
+			&.left-aligned {
+				h4,
+				h2,
+				.subtitle {
+					text-align: center;
+				}
+
+				h4 {
+					&::before {
+			            background: lighten($cx-text-color, 30%);
+			            height: calculateRem(2.5px);
+			            margin: 0 9px;
+			            position: relative;
+			            top: -.2rem;
+			            width: calculateRem(32px);
+					}
+				}
+			}
+		}
+
+		.tab {
+			text-align: center;
+			.nav-tabs {
+				> li {
+					float: none;
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	@include media-only(notebook, max) {
+		.image-container {
+			display: none;
+		}
+	}
+
+	@include media-only(tablet, max) {
 		padding-top: $cx-col-spacing;
 		padding-bottom: $cx-col-spacing;
 	}

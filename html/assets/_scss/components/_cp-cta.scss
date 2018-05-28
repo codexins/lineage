@@ -5,7 +5,6 @@
 
 .cta-centered {
 	text-align: center;
-	@extend %vpadding;
 
 	p {
 		font-size: calculateRem(20px);

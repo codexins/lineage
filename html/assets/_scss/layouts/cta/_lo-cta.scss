@@ -4,7 +4,7 @@
  */
 
 .cta-section {
-	@extend %mb0;
+	// @extend %mb0;
 	&.has-bg {
 		@include cx-background("../img/slider/home-1/slide-2.jpg");
 		@include cx-overlay(rgba(0, 0, 0, 0.65));

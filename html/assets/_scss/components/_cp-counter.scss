@@ -13,8 +13,16 @@
 			border: 0;
 		}
 	}
+
 	@include respond-to(notebook) {
-		padding:0 20px;
+		padding: 0 20px;
+	}
+
+	@include respond-to(tablet) {
+	    width: 50%;
+	    float: left;
+	    margin-bottom: $cx-col-spacing;
+	    @include flex;
 	}
 
 	@include respond-to(mobile) {
@@ -37,10 +45,10 @@
 		}
 	}
 
-	@include respond-to(mobile) {
-		width:100%;
-		text-align: center;
-	}
+	// @include respond-to(mobile) {
+	// 	width:100%;
+	// 	text-align: center;
+	// }
 	.counter-icon {
 		margin-right: 15px;
 		float: left;

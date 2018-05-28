@@ -4,8 +4,6 @@
  */
 
 .testimonial-section {
-	@extend %vpadding;
-	@extend %mb0;
 	@include cx-background("../img/background/testimonial.jpg");
 	@include cx-overlay( linear-gradient(to left , $cx-primary-color, rgba($cx-text-color,0.8)));
 }
