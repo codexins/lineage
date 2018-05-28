@@ -4,34 +4,35 @@ INDEX:
 
     s00 - Predefined Variables
     s01 - Preloader
-    s01 - Tooltips
-    s01 - Social Share
-    s02 - Primary Slider Settings
-    s03 - Image Background Settings
-    s04 - Full Screen Header
-    s05 - Header Background Video
-    s06 - Header Background Slider
-    s07 - Main Navigation Menu
-    s08 - Skill Bars
-    s09 - Accordion Class
-    s12 - Slide left action for Mobile Menu
-    s13 - Simple Image Slider
-    s13 - Image Carousel
-    s14 - Tabbed Carousel
-    s14 - Testimonial Carousel
-    s15 - Client Carousel
-    s15 - Services Carousel
-    s15 - Team Carousel
-    s16 - Smooth Scroll to anchor tags
-    s17 - Scroll to Top JS
-    s18 - Placeholder JS
-    s19 - Parallax JS
-    s20 - Blog Grid Background Settings
-    s21 - Tilt Settings
-    s21 - Typed js Settings
-    s21 - Pie Chart Settings
-    s21 - Flip Settings
-    s22 - Animation Settings
+    s02 - Tooltips
+    s03 - Social Share
+    s04 - Primary Slider Settings
+    s05 - Image Background Settings
+    s06 - Main Navigation Menu
+    s07 - Intelligent Header Space
+    s08 - Accordion Class
+    s09 - Headroom Js for Auto Hide the header on scroll
+    s10 - Animated Counter
+    s11 - Isotope Js for Portfolio Section
+    s12 - Skill Bars
+    s13 - Slide left action for Mobile Menu
+    s14 - Simple Image Slider
+    s15 - Simple Image Carousel
+    s16 - Tabbed Slider
+    s17 - Testimonial Carousel
+    s18 - Client Carousel
+    s19 - Services Carousel
+    s20 - Team Carousel
+    s21 - Smooth Scroll to anchor tags
+    s22 - Scroll to Top JS
+    s23 - Placeholder JS
+    s24 - Parallax JS
+    s25 - Blog Grid Background Settings
+    s26 - Tilt Settings
+    s27 - Typed js Settings
+    s28 - Pie Chart Settings
+    s29 - Flip Settings
+    s30 - Animation Settings
 
 
 ******************************/
@@ -54,8 +55,6 @@ INDEX:
         $slider             = $("#primary-slider"),
         $vslider            = $("#primary-slider-with-video"),
         $pslider            = $("#primary-slider-with-particle"),
-        // $fullscreen         = $(".sp-slide"),
-        // $fullscreenVideo    = $("#header_full_screen_video"),
         $parallax           = $(".jarallax-default"),
         $parallaxSlow       = $(".jarallax-slow"),
         $bgImage            = $(".bg-img-wrapper"),
@@ -75,8 +74,6 @@ INDEX:
         $testimonialTwo     = $(".testimonial-container-type-2"),
         $testimonialThree   = $(".testimonial-with-thumbs"),
         $testimonialWidget  = $(".testimonial-widget.swiper-container"),
-        // $slickNav           = $(".testimonial-nav"),
-        // $slickThree         = $(".testimonial-carousel-type-02"),
         $clients            = $(".client-carousel"),
         $services           = $(".services-carousel"),
         $team               = $(".team-carousel"),
@@ -123,7 +120,7 @@ INDEX:
 
 
     /************************************************************
-        s01 - Tooltips
+        s02 - Tooltips
     *************************************************************/
 
     CODEXIN.toolTips = function() {
@@ -132,7 +129,7 @@ INDEX:
 
 
     /************************************************************
-        s01 - Social Share
+        s03 - Social Share
     *************************************************************/
 
     CODEXIN.socialShares = function() {
@@ -154,7 +151,7 @@ INDEX:
 
 
     /************************************************************
-        s02 - Primary Slider Settings
+        s04 - Primary Slider Settings
     *************************************************************/
 
     CODEXIN.primarySlider = function() {
@@ -217,7 +214,7 @@ INDEX:
 
 
     /************************************************************
-        s03 - Image Background Settings
+        s05 - Image Background Settings
     *************************************************************/
 
     CODEXIN.imageBgSettings = function() {
@@ -237,60 +234,7 @@ INDEX:
 
 
     /************************************************************
-        s04 - Full Screen Header
-    *************************************************************/
-
-    CODEXIN.fullscreenHeader = function() {
-        if ($window.width() > 991) {
-            $fullscreen.css("height", window.innerHeight);
-        } else {
-            $fullscreen.css("height", "500px");
-        }
-    };
-
-
-    /************************************************************
-        s05 - Header Background Video
-    *************************************************************/
-
-    CODEXIN.fullscreenVideoHeader = function() {
-        if ($fullscreenVideo.cxExists()) {
-            $fullscreenVideo.wallpaper({
-                source: {
-                    poster: "assets/img/slider/home-2/poster.jpg",
-                    webm: "assets/videos/video.webm",
-                    mp4: "assets/videos/video.mp4",
-                    ogg: "assets/videos/video.ogv"
-                }
-
-            });
-        }
-    };
-
-
-    /************************************************************
-        s06 - Header Background Slider
-    *************************************************************/
-
-    CODEXIN.backgroundSliderHeader = function() {
-        if ($bgSlide.cxExists()) {
-            $bgSlide.backstretch([
-                "assets/img/slider/home-4/slide-1.jpg",
-                "assets/img/slider/home-4/slide-2.jpg",
-                "assets/img/slider/home-4/slide-3.jpg"
-            ], {
-                duration: 4000,
-                fade: 750,
-                preload: 0,
-                start: 2
-
-            });
-        }
-    };
-
-
-    /************************************************************
-        s07 - Main Navigation Menu
+        s06 - Main Navigation Menu
     *************************************************************/
 
     CODEXIN.mainNav = function() {
@@ -319,7 +263,7 @@ INDEX:
 
 
     /************************************************************
-        s08 - Intelligent Header Space
+        s07 - Intelligent Header Space
     *************************************************************/
 
     CODEXIN.elementHeights = function() {
@@ -337,7 +281,7 @@ INDEX:
 
 
     /************************************************************
-        s09 - Accordion Class
+        s08 - Accordion Class
     *************************************************************/
 
     CODEXIN.accordionClass = function() {
@@ -431,7 +375,7 @@ INDEX:
 
 
     /************************************************************
-        s08 - Skill Bars
+        s12 - Skill Bars
     *************************************************************/
 
     CODEXIN.skillBars = function() {
@@ -452,7 +396,7 @@ INDEX:
 
 
     /************************************************************
-        s12 - Slide left action for Mobile Menu
+        s13 - Slide left action for Mobile Menu
     *************************************************************/
 
     // Initializing mobile menu
@@ -473,60 +417,6 @@ INDEX:
             $slideBtnLeft.addEventListener('click', function(e) {
                 e.preventDefault;
                 slideMenuLeft.open();
-            });
-        }
-
-        /**
-         * Push left instantiation and action.
-         */
-        if ($("#c-button--push-left").cxExists()) {
-            var pushBtnLeft = document.querySelector("#c-button--push-left");
-            var pushMenuLeft = new Menu({
-                wrapper: "#whole",
-                type: "push-left",
-                menuOpenerClass: ".c-button",
-                maskId: "#c-mask"
-            });
-
-            pushBtnLeft.addEventListener('click', function(e) {
-                e.preventDefault;
-                pushMenuLeft.open();
-            });
-        }
-
-        /**
-         * Slide right instantiation and action.
-         */
-        if ($("#c-button--slide-right").cxExists()) {
-            var slideBtnRight = document.querySelector("#c-button--slide-right");
-            var slideMenuRight = new Menu({
-                wrapper: "#whole",
-                type: "slide-right",
-                menuOpenerClass: ".c-button",
-                maskId: "#c-mask"
-            });
-
-            slideBtnRight.addEventListener('click', function(e) {
-                e.preventDefault;
-                slideMenuRight.open();
-            });
-        }
-
-        /**
-         * Push right instantiation and action.
-         */
-        if ($("#c-button--push-right").cxExists()) {
-            var pushBtnRight = document.querySelector("#c-button--push-right");
-            var pushMenuRight = new Menu({
-                wrapper: "#whole",
-                type: "push-right",
-                menuOpenerClass: ".c-button",
-                maskId: "#c-mask"
-            });
-
-            pushBtnRight.addEventListener('click', function(e) {
-                e.preventDefault;
-                pushMenuRight.open();
             });
         }
     };
@@ -551,7 +441,7 @@ INDEX:
 
 
     /************************************************************
-        s13 - Simple Image Slider
+        s14 - Simple Image Slider
     *************************************************************/
 
     CODEXIN.simpleImageSlider = function() {
@@ -578,7 +468,7 @@ INDEX:
 
 
     /************************************************************
-        s13 - Simple Image Carousel
+        s15 - Simple Image Carousel
     *************************************************************/
 
     CODEXIN.simpleImageCarousel = function() {
@@ -614,7 +504,7 @@ INDEX:
 
 
     /************************************************************
-        s13 - Simple Image Slider
+        s16 - Tabbed Slider
     *************************************************************/
 
     CODEXIN.tabbledSlider = function() {
@@ -652,7 +542,7 @@ INDEX:
 
 
     /************************************************************
-        s14 - Testimonial Carousel
+        s17 - Testimonial Carousel
     *************************************************************/
 
     CODEXIN.testimonialCarousel = function() {
@@ -768,7 +658,7 @@ INDEX:
 
 
     /************************************************************
-        s15 - Client Carousel
+        s18 - Client Carousel
     *************************************************************/
 
     CODEXIN.clientCarousel = function() {
@@ -805,7 +695,7 @@ INDEX:
 
 
     /************************************************************
-        s15 - Services Carousel
+        s19 - Services Carousel
     *************************************************************/
 
     CODEXIN.servicesCarousel = function() {
@@ -841,7 +731,7 @@ INDEX:
 
 
     /************************************************************
-        s15 - Team Carousel
+        s20 - Team Carousel
     *************************************************************/
 
     CODEXIN.teamCarousel = function() {
@@ -876,7 +766,7 @@ INDEX:
 
 
     /************************************************************
-        s16 - Smooth Scroll to anchor tags
+        s21 - Smooth Scroll to anchor tags
     *************************************************************/
 
     CODEXIN.smoothScroll = function() {
@@ -893,7 +783,7 @@ INDEX:
 
 
     /************************************************************
-        s17 - Scroll to Top JS
+        s22 - Scroll to Top JS
     *************************************************************/
 
     CODEXIN.scrollToTop = function() {
@@ -915,7 +805,7 @@ INDEX:
 
 
     /************************************************************
-        s18 - Placeholder JS
+        s23 - Placeholder JS
     *************************************************************/
 
     CODEXIN.placeHolders = function() {
@@ -951,7 +841,7 @@ INDEX:
 
 
     /************************************************************
-        s19 - Parallax JS
+        s24 - Parallax JS
     *************************************************************/
 
     CODEXIN.parallaxInit = function() {
@@ -968,7 +858,7 @@ INDEX:
 
 
     /************************************************************
-        s20 - Blog Grid Background Settings
+        s25 - Blog Grid Background Settings
     *************************************************************/
 
     CODEXIN.blogGridBgSetting = function() {
@@ -988,7 +878,7 @@ INDEX:
 
 
     /************************************************************
-        s21 - Tilt Settings
+        s26 - Tilt Settings
     *************************************************************/
 
     CODEXIN.tiltSetting = function() {
@@ -1003,7 +893,7 @@ INDEX:
 
 
     /************************************************************
-        s21 - Typed js Settings
+        s27 - Typed js Settings
     *************************************************************/
 
     CODEXIN.typedSetting = function() {
@@ -1032,7 +922,7 @@ INDEX:
 
 
     /************************************************************
-        s21 - Pie Chart Settings
+        s28 - Pie Chart Settings
     *************************************************************/
 
     CODEXIN.pieChartSetting = function() {
@@ -1090,7 +980,7 @@ INDEX:
 
 
     /************************************************************
-        s21 - Flip Settings
+        s29 - Flip Settings
     *************************************************************/
 
     CODEXIN.flipSetting = function() {
@@ -1104,7 +994,7 @@ INDEX:
     };
 
     /************************************************************
-        s22 - Animation Settings
+        s30 - Animation Settings
     *************************************************************/
 
     CODEXIN.animationSetting = function() {
@@ -1124,7 +1014,7 @@ INDEX:
             sr.reveal('.counter-item', { origin: 'right' }, 200);
             sr.reveal('.feature-box:not(.no-animation)', { origin: 'right' }, 200);
             sr.reveal('.member-wrapper .team-member', { origin: 'bottom' }, 150);
-            sr.reveal('.pricing-table, .pricing-table-type-2', { origin: 'bottom' }, 200);
+            sr.reveal('.pricing-table, .pricing-table-type-2, .pricing-table-type-3', { origin: 'bottom' }, 200);
             sr.reveal('.blog-item-grid, .blog-grid', { origin: 'bottom' }, 200);
             sr.reveal('.info-box-wrapper', { origin: 'bottom' }, 200);
             sr.reveal('.tab .nav-tabs:not(.no-animation) li', { origin: 'right' }, 200);
@@ -1172,22 +1062,23 @@ INDEX:
 
     // Window load and resize functions
     $window.on('load resize', function() {
-        // CODEXIN.fullscreenHeader(),
         CODEXIN.elementHeights();
     });
 
+
     $("#modal-iframe").iziModal({
+        // top: 50,
         headerColor: '#000',
         background: 'black',
-        // title: 'iziModal with iframe',
-        // subtitle: 'Video example using the Vimeo embed.',
+        title: 'Video with iframe',
+        subtitle: 'Video example using the Vimeo embed.',
         icon: 'icon-settings_system_daydream',
         overlayClose: true,
-        iframe: true,
-        iframeURL: 'https://www.youtube.com/embed/7e90gBu4pas?autoplay=1',
+        iframe : true,
+        // iframeURL: 'https://www.youtube.com/embed/7e90gBu4pas?autoplay=1',
         fullscreen: true,
         openFullscreen: false,
-        borderBottom: false
+        borderBottom: false,
     });
 
 

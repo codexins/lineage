@@ -103,9 +103,22 @@
 
     &.type-2 {
         h2 {
-            font-weight: 400;
-            font-size: calculateRem(32px);
+            font-weight: 600;
+            font-size: calculateRem(28px);
             text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            margin-bottom: $cx-heading-margin-bottom;
+
+            &::after {
+                width: 80px;
+                height: 2px;
+                margin-left: auto;
+                margin-right: auto;
+                @extend %bgc-secondary;
+                @include cx-prefix('transform', 'translateY(-50%)');
+                @include abs-position(auto, 0, -2px, 0);
+            }
 
             span {
                 font-weight: 600;
@@ -119,6 +132,10 @@
                 &::before {
                     left: 0;
                     @include transform-translateX(0);
+                }
+
+                &::after {
+                    margin-left: 0;
                 }
             }
         }

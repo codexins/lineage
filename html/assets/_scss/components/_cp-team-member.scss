@@ -146,6 +146,7 @@
 .team-member-card {
 	.front,
 	.back {
+		min-height: 430px;
 		@include cx-box-shadow('5px 5px 25px 0 rgba(46,61,73,.2);')
 	}
 	.front {

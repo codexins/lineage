@@ -151,6 +151,10 @@
 		    @include cx-transition('box-shadow .3s ease 0s');
 		}
 
+		img {
+			cursor: pointer;
+		}
+
 		.swiper-slide-active {
 			img {
 				@include cx-box-shadow('0 0 0 2px '+ lighten( $cx-text-color, 100%));
