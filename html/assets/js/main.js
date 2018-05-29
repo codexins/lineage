@@ -9,7 +9,7 @@ INDEX:
     s04 - Primary Slider Settings
     s05 - Image Background Settings
     s06 - Main Navigation Menu
-    s07 - Intelligent Header Space
+    s07 - Elements spacing
     s08 - Accordion Class
     s09 - Headroom Js for Auto Hide the header on scroll
     s10 - Animated Counter
@@ -159,7 +159,6 @@ INDEX:
             $slider.sliderPro({
                 width: '100%',
                 visibleSize: '100%',
-                // height: '100%',
                 arrows: true,
                 buttons: false,
                 waitForLayers: true,
@@ -168,9 +167,16 @@ INDEX:
                 autoplay: false,
                 fade: true,
                 breakpoints: {
-                    768: {
-                        arrows: false
-                    }
+                    767: {
+                        arrows: false,
+                        forceSize: 'fullWidth',
+                        height: 500
+                    },
+                    479: {
+                        arrows: false,
+                        height: 480,
+                        forceSize: 'fullWidth',
+                    },
                 }
             });
             $(".sp-slide").append('<div class="section-overlay"></div>');
@@ -189,13 +195,14 @@ INDEX:
                 fade: true,
                 reachVideoAction: 'playVideo',
                 breakpoints: {
-                    991: {
-                        height: 500,
-                        forceSize: 'none',
+                    767: {
+                        forceSize: 'fullWidth',
+                        height: 500
                     },
-                    768: {
-                        arrows: false
-                    }
+                    479: {
+                        height: 480,
+                        forceSize: 'fullWidth',
+                    },
                 }
             });
             $(".sp-slide").append('<div class="video-section-overlay"></div>');
@@ -264,7 +271,7 @@ INDEX:
 
 
     /************************************************************
-        s07 - Intelligent Header Space
+        s07 - Elements spacing
     *************************************************************/
 
     CODEXIN.elementHeights = function() {

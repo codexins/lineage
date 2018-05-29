@@ -1,0 +1,131 @@
+/**
+ * Components Slider
+ *
+ */
+
+.slider-pro {
+	h2,
+	p {
+		&.sp-layer {
+			z-index: 2;
+			@extend %color-white;
+		}
+	}
+	h2 {
+		&.sp-layer {
+			font-size: calculateRem(60px);
+			line-height: 64px;
+			margin-bottom: 30px;
+			text-transform: uppercase;
+			@include respond-to(notebook) {
+				font-size: calculateRem(48px);
+			}
+			@include respond-to(tablet) {
+				font-size: calculateRem(43px);
+			}
+			@include respond-to(mobile) {
+				font-size: calculateRem(30px);
+				line-height: 35px;
+				margin-bottom: 15px;
+			}
+			@include media-only(small-mobile, max) {
+				font-size: calculateRem(22px);
+				line-height: 1.4;
+				margin-bottom: 10px;
+			}
+		}
+		span {
+			&.typed-element,
+			&.typed-cursor {
+				color: $cx-secondary-color;
+			}
+		}
+	}
+	p {
+		&.sp-layer {
+			font-size: calculateRem(22.5px);
+			line-height: 32px;
+			margin-bottom: 50px;
+			font-weight: 300;
+			@include respond-to(tablet) {
+				font-size: calculateRem(21px);
+			}
+			@include respond-to(mobile) {
+				font-size: calculateRem(19px);
+				line-height: 27px;
+				margin-bottom: 35px;
+			}
+			@include media-only(small-mobile, max) {
+				font-size: calculateRem(17px);
+				line-height: 1.4;
+				margin-bottom: 25px;
+			}
+		}
+	}
+	div {
+		&.slider-button {
+			z-index: 2;
+		}
+	}
+
+	.sp-arrows {    
+	    .sp-arrow {
+	        background-color: rgba($cx-tertiary-color, .55);
+	        @include box(42px, 50px);
+	        @extend %cx-transition;
+
+	        &::before {
+	            @include box(42px, 50px);
+	            background-color: transparent;
+	            transform: none;
+	            content:"\f104";
+	            font-family: FontAwesome;
+	            font-size: 30px;
+	            color: #fff;
+	            top:0;
+	            left:0;
+	        }
+
+	        &::after {
+	            display: none;
+	        }
+
+	        &:hover {
+	            background-color: rgba($cx-tertiary-color, .85);
+	        }
+	    }
+
+	    .sp-previous-arrow {
+	        left:0;
+	    }
+
+	    .sp-next-arrow {
+	        right:0;
+	    }
+	}
+
+	.sp-layer {
+		position: relative;
+	}
+
+	.sp-buttons {
+		position: absolute;
+		left: 0;
+		bottom: 30px;
+
+		.sp-button {
+			border-color: lighten($cx-text-color, 100%);
+			background-color: lighten($cx-text-color, 100%);
+			width: 15px;
+			height: 8px;
+		    opacity: 0.2;
+		    @include border-radius(0);
+			@extend %cx-transition;
+		}
+
+		.sp-selected-button {
+			width: 26px;
+			opacity: 1;
+		}
+	}
+}

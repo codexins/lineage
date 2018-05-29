@@ -93,6 +93,9 @@
 			    min-width: 160px;
 			    &:first-of-type {
 			    	margin-right: -5px;
+					@include respond-to(small-mobile) {
+						margin-right: 0;
+					}
 			    }
 			    @include respond-to(tablet) {
 			    	padding: 9px 15px;
@@ -100,6 +103,9 @@
 			    }
 				@include respond-to(mobile) {
 				    margin-bottom: $cx-heading-margin-bottom;
+				}
+				@include respond-to(small-mobile) {
+					margin-bottom: 15px;
 				}
 			}
 		}
@@ -128,6 +134,12 @@
 			@include respond-to(mobile) {
 			    display: inline-block;
 			    float: none;
+			}
+		}
+		.actions {
+			@include respond-to(small-mobile) {
+				display: block;
+				margin-bottom: 10px;
 			}
 		}
 		@include respond-to(small-mobile) {
@@ -365,8 +377,9 @@
     width: 100%;
     z-index: -1;
 
-    @include media-only(notebook, max) {
+    @include media-only(tablet, max) {
         position: relative;
+        z-index: 1;
     }
 }
 

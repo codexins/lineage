@@ -6,10 +6,10 @@
 .skillbar {
     position: relative;
     display: inline-block;
-    margin: 40px 0 10px;
+    margin: 40px 0 0;
     background: rgba($cx-grey-color, 0.5);
     height: 7px;
-    width: 88%;
+    width: 90%;
     text-align: left;
     @include border-radius(4px);
 

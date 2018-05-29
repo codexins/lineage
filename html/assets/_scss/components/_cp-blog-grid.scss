@@ -5,8 +5,8 @@
 
 .blog-item-grid {
 	overflow: hidden;
-	margin-bottom: $cx-col-spacing;
 	border: 1px solid $cx-border-color;
+	@extend %mb-half;
 	@include cx-box-shadow;
 	.post-media {
 		width: 180px;
@@ -85,6 +85,18 @@
 			.animated-btn {
 				opacity: 1;
 			}
+		}
+	}
+
+	@include media-only(small-mobile, max) {
+		.flex-wrapper {
+			display: block;
+			text-align: center;
+		}
+
+		.post-media {
+			width: 100%;
+			margin-bottom: 10px;
 		}
 	}
 }

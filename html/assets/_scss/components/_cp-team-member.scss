@@ -36,8 +36,9 @@
 			text-transform: uppercase;
 			font-size: 1.2rem;
 			margin-bottom: 0.5 * $cx-heading-margin-bottom;
-			@include respond-to(notebook) {
+			@include media-only(notebook, max) {
 				font-size: 1rem;
+				margin-bottom: 0.3 * $cx-heading-margin-bottom;
 			}
 		}
 		p {

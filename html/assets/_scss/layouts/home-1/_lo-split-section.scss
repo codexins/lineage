@@ -79,9 +79,4 @@
 			display: none;
 		}
 	}
-
-	@include media-only(tablet, max) {
-		padding-top: $cx-col-spacing;
-		padding-bottom: $cx-col-spacing;
-	}
 }

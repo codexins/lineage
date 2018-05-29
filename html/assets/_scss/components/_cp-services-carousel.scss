@@ -5,6 +5,7 @@
 
 .services-carousel {
 	overflow: hidden;
+	@extend %mb-full;
 	.media-wrapper {
 	    background: lighten($cx-text-color, 100%);
 	    padding: 30px;
@@ -93,22 +94,24 @@
 
 .swiper-arrow {
 	cursor: pointer;
-	@include abs-position(50%);
-	@include transform-translateY(-50%);
+	opacity: 1;
+	bottom: 0;
+	position: absolute;
+	@extend %cx-transition;
 
 	&.prev {
-		left: -50px;
+		left: 50%;
+		margin-left: -45px;
 	}
 
 	&.next {
-		right: -50px;
+		right: 50%;
+		margin-right: -45px;
 	}
 
 	i {
-		font-size: 30px;
 		color: lighten($cx-text-color, 100%);
 		background-color: rgba(0, 0, 0, 0.7);
-		line-height: 39px;
 		opacity: 0.7;
 		@include box(40px);
 		@extend %cx-transition;
@@ -117,3 +120,18 @@
 		}
 	}
 }
+
+// .services-section {
+// 	&:hover {
+// 		.swiper-arrow {
+// 			opacity: 1;
+// 			&.prev {
+// 				left: -50px;
+// 			}
+
+// 			&.next {
+// 				right: -50px;
+// 			}
+// 		}
+// 	}
+// }

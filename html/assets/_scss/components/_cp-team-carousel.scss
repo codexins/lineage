@@ -6,7 +6,11 @@
 .team-carousel {
 	overflow: hidden;
 	.swiper-wrapper {
-		margin-bottom: 0.8 * $cx-section-spacing;
+		margin-bottom: 15px;
+	}
+
+	.swiper-pagination {
+		bottom: -7px;
 	}
 
 	.swiper-pagination-bullet {

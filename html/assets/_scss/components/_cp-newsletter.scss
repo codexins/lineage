@@ -3,26 +3,6 @@
  *
  */
 
-// .newsletter-form-wrapper {
-// 	form {
-// 		div[class^="col-"] {
-// 			padding-left:8px;
-// 			padding-right: 8px;
-// 		}
-
-// 		select,
-// 		textarea,
-// 		input {
-// 			color: $cx-text-color;
-// 		}
-
-// 		input[type="submit"] {
-// 			color: lighten($cx-text-color, 100%);
-// 		}
-// 	}
-
-// }
-
 .newsletter-form-wrapper {
 	@extend %vhcenter;
 
@@ -38,7 +18,7 @@
 			color: $cx-text-color;
 		}
 
-	    input[type="email"] {
+	    input {
 			width: 280px;
 		    margin-right: 10px;
 		    margin-bottom: 0;
@@ -47,5 +27,27 @@
 		input[type="submit"] {
 			color: lighten($cx-text-color, 100%);
 		}
+
+		@include respond-to(mobile) {
+			max-width: 400px;
+		}
+    }
+
+    @include media-only(small-mobile, max) {
+    	display: block;
+
+    	form {
+    		display: block;
+    		max-width: 100%;
+
+    		input {
+    			width: 100%;
+    			max-width: 100%;
+    		}
+
+    		input:not([type="submit"]) {
+    			margin-bottom: 15px;
+    		}
+    	}
     }
 }

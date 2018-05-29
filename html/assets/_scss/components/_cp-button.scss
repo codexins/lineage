@@ -8,29 +8,20 @@
 	position: relative;
 	text-align: center;
 	margin-bottom: -6px;
-    -webkit-transition: border-color 0.3s, color 0.3s;
-    transition: border-color 0.3s, color 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     z-index: 1;
 	@extend %cx-transition;
 	@extend %color-white;
 	&::before {
 	    z-index: -1;
-	    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-	    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-	    -webkit-transform-origin: 0% 100%;
-	    transform-origin: 0% 100%;
-	    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
-	    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+	    @include cx-prefix('transform', 'rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0)');
+	    @include cx-prefix('transform-origin', '0% 100%');
+	    @include cx-prefix('transition', 'transform 0.3s, opacity 0.3s, background-color 0.3s');
 	}
 	&:hover {
 		&::before {
 		    opacity: 1;
-		    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-		    transform: rotate3d(0, 0, 1, 0deg);
-		    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-		    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+		    @include cx-prefix('transform', 'rotate3d(0, 0, 1, 0deg)');
+		    @include cx-prefix('transition-timing-function', 'cubic-bezier(0.2, 1, 0.3, 1)');
 		}
 	}
 	&.white-btn {
@@ -39,7 +30,6 @@
 		@extend %cx-transition;
 		@extend %color-white;
 	    &:hover {
-	        // border-color: $cx-body-bg-color;
 	        color: $cx-text-color;
 	        &::before {
 	            background: $cx-body-bg-color;
@@ -48,8 +38,8 @@
 	}
 
 	@include respond-to(mobile) {
-	    padding: 9px 15px;
-	    font-size: 12px;
+	    padding: 10px 15px;
+	    font-size: calculateRem(12px);
 	    min-width: 135px;
 	}
 
@@ -69,7 +59,7 @@
     color: darken($cx-text-color, 10%);
     padding: 0 25px;
     position: relative;
-    font-size: 12px;
+    font-size: calculateRem(12px);
     font-weight: 700;
     line-height: 1.5em;
     letter-spacing: 2px;

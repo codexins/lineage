@@ -8,6 +8,7 @@
 	width:auto;
 	display: inline-block;
 	padding:0 40px;
+	@extend %mb-half;
 	.counter-icon {
 		i {
 			border: 0;
@@ -21,53 +22,43 @@
 	@include respond-to(tablet) {
 	    width: 50%;
 	    float: left;
-	    margin-bottom: $cx-col-spacing;
+	    // margin-bottom: $cx-col-spacing;
 	    @include flex;
 	}
 
 	@include respond-to(mobile) {
+		text-align: center;
 		width:50%;
 		float: left;
-		margin-bottom: $cx-col-spacing;
 	}
 
-
-	&:nth-child(3),
-	&:nth-child(4) {
-		@include respond-to(tablet) {
-			margin-bottom: 0;
-		}
+	@include media-only(small-mobile, max) {
+		width: 100%;
 	}
 
-	&:nth-child(4) {
-		@include respond-to(mobile) {
-			margin-bottom: 0;
-		}
-	}
-
-	// @include respond-to(mobile) {
-	// 	width:100%;
-	// 	text-align: center;
-	// }
 	.counter-icon {
 		margin-right: 15px;
 		float: left;
 		@extend %mb0;
 		 i {
-		 	font-size: 64px;
+		 	font-size: calculateRem(60px);
 		 	@include box(65px, 65px);
 		 }
 		 @include respond-to(mobile) {
 		 	float: none;
 		 	clear: both;
 		 	margin-right: 0;
+
+		 	i {
+		 		font-size: calculateRem(50px);
+		 	}
 		 }
 	}
 
 	.counter-text {
 		float: right;
 	    text-transform: uppercase;
-	    font-size: 14px;
+	    font-size: calculateRem(13.5px);
 	    margin-bottom: 0;
 		@include respond-to(tablet) {
 			float: left;
@@ -75,7 +66,8 @@
 
 		@include respond-to(mobile) {
 			float: none;
-			margin-top: 20px;
+			margin-top: 10px;
+			font-size: calculateRem(14.5px);
 		}
 	}
 
@@ -85,10 +77,14 @@
 
 	.counter {
 		font-family: $cx-body-font;
-		font-size: 42px;
-		margin-bottom: 2px;
+		font-size: calculateRem(42px);
+		margin-bottom: 3px;
 	    line-height: 100%;
 	    font-weight: bold;
+
+		@include respond-to(mobile) {
+			font-size: calculateRem(34px);
+		}
 	}
 
 	&.white-text {

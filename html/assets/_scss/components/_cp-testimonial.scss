@@ -8,6 +8,10 @@
 	overflow: hidden;
 	margin-bottom: 0.8 * $cx-section-spacing;
 
+	@include media-only(tablet, max) {
+		margin-bottom: 0.4 * $cx-section-spacing;
+	}
+
 	.swiper-pagination {
 	    line-height: 0;
 
@@ -18,6 +22,10 @@
 	    .swiper-pagination-bullet-active {
 			background: lighten($cx-text-color, 100%);
 	    }
+
+		@include media-only(tablet, max) {
+			bottom: - 0.4 * $cx-section-spacing;
+		}
 	}
 }
 

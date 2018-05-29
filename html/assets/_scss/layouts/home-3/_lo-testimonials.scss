@@ -4,8 +4,6 @@
  */
 
 .testimonials-section {
-	@extend %vpadding;
-	@extend %mb0;
 	@include cx-background("../img/background/testimonial.jpg");
 	@include cx-overlay(rgba($cx-tertiary-color, 0.95));
 }

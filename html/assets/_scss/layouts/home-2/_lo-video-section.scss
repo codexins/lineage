@@ -4,8 +4,6 @@
  */
 
 .video-section {
-	@extend %mb0;
-	@extend %vpadding;
 	@extend %overlay;
 	@include cx-background('../img/background/counter-up.jpg');
 

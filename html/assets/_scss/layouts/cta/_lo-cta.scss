@@ -9,15 +9,6 @@
 		@include cx-background("../img/slider/home-1/slide-2.jpg");
 		@include cx-overlay(rgba(0, 0, 0, 0.65));
 		color: lighten($cx-text-color, 100%);
-		h1, h2, h3, h4, h5, h6 {
-			font-size: 2.3 * $cx-body-font-size;
-			color: lighten($cx-text-color, 100%);
-			text-transform: capitalize;
-			font-weight: 600;
-			@include respond-to(tablet) {
-				font-size: 2 * $cx-body-font-size;
-			}
-		}
 	}
 
 	&.cta-split {

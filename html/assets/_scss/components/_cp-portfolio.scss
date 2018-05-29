@@ -184,6 +184,18 @@
 				padding:6px 10px;
 			}
 
+			@include media-only(small-mobile, max) {
+			    width: 50%;
+			    margin: 0 0 5px;
+			    display: block;
+			    float: left;
+			}
+
+		}
+
+		@include media-only(small-mobile, max) {
+			margin-left: 0;
+			overflow: hidden;
 		}
 	}
 

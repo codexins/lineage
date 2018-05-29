@@ -3,45 +3,6 @@
  *
  */
 
-.slider-section,
-.full-screen-slider-section {
-	h2,
-	p {
-		&.sp-layer {
-			z-index: 2;
-			@extend %color-white;
-		}
-	}
-	h2 {
-		&.sp-layer {
-			font-size: 64px;
-			line-height: 64px;
-			margin-bottom: 30px;
-			text-transform: uppercase;
-		}
-		span {
-			&.typed-element,
-			&.typed-cursor {
-				color: $cx-secondary-color;
-			}
-		}
-	}
-	p {
-		&.sp-layer {
-			font-size: 24px;
-			line-height: 32px;
-			margin-bottom: 50px;
-			font-weight: 300;
-		}
-	}
-
-	div {
-		&.slider-button {
-			z-index: 2;
-		}
-	}
-}
-
 .slider-section {
     overflow: hidden;
 }
@@ -55,12 +16,6 @@
 	position: relative;
 	top: -101px;
 	margin-bottom: -101px;
-	.sp-mask {
-		// min-height: 500px;
-		@include respond-to(mobile) {
-			min-height: 300px;
-		}
-	}
 
 	.full-width-video {
 		width: 100%;
@@ -108,36 +63,33 @@
 	right: 0;
 	z-index: 1;
 	@include push-center;
+
+    @include respond-to(notebook) {
+    	width: 940px;
+    }
+
+    @include respond-to(tablet) {
+    	width: 720px;
+    }
+
+    @include respond-to(mobile) {
+        width: 95%;
+    	width: calc(100% - 30px);
+    }
 }
 
 .inner-wrapper {
 	display: block;
 	width: 70%;
 	@include cx-centered(both);
-}
 
-.sp-layer {
-	position: relative;
-}
+    @include respond-to(tablet) {
+        width:90%;
+    }
 
-.sp-buttons {
-	position: absolute;
-	left: 0;
-	bottom: 30px;
+    @include respond-to(mobile) {
+        width:100%;
 
-	.sp-button {
-		border-color: lighten($cx-text-color, 100%);
-		background-color: lighten($cx-text-color, 100%);
-		width: 15px;
-		height: 8px;
-	    opacity: 0.2;
-		@include border-radius(0);
-		@extend %cx-transition;
-	}
-
-	.sp-selected-button {
-		width: 26px;
-		opacity: 1;
-	}
+    }
 }
 

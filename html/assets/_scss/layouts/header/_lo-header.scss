@@ -11,6 +11,10 @@
 	img {
 		height: 100px;
 		@extend %cx-transition;
+		@include media-only(small-mobile, max) {
+			max-width: none;
+			width: auto;
+		}
 	}
 }
 
@@ -22,12 +26,9 @@
 	overflow:hidden;
 	@extend %cx-transition;
 	@include media-only(notebook, max) {
-		margin-top: 29px;
+		margin-top: 31px;
 	}
 
-	@include media-only(tablet, max) {
-		margin-top: 9px;
-	}
 	.icon-bar{
 		@extend %bgc-white;
 	}

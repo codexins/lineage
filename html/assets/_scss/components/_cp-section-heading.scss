@@ -51,6 +51,13 @@
                 width: calculateRem(32px);
             }
         }
+
+        @include media-only(small-mobile, max) {
+            &::before,
+            &::after {
+                content: none;
+            }
+        }
     }
 
     h2 {
@@ -61,12 +68,13 @@
     .subtitle {
         @extend %mb0;
         margin-top: $cx-heading-margin-bottom;
-        font-size: 1.4em;
+        font-size: 1.4rem;
         color: lighten($cx-text-color, 10%);
         font-weight: 300;
-        @include respond-to(notebook) {
-            font-size: 1.2em;
+        @include media-only(notebook, max) {
+            font-size: 1.3rem;
             color: $cx-text-color;
+            margin-top: 0.5 * $cx-heading-margin-bottom;
         }
     }
 
@@ -86,17 +94,43 @@
     }
 
     &.left-aligned {
-        margin: 0;
-        margin-bottom: $cx-col-spacing;
-        max-width: 100%;
-        h2,
-        h4,
-        p {
-            text-align: left;
-        }
         h4 {
             &::before {
                 @extend .visually-hidden;
+            }
+        }
+        @include media-only(notebook, min) {
+            max-width: 100%;
+            h2,
+            h4,
+            p {
+                text-align: left;
+            }
+        }
+        @include media-only(notebook, max) {
+            h4 {
+                &::before {
+                    height: calculateRem(2.5px);
+                    margin: 0 9px;
+                    position: relative;
+                }
+            }
+        }
+
+        @include respond-to(mobile) {
+            h4 {
+                &::before {
+                    width: calculateRem(32px);
+                }
+            }
+        }
+
+        @include media-only(small-mobile, max) {
+            h4 {
+                &::before {
+                    width: 0;
+                    height: 0;
+                }
             }
         }
     }

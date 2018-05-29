@@ -8,9 +8,15 @@
 		margin-bottom: 0.5 * $cx-section-spacing;
 	}
 	
-	@include respond-to(tablet) {
+	@include media-only(notebook, max) {
 		.row > div:first-child {
-			margin-bottom: $cx-col-spacing-mob;
+			margin-bottom: $cx-col-spacing;
 		}
+	}
+}
+
+@include media-only(notebook, max) {
+	.wrapper-with-right-padding {
+		text-align: center;
 	}
 }

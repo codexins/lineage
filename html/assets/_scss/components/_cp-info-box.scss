@@ -61,6 +61,7 @@
 	}
 
 	&.type-2 {
+		@extend %mb0;
 		&::before {
 		    opacity: 0;
 		    @include cx-transition(opacity .5s);

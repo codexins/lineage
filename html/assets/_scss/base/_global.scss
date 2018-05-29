@@ -205,10 +205,16 @@ section {
 
 .wrapper-with-right-padding {
 	padding-right: $cx-heading-margin-bottom;
+	@include media-only(notebook, max) {
+		padding-right: 0;
+	}
 }
 
 .wrapper-with-left-padding {
 	padding-left: $cx-heading-margin-bottom;
+	@include media-only(notebook, max) {
+		padding-left: 0;
+	}
 }
 
 // Background Colors

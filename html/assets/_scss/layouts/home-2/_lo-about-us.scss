@@ -4,8 +4,8 @@
  */
 
 .about-us {
-	@extend %mb0;
-	@extend %vpadding;
+	// @extend %mb0;
+	// @extend %vpadding;
 	ul {
 		padding: 0;
 		margin-bottom: $cx-col-spacing-mob;
@@ -22,6 +22,7 @@
 
 	.animated-skillbar {
 		@extend %mt-half;
+		margin-bottom: -7px;
 		@include respond-to(mobile) {
 			margin: 0;
 			margin-bottom: $cx-col-spacing-mob;

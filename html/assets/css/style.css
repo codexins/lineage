@@ -136,8 +136,20 @@ section {
   padding-right: 25px;
 }
 
+@media only screen and (max-width: 991px) {
+  .wrapper-with-right-padding {
+    padding-right: 0;
+  }
+}
+
 .wrapper-with-left-padding {
   padding-left: 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  .wrapper-with-left-padding {
+    padding-left: 0;
+  }
 }
 
 .bgc-tertiary-textured {
@@ -573,13 +585,13 @@ input[type="button"]:hover {
 /************************************************************
 	c02 - Base - Placeholders
 *************************************************************/
-.vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .about-us, .services-section, .fun-facts, .testimonials-section, .video-section, .about-us-section, .our-features, .our-values-section, .contact-us-section, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
+.vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .our-features, .our-values-section, .contact-us-section, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .about-us, .services-section, .fun-facts, .testimonials-section, .video-section, .about-us-section, .our-features, .our-values-section, .contact-us-section, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
+  .vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .cta-section.type-2, .our-features, .our-values-section, .contact-us-section, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .our-history, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
     padding-top: 67.5px;
     padding-bottom: 67.5px;
   }
@@ -652,9 +664,9 @@ input[type="reset"],
 input[type="password"],
 input[type="search"],
 input[type="tel"],
-input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .animated-btn::before, .animated-btn::after, .animated-btn span::before, .animated-btn span::after, .fancy-btn::before, .social-icon a, .social-icon-large a, .author-box .author-socials a, .section-heading h4::before, .service-tabs .tab-content-heading h4::before, .section-heading h4::after, .service-tabs .tab-content-heading h4::after, .section-heading.type-3 h2::before, .service-tabs .type-3.tab-content-heading h2::before, .section-heading.type-3 h2::after, .service-tabs .type-3.tab-content-heading h2::after, .info-item, .info-item .thumb-icon i, .info-item.border-collapsed h3, .info-item.border-collapsed h3::before, .services-carousel .media-wrapper img, .services-carousel .media-thumb, .swiper-arrow i, .counter-item.type-2 .counter-wrapper, .counter-item.type-2 .counter-wrapper i, .tab.type-2 .nav-tabs > li.active > a, .tab.type-2 .tab.iconic-tab > .nav-tabs > li > a, .tab.type-2 .tab-content, .text-widget .contact-no a i, .tab.widget-tab .nav-tabs > li, .contact-box-widget .icon-wrapper i, .contact-box-widget .icon-wrapper i::after, .posts-single .img-thumb img, .author-box .img-thumb img, .instagram-widget .image-popup figure a::before, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .portfolio-filter ul li::before, .portfolio-filter.type-2 li::after, .portfolio-filter.type-3 li, .team-member .team-media .team-social-wrapper, .team-member .social-icon, .team-member .social-icon-large, .team-member .author-box .author-socials, .author-box .team-member .author-socials, .team-member.type-3 .team-media img, .team-carousel .swiper-pagination-bullet, .simple-slider-container .swiper-pagination-bullet, .simple-slider-container .carousel-arrow, .pricing-table-type-3, .carousel-arrow::after, .blog-item-grid .flex-wrapper::before, .blog-grid .post-media img, .blog-grid.type-2 .post-media::before, .blog-grid.type-2 .post-category a::before, .post-single .post-media img, .post-single .post-like,
+input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .animated-btn::before, .animated-btn::after, .animated-btn span::before, .animated-btn span::after, .fancy-btn::before, .social-icon a, .social-icon-large a, .author-box .author-socials a, .section-heading h4::before, .service-tabs .tab-content-heading h4::before, .section-heading h4::after, .service-tabs .tab-content-heading h4::after, .section-heading.type-3 h2::before, .service-tabs .type-3.tab-content-heading h2::before, .section-heading.type-3 h2::after, .service-tabs .type-3.tab-content-heading h2::after, .info-item, .info-item .thumb-icon i, .info-item.border-collapsed h3, .info-item.border-collapsed h3::before, .services-carousel .media-wrapper img, .services-carousel .media-thumb, .swiper-arrow, .swiper-arrow i, .counter-item.type-2 .counter-wrapper, .counter-item.type-2 .counter-wrapper i, .tab.type-2 .nav-tabs > li.active > a, .tab.type-2 .tab.iconic-tab > .nav-tabs > li > a, .tab.type-2 .tab-content, .text-widget .contact-no a i, .tab.widget-tab .nav-tabs > li, .contact-box-widget .icon-wrapper i, .contact-box-widget .icon-wrapper i::after, .posts-single .img-thumb img, .author-box .img-thumb img, .instagram-widget .image-popup figure a::before, .portfolio-item .img:before, .portfolio-mini-desc, .portfolio-filter ul li, .portfolio-filter ul li::before, .portfolio-filter.type-2 li::after, .portfolio-filter.type-3 li, .team-member .team-media .team-social-wrapper, .team-member .social-icon, .team-member .social-icon-large, .team-member .author-box .author-socials, .author-box .team-member .author-socials, .team-member.type-3 .team-media img, .team-carousel .swiper-pagination-bullet, .simple-slider-container .swiper-pagination-bullet, .simple-slider-container .carousel-arrow, .pricing-table-type-3, .carousel-arrow::after, .blog-item-grid .flex-wrapper::before, .blog-grid .post-media img, .blog-grid.type-2 .post-media::before, .blog-grid.type-2 .post-category a::before, .post-single .post-media img, .post-single .post-like,
 .post-single .post-share,
-.post-single .post-comments, .pie-chart-wrapper, .pie-chart-wrapper h6, .accordion .panel-heading, .accordion .accordion-toggle::after, .client-single, #toTop, #toTop i, .image-box-wrapper figure img, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, #social-share-btn .popover .popover-content a.share-google-plus::after, .logo img, .c-button, header .intelligent-header.scrolling-up img, .top-content a, .sp-buttons .sp-button, .image-carousel-full-width .swiper-slide .icon-wrapper, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .nav-swiper .swiper-slide, #colophon nav li, .portfolio-list-wrapper .portfolio-media .media-container, .portfolio-list-wrapper .portfolio-content::before, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
+.post-single .post-comments, .pie-chart-wrapper, .pie-chart-wrapper h6, .accordion .panel-heading, .accordion .accordion-toggle::after, .client-single, #toTop, #toTop i, .image-box-wrapper figure img, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, #social-share-btn .popover .popover-content a.share-google-plus::after, .slider-pro .sp-arrows .sp-arrow, .slider-pro .sp-buttons .sp-button, .logo img, .c-button, header .intelligent-header.scrolling-up img, .top-content a, .image-carousel-full-width .swiper-slide .icon-wrapper, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .nav-swiper .swiper-slide, #colophon nav li, .portfolio-list-wrapper .portfolio-media .media-container, .portfolio-list-wrapper .portfolio-content::before, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category a,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content h3 a,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content p, .portfolio-nav .inner-media img, .single-post-wrapper .post-single .post-media .image-overlay, .trigger-iframe::before, .trigger-iframe i, .contact-section .contact-item-wrapper i, .contact-us-section .box-wrapper i, .client-carousel .item-brand {
@@ -816,10 +828,8 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .accordion.white-text .accordion-toggle,
 .accordion.white-text .accordion-toggle:hover,
 .accordion.white-text .accordion-toggle::after, .image-box-wrapper figure figcaption,
-.image-box-wrapper figure figcaption > a, .slider-section h2.sp-layer,
-.slider-section p.sp-layer,
-.full-screen-slider-section h2.sp-layer,
-.full-screen-slider-section p.sp-layer, #primary-slider-with-particle h4,
+.image-box-wrapper figure figcaption > a, .slider-pro h2.sp-layer,
+.slider-pro p.sp-layer, #primary-slider-with-particle h4,
 #primary-slider-with-video h4, .image-carousel-full-width .swiper-slide .icon-wrapper span, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .nav-swiper .swiper-slide, .service-tabs .tab-content-heading.white-text, .service-tabs .tab-content.white-text p,
 .service-tabs .tab-content.white-text li, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category a,
@@ -853,28 +863,28 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 
 .mb0, .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle, .info-item.left-edged-icon.last, .info-item.flip-card .back p:last-of-type, .services-carousel .media-wrapper p, .counter-item .counter-icon, .sidebar-widget p:last-of-type, .contact-box-widget h3, .testimonial-widget .client-meta .client-name h3, .widget-form-wrapper input,
 .widget-form-wrapper textarea, .team-member-card .team-details h2,
-.team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .feature-box h3, .feature-box p, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .pagination-wrapper .pagination, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .portfolio-section, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
+.team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .info-box-wrapper.type-2, .feature-box h3, .feature-box p, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .pagination-wrapper .pagination, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .portfolio-section, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
 .single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-posts-section, .blog-grid-wrapper .quote-wrapper, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section.type-2 .cta-content-wrapper .cta-content p, .features-section .info-item,
-.features-section .secondary-title, .about-us, .services-section, .fun-facts, .values-section, .testimonials-section, .video-section, .contact-section, .contact-section .contact-item-wrapper p, .slider-section, .about-us-section, .our-features, .our-values-section, .background-video-section, .contact-us-section, .social-section, .contacts-form-section, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .fun-facts-section.facts-about, .values-promo.values-about, .our-history, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .error-404-wrapper {
+.features-section .secondary-title, .contact-section .contact-item-wrapper p, .slider-section, .our-features, .our-values-section, .background-video-section, .contact-us-section, .social-section, .contacts-form-section, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .fun-facts-section.facts-about, .values-promo.values-about, .our-history, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .error-404-wrapper {
   margin-bottom: 0;
 }
 
-.mb-full, .single-portfolio-intro .portfolio-meta {
+.mb-full, .services-carousel, .single-portfolio-intro .portfolio-meta {
   margin-bottom: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mb-full, .single-portfolio-intro .portfolio-meta {
+  .mb-full, .services-carousel, .single-portfolio-intro .portfolio-meta {
     margin-bottom: 67.5px;
   }
 }
 
-.mt-full, .portfolio-section, .single-portfolio-intro, .single-portfolio-intro .portfolio-content, .single-portfolio-details, .portfolio-nav, .features, .values-section {
+.mt-full, .portfolio-section, .single-portfolio-intro, .single-portfolio-intro .portfolio-content, .single-portfolio-details, .portfolio-nav {
   margin-top: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mt-full, .portfolio-section, .single-portfolio-intro, .single-portfolio-intro .portfolio-content, .single-portfolio-details, .portfolio-nav, .features, .values-section {
+  .mt-full, .portfolio-section, .single-portfolio-intro, .single-portfolio-intro .portfolio-content, .single-portfolio-details, .portfolio-nav {
     margin-top: 67.5px;
   }
 }
@@ -899,12 +909,12 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.mb-half, .team-member, .team-member.type-3, .info-box-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p {
+.mb-half, .counter-item, .team-member, .team-member.type-3, .pricing-table, .blog-item-grid, .info-box-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p {
   margin-bottom: 45px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mb-half, .team-member, .team-member.type-3, .info-box-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p {
+  .mb-half, .counter-item, .team-member, .team-member.type-3, .pricing-table, .blog-item-grid, .info-box-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p {
     margin-bottom: 33.75px;
   }
 }
@@ -1167,10 +1177,6 @@ to a reusable component.
   position: relative;
   text-align: center;
   margin-bottom: -6px;
-  -webkit-transition: border-color 0.3s, color 0.3s;
-  transition: border-color 0.3s, color 0.3s;
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   z-index: 1;
 }
 
@@ -1198,18 +1204,33 @@ to a reusable component.
 .default-btn::before {
   z-index: -1;
   -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  -moz-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  -ms-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  -o-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
   transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
   -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
   transform-origin: 0% 100%;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+  -webkit-transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+  -moz-transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+  -ms-transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+  -o-transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
   transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
 }
 
 .default-btn:hover::before {
   opacity: 1;
   -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  -moz-transform: rotate3d(0, 0, 1, 0deg);
+  -ms-transform: rotate3d(0, 0, 1, 0deg);
+  -o-transform: rotate3d(0, 0, 1, 0deg);
   transform: rotate3d(0, 0, 1, 0deg);
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  -moz-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  -ms-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  -o-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
@@ -1228,8 +1249,8 @@ to a reusable component.
 
 @media only screen and (max-width: 767px) {
   .default-btn {
-    padding: 9px 15px;
-    font-size: 12px;
+    padding: 10px 15px;
+    font-size: 0.75rem;
     min-width: 135px;
   }
 }
@@ -1249,7 +1270,7 @@ to a reusable component.
   color: #3b3b3b;
   padding: 0 25px;
   position: relative;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.5em;
   letter-spacing: 2px;
@@ -1845,34 +1866,61 @@ to a reusable component.
   }
 }
 
+@media only screen and (max-width: 479px) {
+  .section-heading h4::before, .service-tabs .tab-content-heading h4::before, .section-heading h4::after, .service-tabs .tab-content-heading h4::after {
+    content: none;
+  }
+}
+
 .section-heading h2, .service-tabs .tab-content-heading h2 {
   margin-bottom: 0;
 }
 
 .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle {
   margin-top: 25px;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   color: #6e6e6e;
   font-weight: 300;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (max-width: 991px) {
   .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle {
-    font-size: 1.2em;
+    font-size: 1.3rem;
     color: #545454;
+    margin-top: 12.5px;
   }
 }
 
-.section-heading.left-aligned, .service-tabs .left-aligned.tab-content-heading {
-  margin: 0;
-  margin-bottom: 45px;
-  max-width: 100%;
+@media only screen and (min-width: 992px) {
+  .section-heading.left-aligned, .service-tabs .left-aligned.tab-content-heading {
+    max-width: 100%;
+  }
+  .section-heading.left-aligned h2, .service-tabs .left-aligned.tab-content-heading h2,
+  .section-heading.left-aligned h4, .service-tabs .left-aligned.tab-content-heading h4,
+  .section-heading.left-aligned p, .service-tabs .left-aligned.tab-content-heading p {
+    text-align: left;
+  }
 }
 
-.section-heading.left-aligned h2, .service-tabs .left-aligned.tab-content-heading h2,
-.section-heading.left-aligned h4, .service-tabs .left-aligned.tab-content-heading h4,
-.section-heading.left-aligned p, .service-tabs .left-aligned.tab-content-heading p {
-  text-align: left;
+@media only screen and (max-width: 991px) {
+  .section-heading.left-aligned h4::before, .service-tabs .left-aligned.tab-content-heading h4::before {
+    height: 0.15625rem;
+    margin: 0 9px;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section-heading.left-aligned h4::before, .service-tabs .left-aligned.tab-content-heading h4::before {
+    width: 2rem;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .section-heading.left-aligned h4::before, .service-tabs .left-aligned.tab-content-heading h4::before {
+    width: 0;
+    height: 0;
+  }
 }
 
 .section-heading.type-2 h2, .service-tabs .type-2.tab-content-heading h2 {
@@ -2566,33 +2614,24 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .swiper-arrow {
   cursor: pointer;
-  content: "";
-  display: block;
+  opacity: 1;
+  bottom: 0;
   position: absolute;
-  top: 50%;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 .swiper-arrow.prev {
-  left: -50px;
+  left: 50%;
+  margin-left: -45px;
 }
 
 .swiper-arrow.next {
-  right: -50px;
+  right: 50%;
+  margin-right: -45px;
 }
 
 .swiper-arrow i {
-  font-size: 30px;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
-  line-height: 39px;
   opacity: 0.7;
   width: 40px;
   height: 40px;
@@ -2630,8 +2669,21 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 @media only screen and (max-width: 767px) {
-  .cta-centered h2 {
-    font-size: 24px;
+  .cta-centered p {
+    font-size: 1.09375rem;
+  }
+}
+
+.cta-centered h1, .cta-centered h2, .cta-centered h3, .cta-centered h4, .cta-centered h5, .cta-centered h6 {
+  font-size: 39.1px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+  .cta-centered h1, .cta-centered h2, .cta-centered h3, .cta-centered h4, .cta-centered h5, .cta-centered h6 {
+    font-size: 1.5rem;
   }
 }
 
@@ -2706,7 +2758,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   .counter-item {
     width: 50%;
     float: left;
-    margin-bottom: 45px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -2717,21 +2768,15 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 @media only screen and (max-width: 767px) {
   .counter-item {
+    text-align: center;
     width: 50%;
     float: left;
-    margin-bottom: 45px;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .counter-item:nth-child(3), .counter-item:nth-child(4) {
-    margin-bottom: 0;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .counter-item:nth-child(4) {
-    margin-bottom: 0;
+@media only screen and (max-width: 479px) {
+  .counter-item {
+    width: 100%;
   }
 }
 
@@ -2741,7 +2786,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .counter-item .counter-icon i {
-  font-size: 64px;
+  font-size: 3.75rem;
   width: 65px;
   height: 65px;
   text-align: center;
@@ -2755,12 +2800,15 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
     clear: both;
     margin-right: 0;
   }
+  .counter-item .counter-icon i {
+    font-size: 3.125rem;
+  }
 }
 
 .counter-item .counter-text {
   float: right;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.84375rem;
   margin-bottom: 0;
 }
 
@@ -2773,7 +2821,8 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 @media only screen and (max-width: 767px) {
   .counter-item .counter-text {
     float: none;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 0.90625rem;
   }
 }
 
@@ -2783,10 +2832,16 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .counter-item .counter {
   font-family: "Lato", sans-serif;
-  font-size: 42px;
-  margin-bottom: 2px;
+  font-size: 2.625rem;
+  margin-bottom: 3px;
   line-height: 100%;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .counter-item .counter {
+    font-size: 2.125rem;
+  }
 }
 
 .counter-item.white-text {
@@ -3014,6 +3069,14 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
+}
+
+@media only screen and (max-width: 479px) {
+  .tab .nav-tabs > li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .tab .tab-pane p:last-of-type {
@@ -4011,6 +4074,22 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   }
 }
 
+@media only screen and (max-width: 479px) {
+  .portfolio-filter ul li {
+    width: 50%;
+    margin: 0 0 5px;
+    display: block;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .portfolio-filter ul {
+    margin-left: 0;
+    overflow: hidden;
+  }
+}
+
 .portfolio-filter.type-2 li {
   padding: 3px 0;
   line-height: 1.4em;
@@ -4375,9 +4454,10 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   margin-bottom: 12.5px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (max-width: 991px) {
   .team-member .team-details h2 {
     font-size: 1rem;
+    margin-bottom: 7.5px;
   }
 }
 
@@ -4669,7 +4749,11 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .team-carousel .swiper-wrapper {
-  margin-bottom: 72px;
+  margin-bottom: 15px;
+}
+
+.team-carousel .swiper-pagination {
+  bottom: -7px;
 }
 
 .team-carousel .swiper-pagination-bullet {
@@ -4852,7 +4936,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   color: #545454;
 }
 
-.newsletter-form-wrapper form input[type="email"] {
+.newsletter-form-wrapper form input {
   width: 280px;
   margin-right: 10px;
   margin-bottom: 0;
@@ -4860,6 +4944,29 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .newsletter-form-wrapper form input[type="submit"] {
   color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .newsletter-form-wrapper form {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .newsletter-form-wrapper {
+    display: block;
+  }
+  .newsletter-form-wrapper form {
+    display: block;
+    max-width: 100%;
+  }
+  .newsletter-form-wrapper form input {
+    width: 100%;
+    max-width: 100%;
+  }
+  .newsletter-form-wrapper form input:not([type="submit"]) {
+    margin-bottom: 15px;
+  }
 }
 
 /**
@@ -4946,6 +5053,19 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   border: 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .pricing-table .pricing-features li {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricing-table .pricing-features {
+    min-height: auto;
+    overflow: hidden;
+  }
+}
+
 .pricing-table .pricing-button a {
   padding: 12px 32px;
   background-color: #d7706d;
@@ -5018,16 +5138,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .pricing-table.on-sale .pricing-button a:hover {
   background: #252525;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .pricing-table {
-    margin-bottom: 45px;
-  }
-}
-
-.pricing-table.last {
-  margin-bottom: 0;
 }
 
 .pricing-table-type-2 {
@@ -5133,6 +5243,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .pricing-table-type-2.featured {
   top: -14px;
+  margin-bottom: -14px;
   -webkit-box-shadow: 0 4px 8px 0px rgba(46,61,73,0.2);;
   -moz-box-shadow: 0 4px 8px 0px rgba(46,61,73,0.2);;
   -ms-box-shadow: 0 4px 8px 0px rgba(46,61,73,0.2);;
@@ -5322,6 +5433,13 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   margin-bottom: 72px;
 }
 
+@media only screen and (max-width: 767px) {
+  .testimonial-container,
+  .testimonial-container-type-2 {
+    margin-bottom: 36px;
+  }
+}
+
 .testimonial-container .swiper-pagination,
 .testimonial-container-type-2 .swiper-pagination {
   line-height: 0;
@@ -5335,6 +5453,13 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .testimonial-container .swiper-pagination .swiper-pagination-bullet-active,
 .testimonial-container-type-2 .swiper-pagination .swiper-pagination-bullet-active {
   background: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .testimonial-container .swiper-pagination,
+  .testimonial-container-type-2 .swiper-pagination {
+    bottom: -36px;
+  }
 }
 
 .testimonial-container .testimonial-media {
@@ -5682,7 +5807,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
  */
 .blog-item-grid {
   overflow: hidden;
-  margin-bottom: 45px;
   border: 1px solid #ddd;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
@@ -5808,6 +5932,17 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .blog-item-grid .flex-wrapper:hover .default-btn,
 .blog-item-grid .flex-wrapper:hover .animated-btn {
   opacity: 1;
+}
+
+@media only screen and (max-width: 479px) {
+  .blog-item-grid .flex-wrapper {
+    display: block;
+    text-align: center;
+  }
+  .blog-item-grid .post-media {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 .blog-grid {
@@ -6406,10 +6541,10 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .skillbar {
   position: relative;
   display: inline-block;
-  margin: 40px 0 10px;
+  margin: 40px 0 0;
   background: rgba(154, 171, 184, 0.5);
   height: 7px;
-  width: 88%;
+  width: 90%;
   text-align: left;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -7574,6 +7709,156 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   width: 100%;
 }
 
+/**
+ * Components Slider
+ *
+ */
+.slider-pro h2.sp-layer,
+.slider-pro p.sp-layer {
+  z-index: 2;
+}
+
+.slider-pro h2.sp-layer {
+  font-size: 3.75rem;
+  line-height: 64px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slider-pro h2.sp-layer {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-pro h2.sp-layer {
+    font-size: 2.6875rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slider-pro h2.sp-layer {
+    font-size: 1.875rem;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .slider-pro h2.sp-layer {
+    font-size: 1.375rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+}
+
+.slider-pro h2 span.typed-element, .slider-pro h2 span.typed-cursor {
+  color: #d7706d;
+}
+
+.slider-pro p.sp-layer {
+  font-size: 1.40625rem;
+  line-height: 32px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-pro p.sp-layer {
+    font-size: 1.3125rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slider-pro p.sp-layer {
+    font-size: 1.1875rem;
+    line-height: 27px;
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .slider-pro p.sp-layer {
+    font-size: 1.0625rem;
+    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+}
+
+.slider-pro div.slider-button {
+  z-index: 2;
+}
+
+.slider-pro .sp-arrows .sp-arrow {
+  background-color: rgba(62, 62, 62, 0.55);
+  width: 42px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.slider-pro .sp-arrows .sp-arrow::before {
+  width: 42px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  background-color: transparent;
+  transform: none;
+  content: "\f104";
+  font-family: FontAwesome;
+  font-size: 30px;
+  color: #fff;
+  top: 0;
+  left: 0;
+}
+
+.slider-pro .sp-arrows .sp-arrow::after {
+  display: none;
+}
+
+.slider-pro .sp-arrows .sp-arrow:hover {
+  background-color: rgba(62, 62, 62, 0.85);
+}
+
+.slider-pro .sp-arrows .sp-previous-arrow {
+  left: 0;
+}
+
+.slider-pro .sp-arrows .sp-next-arrow {
+  right: 0;
+}
+
+.slider-pro .sp-layer {
+  position: relative;
+}
+
+.slider-pro .sp-buttons {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+}
+
+.slider-pro .sp-buttons .sp-button {
+  border-color: white;
+  background-color: white;
+  width: 15px;
+  height: 8px;
+  opacity: 0.2;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+.slider-pro .sp-buttons .sp-selected-button {
+  width: 26px;
+  opacity: 1;
+}
+
 /************************************************************
 	c20 - Layout - header
 *************************************************************/
@@ -7590,6 +7875,13 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   height: 100px;
 }
 
+@media only screen and (max-width: 479px) {
+  .logo img {
+    max-width: none;
+    width: auto;
+  }
+}
+
 .header-wrapper {
   position: relative;
 }
@@ -7600,13 +7892,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 @media only screen and (max-width: 991px) {
   .c-button {
-    margin-top: 29px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .c-button {
-    margin-top: 9px;
+    margin-top: 31px;
   }
 }
 
@@ -7945,40 +8231,6 @@ header.header-white .intelligent-header {
  * layout slider/ slider
  *
  */
-.slider-section h2.sp-layer,
-.slider-section p.sp-layer,
-.full-screen-slider-section h2.sp-layer,
-.full-screen-slider-section p.sp-layer {
-  z-index: 2;
-}
-
-.slider-section h2.sp-layer,
-.full-screen-slider-section h2.sp-layer {
-  font-size: 64px;
-  line-height: 64px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
-
-.slider-section h2 span.typed-element, .slider-section h2 span.typed-cursor,
-.full-screen-slider-section h2 span.typed-element,
-.full-screen-slider-section h2 span.typed-cursor {
-  color: #d7706d;
-}
-
-.slider-section p.sp-layer,
-.full-screen-slider-section p.sp-layer {
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 50px;
-  font-weight: 300;
-}
-
-.slider-section div.slider-button,
-.full-screen-slider-section div.slider-button {
-  z-index: 2;
-}
-
 .slider-section {
   overflow: hidden;
 }
@@ -7992,12 +8244,6 @@ header.header-white .intelligent-header {
   position: relative;
   top: -101px;
   margin-bottom: -101px;
-}
-
-@media only screen and (max-width: 767px) {
-  .full-screen-slider-section .sp-mask {
-    min-height: 300px;
-  }
 }
 
 .full-screen-slider-section .full-width-video {
@@ -8045,6 +8291,25 @@ header.header-white .intelligent-header {
   margin-right: auto;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .layer-wrapper {
+    width: 940px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .layer-wrapper {
+    width: 720px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .layer-wrapper {
+    width: 95%;
+    width: calc(100% - 30px);
+  }
+}
+
 .inner-wrapper {
   display: block;
   width: 70%;
@@ -8058,32 +8323,16 @@ header.header-white .intelligent-header {
   transform: translate(-50%, -50%);
 }
 
-.sp-layer {
-  position: relative;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .inner-wrapper {
+    width: 90%;
+  }
 }
 
-.sp-buttons {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-}
-
-.sp-buttons .sp-button {
-  border-color: white;
-  background-color: white;
-  width: 15px;
-  height: 8px;
-  opacity: 0.2;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-}
-
-.sp-buttons .sp-selected-button {
-  width: 26px;
-  opacity: 1;
+@media only screen and (max-width: 767px) {
+  .inner-wrapper {
+    width: 100%;
+  }
 }
 
 /**
@@ -8382,6 +8631,12 @@ header.header-white .intelligent-header {
   margin-right: -5px;
 }
 
+@media only screen and (max-width: 479px) {
+  #colophon .contact .actions .default-btn:first-of-type {
+    margin-right: 0;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #colophon .contact .actions .default-btn {
     padding: 9px 15px;
@@ -8392,6 +8647,12 @@ header.header-white .intelligent-header {
 @media only screen and (max-width: 767px) {
   #colophon .contact .actions .default-btn {
     margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  #colophon .contact .actions .default-btn {
+    margin-bottom: 15px;
   }
 }
 
@@ -8430,6 +8691,13 @@ header.header-white .intelligent-header {
   #colophon .contact .socials {
     display: inline-block;
     float: none;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  #colophon .contact .actions {
+    display: block;
+    margin-bottom: 10px;
   }
 }
 
@@ -8636,9 +8904,10 @@ header.header-white .intelligent-header {
   z-index: -1;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   .fixed-footer {
     position: relative;
+    z-index: 1;
   }
 }
 
@@ -8764,13 +9033,6 @@ header.header-white .intelligent-header {
 @media only screen and (max-width: 991px) {
   .split-section .image-container {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .split-section {
-    padding-top: 45px;
-    padding-bottom: 45px;
   }
 }
 
@@ -9660,19 +9922,6 @@ blockquote {
   left: 0;
 }
 
-.cta-section.has-bg h1, .cta-section.has-bg h2, .cta-section.has-bg h3, .cta-section.has-bg h4, .cta-section.has-bg h5, .cta-section.has-bg h6 {
-  font-size: 39.1px;
-  color: white;
-  text-transform: capitalize;
-  font-weight: 600;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .cta-section.has-bg h1, .cta-section.has-bg h2, .cta-section.has-bg h3, .cta-section.has-bg h4, .cta-section.has-bg h5, .cta-section.has-bg h6 {
-    font-size: 34px;
-  }
-}
-
 .cta-section.cta-split {
   padding-top: 67.5px;
   padding-bottom: 67.5px;
@@ -9795,9 +10044,15 @@ blockquote {
   margin-bottom: 45px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   .reasons-choose-section .row > div:first-child {
-    margin-bottom: 33.75px;
+    margin-bottom: 45px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .wrapper-with-right-padding {
+    text-align: center;
   }
 }
 
@@ -9854,19 +10109,9 @@ blockquote {
 }
 
 /**
- * Layout home-1/ support
- *
- */
-/**
  * layout home-1 / features
  *
  */
-@media only screen and (max-width: 991px) {
-  .features-section .info-item {
-    margin-bottom: 33.75px;
-  }
-}
-
 .features-section .secondary-title {
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -9892,6 +10137,10 @@ blockquote {
   margin-right: 2%;
 }
 
+.about-us .animated-skillbar {
+  margin-bottom: -7px;
+}
+
 @media only screen and (max-width: 767px) {
   .about-us .animated-skillbar {
     margin: 0;
@@ -9902,10 +10151,6 @@ blockquote {
   }
 }
 
-/**
- * layout home-2/ features
- *
- */
 /**
  * layout home-2/ services
  *
