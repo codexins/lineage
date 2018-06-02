@@ -107,6 +107,10 @@
 		}
 		@include respond-to(mobile) {
 			text-align: center;
+			.thumb-icon {
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 
 		&.last {
@@ -116,6 +120,10 @@
 		i {
 			font-size: 40px;
 			padding-top: 0;
+		}
+
+		.thumb-icon {
+			width: 64px;
 		}
 
 	}
@@ -166,8 +174,8 @@
 			}
 		}
 
-		@include media-only(993px, max) {
-			padding-top:0;
+		@include media-only(notebook, max) {
+			padding-top: 0;
 			padding-bottom: 0;
 			margin-bottom: $cx-col-spacing;
 		}

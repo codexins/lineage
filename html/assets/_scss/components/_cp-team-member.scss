@@ -107,6 +107,7 @@
 			}
 		}
 		.team-intro-wrapper {
+			position: relative;
 			@include eqheight;
 		}
 
@@ -122,6 +123,23 @@
 				    @include cx-prefix('transform', 'none');
 				    @include border-radius('0');
 				    @include box(34px);
+				    @include respond-to(notebook) {
+				    	@include box(30px);
+				    	margin-left: 1px;
+				    	margin-right: 1px;
+				    }
+			    }
+			}
+
+			@include respond-to(mobile) {
+				position: absolute;
+			    top: -135%;
+			    top: calc(-100% - 15px);
+
+			    a {
+			    	&:first-child {
+			    		margin-left: 0;
+			    	}
 			    }
 			}
 		}
@@ -144,10 +162,20 @@
 }
 
 .team-member-card {
+	@extend %mb-half;
+	@include respond-to(mobile) {
+		&.flip-card {
+			min-height: auto;
+		}
+	}
 	.front,
 	.back {
 		min-height: 430px;
 		@include cx-box-shadow('5px 5px 25px 0 rgba(46,61,73,.2);')
+	    @include respond-to(mobile) {
+			min-height: auto;
+			// max-height: 375px;
+	    }
 	}
 	.front {
 		img {
@@ -176,6 +204,15 @@
 			font-style: italic;
 		    margin-bottom: 25px;
 		    padding-bottom: 20px;
+
+		    @include respond-to(tablet) {
+		    	min-height: 160px;
+		    }
+
+		    @include respond-to(mobile) {
+		    	margin-bottom: 10px;
+		    	padding-bottom: 10px;
+		    }
 		}
 	}
 	.team-details {
@@ -210,6 +247,9 @@
 		text-align: center;
 		border-top: 5px solid $gplus-color;
 		@include cx-prefix('backface-visibility', 'hidden');
+		@include respond-to(mobile) {
+			padding: 15px;
+		}
 	}
 
 	.team-detail {
@@ -232,6 +272,10 @@
 			&:hover {
 				background: transparent;
 				color: $cx-secondary-color;
+			}
+
+			@include respond-to(mobile) {
+				margin: 0;
 			}
 		}
 	}

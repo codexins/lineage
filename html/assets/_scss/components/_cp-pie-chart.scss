@@ -36,6 +36,7 @@
     overflow: hidden;
     @extend %cx-transition;
     @extend %rounded-corners;
+    @extend %mb-half;
 
     h6 {
 	    text-transform: uppercase;

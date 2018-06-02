@@ -211,7 +211,7 @@
                                 <div class="col-xs-4 col-md-7">
 
                                     <!-- Start of Main Navigation -->
-                                    <nav id="main-nav" class="stellarnav hidden-xs hidden-sm">
+                                    <nav id="main-nav" class="stellarnav header-type-2 hidden-xs hidden-sm">
                                         <ul>
                                             <li><a href="index.html">Home</a>
                                                 <ul class="sub-menu">
@@ -365,7 +365,7 @@
                                     </div> <!-- end of mobile-menu-button -->
                                 </div> <!-- end of col -->
 
-                                <div class="col-xs-4 col-md-2 nav-social-wrapper">
+                                <div class="col-xs-4 col-md-2 hidden-xs nav-social-wrapper">
                                     <ul class="header-socials">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -389,7 +389,7 @@
                 <div class="sp-slides">
                     <div class="sp-slide">
                         <!-- main video -->
-                        <video class="sp-video full-width-video" poster="assets/videos/video-poster.jpg" loop autoplay>
+                        <video class="sp-video full-width-video" poster="assets/videos/video-poster.jpg" loop muted autoplay>
                             <source src="assets/videos/video.mp4" type="video/mp4"/>
                             <!-- <source src="path/to/video.ogv" type="video/ogg"/> -->
                         </video>
@@ -434,7 +434,7 @@
                     
                     <div class="sp-slide">
                         <!-- main video -->
-                        <a class="sp-video" href="//www.youtube.com/watch?v=o1Uo75TlYzc&loop=1&autoplay=1&mute=1&rel=0&showinfo=0&playlist=o1Uo75TlYzc">
+                        <a class="sp-video" href="//www.youtube.com/watch?v=o1Uo75TlYzc&loop=1&autoplay=1&mute=1&rel=0&showinfo=0&playlist=o1Uo75TlYzc&controls=0">
                             <img src="assets/videos/video-poster-2.jpg" alt="Slider Video Poster"/>
                         </a>
                         <!-- layers -->
@@ -548,13 +548,28 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-6 col-lg-6 animation-left">
-                            <div class="simple-slider-container">
+                            <div class="simple-slider-container bg-img-wrapper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="//placehold.it/555x420" alt="Slider Image"></div>
-                                    <div class="swiper-slide"><img src="//placehold.it/555x420" alt="Slider Image"></div>
-                                    <div class="swiper-slide"><img src="//placehold.it/555x420" alt="Slider Image"></div>
-                                    <div class="swiper-slide"><img src="//placehold.it/555x420" alt="Slider Image"></div>
-                                    <div class="swiper-slide"><img src="//placehold.it/555x420" alt="Slider Image"></div>
+                                    <div class="swiper-slide">
+                                        <div class="sp-image image-placeholder"></div>
+                                        <img src="//placehold.it/555x420" class="visually-hidden" alt="Slider Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sp-image image-placeholder"></div>
+                                        <img src="//placehold.it/555x420" class="visually-hidden" alt="Slider Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sp-image image-placeholder"></div>
+                                        <img src="//placehold.it/555x420" class="visually-hidden" alt="Slider Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sp-image image-placeholder"></div>
+                                        <img src="//placehold.it/555x420" class="visually-hidden" alt="Slider Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sp-image image-placeholder"></div>
+                                        <img src="//placehold.it/555x420" class="visually-hidden" alt="Slider Image">
+                                    </div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -609,10 +624,10 @@
             <!-- End of About Us Section -->
 
             <!-- Start of Features Section -->
-            <section class="features">
+            <section class="features mb-half">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="feature-box">
                                 <div class="feature-title">
                                     <h3>01.</h3>
@@ -622,7 +637,7 @@
                             </div> <!-- end of feature-box -->
                         </div> <!-- end of col -->
 
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="feature-box">
                                 <div class="feature-title">
                                     <h3>02.</h3>
@@ -632,7 +647,7 @@
                             </div> <!-- end of feature-box -->
                         </div> <!-- end of col -->
 
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                             <div class="feature-box">
                                 <div class="feature-title">
                                     <h3>03.</h3>
@@ -888,7 +903,7 @@
             <section class="fun-facts bgc-offset mb0 pt-full pb-half">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="col-xs-6 col-sm-6 col-md-3">
                             <div class="counter-item type-2">
                                 <div class="counter-wrapper">
                                     <div class="counter-content">
@@ -900,7 +915,7 @@
                             </div> <!-- end of counter-item -->
                         </div> <!-- end of col -->
 
-                        <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="col-xs-6 col-sm-6 col-md-3">
                             <div class="counter-item type-2">
                                 <div class="counter-wrapper">
                                     <div class="counter-content">
@@ -912,7 +927,9 @@
                             </div> <!-- end of counter-item -->
                         </div> <!-- end of col -->
 
-                        <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="clearfix hidden-md hidden-lg"></div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-3">
                             <div class="counter-item type-2">
                                 <div class="counter-wrapper">
                                     <div class="counter-content">
@@ -924,7 +941,7 @@
                             </div> <!-- end of counter-item -->
                         </div> <!-- end of col -->
 
-                        <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="col-xs-6 col-sm-6 col-md-3">
                             <div class="counter-item type-2 last">
                                 <div class="counter-wrapper">
                                     <div class="counter-content">
@@ -984,7 +1001,7 @@
             <!-- End of Work Process Section -->
 
             <!-- Start of Pricing Section -->
-            <section class="pricing-section bgc-offset vpadding">
+            <section class="pricing-section bgc-offset pt-full pb-half">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -1375,7 +1392,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="testimonial-content border-color-6">
-                                            <p>Professionally myocardinate tactical materials rather than turnkey applications. Holisticly fabricate compelling sources before prospective.</p>
+                                            <p>Professionally myocardinate tactical materials rather than turnkey applications. Holisticly fabricate compelling source prospective.</p>
                                         </div>
                                         <div class="testimonial-media">
                                             <img src="assets/img/testimonial/testimonial-6.jpg" alt="Testimonial Image">
@@ -1453,7 +1470,7 @@
             <!-- End of Vide Section -->
 
             <!-- Start of Blog Section -->
-            <section class="blog-section bgc-offset mb0 vpadding">
+            <section class="blog-section bgc-offset mb0 pt-full pb-half">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -1556,24 +1573,24 @@
                             <div class="quote-form-wrapper transparent-input animation-left">
                                 <form action="sendquote.php" method="post" class="primary-form" id="primary_form">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
                                             <div class="full-width-input">
                                                 <input type="text" name="name" placeholder="Name*" value="" required>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
                                             <div class="full-width-input">
                                                 <input type="email" name="email" placeholder="Email*" value="" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
                                             <div class="full-width-input">
                                                 <input type="text" name="phone" placeholder="Phone" value="" >
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
                                             <div class="full-width-input select-wrapper">
                                                 <select name="service-type">
                                                     <option value="" disabled="" selected="selected">Service Type</option>
@@ -1683,6 +1700,8 @@
                                 </ul>
                             </aside> <!-- end of widget-container -->
                         </div> <!-- end of col -->
+
+                        <div class="clearfix visible-sm mb-half"></div>
 
                         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                             <aside class="widget-container">
@@ -1799,15 +1818,15 @@
 
             <div class="clearfix"></div>
 
-            <div class="copyright-section">
+            <div class="copyright-section split">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6">
-                            <p class="text-left">&copy; Copyright - 2018. All rights reserverd by <a href="#">themeitems.com</a></p>
+                            <p>&copy; Copyright - 2018. All rights reserverd by <a href="#">themeitems.com</a></p>
                         </div> <!-- end of col -->
 
                         <div class="col-xs-12 col-sm-12 col-md-6">
-                            <ul class="copyright-menu list-inline text-right mb0">
+                            <ul class="copyright-menu list-inline mb0">
                                 <li><a href="#">FAQ</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Terms &amp; Conditions</a></li>

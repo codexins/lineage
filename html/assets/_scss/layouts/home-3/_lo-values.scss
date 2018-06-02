@@ -4,11 +4,40 @@
  */
 
 .our-values-section {
-	@extend %mb0;
-	@extend %vpadding;
-
 	.image-placeholder {
-		height: 450px;
+		height: 512px;
+		@include respond-to(tablet) {
+			height: 450px;
+		}
+		@include respond-to(mobile) {
+			height: 300px;
+		}
 	}
 
+	.wrapper-with-right-padding {
+		@include respond-to(tablet) {
+			text-align: center;
+		}
+		.section-heading {
+			&.type-3 {
+				h4,
+				h2,
+				.subtitle {
+					text-align: center;
+				}
+				h2 {
+					&::before,
+					&::after {
+						right: 0;
+					}
+				}
+			}
+		}
+
+		.accordion {
+			@include media-only(notebook, max) {
+				margin-bottom: $cx-col-spacing;
+			}
+		}
+	}
 }

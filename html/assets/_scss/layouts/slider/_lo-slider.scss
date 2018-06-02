@@ -19,6 +19,11 @@
 
 	.full-width-video {
 		width: 100%;
+		height: auto;
+		// @include media-only(990px, max) {
+		// 	width: auto;
+		// 	height: 100%;
+		// }
 	}
 }
 
@@ -35,15 +40,20 @@
 		text-transform: uppercase;
 		margin-bottom: 5px;
 		@extend %color-white;
+		@include respond-to(mobile) {
+			margin-bottom: 15px;
+		}
 	}
 
 	h2 {
 		font-size: 2.5em;
 		margin-bottom: 20px;
+		@include media-only(small-mobile, max) {
+			font-size: 1.5rem;
+		}
 	}
 
 	p {
-		// width: 70%;
 		margin-bottom: 50px;
 	}
 

@@ -4,8 +4,32 @@
  */
 
 .contact-us-section {
-	@extend %mb0;
-	@extend %vpadding;
+
+	.wrapper-with-right-padding {
+		@include media-only(notebook, max) {
+			margin-bottom: $cx-col-spacing;
+		}
+	}
+
+	.section-heading {
+		&.type-3 {
+			&.left-aligned {
+            	@include media-only(notebook, max) {
+            		h2,
+            		h4,
+            		.subtitle {
+            			text-align: center;
+            		}
+		            h2 {
+		                &::after,
+		                &::before {
+		                    right: 0;
+		                }
+		            }
+	            }
+			}
+		}
+	}
 
 	.box-wrapper {
 		position: relative;
@@ -77,9 +101,25 @@
 				}
 			}
 		}
+
+		@include media-only(notebook, max) {
+			i {
+				position: relative;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 20px;
+			}
+
+			.info-wrapper {
+				padding-left: 0;
+			}
+		}
 	}
 
 	#gmap {
 		height: 600px;
+		@include media-only(notebook, max) {
+			height: 350px;
+		}
 	}
 }

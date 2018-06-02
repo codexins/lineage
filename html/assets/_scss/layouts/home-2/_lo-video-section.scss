@@ -11,6 +11,12 @@
 	    font-size: calculateRem(32px);
 	    font-weight: 500;
 		@extend %color-white;
+		@include respond-to(tablet) {
+			font-size: calculateRem(28px);
+		}
+		@include respond-to(mobile) {
+			font-size: calculateRem(24px);
+		}
 	}
 }
 
@@ -18,6 +24,15 @@
     position: relative;
     margin: 30px;
     @include box(90px);
+    @include respond-to(tablet) {
+    	margin: 20px;
+    	@include box(70px);
+    }
+
+    @include respond-to(mobile) {
+    	margin: 20px;
+    	@include box(65px);
+    }
 
     &::before {
 	    width: 100%;
@@ -28,10 +43,16 @@
 	    @include cx-prefix('backface-visibility', 'hidden');
 	    @include abs-position(0, auto, auto, 0);
 	    @include border-radius(50%);
+	    @include respond-to(tablet) {
+	    	border-width: 4px;
+	    }
+	    @include respond-to(mobile) {
+	    	border-width: 3px;
+	    }
     }
 
     i {
-    	font-size: 30px;
+    	font-size: calculateRem(28.5px);
 	    display: block;
 	    height: 100%;
 	    width: 100%;
@@ -40,6 +61,12 @@
 	    @include cx-prefix('backface-visibility', 'hidden');
 	    @extend %cx-transition;
 	    @extend %color-white;
+	    @include respond-to(tablet) {
+			font-size: calculateRem(24.5px);
+	    }
+	    @include respond-to(mobile) {
+			font-size: calculateRem(22px);
+	    }
     }
 
     &:hover {

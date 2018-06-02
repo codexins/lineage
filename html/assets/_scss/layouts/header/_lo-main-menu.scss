@@ -13,7 +13,7 @@
             line-height: 22px;
             padding: 39px 11px;
             font-weight: 700;
-            font-size: 14px;
+            font-size: calculateRem(13.2px);
             letter-spacing: 1px;
             text-transform: uppercase;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
@@ -91,7 +91,7 @@
                     @include respond-to(notebook) {
                         padding-left: 6px;
                         padding-right: 6px;
-                        font-size: calculateRem(11.4px);
+                        font-size: calculateRem(11.1px);
                     }
                     // @include respond-to(tablet) {
                     //     padding: 39px 4px;
@@ -99,14 +99,17 @@
                     //     letter-spacing: 0;
                     // }
                 }
-                // &.has-sub {
+                &.has-sub {
+                    .sub-menu {
+                        top: 85%;
+                    }
                 //     > a {
                 //         &::after {
                 //             content: "\f107";
                 //             font-weight: normal;
                 //         }
                 //     }
-                // }
+                }
             }
         }
 

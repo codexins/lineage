@@ -10,6 +10,7 @@
 	.page-title-container,
 	.breadcrumb-container {
 		position: relative;
+		z-index: 1;
 	}
 	.page-title-heading {
 		text-transform: capitalize;
@@ -67,10 +68,6 @@
 		}
 	}
 
-	.page-title-overlay {
-		z-index: -1;
-	}
-
 	&.modern {
 		position: relative;
 		top: -101px;
@@ -81,6 +78,10 @@
 		@extend %color-white;
 		@extend %bgc-white;
 
+		@include media-only(tablet, max) {
+		    padding: 160px 0 110px;
+		}
+
 		&::before,
 		&::after {
 		    width: 50%;
@@ -89,6 +90,7 @@
 		    @include abs-position(auto, auto, 0, 50%);
 		    @include cx-prefix('transform', 'skew(-77deg)');
 		    @include cx-prefix('transform-origin', '0 100%');
+		    z-index: 1;
 		}
 
 		&::after {
@@ -101,6 +103,12 @@
 
 		.page-title-container {
 			margin-bottom: $cx-section-spacing;
+			@include respond-to(mobile) {
+				margin-bottom: $cx-section-spacing-mob;
+			}
+			@include media-only(small-mobile, max) {
+				margin-bottom: $cx-col-spacing-mob;
+			}
 		}
 
 		.page-title-heading {
@@ -108,12 +116,27 @@
 			text-transform: uppercase;
 			font-weight: 500;
 			@include push-center;
+			@include respond-to(tablet) {
+				font-size: calculateRem(40px);
+			}
+
+			@include respond-to(mobile) {
+				font-size: calculateRem(32px);
+			}
+
+			@include media-only(small-mobile, max) {
+				font-size: calculateRem(28px);
+			}
 		}
 
 		.page-subtitle {
 			font-size: calculateRem(24px);
 			font-weight: 300;
 			@include push-center;
+
+			@include respond-to(mobile) {
+				font-size: calculateRem(20px);
+			}
 		}
 	}
 

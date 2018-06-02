@@ -18,6 +18,13 @@
 			@include eqheight;
 		}
 
+		.cta-content {
+			@include respond-to(mobile) {
+				margin-bottom: $cx-col-spacing-mob;
+				text-align: center;
+			}
+		}
+
 		h2,
 		p {
 			color: $cx-text-color;
@@ -25,8 +32,14 @@
 		}
 
 		h2 {
-			font-size: 2em;
+			font-size: 2rem;
 			margin-bottom: 10px;
+			@include respond-to(mobile) {
+				font-size: 1.7rem;
+			}
+			@include media-only(small-mobile, max) {
+				font-size: 1.3rem;
+			}
 		}
 
 		&.has-bg {
@@ -52,6 +65,16 @@
 			.default-btn {
 				margin-right: -30px;
 			}
+
+			@include respond-to(mobile) {
+				text-align: center;
+				.default-btn {
+					margin-right: 0;
+				}
+				.fancy-btn {
+					margin-right: 0;
+				}
+			}
 		}
 
 		&.white-text {
@@ -63,7 +86,6 @@
 	}
 
 	&.type-2 {
-		@extend %vpadding;
 		@include cx-background('../img/background/counter-up.jpg');
 		@extend %overlay;
 		&::before {
@@ -74,27 +96,57 @@
 			@extend %vhcenter;
 			padding: 0.67 * $cx-section-spacing;
 			@extend %bgc-white;
-			// @extend %rounded-corners;
-			@extend .spreaded-shadow;
+			@include respond-to(mobile) {
+				display: block;
+				text-align: center;
+				padding: 0.33 * $cx-section-spacing;
+			}
 
 			i {
 				font-size: 50px;
-			    margin-right: 2.4 * $cx-heading-margin-bottom;
+			    margin-right: 2 * $cx-heading-margin-bottom;
 			    @extend %color-secondary;
+			    @include respond-to(tablet) {
+			    	display: none;
+			    }
+			    @include respond-to(mobile) {
+			    	margin-right: 0;
+			    }
+			    @include media-only(small-mobile, max) {
+					font-size: 30px;
+			    }
 			}
 
 			.cta-content {
 				padding-right: 50px;
-				min-width: 450px;
+				min-width: 460px;
 
 				p {
-					@extend %mb0;
+					&:last-of-type {
+						@extend %mb0;
+					}
 				}
+
+				@include respond-to(mobile) {
+					display: block;
+				    min-width: auto;
+				    padding-right: 0;
+				    margin-top: 30px;
+				    margin-bottom: 30px;
+				}
+			    @include media-only(small-mobile, max) {
+				    margin-top: 15px;
+				    margin-bottom: 25px;
+			    }
 			}
 
 			h2 {
 				font-weight: 400;
 				@extend %color-secondary;
+				@include media-only(small-mobile, max) {
+					font-size: 1.5rem;
+					margin-bottom: 15px;
+				}
 			}
 		}
 	}

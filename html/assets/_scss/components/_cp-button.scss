@@ -176,7 +176,6 @@
     height: 44px;
     font-size: 12px;
     font-weight: 700;
-    line-height: 1.5em;
     letter-spacing: 2px;
     margin-bottom: -6px;
     text-transform: uppercase;
@@ -206,6 +205,14 @@
 		    @include cx-prefix('transform', 'skewX(30deg)');
 		}
 	}
+
+	@include respond-to(mobile) {
+	    padding: 12px 15px;
+	    font-size: calculateRem(12px);
+	    min-width: 135px;
+	    height: 40px;
+	    line-height: 1.4;
+	}
 }
 
 .shadow-btn {
@@ -214,7 +221,7 @@
     height: 44px;
     font-size: 12px;
     font-weight: 700;
-    line-height: 1.5em;
+    line-height: 1.6;
     letter-spacing: 2px;
     margin-bottom: -6px;
     text-transform: uppercase;
@@ -230,6 +237,14 @@
 		color: lighten($cx-text-color, 100%);
     	@include transform-translateY(-3px);
     	@extend .spreaded-shadow;
+	}
+
+	@include respond-to(mobile) {
+	    padding: 12px 15px;
+	    font-size: calculateRem(12px);
+	    min-width: 135px;
+	    height: 40px;
+	    line-height: 1.4;
 	}
 }
 

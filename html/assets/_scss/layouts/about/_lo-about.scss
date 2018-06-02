@@ -25,6 +25,9 @@
 
 			.cta-content {
 				border-left: 8px solid $cx-primary-color;
+				@include media-only(notebook, max) {
+					border-left: 0;
+				}
 			}
 		}
 	}
@@ -33,6 +36,16 @@
 .testimonial-section {
 	&.testimonial-about {
 		@include cx-background('../img/background/counter-up.jpg');
+		
+		@include respond-to(mobile) {
+			.testimonial-container {
+				margin-bottom: 1.7 * $cx-col-spacing;
+			}
+
+			.carousel-arrow {
+				bottom: -76px;
+			}
+		}
 	}
 }
 

@@ -4,13 +4,55 @@
  */
 
 .our-history {
-	@extend %mb0;
-	@extend %vpadding;
-
+	#tab_panel_three {
+		.media-wrapper {
+			margin-bottom: $cx-col-spacing-mob;
+		}
+	}
+	#tab_panel_two {
+		margin-bottom: -45px;
+		@include respond-to(mobile) {
+			margin-bottom: -33.75px;
+		}
+	}
+	#tab_panel_four,
 	#tab_panel_five {
 		> .row {
 			&:last-child {
 				margin-bottom: -45px;
+				@include respond-to(mobile) {
+					margin-bottom: -33.75px;
+				}
+			}
+		}
+	}
+	.tab-general-wrapper {
+		@extend %mb-half;
+	}
+	@include media-only(notebook, max) {
+		.wrapper-with-right-padding {
+			margin-bottom: $cx-col-spacing-mob;
+		}
+		.tab-pane {
+			text-align: center;
+		}
+		.pie-chart-type-2 {
+			margin-bottom: 30px;
+		}
+	}
+	@include media-only(small-mobile, max) {
+		.pie-chart-section {
+			.row {
+				> div[class^='col'], 
+				> div[class*=' col'] {
+					width: 100%;
+				}
+			}
+		}
+
+		.info-item {
+			.info-content-wrapper {
+				padding: 0;
 			}
 		}
 	}

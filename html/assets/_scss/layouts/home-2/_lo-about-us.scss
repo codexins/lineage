@@ -4,8 +4,6 @@
  */
 
 .about-us {
-	// @extend %mb0;
-	// @extend %vpadding;
 	ul {
 		padding: 0;
 		margin-bottom: $cx-col-spacing-mob;
@@ -17,18 +15,34 @@
 			&:nth-child(odd) {
 				margin-right: 2%;
 			}
+			@include media-only(small-mobile, max) {
+				width: 100%;
+			}
+		}
+
+		@include media-only(notebook, max) {
+			margin-bottom: 0;
 		}
 	}
 
 	.animated-skillbar {
 		@extend %mt-half;
 		margin-bottom: -7px;
-		@include respond-to(mobile) {
-			margin: 0;
-			margin-bottom: $cx-col-spacing-mob;
-			&.last {
-				margin-bottom: 0;
-			}
+        @include respond-to(notebook) {
+            margin-top: 20px;
+        }
+		// @include respond-to(mobile) {
+		// 	margin: 0;
+		// 	margin-bottom: $cx-col-spacing-mob;
+		// 	&.last {
+		// 		margin-bottom: 0;
+		// 	}
+		// }
+	}
+
+	.wrapper-with-left-padding {
+		@include media-only(notebook, max) {
+			text-align: center;
 		}
 	}
 }

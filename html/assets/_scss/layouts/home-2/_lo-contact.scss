@@ -24,6 +24,9 @@
 		@include eqheight;
 		@include cx-background('../img/slider/home-4/slide-2.jpg');
 		@include cx-overlay(rgba(darken($cx-primary-color, 10%), 0.9));
+		@include respond-to(mobile) {
+			min-height: auto;
+		}
 
 		.content-inner {
 			position: relative;

@@ -186,7 +186,7 @@ INDEX:
             $vslider.sliderPro({
                 width: '100%',
                 arrows: false,
-                visibleSize: 'auto',
+                visibleSize: '100%',
                 buttons: true,
                 waitForLayers: true,
                 slideDistance: 0,
@@ -195,12 +195,20 @@ INDEX:
                 fade: true,
                 reachVideoAction: 'playVideo',
                 breakpoints: {
-                    767: {
+                    1199: {
+                        forceSize: 'fullWidth',
+                        height: 550,
+                    },
+                    991: {
                         forceSize: 'fullWidth',
                         height: 500
                     },
+                    767: {
+                        forceSize: 'fullWidth',
+                        height: 450
+                    },
                     479: {
-                        height: 480,
+                        height: 400,
                         forceSize: 'fullWidth',
                     },
                 }
@@ -211,10 +219,19 @@ INDEX:
         if ($pslider.cxExists()) {
             $pslider.sliderPro({
                 width: '100%',
-                height: '600px',
+                height: 600,
+                forceSize: 'fullWidth',
                 arrows: false,
                 buttons: false,
                 touchSwipe: false,
+                breakpoints: {
+                    767: {
+                        height: 500
+                    },
+                    479: {
+                        height: 480
+                    },
+                }
             });
             $(".sp-slide").append('<div class="particle-section-overlay"></div>');
         }
@@ -588,12 +605,14 @@ INDEX:
 
                 // Responsive breakpoints
                 breakpoints: {
-                    992: {
+                    991: {
                         slidesPerView: 2,
+                        slidesPerGroup: 2,
                         centeredSlides: false,
                     },
-                    481: {
+                    550: {
                         slidesPerView: 1,
+                        slidesPerGroup: 1
                     }
                 }
             });
@@ -631,11 +650,11 @@ INDEX:
                     slideToClickedSlide: true,
                     // Responsive breakpoints
                     breakpoints: {
-                        992: {
+                        991: {
                             slidesPerView: 3,
-                            centeredSlides : true
+                            centeredSlides : true,
                         },
-                        768: {
+                        767: {
                             slidesPerView: 1,
                             centeredSlides : true
                         }
@@ -683,18 +702,18 @@ INDEX:
 
                 // Responsive breakpoints
                 breakpoints: {
-                    992: {
+                    991: {
                         slidesPerView: 4,
                         centeredSlides: false,
                         spaceBetween: 40
                     },
-                    768: {
+                    767: {
                         slidesPerView: 3,
-                        spaceBetween: 50
                     },
-                    481: {
+                    479: {
                         centeredSlides: false,
                         slidesPerView: 2,
+                        spaceBetween: 15
                     }
                 }
             })
@@ -725,11 +744,11 @@ INDEX:
 
                 // Responsive breakpoints
                 breakpoints: {
-                    992: {
+                    991: {
                         slidesPerView: 2,
                         centeredSlides: false,
                     },
-                    481: {
+                    550: {
                         slidesPerView: 1,
                     }
                 }
@@ -759,15 +778,18 @@ INDEX:
                 // },
 
                 // Responsive breakpoints
-                // breakpoints: {
-                //     992: {
-                //         slidesPerView: 2,
-                //         centeredSlides: false,
-                //     },
-                //     481: {
-                //         slidesPerView: 1,
-                //     }
-                // }
+                breakpoints: {
+                    991: {
+                        slidesPerView: 3,
+                    },
+                    767: {
+                        slidesPerView: 2,
+                        centeredSlides: false,
+                    },
+                    479: {
+                        slidesPerView: 1
+                    }
+                }
             })
         }
     };
@@ -891,11 +913,13 @@ INDEX:
 
     CODEXIN.tiltSetting = function() {
         if ($tiltEl.cxExists()) {
-            $tiltEl.tilt({
-                maxTilt: 15,
-                perspective: 1140,
-                easing: "cubic-bezier(.2,1,.22,1)", // Easing on enter/exit.
-            });
+            if ($window.width() > 768) {
+                $tiltEl.tilt({
+                    maxTilt: 15,
+                    perspective: 1140,
+                    easing: "cubic-bezier(.2,1,.22,1)", // Easing on enter/exit.
+                });
+            }
         }
     };
 
@@ -1021,7 +1045,7 @@ INDEX:
             sr.reveal('.info-item.boxed', { origin: 'bottom' }, 200);
             sr.reveal('.counter-item', { origin: 'right' }, 200);
             sr.reveal('.feature-box:not(.no-animation)', { origin: 'right' }, 200);
-            sr.reveal('.member-wrapper .team-member', { origin: 'bottom' }, 150);
+            sr.reveal('.member-wrapper .team-member, .team-member-card', { origin: 'bottom' }, 150);
             sr.reveal('.pricing-table, .pricing-table-type-2, .pricing-table-type-3', { origin: 'bottom' }, 200);
             sr.reveal('.blog-item-grid, .blog-grid', { origin: 'bottom' }, 200);
             sr.reveal('.info-box-wrapper', { origin: 'bottom' }, 200);

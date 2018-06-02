@@ -50,6 +50,12 @@
 					text-align: center;
 				}
 
+				h2 {
+					&::after {
+						margin-left: auto;
+					}
+				}
+
 				h4 {
 					&::before {
 			            background: lighten($cx-text-color, 30%);
@@ -59,6 +65,16 @@
 			            top: -.2rem;
 			            width: calculateRem(32px);
 					}
+				}
+			}
+			&.type-3 {
+				&.left-aligned {
+		            h2 {
+		                &::after,
+		                &::before {
+		                    right: 0;
+		                }
+		            }
 				}
 			}
 		}

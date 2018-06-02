@@ -258,6 +258,16 @@
 				i {
 					line-height: 40px;
 				}
+
+				@include respond-to(notebook) {
+					margin-right: 7px;
+					@include box(34px);
+
+					i {
+						line-height: 34px;
+						font-size: calculateRem(14px);
+					}
+				}
 			}
 		}
 
@@ -265,6 +275,16 @@
 			div[class^='col'] {
 				.widget-container {
 					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		@include respond-to(mobile) {
+			div[class^='col'] {
+				&:last-child {
+					.widget-container {
 						margin-bottom: 0;
 					}
 				}
@@ -308,6 +328,9 @@
 
 			form {
 				@extend %vhcenter;
+				@include media-only(small-mobile, max) {
+					display: block;
+				}
 			}
 
 			h6 {
@@ -324,12 +347,26 @@
 				min-width: 400px;
 			    background: transparent;
 			    margin: 0;
+			    @include respond-to(mobile) {
+			    	min-width: 300px;
+			    }
+			    @include media-only(small-mobile, max) {
+					min-width: auto;
+				    width: 100%;
+				    margin-bottom: 15px;
+			    }
 			}
 
 			input[type="submit"] {
 				margin-left: -5px;
 				@include cx-prefix('border-top-left-radius', '0');
 				@include cx-prefix('border-bottom-left-radius', '0');
+
+			    @include media-only(small-mobile, max) {
+				    width: 100%;
+				    margin-left: 0;
+				    @include cx-prefix('border-radius', '4px');
+			    }
 			}
 		}
 	}
@@ -358,6 +395,9 @@
     			position: absolute;
     			content: "|";
     			right: -5px;
+		    	@include media-only(small-mobile, max) {
+		    		content: none;
+		    	}
     		}
 
 	    	&:last-child {
@@ -366,6 +406,32 @@
 	    			content: none;
 	    		}
 	    	}
+
+	    	@include media-only(small-mobile, max) {
+	    		display: block;
+	    	}
+    	}
+    }
+
+    &.split {
+    	@include media-only(notebook, min) {
+    		p {
+    			text-align: left;
+    		}
+
+    		.list-inline {
+    			text-align: right;
+    		}
+    	}
+    	@include media-only(notebook, max) {
+    		.list-inline {
+    			margin-top: 15px;
+    		}
+    	}
+
+    	@include respond-to(mobile) {
+    		padding-left: 0;
+    		padding-right: 0;
     	}
     }
 }

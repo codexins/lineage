@@ -12,6 +12,9 @@
     width: 90%;
     text-align: left;
     @include border-radius(4px);
+    @include respond-to(mobile) {
+        width: 100%;
+    }
 
     .skillbar-title {
         font-weight: 700;
@@ -46,6 +49,7 @@
 	&.with-stripes {
 	    .skillbar {
 	        margin-top: 30px;
+            margin-bottom: 15px;
 	    }
 
 	    .skill-bar-percent {

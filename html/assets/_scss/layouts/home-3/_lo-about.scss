@@ -4,18 +4,47 @@
  */
 
 .about-us-section {
-	// @extend %mb0;
-	// @extend %vpadding;
 
-	// .image-placeholder {
-	// 	height: 400px;
-	// 	position: relative;
-		
-	// }
+	.image-placeholder {
+		height: 420px;
+		@include respond-to(mobile) {
+			height: 300px;
+		}
+	}
+
+	.bg-img-wrapper {
+		@include media-only(notebook, max) {
+			margin-bottom: $cx-col-spacing;
+			@include cx-box-shadow('none');
+		}
+	}
 
 	.trigger-iframe {
 		margin-top: -45px;
 		margin-left: -45px;
 		@include abs-position(50%, auto, auto, 50%);
+		@include respond-to(mobile) {
+			margin-top: -32.5px;
+			margin-left: -32.5px;
+		}
+	}
+
+	.wrapper-with-left-padding {
+		@include media-only(notebook, max) {
+			text-align: center;
+		}
+		.section-heading {
+			&.type-3 {
+	            @include media-only(notebook, max) {
+	                text-align: center;
+	                h2 {
+	                    &::after,
+	                    &::before {
+	                        right: 0;
+	                    }
+	                }
+	            }
+			}
+		}
 	}
 }

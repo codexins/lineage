@@ -3,7 +3,13 @@
  *
  */
 
-// .fun-facts {
-// 	@extend %mb0;
-// 	@extend %vpadding;
-// }
+.fun-facts {
+	.row {
+		> div[class^='col'], 
+		> div[class*=' col'] {
+			@include media-only(small-mobile, max) {
+				width: 100%;
+			}
+		}
+	}
+}

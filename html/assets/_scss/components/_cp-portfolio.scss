@@ -16,9 +16,9 @@
 		    color: lighten($cx-primary-color,100%);
 		    opacity: 0 ;
 			@extend %cx-transition;
-			// @include respond-to(mobile) {
-			// 	@include  abs-position(10px,10px,10px,10px);
-			// };
+			@include respond-to(mobile) {
+				opacity: 1;
+			}
 		}
 		span {
 			overflow: hidden;
@@ -32,6 +32,10 @@
 		    will-change: transform;
 		    @include transform-translateX(100%);
 		    @include cx-prefix('transition', 'all 0.4s cubic-bezier(0.37, 0.31, 0.2, 0.85)');
+			@include respond-to(mobile) {
+				opacity: 1;
+				@include transform-translateX(0);
+			}
 		}
 		
 		img {
@@ -90,6 +94,9 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	@include respond-to(mobile) {
+		opacity: 1;
+	}
 	@extend %cx-transition;
 		@include respond-to(mobile) {
 			padding:30px;
@@ -103,9 +110,12 @@
 	    will-change: transform;
 	    @include transform-translateY(100%);
 	    @include cx-prefix('transition', 'all 0.4s cubic-bezier(0.37, 0.31, 0.2, 0.85)');
+		@include respond-to(mobile) {
+			@include transform-translateY(0);
+		}
 	}
 
-	h3{
+	h3 {
 		text-transform: uppercase;
 		position:relative;
 		margin-bottom: 5px;
@@ -169,6 +179,9 @@
 			    width: 0;
 			    @include abs-position(auto, auto, -2px, 0);
 			    @extend %cx-transition;
+			    @include media-only(small-mobile, max) {
+			    	content: none;
+			    }
 			}
 
 			&.active,
@@ -177,18 +190,6 @@
 				&::before {
 					width: 100%;
 				}
-			}
-
-			@include respond-to(mobile) {
-				margin-bottom: 8px;
-				padding:6px 10px;
-			}
-
-			@include media-only(small-mobile, max) {
-			    width: 50%;
-			    margin: 0 0 5px;
-			    display: block;
-			    float: left;
 			}
 
 		}
@@ -230,6 +231,13 @@
 					background: $cx-secondary-color;
 				}
 			}
+			@include media-only(small-mobile, max) {
+				padding: 5px 0;
+				&::before,
+				&::after {
+					content: none;
+				}
+			}
 		}
 	}
 
@@ -256,6 +264,27 @@
 			&:hover {
 				@include transform-translateY(-3px);
 				@extend .spreaded-shadow;
+				@include respond-to(mobile) {
+					@include transform-translateY(0);
+				}
+			}
+		}
+	}
+
+	ul{
+		&.list-inline {
+			li {
+				@include respond-to(mobile) {
+					margin-bottom: 8px;
+					padding:6px 10px;
+				}
+
+				@include media-only(small-mobile, max) {
+				    width: 48%;
+				    margin: 0 1% 5px;
+				    display: block;
+				    float: left;
+				}
 			}
 		}
 	}
@@ -347,7 +376,14 @@
 		    color: $cx-text-color;
 		    margin-bottom: -1px;
 		    @include cx-prefix('transform', 'translate3d(0,110%,0)');
-		    @include cx-box-shadow('0 0 35px 0px rgba(0, 0, 0, 0.15);');
+		    @include cx-box-shadow('0 0 35px 0px rgba(0, 0, 0, 0.15)');
+		    @include respond-to(notebook) {
+		    	padding: $cx-heading-margin-bottom;;
+		    }
+		    @include respond-to(mobile) {
+		    	padding: 7px;
+		    	@include cx-prefix('transform', 'translate3d(0,0,0)');
+		    }
 
 		    h3 {
 	    	    display: inline-block;
@@ -365,18 +401,35 @@
     	        	display: inline-block;
 					color: $cx-secondary-color;
     	        }
+    	        @include respond-to(notebook) {
+    	        	font-size: 1rem;
+    	        	padding-top: 6px;
+    	        }
+    	        @include respond-to(mobile) {
+				    font-size: 1rem;
+				    float: none;
+				    width: 100%;
+    	        }
 		    }
 
 		    h3,
 		    span {
     	        @include cx-transition('transform 0.35s');
     	        @include cx-prefix('transform', 'translate3d(0,200%,0)');
+    	        @include respond-to(mobile) {
+    	        	@include cx-prefix('transform', 'translate3d(0,0,0)');
+    	        }
 		    }
 
 		    .icon-links {
 				letter-spacing: 1px;
 			    float: right;
 			    display: inline-block;
+			    @include respond-to(mobile) {
+					font-size: 12px;
+					margin-top: 5px;
+					float: none;
+			    }
 			    span {
 			    	display: inline-block;
 			    	font-size: calculateRem(14px);
@@ -386,6 +439,15 @@
 					border: 1.2px solid $cx-text-color;
 					line-height: 30px;
 					@include border-radius(50%);
+					@include respond-to(notebook) {
+						margin-right: 10px;
+					}
+
+					@include respond-to(mobile) {
+					    width: 28px;
+					    height: 28px;
+					    line-height: 26px;
+					}
 			    	
 			    	&:last-child {
 			    		margin-right: 0;

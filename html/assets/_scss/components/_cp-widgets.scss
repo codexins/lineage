@@ -446,6 +446,12 @@
 			    width: 32%;
 			    margin-right: 2%;
 			    margin-bottom: 2%;
+			    @include respond-to(mobile) {
+			    	max-width: 175px;
+			    }
+			    @include media-only(small-mobile, max) {
+			    	
+			    }
 				img {
 					width: 100%;
 					height: auto;
@@ -469,7 +475,7 @@
 				}	
 			}
 
-			&:nth-child(3n) {
+			&:nth-of-type(3n) {
 				a {
 					margin-right: 0;
 				}

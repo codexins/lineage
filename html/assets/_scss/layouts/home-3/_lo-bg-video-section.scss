@@ -4,11 +4,13 @@
  */
 
 .background-video-section {
-	@extend %mb0;
 
 	.video-container {
 		min-height: 450px;
 		@include cx-overlay(rgba(#000, 0.75));
+		@include respond-to(mobile) {
+			min-height: 350px;
+		}
 	}
 
 	.video-content-wrapper {
@@ -26,6 +28,30 @@
 			font-weight: 300;
 			@extend %mb-half;
 			@extend %color-white;
+		}
+
+		@include respond-to(mobile) {
+			width: 100%;
+			h2 {
+				font-size: 1.8 * $cx-body-font-size;
+			}
+			p {
+				font-size: calculateRem(18px);
+			}
+		}
+
+		@include media-only(small-mobile, max) {
+			h2,
+			p {
+				margin-bottom: 20px;
+			}
+			h2 {
+				font-size: 1.2rem;
+			}
+
+			p {
+				font-size: 1rem;
+			}
 		}
 	}
 }

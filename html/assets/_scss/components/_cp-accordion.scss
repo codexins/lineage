@@ -37,6 +37,7 @@
 		font-weight: 500;
 		padding: 18px 28px;
 		display: block;
+		text-align: left;
 	    letter-spacing: 0.5px;
 	    position: relative;
 	    color: $cx-text-color;
@@ -53,11 +54,15 @@
 		    color: $cx-secondary-color;
 		    @extend %cx-transition;
 		}
+		@include media-only(small-mobile, max) {
+			font-size: 1rem;
+		}
 	}
 
 	.panel-body {
 		p {
 			margin: auto;
+			text-align: left;
 		}
 	}
 

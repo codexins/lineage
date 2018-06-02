@@ -173,6 +173,20 @@
 			    width: 85px;
 			    background: rgba($cx-secondary-color, 0.75);
 			    left: 5px;
+			    @include respond-to(notebook) {
+				    height: 65px;
+				    margin-top: -70px;
+				    width: 65px;
+			    }
+			    @include respond-to(tablet) {
+				    height: 92px;
+				    margin-top: -97px;
+				    width: 92px;
+			    }
+
+			    @include respond-to(mobile) {
+				    display: none;
+			    }
 
 			    &::before {
 				    font-family: FontAwesome;
@@ -187,6 +201,9 @@
 
 	.testimonial-content {
 		margin-top: 0.4 * $cx-section-spacing;
+		@include respond-to(mobile) {
+			margin-top: 20px;
+		}
 		.swiper-slide {
 			margin-bottom: 0.8 * $cx-section-spacing;
 		}
@@ -220,8 +237,8 @@
     color: lighten($cx-text-color, 100%);
     font-size: calculateRem(16px);
     cursor: pointer;
+    position: absolute;
 	@include box(40px);
-    @include cx-centered(horizontal);
 
     &::before {
     	position: relative;
@@ -237,11 +254,13 @@
     }
 
     &.arrow-left {
-    	left: 47%;
+	    left: 50%;
+	    margin-left: -45px;
     }
 
     &.arrow-right {
-    	left: 53%;
+    	right: 50%;
+	    margin-right: -45px;
     }
 
     &:hover {

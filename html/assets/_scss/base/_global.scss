@@ -392,7 +392,10 @@ $border-colors-count: length($border-colors);
 // Flex\
 
 .flex-eq-height {
-	@extend %display-flex;
+	@include media-only(notebook, min) {
+		@include cx-prefix('display', 'flex');
+		@include cx-prefix('flex-wrap', 'wrap');
+	}
 }
 
 // shadow

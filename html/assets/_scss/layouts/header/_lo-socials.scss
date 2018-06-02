@@ -21,20 +21,20 @@
 				color: lighten($cx-text-color, 50%);
 			}
 
-            @include respond-to(notebook) {
-			    padding-left: 6px;
-			    padding-right: 6px;
-            }
+       //      @include respond-to(notebook) {
+			    // padding-left: 6px;
+			    // padding-right: 6px;
+       //      }
 		}
-		&.header-search {
-			a {
-				padding-right: 20px;
+		// &.header-search {
+		// 	a {
+		// 		padding-right: 20px;
 
-                @include respond-to(notebook) {
-				    padding-right: inherit;
-                }
-			}
-		}
+  //               @include respond-to(notebook) {
+		// 		    padding-right: inherit;
+  //               }
+		// 	}
+		// }
 
 		&:last-child {
 			a {
@@ -59,10 +59,10 @@
                 > a {
                     padding-top: 26px;
                     padding-bottom: 26px;
-                    @include respond-to(notebook) {
-					    padding-left: 6px;
-					    padding-right: 6px;
-                    }
+         //            @include respond-to(notebook) {
+					    // padding-left: 6px;
+					    // padding-right: 6px;
+         //            }
                 }
             }
         }

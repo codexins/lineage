@@ -22,6 +22,16 @@
 		}
 	}
 
+	.image-placeholder {
+		min-height: 420px;
+		@include respond-to(notebook) {
+			min-height: 450px;
+		}
+		@include media-only(small-mobile, max) {
+			min-height: 300px;
+		}
+	}
+
 	.carousel-arrow {
 		opacity: 0;
 		width: 34px;
@@ -60,5 +70,9 @@
 		&::before {
 			content: none;
 		}
+	}
+
+	@include media-only(notebook, max) {
+		margin-bottom: $cx-col-spacing-mob;
 	}
 }

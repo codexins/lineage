@@ -65,6 +65,9 @@
 		&::before {
 		    opacity: 0;
 		    @include cx-transition(opacity .5s);
+		    @include respond-to(mobile) {
+		    	opacity: 1;
+		    }
 		}
 		.info-content {
 		    padding: 0 10%;
@@ -75,11 +78,20 @@
 		    bottom: auto;
 			@include cx-transition(opacity .5s);
 		    @include cx-centered(vertical);
+		    @include respond-to(mobile) {
+		    	opacity: 1;
+		    }
 
 		    p {
 		    	margin: 0;
+		    	@include media-only(small-mobile, max) {
+		    		font-size: calculateRem(15px);
+		    	}
 		    }
 		}
+	    @include respond-to(mobile) {
+	    	text-align: center;
+	    }
 	}
 
 	&:hover {

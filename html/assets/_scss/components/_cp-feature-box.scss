@@ -4,6 +4,7 @@
  */
 
 .feature-box {
+	@extend %mb-half;
 	.feature-title {
 		margin-bottom: 15px;
 		display: table;
@@ -36,7 +37,12 @@
 	p {
 		width: 90%;
 		font-size: calculateRem(15px);
-		@extend %mb0;
+		&:last-of-type {
+			@extend %mb0;
+		}
+		@include media-only(notebook, max) {
+			width: 100%;
+		}
 	}
 	
 	&.white-text {

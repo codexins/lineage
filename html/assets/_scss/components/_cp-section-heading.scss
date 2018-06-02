@@ -9,12 +9,12 @@
     max-width: 70%;
     margin: 0 auto $cx-col-spacing;
     position: relative;
-    @include respond-to(tablet) {
+    @include media-only(notebook, max) {
     	max-width:85%;
+        margin-bottom: $cx-col-spacing-mob;
     }
     @include respond-to(mobile) {
     	max-width:95%;
-        margin-bottom: $cx-col-spacing-mob;
     }
 
     h4 {
@@ -45,7 +45,7 @@
             @extend %cx-transition;
         }
 
-        @include respond-to(mobile) {
+        @include respond-to(tablet) {
             &::before,
             &::after {
                 width: calculateRem(32px);
@@ -140,6 +140,7 @@
             font-weight: 600;
             font-size: calculateRem(28px);
             text-align: center;
+            position: relative;
             text-transform: uppercase;
             padding-bottom: 20px;
             margin-bottom: $cx-heading-margin-bottom;
@@ -172,6 +173,9 @@
                     margin-left: 0;
                 }
             }
+            @include media-only(notebook, max) {
+                max-width: 100%;
+            }
         }
     }
 
@@ -193,6 +197,15 @@
             letter-spacing: 0.5px;
             position: relative;
 
+            @include respond-to(mobile) {
+                font-size: calculateRem(24px);
+                line-height: 1.5;
+            }
+
+            @include media-only(small-mobile, max) {
+                font-size: calculateRem(20px);
+            }
+
             &::before,
             &::after {
                 height: 5px;
@@ -213,12 +226,21 @@
                 @include abs-position(auto, 0, 0, 0);
             }
 
-            @include respond-to(mobile) {
+            @include media-only(tablet, max) {
                 &::before {
                     width: 20%;
                 }
                 &::after {
                     width: 10%;
+                }
+            }
+
+            @include media-only(small-mobile, max) {
+                &::before {
+                    width: 30%;
+                }
+                &::after {
+                    width: 20%;
                 }
             }
         }
@@ -253,6 +275,12 @@
                 &::after {
                     width: 10%;
                 }
+            }
+        }
+
+        .subtitle {
+            @include media-only(small-mobile, max) {
+                font-size: 1.1rem;
             }
         }
     }

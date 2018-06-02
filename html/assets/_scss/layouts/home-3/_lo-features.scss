@@ -4,8 +4,16 @@
  */
 
 .our-features {
-	@extend %mb0;
-	@extend %vpadding;
 	@include cx-overlay(rgba(0, 0, 0, 0.7));
 	@include cx-background('../img/background/counter-up.jpg');
+	@include media-only(small-mobile, max) {
+		hr{
+			+ .row {
+				> div[class^='col'], 
+				> div[class*=' col'] {
+					width: 100%;
+				}
+			}
+		}
+	}
 }

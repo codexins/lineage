@@ -137,9 +137,25 @@
 				}
 
 				&:last-child {
+					padding-right: 0;
 					&::before,
 					&::after {
 						content: none;
+					}
+				}
+			}
+		}
+
+		@include media-only(small-mobile, max) {
+			> .nav {
+				&.nav-tabs {
+					> li {
+						float: left;
+						width: auto;
+						padding-right: 47px;
+						&:last-child {
+							padding-right: 0;
+						}
 					}
 				}
 			}
@@ -182,6 +198,12 @@
 		    margin-bottom: -4px;
 			@extend %vhcenter;
 
+			@include respond-to(mobile) {
+			    display: block;
+			    overflow: hidden;
+			    margin: 0 0 10px;
+			}
+
 			> li {
 				margin-top: 2px;
 				margin-bottom: 2px;
@@ -196,7 +218,6 @@
 					> a {
 						background: lighten($cx-text-color, 100%);
 						border: 2px solid $cx-primary-color;
-					    // border-bottom-color: transparent;
 					    color: inherit;
 					    position: relative;
 					    @extend %cx-transition;
@@ -221,6 +242,28 @@
 				    letter-spacing: .5px;
 				    text-transform: uppercase;
 				}
+
+				@include respond-to(notebook) {
+					min-width: 160px;
+					margin-right: 10px;
+				}
+
+				@include respond-to(tablet) {
+					min-width: 120px;
+					margin-right: 10px;
+				}
+
+				@include respond-to(mobile) {
+					width: 100%;
+					margin-right: 0;
+					&.active {
+						> a {
+							&::after {
+								content: none;
+							}
+						}
+					}
+				}
 			}
 		}
 
@@ -231,6 +274,12 @@
 		    position: relative;
 		    @extend %cx-transition;
 		    @extend %bgc-white;
+		    @include respond-to(mobile) {
+		    	padding: 30px;
+		    }
+		    @include media-only(small-mobile, max) {
+		    	padding: 15px;
+		    }
 
 		    .tab-content-heading {
 				h2 {

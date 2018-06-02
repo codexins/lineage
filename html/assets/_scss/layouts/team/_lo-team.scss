@@ -4,10 +4,6 @@
  */
 
 .team-section {
-	// @extend %mb0;
-	// @extend %pt-full;
-	// @extend %pb-half;
-
 	.member-wrapper {
 		@include respond-to(small-mobile) {
 			max-width:100%;
