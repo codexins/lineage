@@ -600,13 +600,13 @@ input[type="button"]:hover {
 /************************************************************
 	c02 - Base - Placeholders
 *************************************************************/
-.vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
+.vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .fun-facts-section.facts-about, .service-promo, .cta-split.split-cta-service, .testimonial-simple {
+  .vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
     padding-top: 67.5px;
     padding-bottom: 67.5px;
   }
@@ -876,11 +876,11 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   margin-top: 0;
 }
 
-.mb0, .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle, .info-item.left-edged-icon.last, .info-item.flip-card .back p:last-of-type, .services-carousel .media-wrapper p, .counter-item .counter-icon, .sidebar-widget p:last-of-type, .contact-box-widget h3, .testimonial-widget .client-meta .client-name h3, .widget-form-wrapper input,
+.mb0, .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle, .info-item.flip-card .back p:last-of-type, .services-carousel .media-wrapper p, .counter-item .counter-icon, .sidebar-widget p:last-of-type, .contact-box-widget h3, .testimonial-widget .client-meta .client-name h3, .widget-form-wrapper input,
 .widget-form-wrapper textarea, .team-member-card .team-details h2,
 .team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .info-box-wrapper.type-2, .feature-box h3, .feature-box p:last-of-type, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .pagination-wrapper .pagination, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .portfolio-section, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
 .single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-posts-section, .blog-grid-wrapper .quote-wrapper, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section.type-2 .cta-content-wrapper .cta-content p:last-of-type, .features-section .info-item,
-.features-section .secondary-title, .contact-section .contact-item-wrapper p, .slider-section, .social-section, .contacts-form-section, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .fun-facts-section.facts-about, .values-promo.values-about, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .error-404-wrapper {
+.features-section .secondary-title, .contact-section .contact-item-wrapper p, .slider-section, .social-section, .contacts-form-section, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .error-404-wrapper {
   margin-bottom: 0;
 }
 
@@ -914,22 +914,22 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.pt-full, .blog-posts-section, .values-promo.values-about {
+.pt-full, .blog-posts-section {
   padding-top: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .pt-full, .blog-posts-section, .values-promo.values-about {
+  .pt-full, .blog-posts-section {
     padding-top: 67.5px;
   }
 }
 
-.mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .our-history .tab-general-wrapper {
+.mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper {
   margin-bottom: 45px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .our-history .tab-general-wrapper {
+  .mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper {
     margin-bottom: 33.75px;
   }
 }
@@ -944,12 +944,12 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.pb-half, .pricing-table-type-3 .pricing-header, #colophon.type-3 .footer-top, .single-post-wrapper, .values-promo.values-about, .single-faq {
+.pb-half, .pricing-table-type-3 .pricing-header, #colophon.type-3 .footer-top, .single-post-wrapper, .single-faq {
   padding-bottom: 45px;
 }
 
 @media only screen and (max-width: 767px) {
-  .pb-half, .pricing-table-type-3 .pricing-header, #colophon.type-3 .footer-top, .single-post-wrapper, .values-promo.values-about, .single-faq {
+  .pb-half, .pricing-table-type-3 .pricing-header, #colophon.type-3 .footer-top, .single-post-wrapper, .single-faq {
     padding-bottom: 33.75px;
   }
 }
@@ -3020,6 +3020,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .counter-item.type-3 {
     padding: 0 15px;
+    display: block;
   }
 }
 
@@ -5277,6 +5278,14 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   content: none;
 }
 
+.simple-slider-container.with-arrow .carousel-arrow.arrow-left {
+  margin-left: 0;
+}
+
+.simple-slider-container.with-arrow .carousel-arrow.arrow-right {
+  margin-right: 0;
+}
+
 @media only screen and (max-width: 991px) {
   .simple-slider-container {
     margin-bottom: 33.75px;
@@ -7144,6 +7153,20 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   color: white;
 }
 
+@media only screen and (max-width: 767px) {
+  .feature-box {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .feature-box {
+    width: 100%;
+  }
+}
+
 /**
  * Components widgetized menu
  *
@@ -7693,6 +7716,25 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   left: 0;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .image-box-wrapper figure figcaption h2,
+  .image-box-wrapper figure figcaption p {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .image-box-wrapper figure figcaption h2,
+  .image-box-wrapper figure figcaption p {
+    padding: 15px 10px;
+  }
+}
+
+.image-box-wrapper figure figcaption h2,
+.image-box-wrapper figure figcaption p {
+  text-shadow: 0 1px 1px #111;
+}
+
 .image-box-wrapper figure figcaption h2 {
   font-size: 1.5rem;
   font-weight: 500;
@@ -7700,6 +7742,18 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .image-box-wrapper figure figcaption h2 span {
   font-weight: 700;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .image-box-wrapper figure figcaption h2 {
+    font-size: 1.375rem;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .image-box-wrapper figure figcaption h2 {
+    font-size: 1.1875rem;
+  }
 }
 
 .image-box-wrapper figure figcaption p {
@@ -8925,12 +8979,28 @@ header.header-white .intelligent-header {
   border-bottom: 2px solid #525252;
 }
 
+@media only screen and (max-width: 991px) {
+  .service-tabs .nav-swiper .swiper-wrapper {
+    border: none;
+  }
+}
+
 .service-tabs .nav-swiper .swiper-wrapper .selected {
   -webkit-box-shadow: 0 2px 0 0 #947cb0, 0 -2px 0 0 #947cb0;
   -moz-box-shadow: 0 2px 0 0 #947cb0, 0 -2px 0 0 #947cb0;
   -ms-box-shadow: 0 2px 0 0 #947cb0, 0 -2px 0 0 #947cb0;
   -o-box-shadow: 0 2px 0 0 #947cb0, 0 -2px 0 0 #947cb0;
   box-shadow: 0 2px 0 0 #947cb0, 0 -2px 0 0 #947cb0;
+}
+
+@media only screen and (max-width: 991px) {
+  .service-tabs .nav-swiper .swiper-wrapper .selected {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+  }
 }
 
 .service-tabs .nav-swiper .swiper-wrapper .selected::before {
@@ -8954,6 +9024,12 @@ header.header-white .intelligent-header {
   transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 991px) {
+  .service-tabs .nav-swiper .swiper-wrapper .selected::before {
+    content: none;
+  }
+}
+
 .service-tabs .nav-swiper .swiper-slide {
   text-align: center;
   font-size: 0.875rem;
@@ -8964,10 +9040,75 @@ header.header-white .intelligent-header {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 991px) {
+  .service-tabs .nav-swiper .swiper-slide {
+    border: 1px solid #525252;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .service-tabs .nav-swiper .swiper-slide {
+    font-size: 0.8125rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .service-tabs .nav-swiper .swiper-slide {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .service-tabs .nav-swiper .carousel-arrow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .service-tabs .nav-swiper .carousel-arrow {
+    top: 0;
+    z-index: 3;
+    height: 50px;
+    line-height: 50px;
+  }
+  .service-tabs .nav-swiper .carousel-arrow.arrow-left {
+    left: 0;
+    margin-left: 0;
+  }
+  .service-tabs .nav-swiper .carousel-arrow.arrow-right {
+    right: 0;
+    margin-right: 0;
+  }
+  .service-tabs .nav-swiper .carousel-arrow::after {
+    content: none;
+  }
+}
+
 .service-tabs .swiper-content {
   margin-top: -12px;
   width: 100%;
   min-height: 400px;
+}
+
+@media only screen and (max-width: 991px) {
+  .service-tabs .swiper-content {
+    text-align: center;
+  }
+  .service-tabs .swiper-content .media-wrapper {
+    margin-top: 45px;
+  }
+  .service-tabs .swiper-content .feature-box {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .service-tabs .swiper-content .pie-charts > div[class^='col'],
+  .service-tabs .swiper-content .pie-charts > div[class*=' col'] {
+    width: 100%;
+  }
 }
 
 .service-tabs .icon-check {
@@ -8978,6 +9119,36 @@ header.header-white .intelligent-header {
 
 .service-tabs .icon-check > li {
   margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 991px) {
+  .service-tabs .icon-check {
+    text-align: left;
+    margin-left: 15%;
+  }
+  .service-tabs .icon-check li {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .service-tabs .icon-check li {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .service-tabs .icon-check {
+    margin-left: 7%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .service-tabs .icon-check {
+    margin-left: 15%;
+  }
 }
 
 .service-tabs .tab-content-heading {
@@ -10803,7 +10974,7 @@ blockquote {
 }
 
 @media only screen and (max-width: 991px) {
-  .about-us .wrapper-with-left-padding {
+  .about-us .wrapper-with-left-padding:not(.mobile-text-left) {
     text-align: center;
   }
 }
@@ -11229,6 +11400,13 @@ blockquote {
   right: auto;
   bottom: auto;
   left: 50%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-us-section .trigger-iframe {
+    margin-top: -35px;
+    margin-left: -35px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -11852,6 +12030,10 @@ blockquote {
  * layout page-title/ page-title
  *
  */
+.page-title-section {
+  position: relative;
+}
+
 .page-title-section .page-title-container,
 .page-title-section .breadcrumb-container {
   position: relative;
@@ -11867,6 +12049,12 @@ blockquote {
 
 .page-title-section .page-title-heading span {
   color: #d7706d;
+}
+
+@media only screen and (max-width: 479px) {
+  .page-title-section .page-title-heading {
+    font-size: 1.75rem;
+  }
 }
 
 .page-title-section .page-subtitle {
@@ -11900,7 +12088,6 @@ blockquote {
 }
 
 .page-title-section.modern {
-  position: relative;
   top: -101px;
   margin-bottom: -101px;
   padding: 200px 0 150px;
@@ -12035,9 +12222,23 @@ blockquote {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .page-title-section.left-aligned .page-title-wrapper {
+    text-align: center;
+  }
+}
+
 .page-title-section.left-aligned .breadcrumb {
   text-align: right;
   padding-right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .page-title-section.left-aligned .breadcrumb {
+    text-align: center;
+    padding-left: 0;
+    margin-top: 29.7px;
+  }
 }
 
 /**
@@ -12133,6 +12334,12 @@ blockquote {
   float: left;
 }
 
+@media only screen and (max-width: 767px) {
+  .fun-facts-section.facts-about .counter-item.type-3 {
+    width: 100%;
+  }
+}
+
 .testimonial-simple.testimonial-about {
   background-image: url("../img/slider/home-1/slide-2.jpg");
   background-position: center;
@@ -12175,6 +12382,10 @@ blockquote {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.client-list.client-about {
+  margin-bottom: -25px;
 }
 
 /**
@@ -12239,9 +12450,15 @@ blockquote {
 }
 
 .service-promo .focused-text {
-  font-size: 2em;
+  font-size: 2rem;
   line-height: 1.2em;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .service-promo .focused-text {
+    font-size: 1.5rem;
+  }
 }
 
 .service-promo .lead {
@@ -12256,6 +12473,66 @@ blockquote {
 
 .service-promo .icon-check > li {
   margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .service-promo .col-lg-4 p:last-of-type {
+    margin-bottom: 0;
+  }
+  .service-promo .col-lg-8 p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .service-promo {
+    text-align: center;
+  }
+  .service-promo .col-lg-4 h2 + .focused-text {
+    margin-bottom: 29.7px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .service-promo .split-section {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .service-promo .split-section.mt-full {
+    margin-bottom: -90px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .service-promo .split-section .icon-check {
+    text-align: left;
+    margin-left: 15%;
+  }
+  .service-promo .split-section .icon-check li {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .service-promo .split-section .icon-check li {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .service-promo .split-section .icon-check {
+    margin-left: 7%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .service-promo .split-section .icon-check {
+    margin-left: 15%;
+  }
 }
 
 /**
@@ -12289,6 +12566,12 @@ blockquote {
 .feature-title-wrapper h4 {
   text-align: center;
   margin-bottom: 12.5px;
+}
+
+@media only screen and (max-width: 991px) {
+  .feature-title-wrapper {
+    margin-top: -45px;
+  }
 }
 
 @media only screen and (max-width: 767px) {

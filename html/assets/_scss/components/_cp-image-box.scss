@@ -33,6 +33,19 @@
 				padding: 15px 30px;
 				text-align: center;
 				@include abs-position(auto, 0, 0, 0);
+
+				@include respond-to(notebook) {
+					padding: 15px;
+				}
+
+				@include media-only(small-mobile, max) {
+					padding: 15px 10px;
+				}
+			}
+
+			h2,
+			p {
+				text-shadow: 0 1px 1px #111;
 			}
 
 			h2 {
@@ -43,6 +56,14 @@
 
 				span {
 					font-weight: 700;
+				}
+
+				@include respond-to(notebook) {
+					font-size: calculateRem(22px);
+				}
+
+				@include media-only(small-mobile, max) {
+					font-size: calculateRem(19px);
 				}
 			}
 

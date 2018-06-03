@@ -303,6 +303,7 @@
 
 .pricing-table-type-3 {
 	border: 1px solid $cx-border-color;
+	@extend %mb-half;
 	@extend %bgc-white;
 	@extend %cx-transition;
 

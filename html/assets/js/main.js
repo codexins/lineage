@@ -512,14 +512,14 @@ INDEX:
 
                 // Responsive breakpoints
                 breakpoints: {
-                    992: {
+                    991: {
                         slidesPerView: 3,
                     },
-                    769: {
+                    767: {
                         slidesPerView: 2,
                         centeredSlides : false,
                     },
-                    481: {
+                    479: {
                         slidesPerView: 1,
                     }
                 }
@@ -543,9 +543,34 @@ INDEX:
             var navSwiper = new Swiper('.nav-swiper', {
                 slidesPerView: 6,
                 paginationClickable: true,
-                freeMode: true,
+                // freeMode: true,
                 loop: false,
-                simulateTouch: false
+                simulateTouch: false,
+                    // touchRatio: 0.2,
+                    slideToClickedSlide: true,
+                    navigation: {
+                        nextEl: '.arrow-right',
+                        prevEl: '.arrow-left'
+                    },
+                // Responsive breakpoints
+                breakpoints: {
+                    991: {
+                        slidesPerView: 4
+                    },
+                    767: {
+                        slidesPerView: 3
+                    },
+                    479: {
+                        slidesPerView: 2
+                    },
+                    // 767: {
+                    //     slidesPerView: 2,
+                    //     centeredSlides : false,
+                    // },
+                    // 479: {
+                    //     slidesPerView: 1,
+                    // }
+                }
             });
 
             navSwiper.slides.each(function(index,val){
@@ -560,7 +585,21 @@ INDEX:
                 direction: 'horizontal',
                 loop: false,
                 autoHeight: true,
-                simulateTouch: false
+                simulateTouch: false,
+                touchRatio: 0,
+                // Responsive breakpoints
+                breakpoints: {
+                    991: {
+                        simulateTouch: false,
+                    },
+                    // 767: {
+                    //     slidesPerView: 2,
+                    //     centeredSlides : false,
+                    // },
+                    // 479: {
+                    //     slidesPerView: 1,
+                    // }
+                }
             });
         }
     };

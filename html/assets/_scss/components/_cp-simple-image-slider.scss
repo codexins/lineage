@@ -70,6 +70,15 @@
 		&::before {
 			content: none;
 		}
+
+		.carousel-arrow {
+			&.arrow-left {
+				margin-left: 0;
+			}
+			&.arrow-right {
+				margin-right: 0;
+			}
+		}
 	}
 
 	@include media-only(notebook, max) {

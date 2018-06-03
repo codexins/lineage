@@ -40,7 +40,7 @@
 		// }
 	}
 
-	.wrapper-with-left-padding {
+	.wrapper-with-left-padding:not(.mobile-text-left) {
 		@include media-only(notebook, max) {
 			text-align: center;
 		}

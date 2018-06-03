@@ -156,6 +156,7 @@
 		padding: 0 25px;
 		@include respond-to(tablet) {
 			padding: 0 15px;
+			display: block;
 		}
 
 		@include respond-to(mobile) {

@@ -4,6 +4,7 @@
  */
 
 .page-title-section {
+	position: relative;
 	@extend %vpadding;
 	@extend %color-white;
 
@@ -20,6 +21,10 @@
 
 		span {
 			color: $cx-secondary-color;
+		}
+
+		@include media-only(small-mobile, max) {
+			font-size: calculateRem(28px);
 		}
 	}
 
@@ -69,7 +74,6 @@
 	}
 
 	&.modern {
-		position: relative;
 		top: -101px;
 		margin-bottom: -101px;
 		padding: 200px 0 150px;
@@ -143,11 +147,19 @@
 	&.left-aligned {
 		.page-title-wrapper {
 			@include eqheight;
+			@include respond-to(mobile) {
+				text-align: center;
+			}
 		}
 
 		.breadcrumb {
 			text-align: right;
 			padding-right: 0;
+			@include respond-to(mobile) {
+				text-align: center;
+			    padding-left: 0;
+			    margin-top: 0.33 * $cx-section-spacing;
+			}
 		}
 	}
 }

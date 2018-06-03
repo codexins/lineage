@@ -4,7 +4,6 @@
  */
 
 .testimonial-simple {
-	@extend %vpadding;
 	.testimonial-simple-wrapper {
 		padding: 50px 20px;
 		@include respond-to(mobile) {

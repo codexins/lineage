@@ -51,24 +51,17 @@
 
 .fun-facts-section {
 	&.facts-about {
-		@extend %mb0;
-		@extend %vpadding;
 		@include cx-background('../img/background/counter-up.jpg');
 		@include cx-overlay(rgba($cx-primary-color, 0.92));
 		.counter-item {
 			&.type-3 {
 				width: 20%;
 				float: left;
+				@include respond-to(mobile) {
+					width: 100%;
+				}
 			}
 		}
-	}
-}
-
-.values-promo {
-	&.values-about {
-		@extend %mb0;
-		@extend %pt-full;
-		@extend %pb-half;
 	}
 }
 
@@ -83,5 +76,11 @@
 	&.cta-about {
 		@include cx-background("../img/slider/home-1/slide-2.jpg");
 		@include cx-overlay(rgba(0, 0, 0, 0.65));
+	}
+}
+
+.client-list {
+	&.client-about {
+		margin-bottom: -25px;
 	}
 }

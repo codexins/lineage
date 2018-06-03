@@ -11,6 +11,10 @@
 	&.bcg-service {
 		@include cx-background('../img/page-titles/contact-bg-1.jpg');
 	}
+
+	.simple-slider-wrapper {
+		@extend %mb-half;
+	}
 }
 
 .feature-title-wrapper {
@@ -27,6 +31,10 @@
 		text-align: center;
 		margin-bottom: 0.5 * $cx-heading-margin-bottom;
 		@extend %color-secondary;
+	}
+
+	@include media-only(notebook, max) {
+		margin-top: - $cx-col-spacing;
 	}
 
 	@include respond-to(mobile) {

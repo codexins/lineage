@@ -51,4 +51,14 @@
 			color: lighten($cx-text-color, 100%);
 		}
 	}
+
+	@include respond-to(mobile) {
+		width: 80%;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	@include media-only(small-mobile, max) {
+		width: 100%;
+	}
 }

@@ -4,15 +4,18 @@
  */
 
 .service-promo {
-	@extend %vpadding;
 	h2 {
 		text-transform: uppercase;
 		font-weight:bold;
 	}
 	.focused-text {
-		font-size: 2em;
+		font-size: 2rem;
 		line-height: 1.2em;
 		margin-bottom: 10px;
+
+		@include respond-to(mobile) {
+			font-size: 1.5rem;
+		}
 	}
 
 	.col-sm-8 {
@@ -43,6 +46,72 @@
 		p,
 		li {
 			@extend %color-white;
+		}
+	}
+
+	@include media-only(tablet, min) {
+		.col-lg-4 {
+			p {
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.col-lg-8 {
+			p {
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	@include respond-to(mobile) {
+		text-align: center;
+		.col-lg-4 {
+			h2 {
+				+ .focused-text {
+					margin-bottom: 0.33 * $cx-section-spacing;
+				}
+			}
+		}
+	}
+
+	.split-section {
+		@include media-only(notebook, max) {
+			text-align: center;
+		}
+		&.mt-full {
+			@include media-only(notebook, max) {
+				margin-bottom: - $cx-section-spacing;
+			}
+		}
+
+		.icon-check {
+			@include media-only(notebook, max) {
+				text-align: left;
+				margin-left: 15%;
+				li {
+					width: 50%;
+					float: left;
+				}
+			}
+
+			@include media-only(small-mobile, max) {
+				li {
+					width: 100%;
+					float: none;
+				}
+			}
+
+			@include respond-to(mobile) {
+				margin-left: 7%;
+			}
+
+			@include media-only(small-mobile, max) {
+				margin-left: 15%;
+			}
 		}
 	}
 }

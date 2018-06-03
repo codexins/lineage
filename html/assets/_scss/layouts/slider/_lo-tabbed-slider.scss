@@ -12,9 +12,17 @@
 		    border-top: 2px solid lighten($cx-tertiary-color, 8%);
 		    border-bottom: 2px solid lighten($cx-tertiary-color, 8%);
 
+		    @include media-only(notebook, max) {
+		    	border: none;
+		    }
+
 		    .selected {
 		        @extend %bgc-primary;
 		        @include cx-box-shadow('0 2px 0 0 ' + $cx-primary-color + ', 0 -2px 0 0 ' + $cx-primary-color);
+
+		        @include media-only(notebook, max) {
+		        	@include cx-box-shadow(none);
+		        }
 
 		        &::before {
 				    width: 0;
@@ -25,6 +33,9 @@
 				    margin-bottom: -12px;
 				    @include abs-position(auto, auto, 0, 50%);
 				    @include transform-translateX(-50%);
+				    @include media-only(notebook, max) {
+				    	content: none;
+				    }
 		        }
 		    }
         }
@@ -41,6 +52,44 @@
 	        @extend %bgc-tertiary;
 	        @extend %color-white;
 	        @extend %cx-transition;
+
+	        @include media-only(notebook, max) {
+	        	border: 1px solid lighten($cx-tertiary-color, 8%);
+	        	border-top-width: 2px;
+	        	border-bottom-width: 2px;
+	        }
+
+	        @include respond-to(tablet) {
+	        	font-size: calculateRem(13px);
+	        }
+
+	        @include respond-to(mobile) {
+				font-size: calculateRem(12px);
+	        }
+        }
+
+		.carousel-arrow {
+	        @include media-only(notebook, min) {
+        		display: none;
+        	}
+
+        	@include media-only(notebook, max) {
+			    top: 0;
+			    z-index: 3;
+			    height: 50px;
+			    line-height: 50px;
+        		&.arrow-left {
+        			left: 0;
+        			margin-left: 0;
+        		}
+        		&.arrow-right {
+        			right: 0;
+        			margin-right: 0;
+        		}
+        		&::after {
+        			content: none;
+        		}
+        	}
         }
     }
 	
@@ -56,6 +105,25 @@
 				}
 			}
         }
+
+        @include media-only(notebook, max) {
+        	text-align: center;
+        	.media-wrapper {
+        		margin-top: $cx-col-spacing;
+        	}
+        	.feature-box {
+        		text-align: left;
+        	}
+        }
+
+        .pie-charts {
+        	@include media-only(small-mobile, max) {
+				> div[class^='col'], 
+				> div[class*=' col'] {
+					width: 100%;
+				}
+        	}
+        }
 	}
 
 	.icon-check {
@@ -69,6 +137,30 @@
 			&:last-child {
 				@extend %mb0;
 			}
+		}
+
+		@include media-only(notebook, max) {
+			text-align: left;
+			margin-left: 15%;
+			li {
+				width: 50%;
+				float: left;
+			}
+		}
+
+		@include media-only(small-mobile, max) {
+			li {
+				width: 100%;
+				float: none;
+			}
+		}
+
+		@include respond-to(mobile) {
+			margin-left: 7%;
+		}
+
+		@include media-only(small-mobile, max) {
+			margin-left: 15%;
 		}
 	}
 
