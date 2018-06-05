@@ -86,3 +86,22 @@
 	    background-image: url('../img/background/counter-up.jpg');
 	}
 }
+
+.service-types {
+	.info-item {
+		&.flip-card {
+			.front,
+			.back {
+				@include respond-to(mobile) {
+					display: table;
+					> div {
+						display: table-cell;
+					}
+				}
+				@include media-only(small-mobile, max) {
+					padding: 20px;
+				}
+			}
+		}
+	}
+}

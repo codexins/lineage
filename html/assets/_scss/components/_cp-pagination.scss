@@ -8,8 +8,8 @@
 	// margin-bottom: ($cx-section-spacing)-20px;
 
 	.pagination {
-		@extend %mb0;
 		@extend %mt0;
+		margin-bottom: -7px;
 	}
 
 
@@ -20,12 +20,28 @@
 			margin-left: 5px;
 			margin-right: 5px;
 		    padding: 7px 13px;
-				@include respond-to(small-mobile) {
-					padding:6px 12px;
+				@include media-only(small-mobile, max) {
+					padding: 6px 12px;
+					font-size: calculateRem(14px);
+					margin-left: 0;
 				}
 			}
 		}
-		
+
+		& > li {
+			&:first-child {
+				& > span,
+				& > a {
+					margin-left: 0;
+				}
+			}
+			&:last-child {
+				& > span,
+				& > a {
+					margin-right: 0;
+				}
+			}
+		}
 	}
 }
 
@@ -110,6 +126,9 @@
 		font-size: calculateRem(15px);
 		&:hover {
 			color: $cx-secondary-color;
+		}
+		@include media-only(small-mobile, max) {
+			font-size: calculateRem(14px);
 		}
 	}
 	@include respond-to(mobile) {

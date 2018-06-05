@@ -31,6 +31,18 @@
 			&::before {
 				top: 60px;
 			}
+
+			@include respond-to(mobile) {
+				height: auto;
+			}
+		}
+	}
+
+	.post-like,
+	.post-share,
+	.post-comments {
+		@include media-only(small-mobile, max) {
+			display: none;
 		}
 	}
 }

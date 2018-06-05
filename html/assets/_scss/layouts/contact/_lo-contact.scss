@@ -13,8 +13,6 @@
 	.default-btn {
 		margin-top: 1.1 * $cx-col-spacing
 	}
-	@extend %mb0;
-	@extend %vpadding;
 	@extend %overlay;
 	&::before {
 		background: rgba(0, 0, 0, 0.75);
@@ -27,6 +25,9 @@
 		    float: none;
 		    margin-right: 0;
 		    @extend %mb-half;
+		    @include media-only(small-mobile, max) {
+		    	line-height: 1.6;
+		    }
 		}
 
 		li {
@@ -44,12 +45,19 @@
 	
 	.quote-form-wrapper,
 	.contact-info-wrapper {
-    background-image: url(../img/cta/cta-bg-1.png);
-    background-repeat: repeat;
+	    background-image: url(../img/cta/cta-bg-1.png);
+	    background-repeat: repeat;
 		padding: 30px;
 		background-color: rgba(0, 0, 0, 0.5);
 		color: darken($cx-border-color, 10%);
 		min-height: 480px;
+		@extend %mb-half;
+		@include media-only(notebook, max) {
+			min-height: auto;
+		}
+		@include media-only(small-mobile, max) {
+			padding: 15px;
+		}
 	}
 
 	.contact-item {
@@ -74,6 +82,15 @@
 
 		&:last-child {
 			@extend %mb0;
+		}
+		&:last-child {
+			p {
+				@extend %mb0;
+			}
+		}
+
+		@include media-only(notebook, max) {
+			text-align: center;
 		}
 	}
 
@@ -127,6 +144,15 @@
 	&.h-600 {
 		#gmap {
 			height: 600px;
+			@include respond-to(notebook) {
+				height: 500px;
+			}
+			@include respond-to(tablet) {
+				height: 450px;
+			}
+			@include respond-to(mobile) {
+				height: 350px;
+			}
 		}
 	}
 }

@@ -78,7 +78,7 @@
 		input[type="submit"] {
 		    z-index: 9;
 		    outline: 0;
-		    width: 18% !important;
+		    width: 18%;
 		    float: right;
 		    height: 44px;
 		    text-indent: -99999px;
@@ -143,7 +143,6 @@
 
 		.nav-tabs {
 			border-bottom: 1px solid $cx-border-color;
-			// @extend %vhcenter;
 			> li {
 				margin-right: 4px;
 				margin-left: 4px;
@@ -151,6 +150,12 @@
 			    border-bottom-color: $cx-body-bg-color;
 			    background: darken($cx-offset-color, 5%);
 			    @extend %cx-transition;
+
+			    @include media-only(small-mobile, max) {
+			    	margin-left: 0;
+			    	margin-right: 0;
+			    	border-bottom-color: $cx-border-color;
+			    }
 
 				> a {
 					position: relative;
@@ -162,10 +167,17 @@
 					color: $cx-text-color;
 					font-weight: bold;
 					font-size: calculateRem(14px);
+				    @include media-only(small-mobile, max) {
+				    	top: 0;
+				    }
 				}
 
 				&:first-child {
 					margin-left: 10px;
+				    @include media-only(small-mobile, max) {
+				    	margin-left: 0;
+				    	margin-right: 0;
+				    }
 				}
 
 				&.active {
@@ -175,6 +187,9 @@
 					    color: inherit;
 					    border-color: $cx-body-bg-color;
 					    background: none;
+					    @include media-only(small-mobile, max) {
+					    	top: 0;
+					    }
 					}
 				}
 			}
@@ -372,6 +387,10 @@
 			margin-right:5px;
 			margin-bottom:10px;
 
+			&:last-child {
+				margin-right: 0;
+			}
+
 			a {
 				font-size: calculateRem(14px);
 				padding: 7px 12px;
@@ -386,7 +405,6 @@
 					border-color: $cx-link-hover-color;
 					@include cx-box-shadow;
 				}
-
 			}
 		}
 	}
@@ -530,6 +548,15 @@
 			p {
 				font-style: italic;
 				font-size: calculateRem(14px);
+			}
+		}
+		@include respond-to(mobile) {
+			display: table;
+			width: 100%;
+
+			.client-avatar,
+			.client-name {
+				display: table-cell;
 			}
 		}
 	}

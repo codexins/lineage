@@ -38,6 +38,10 @@
 		z-index: 2;
 		@extend %cx-transition;
 
+		@include respond-to(mobile) {
+			opacity: 1;
+		}
+
 		&.arrow-left {
 			left: 0;
 			top: 50%;

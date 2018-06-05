@@ -35,7 +35,7 @@
 		font-family: lato;
 		font-size: calculateRem(20px);
 		font-weight: 500;
-		padding: 18px 28px;
+		padding: 18px 36px;
 		display: block;
 		text-align: left;
 	    letter-spacing: 0.5px;
@@ -52,6 +52,7 @@
 		    right: 20px;
 		    font-size: 14px;
 		    color: $cx-secondary-color;
+		    top: 18px;
 		    @extend %cx-transition;
 		}
 		@include media-only(small-mobile, max) {

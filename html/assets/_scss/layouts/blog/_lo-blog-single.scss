@@ -28,12 +28,19 @@
 				    @include cx-prefix('backface-visibility', 'hidden');
 				    @include cx-centered('both');
 			    }
+
+			    @include respond-to(mobile) {
+			    	opacity: 1;
+			    }
 			}
 
 			> .quote-wrapper {
 				padding-top: 0.6 * $cx-section-spacing;
 				padding-bottom: 0.6 * $cx-section-spacing;
 				@extend %mb0;
+				@include media-only(small-mobile, max) {
+					padding: 30px;
+				}
 
 				&::before {
 					top: 45px;
@@ -48,6 +55,10 @@
 
 		.post-content {
 			padding: 20px 0;
+		}
+
+		.quote-wrapper {
+			margin-bottom: 25px;
 		}
 
 		.post-meta {

@@ -3,11 +3,6 @@
  *
  */
 
-.blog-posts-section {
-	@extend %mb0;
-	@extend %pt-full;
-}
-
 .blog-grid-wrapper {
 	margin-bottom: - $cx-col-spacing;
 	.blog-grid {
@@ -23,6 +18,18 @@
 		padding: 20px 30px;
 		padding-left: 90px;
 		@extend %mb0;
+		@include respond-to(mobile) {
+			height: auto;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		@include media-only(small-mobile, max) {
+			padding: 15px;
+		}
+	}
+
+	.simple-slider-container {
+		@extend %mb0
 	}
 }
 
@@ -43,6 +50,12 @@
     margin-bottom: 25px;
     @include bcg-linear-gradient(45deg, $cx-tertiary-color, lighten($cx-tertiary-color, 20%));
     @extend %color-white;
+	@include respond-to(mobile) {
+		margin-bottom: 0;
+	}
+	@include media-only(small-mobile, max) {
+		padding: 15px;
+	}
 
     a {
     	@extend %color-white;
@@ -57,6 +70,9 @@
 	    left: 30px;
 	    opacity: 0.7;
         line-height: 1em;
+        @include media-only(small-mobile, max) {
+        	content: none;
+        }
     }
 
     p {

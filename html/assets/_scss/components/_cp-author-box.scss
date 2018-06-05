@@ -8,6 +8,12 @@
 	border: 1px dashed $cx-border-color;
 	@extend .posts-single;
 	@extend %bgc-offset;
+	@include respond-to(mobile) {
+		padding: 15px;
+	}
+	@include media-only(small-mobile, max) {
+		text-align: center;
+	}
 
 	.img-thumb {
 		width: 150px;
@@ -19,10 +25,18 @@
 			border: 1px solid $cx-border-color;
 			@include border-radius(50%);
 		}
+
+		@include media-only(small-mobile, max) {
+			margin-bottom: 20px;
+			@include push-center;
+		}
 	}
 
 	.author-description {
 		padding-left: 30px;
+		@include media-only(small-mobile, max) {
+			padding-left: 0;
+		}
 	}
 
 	h3 {
@@ -39,6 +53,7 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		margin-bottom: -7px;
 
 		li {
 			display: inline-block;

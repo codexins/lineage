@@ -18,6 +18,12 @@
 
 	.post-content {
 		padding: 0.45 * $cx-section-spacing;
+		@include respond-to(mobile) {
+			padding: 30px;
+		}
+		@include media-only(small-mobile, max) {
+			padding: 15px;
+		}
 	}
 
 	.post-meta {
@@ -26,8 +32,11 @@
 			font-size: 15px;
 			font-style: italic;
 
-			span {
+			.single-meta {
 				margin-right: 10px;
+				@include media-only(small-mobile, max) {
+					margin-right: 6px;
+				}
 			}
 		}
 	}
@@ -96,6 +105,16 @@
 			img {
 				@include cx-prefix('transform', 'scale(1.1)');
 			}
+		}
+	}
+
+	.simple-slider-container {
+		@extend %mb0
+	}
+
+	@include media-only(small-mobile, max) {
+		.post-categories {
+			display: none;
 		}
 	}
 }

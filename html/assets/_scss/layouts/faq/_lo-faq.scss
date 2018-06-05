@@ -10,6 +10,9 @@
 
 	    > li {
 	    	margin-right: 0;
+	    	@include respond-to(mobile) {
+	    		width: 50%;
+	    	}
 
 	    	> a {
 	    		margin: 0;

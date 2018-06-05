@@ -600,13 +600,13 @@ input[type="button"]:hover {
 /************************************************************
 	c02 - Base - Placeholders
 *************************************************************/
-.vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
+.vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .social-section, .contacts-form-section, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
+  .vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
     padding-top: 67.5px;
     padding-bottom: 67.5px;
   }
@@ -877,10 +877,10 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 }
 
 .mb0, .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle, .info-item.flip-card .back p:last-of-type, .services-carousel .media-wrapper p, .counter-item .counter-icon, .sidebar-widget p:last-of-type, .contact-box-widget h3, .testimonial-widget .client-meta .client-name h3, .widget-form-wrapper input,
-.widget-form-wrapper textarea, .team-member-card .team-details h2,
-.team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .info-box-wrapper.type-2, .feature-box h3, .feature-box p:last-of-type, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .pagination-wrapper .pagination, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .portfolio-section, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
-.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-posts-section, .blog-grid-wrapper .quote-wrapper, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section.type-2 .cta-content-wrapper .cta-content p:last-of-type, .features-section .info-item,
-.features-section .secondary-title, .contact-section .contact-item-wrapper p, .slider-section, .social-section, .contacts-form-section, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .error-404-wrapper {
+.widget-form-wrapper textarea, .portfolio-mini-desc h3, .team-member-card .team-details h2,
+.team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .post-single .simple-slider-container, .info-box-wrapper.type-2, .feature-box h3, .feature-box p:last-of-type, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
+.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-grid-wrapper .quote-wrapper, .blog-grid-wrapper .simple-slider-container, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section.type-2 .cta-content-wrapper .cta-content p:last-of-type, .features-section .info-item,
+.features-section .secondary-title, .contact-section .contact-item-wrapper p, .slider-section, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .contacts-form-section .contact-item:last-child p, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .error-404-wrapper {
   margin-bottom: 0;
 }
 
@@ -894,12 +894,12 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.mt-full, .portfolio-section, .single-portfolio-intro, .single-portfolio-intro .portfolio-content, .single-portfolio-details, .portfolio-nav {
+.mt-full, .single-portfolio-intro, .single-portfolio-intro .portfolio-content, .single-portfolio-details, .portfolio-nav {
   margin-top: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mt-full, .portfolio-section, .single-portfolio-intro, .single-portfolio-intro .portfolio-content, .single-portfolio-details, .portfolio-nav {
+  .mt-full, .single-portfolio-intro, .single-portfolio-intro .portfolio-content, .single-portfolio-details, .portfolio-nav {
     margin-top: 67.5px;
   }
 }
@@ -914,22 +914,24 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.pt-full, .blog-posts-section {
+.pt-full {
   padding-top: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .pt-full, .blog-posts-section {
+  .pt-full {
     padding-top: 67.5px;
   }
 }
 
-.mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper {
+.mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .contacts-form-section .quote-form-wrapper,
+.contacts-form-section .contact-info-wrapper, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper {
   margin-bottom: 45px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper {
+  .mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .contacts-form-section .quote-form-wrapper,
+  .contacts-form-section .contact-info-wrapper, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper {
     margin-bottom: 33.75px;
   }
 }
@@ -1894,7 +1896,7 @@ to a reusable component.
   top: -.2rem;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   .section-heading h4::before, .service-tabs .tab-content-heading h4::before, .section-heading h4::after, .service-tabs .tab-content-heading h4::after {
     width: 2rem;
   }
@@ -1941,6 +1943,7 @@ to a reusable component.
     height: 0.15625rem;
     margin: 0 9px;
     position: relative;
+    width: 2rem;
   }
 }
 
@@ -3464,7 +3467,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .search-widget form input[type="submit"], .error-404-wrapper form input[type="submit"] {
   z-index: 9;
   outline: 0;
-  width: 18% !important;
+  width: 18%;
   float: right;
   height: 44px;
   text-indent: -99999px;
@@ -3537,6 +3540,14 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   background: #e9ecef;
 }
 
+@media only screen and (max-width: 479px) {
+  .tab.widget-tab .nav-tabs > li {
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom-color: #ddd;
+  }
+}
+
 .tab.widget-tab .nav-tabs > li > a {
   position: relative;
   top: 1px;
@@ -3549,8 +3560,21 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   font-size: 0.875rem;
 }
 
+@media only screen and (max-width: 479px) {
+  .tab.widget-tab .nav-tabs > li > a {
+    top: 0;
+  }
+}
+
 .tab.widget-tab .nav-tabs > li:first-child {
   margin-left: 10px;
+}
+
+@media only screen and (max-width: 479px) {
+  .tab.widget-tab .nav-tabs > li:first-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .tab.widget-tab .nav-tabs > li.active, .tab.widget-tab .tab.iconic-tab > .nav-tabs > li {
@@ -3562,6 +3586,12 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   color: inherit;
   border-color: #fff;
   background: none;
+}
+
+@media only screen and (max-width: 479px) {
+  .tab.widget-tab .nav-tabs > li.active a, .tab.widget-tab .tab.iconic-tab > .nav-tabs > li a {
+    top: 0;
+  }
 }
 
 .tab.widget-tab .img-thumb,
@@ -3791,6 +3821,10 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   margin-bottom: 10px;
 }
 
+.tags-widget ul li:last-child, .single-post-wrapper .post-single .post-tags ul li:last-child {
+  margin-right: 0;
+}
+
 .tags-widget ul li a, .single-post-wrapper .post-single .post-tags ul li a {
   font-size: 0.875rem;
   padding: 7px 12px;
@@ -3970,6 +4004,17 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .testimonial-widget .client-meta .client-name p {
   font-style: italic;
   font-size: 0.875rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .testimonial-widget .client-meta {
+    display: table;
+    width: 100%;
+  }
+  .testimonial-widget .client-meta .client-avatar,
+  .testimonial-widget .client-meta .client-name {
+    display: table-cell;
+  }
 }
 
 .widget-form-wrapper textarea {
@@ -4174,7 +4219,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .portfolio-mini-desc h3 {
   text-transform: uppercase;
   position: relative;
-  margin-bottom: 5px;
   padding-top: 15px;
   padding-bottom: 0;
   font-size: 1rem;
@@ -4198,6 +4242,10 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
     font-size: 14px;
     letter-spacing: 1px;
   }
+}
+
+.portfolio-mini-desc h3 + p {
+  margin-top: 5px;
 }
 
 .portfolio-mini-desc a {
@@ -4414,17 +4462,22 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transform: translateY(101px);
-  -moz-transform: translateY(101px);
-  -ms-transform: translateY(101px);
-  -o-transform: translateY(101px);
-  transform: translateY(101px);
+  -webkit-transform: translateY(110px);
+  -moz-transform: translateY(110px);
+  -ms-transform: translateY(110px);
+  -o-transform: translateY(110px);
+  transform: translateY(110px);
+}
+
+@media only screen and (max-width: 991px) {
+  .portfolio-wrapper.hover-effect-type-2 .portfolio-mini-desc {
+    min-height: auto;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .portfolio-wrapper.hover-effect-type-2 .portfolio-mini-desc {
-    min-height: 60px;
-    padding: 10px;
+    padding: 15px;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -4437,6 +4490,13 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   font-size: 1.0625rem;
   letter-spacing: 0.5px;
   padding-top: 0;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-wrapper.hover-effect-type-2 .portfolio-mini-desc h3 {
+    font-size: 0.9375rem;
+  }
 }
 
 .portfolio-wrapper.hover-effect-type-2 figure {
@@ -5239,6 +5299,12 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   opacity: 0;
   width: 34px;
   z-index: 2;
+}
+
+@media only screen and (max-width: 767px) {
+  .simple-slider-container .carousel-arrow {
+    opacity: 1;
+  }
 }
 
 .simple-slider-container .carousel-arrow.arrow-left {
@@ -6648,14 +6714,32 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   padding: 40.5px;
 }
 
+@media only screen and (max-width: 767px) {
+  .post-single .post-content {
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .post-single .post-content {
+    padding: 15px;
+  }
+}
+
 .post-single .post-meta p {
   margin-bottom: 10px;
   font-size: 15px;
   font-style: italic;
 }
 
-.post-single .post-meta p span {
+.post-single .post-meta p .single-meta {
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 479px) {
+  .post-single .post-meta p .single-meta {
+    margin-right: 6px;
+  }
 }
 
 .post-single .post-title {
@@ -6727,6 +6811,12 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 479px) {
+  .post-single .post-categories {
+    display: none;
+  }
 }
 
 /**
@@ -7382,7 +7472,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   font-family: lato;
   font-size: 1.25rem;
   font-weight: 500;
-  padding: 18px 28px;
+  padding: 18px 36px;
   display: block;
   text-align: left;
   letter-spacing: 0.5px;
@@ -7401,6 +7491,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   right: 20px;
   font-size: 14px;
   color: #d7706d;
+  top: 18px;
 }
 
 @media only screen and (max-width: 479px) {
@@ -7807,6 +7898,10 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   margin-top: 70px;
 }
 
+.pagination-wrapper .pagination {
+  margin-bottom: -7px;
+}
+
 .pagination-wrapper .pagination-lg > li > span,
 .pagination-wrapper .pagination-lg > li > a {
   margin-left: 5px;
@@ -7818,7 +7913,19 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   .pagination-wrapper .pagination-lg > li > span,
   .pagination-wrapper .pagination-lg > li > a {
     padding: 6px 12px;
+    font-size: 0.875rem;
+    margin-left: 0;
   }
+}
+
+.pagination-wrapper .pagination-lg > li:first-child > span,
+.pagination-wrapper .pagination-lg > li:first-child > a {
+  margin-left: 0;
+}
+
+.pagination-wrapper .pagination-lg > li:last-child > span,
+.pagination-wrapper .pagination-lg > li:last-child > a {
+  margin-right: 0;
 }
 
 .pagination .active a, .pagination .tab.iconic-tab > .nav-tabs li a, .tab.iconic-tab > .nav-tabs .pagination li a {
@@ -7899,6 +8006,12 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .cx-pagination a:hover {
   color: #d7706d;
+}
+
+@media only screen and (max-width: 479px) {
+  .cx-pagination a {
+    font-size: 0.875rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -8013,6 +8126,18 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   border: 1px dashed #ddd;
 }
 
+@media only screen and (max-width: 767px) {
+  .author-box {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .author-box {
+    text-align: center;
+  }
+}
+
 .author-box .img-thumb {
   width: 150px;
   border: 0;
@@ -8029,8 +8154,23 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 479px) {
+  .author-box .img-thumb {
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .author-box .author-description {
   padding-left: 30px;
+}
+
+@media only screen and (max-width: 479px) {
+  .author-box .author-description {
+    padding-left: 0;
+  }
 }
 
 .author-box h3 {
@@ -8046,6 +8186,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: -7px;
 }
 
 .author-box .author-socials li {
@@ -8187,7 +8328,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .comments-area .comment-meta {
-  font-size: 14px;
+  font-size: 0.84375rem;
   line-height: 1.6em;
   text-align: right;
 }
@@ -8224,7 +8365,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 @media only screen and (max-width: 767px) {
   .comments-area .comment-meta {
     text-align: left;
-    font-size: 90%;
   }
 }
 
@@ -8534,10 +8674,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   }
 }
 
-#main-nav.header-type-2 ul:not(.sub-menu) > li.has-sub .sub-menu {
-  top: 85%;
-}
-
 .header-white #main-nav ul:not(.sub-menu) > li > a {
   color: #545454;
   text-shadow: none;
@@ -8571,10 +8707,6 @@ header .intelligent-header.scrolling-up img {
 
 header .intelligent-header.scrolling-up .c-button {
   margin-top: 20.5px;
-}
-
-header .intelligent-header.scrolling-up #main-nav.header-type-2 li .sub-menu {
-  top: auto;
 }
 
 header.header-white {
@@ -9814,7 +9946,7 @@ header.header-white .intelligent-header {
   .portfolio-wrapper.hover-effect-type-2 .col-lg-2 .portfolio-mini-desc {
     min-height: auto;
     padding-top: 17px;
-    padding-bottom: 12px;
+    padding-bottom: 17px;
   }
 }
 
@@ -9829,6 +9961,19 @@ header.header-white .intelligent-header {
 .portfolio-list-wrapper {
   margin-left: 15px;
   margin-right: -15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-list-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-list-wrapper .portfolio {
+    overflow: hidden;
+  }
 }
 
 .portfolio-list-wrapper .row {
@@ -9871,6 +10016,18 @@ header.header-white .intelligent-header {
   backface-visibility: hidden;
 }
 
+@media only screen and (max-width: 767px) {
+  .portfolio-list-wrapper .portfolio-media .media-container {
+    min-height: 240px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .portfolio-list-wrapper .portfolio-media .media-container {
+    min-height: 180px;
+  }
+}
+
 .portfolio-list-wrapper .portfolio-media a {
   content: "";
   display: block;
@@ -9888,6 +10045,13 @@ header.header-white .intelligent-header {
   background: #eff1f4;
 }
 
+@media only screen and (max-width: 767px) {
+  .portfolio-list-wrapper .portfolio-content {
+    margin-left: 0;
+    padding: 30px;
+  }
+}
+
 .portfolio-list-wrapper .portfolio-content a {
   color: #545454;
 }
@@ -9903,7 +10067,7 @@ header.header-white .intelligent-header {
 }
 
 .portfolio-list-wrapper .portfolio-content .portfolio-category {
-  font-size: 13px;
+  font-size: 0.8125rem;
   margin-bottom: 15px;
   line-height: 1;
   text-transform: uppercase;
@@ -9936,6 +10100,12 @@ header.header-white .intelligent-header {
   content: none;
 }
 
+@media only screen and (max-width: 767px) {
+  .portfolio-list-wrapper .portfolio-content .portfolio-category {
+    font-size: 0.75rem;
+  }
+}
+
 .portfolio-list-wrapper .portfolio-content h3 {
   font-size: 1.375rem;
   text-transform: uppercase;
@@ -9946,6 +10116,18 @@ header.header-white .intelligent-header {
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-list-wrapper .portfolio-content h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .portfolio-list-wrapper .portfolio-content h3 {
+    font-size: 1.125rem;
+  }
 }
 
 .portfolio-list-wrapper .portfolio-content::before {
@@ -10424,6 +10606,20 @@ header.header-white .intelligent-header {
   padding-left: 90px;
 }
 
+@media only screen and (max-width: 767px) {
+  .blog-grid-wrapper .quote-wrapper {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .blog-grid-wrapper .quote-wrapper {
+    padding: 15px;
+  }
+}
+
 .blog-post .post-media.quote-post > a {
   display: table;
   width: 100%;
@@ -10461,6 +10657,18 @@ header.header-white .intelligent-header {
   background: linear-gradient(45deg, #3e3e3e, #717171);
 }
 
+@media only screen and (max-width: 767px) {
+  .quote-wrapper {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .quote-wrapper {
+    padding: 15px;
+  }
+}
+
 .quote-wrapper::before {
   content: "\f128";
   font-family: "Flaticon";
@@ -10470,6 +10678,12 @@ header.header-white .intelligent-header {
   left: 30px;
   opacity: 0.7;
   line-height: 1em;
+}
+
+@media only screen and (max-width: 479px) {
+  .quote-wrapper::before {
+    content: none;
+  }
 }
 
 .quote-wrapper p {
@@ -10531,6 +10745,20 @@ blockquote {
   top: 60px;
 }
 
+@media only screen and (max-width: 767px) {
+  .blog-list-wrapper .blog-post .quote-wrapper {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .blog-list-wrapper .post-like,
+  .blog-list-wrapper .post-share,
+  .blog-list-wrapper .post-comments {
+    display: none;
+  }
+}
+
 /**
  * layout blog / blog-single
  *
@@ -10575,9 +10803,21 @@ blockquote {
   transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 767px) {
+  .single-post-wrapper .post-single .post-media .image-overlay {
+    opacity: 1;
+  }
+}
+
 .single-post-wrapper .post-single .post-media > .quote-wrapper {
   padding-top: 54px;
   padding-bottom: 54px;
+}
+
+@media only screen and (max-width: 479px) {
+  .single-post-wrapper .post-single .post-media > .quote-wrapper {
+    padding: 30px;
+  }
 }
 
 .single-post-wrapper .post-single .post-media > .quote-wrapper::before {
@@ -10590,6 +10830,10 @@ blockquote {
 
 .single-post-wrapper .post-single .post-content {
   padding: 20px 0;
+}
+
+.single-post-wrapper .post-single .quote-wrapper {
+  margin-bottom: 25px;
 }
 
 .single-post-wrapper .post-single .post-meta {
@@ -11875,6 +12119,12 @@ blockquote {
   margin-right: 0;
 }
 
+@media only screen and (max-width: 479px) {
+  .intro-social-section .social-icons > p {
+    line-height: 1.6;
+  }
+}
+
 .contacts-form-section {
   background-image: url("../img/background/counter-up.jpg");
 }
@@ -11893,6 +12143,20 @@ blockquote {
   min-height: 480px;
 }
 
+@media only screen and (max-width: 991px) {
+  .contacts-form-section .quote-form-wrapper,
+  .contacts-form-section .contact-info-wrapper {
+    min-height: auto;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .contacts-form-section .quote-form-wrapper,
+  .contacts-form-section .contact-info-wrapper {
+    padding: 15px;
+  }
+}
+
 .contacts-form-section .contact-item {
   margin-bottom: 40px;
 }
@@ -11909,6 +12173,12 @@ blockquote {
 
 .contacts-form-section .contact-item a {
   color: #c4c4c4;
+}
+
+@media only screen and (max-width: 991px) {
+  .contacts-form-section .contact-item {
+    text-align: center;
+  }
 }
 
 .contacts-form-section .transparent-input textarea,
@@ -11962,6 +12232,24 @@ blockquote {
 
 .contact-section.h-600 #gmap {
   height: 600px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-section.h-600 #gmap {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-section.h-600 #gmap {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-section.h-600 #gmap {
+    height: 350px;
+  }
 }
 
 /**
@@ -12624,6 +12912,53 @@ blockquote {
   background-image: url("../img/background/counter-up.jpg");
 }
 
+@media only screen and (max-width: 767px) {
+  .service-types .info-item.flip-card .front,
+  .service-types .info-item.flip-card .back {
+    display: table;
+  }
+  .service-types .info-item.flip-card .front > div,
+  .service-types .info-item.flip-card .back > div {
+    display: table-cell;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .service-types .info-item.flip-card .front,
+  .service-types .info-item.flip-card .back {
+    padding: 20px;
+  }
+}
+
+/**
+ * layout services/ pricing
+ *
+ */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pricing-section .col-sm-12 .pricing-table-type-3 .pricing-title {
+    width: 50%;
+  }
+  .pricing-section .col-sm-12 .pricing-table-type-3 .pricing-title::before, .pricing-section .col-sm-12 .pricing-table-type-3 .pricing-title::after {
+    left: 96%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricing-section .row > div[class*='col-'] .pricing-table-type-3 .pricing-title {
+    width: 100%;
+  }
+  .pricing-section .row > div[class*='col-'] .pricing-table-type-3 .pricing-title::before, .pricing-section .row > div[class*='col-'] .pricing-table-type-3 .pricing-title::after {
+    width: 50px;
+    left: 97%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .pricing-section .row > div[class*='col-'] .pricing-table-type-3 .pricing-title::before, .pricing-section .row > div[class*='col-'] .pricing-table-type-3 .pricing-title::after {
+    content: none;
+  }
+}
+
 /**
  * layout testimonial/ testimonial
  *
@@ -12689,6 +13024,12 @@ blockquote {
 
 .faq-tabs .nav-tabs > li {
   margin-right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .faq-tabs .nav-tabs > li {
+    width: 50%;
+  }
 }
 
 .faq-tabs .nav-tabs > li > a {

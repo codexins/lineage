@@ -45,7 +45,7 @@
             @extend %cx-transition;
         }
 
-        @include respond-to(tablet) {
+        @include media-only(notebook, max) {
             &::before,
             &::after {
                 width: calculateRem(32px);
@@ -113,6 +113,7 @@
                     height: calculateRem(2.5px);
                     margin: 0 9px;
                     position: relative;
+                    width: calculateRem(32px);
                 }
             }
         }

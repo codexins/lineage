@@ -1,0 +1,42 @@
+/**
+ * layout services/ pricing
+ *
+ */
+
+ .pricing-section {
+	.col-sm-12 {
+		.pricing-table-type-3 {
+			@include respond-to(tablet) {
+				.pricing-title {
+					width: 50%;
+					&::before,
+					&::after {
+						left: 96%;
+					}
+				}
+			}
+		}
+	}
+	.row {
+		> div[class*='col-'] {
+			.pricing-table-type-3 {
+				.pricing-title {
+					@include respond-to(mobile) {
+						width: 100%;
+						&::before,
+						&::after {
+							width: 50px;
+							left: 97%;
+						}
+					}
+					@include media-only(small-mobile, max) {
+						&::before,
+						&::after {
+							content: none;
+						}
+					}
+				}
+			}
+		}
+	}
+ }
