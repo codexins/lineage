@@ -35,6 +35,13 @@
 		    	min-height: 350px;
 		    }
 		}
+		@include media-only(small-mobile, max) {
+		    min-height: 280px;
+		    height: 280px;
+		    .image-placeholder {
+		    	min-height: 280px;
+		    }
+		}
 	}
 
 	.carousel-arrow {
@@ -126,12 +133,14 @@
 			margin: 0;
 			padding: 0;
 			margin-top: 15px;
+			margin-bottom: -8px;
 
 			li {
 				display: inline-block;
+				margin-right: 5px;
+				margin-bottom: 10px;
 				a {
 				    padding: 5px 10px;
-					margin-right: 5px;
 					text-align: center;
 					font-size: calculateRem(15px);
 					border: 1px solid $cx-text-color;
@@ -151,7 +160,6 @@
 
 	.portfolio-meta {
 		@extend %clearfix;
-		@extend %mb-full;
 
 		.counter-item {
 			.counter-wrapper {
@@ -164,6 +172,11 @@
 
 				&:hover {
 					@extend %bgc-grey;
+				}
+
+				@include respond-to(mobile) {
+					height: auto;
+					min-height: auto;;
 				}
 			}
 
@@ -193,12 +206,17 @@
 
 	.portfolio-images {
 		background: darken($cx-grey-color, 20%);
-		@extend %mb0;
-		@extend %vpadding;
 		@extend %clearfix;
 
 		img {
 			@include cx-box-shadow;
+			@extend %mb-half;
+		}
+
+		@include media-only(small-mobile, max) {
+			> div {
+				width: 100%;
+			}
 		}
 	}
 
@@ -240,6 +258,18 @@
 		.portfolio-main-content {
 			min-height: 400px;
 			height: 400px;
+			@include respond-to(notebook) {
+			    min-height: 430px;
+			    height: 430px;
+			}
+			@include media-only(notebook, max) {
+				min-height: auto;
+				height: auto;
+				display: block;
+				> div {
+					display: block;
+				}
+			}
 		}
 
 		.portfolio-summary-wrapper {
@@ -253,6 +283,31 @@
 
 			h2 {
 				font-size: calculateRem(17px);
+			}
+
+			@include media-only(notebook, max) {
+				margin-right: 0;
+				width: calc(100% - 30px);
+				border-right: 0;
+				margin-bottom: $cx-col-spacing;
+			    .portfolio-summary {
+			    	> div {
+					    width: 49%;
+					    display: inline-block;
+			    	}
+			    }
+			}
+
+			@include respond-to(mobile) {
+			    .portfolio-summary {
+			    	> div {
+					    width: 100%;
+			    	}
+			    }
+			}
+
+			@include media-only(small-mobile, max) {
+				padding: 20px;
 			}
 		}
 
@@ -270,6 +325,11 @@
 			    font-weight: 600;
 			    margin-bottom: 30px;
 			}
+			@include media-only(notebook, max) {
+			    width: calc(100% - 30px);
+			    margin-left: 15px;
+				padding: 0;
+			}
 		}
 
 		.default-btn {
@@ -277,13 +337,6 @@
 		    padding: 10px 20px;
 		}
 	}
-
-	&.type-3 {
-		@extend %mb0;
-		@extend %mt0;
-		@extend %vpadding;
-	}
-
 }
 
 .single-portfolio-details {
@@ -309,6 +362,13 @@
 	.portfolio-wrapper {
 		.portfolio-item {
 			margin-bottom: 30px;
+			@include respond-to(mobile) {
+				> a {
+					&::before {
+						opacity: 0;
+					}
+				}
+			}
 		}
 	}
 }

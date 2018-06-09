@@ -600,13 +600,13 @@ input[type="button"]:hover {
 /************************************************************
 	c02 - Base - Placeholders
 *************************************************************/
-.vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
+.vpadding, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
+  .vpadding, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
     padding-top: 67.5px;
     padding-bottom: 67.5px;
   }
@@ -872,24 +872,24 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   padding-bottom: 0;
 }
 
-.mt0, .pagination-wrapper .pagination, .single-portfolio-intro.type-3 {
+.mt0, .pagination-wrapper .pagination {
   margin-top: 0;
 }
 
 .mb0, .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle, .info-item.flip-card .back p:last-of-type, .services-carousel .media-wrapper p, .counter-item .counter-icon, .sidebar-widget p:last-of-type, .contact-box-widget h3, .testimonial-widget .client-meta .client-name h3, .widget-form-wrapper input,
 .widget-form-wrapper textarea, .portfolio-mini-desc h3, .team-member-card .team-details h2,
 .team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .post-single .simple-slider-container, .info-box-wrapper.type-2, .feature-box h3, .feature-box p:last-of-type, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
-.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote p, .single-portfolio-details p:last-of-type, .related-portfolio .related-portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-grid-wrapper .quote-wrapper, .blog-grid-wrapper .simple-slider-container, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section.type-2 .cta-content-wrapper .cta-content p:last-of-type, .features-section .info-item,
+.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .portfolio-quote p, .single-portfolio-details p:last-of-type, .related-portfolio .related-portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-grid-wrapper .quote-wrapper, .blog-grid-wrapper .simple-slider-container, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section.type-2 .cta-content-wrapper .cta-content p:last-of-type, .features-section .info-item,
 .features-section .secondary-title, .contact-section .contact-item-wrapper p, .slider-section, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .contacts-form-section .contact-item:last-child p, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .error-404-wrapper {
   margin-bottom: 0;
 }
 
-.mb-full, .services-carousel, .single-portfolio-intro .portfolio-meta {
+.mb-full, .services-carousel {
   margin-bottom: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mb-full, .services-carousel, .single-portfolio-intro .portfolio-meta {
+  .mb-full, .services-carousel {
     margin-bottom: 67.5px;
   }
 }
@@ -924,13 +924,13 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .contacts-form-section .quote-form-wrapper,
+.mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .single-portfolio-intro .portfolio-images img, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .contacts-form-section .quote-form-wrapper,
 .contacts-form-section .contact-info-wrapper, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper {
   margin-bottom: 45px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .contacts-form-section .quote-form-wrapper,
+  .mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .single-portfolio-intro .portfolio-images img, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p, .intro-social-section .social-icons > p, .contacts-form-section .quote-form-wrapper,
   .contacts-form-section .contact-info-wrapper, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper {
     margin-bottom: 33.75px;
   }
@@ -3255,7 +3255,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 @media only screen and (max-width: 479px) {
   .tab.iconic-tab > .nav.nav-tabs > li {
-    float: left;
     width: auto;
     padding-right: 47px;
   }
@@ -10220,6 +10219,16 @@ header.header-white .intelligent-header {
   }
 }
 
+@media only screen and (max-width: 479px) {
+  .single-portfolio-intro .simple-slider-container {
+    min-height: 280px;
+    height: 280px;
+  }
+  .single-portfolio-intro .simple-slider-container .image-placeholder {
+    min-height: 280px;
+  }
+}
+
 .single-portfolio-intro .carousel-arrow {
   width: 42px;
   height: 46px;
@@ -10304,15 +10313,17 @@ header.header-white .intelligent-header {
   margin: 0;
   padding: 0;
   margin-top: 15px;
+  margin-bottom: -8px;
 }
 
 .single-portfolio-intro .portfolio-summary ul li {
   display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
 
 .single-portfolio-intro .portfolio-summary ul li a {
   padding: 5px 10px;
-  margin-right: 5px;
   text-align: center;
   font-size: 0.9375rem;
   border: 1px solid #545454;
@@ -10325,6 +10336,13 @@ header.header-white .intelligent-header {
 .single-portfolio-intro .portfolio-meta .counter-item .counter-wrapper {
   height: 150px;
   min-height: 150px;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-portfolio-intro .portfolio-meta .counter-item .counter-wrapper {
+    height: auto;
+    min-height: auto;
+  }
 }
 
 .single-portfolio-intro .portfolio-meta .counter-item h3 {
@@ -10352,6 +10370,12 @@ header.header-white .intelligent-header {
   -ms-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
   -o-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
+}
+
+@media only screen and (max-width: 479px) {
+  .single-portfolio-intro .portfolio-images > div {
+    width: 100%;
+  }
 }
 
 .single-portfolio-intro.type-1 .portfolio-summary-wrapper {
@@ -10392,6 +10416,27 @@ header.header-white .intelligent-header {
   height: 400px;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-portfolio-intro.type-2 .portfolio-summary-wrapper,
+  .single-portfolio-intro.type-2 .portfolio-main-content {
+    min-height: 430px;
+    height: 430px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .single-portfolio-intro.type-2 .portfolio-summary-wrapper,
+  .single-portfolio-intro.type-2 .portfolio-main-content {
+    min-height: auto;
+    height: auto;
+    display: block;
+  }
+  .single-portfolio-intro.type-2 .portfolio-summary-wrapper > div,
+  .single-portfolio-intro.type-2 .portfolio-main-content > div {
+    display: block;
+  }
+}
+
 .single-portfolio-intro.type-2 .portfolio-summary-wrapper {
   margin-left: 15px;
   margin-right: -15px;
@@ -10411,6 +10456,31 @@ header.header-white .intelligent-header {
   font-size: 1.0625rem;
 }
 
+@media only screen and (max-width: 991px) {
+  .single-portfolio-intro.type-2 .portfolio-summary-wrapper {
+    margin-right: 0;
+    width: calc(100% - 30px);
+    border-right: 0;
+    margin-bottom: 45px;
+  }
+  .single-portfolio-intro.type-2 .portfolio-summary-wrapper .portfolio-summary > div {
+    width: 49%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .single-portfolio-intro.type-2 .portfolio-summary-wrapper .portfolio-summary > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .single-portfolio-intro.type-2 .portfolio-summary-wrapper {
+    padding: 20px;
+  }
+}
+
 .single-portfolio-intro.type-2 .portfolio-main-content {
   border: 0;
   padding-left: 60px;
@@ -10426,6 +10496,14 @@ header.header-white .intelligent-header {
   letter-spacing: 0.5px;
   font-weight: 600;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .single-portfolio-intro.type-2 .portfolio-main-content {
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    padding: 0;
+  }
 }
 
 .single-portfolio-intro.type-2 .default-btn {
@@ -10453,6 +10531,12 @@ header.header-white .intelligent-header {
 
 .portfolio-gallery .portfolio-wrapper .portfolio-item {
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-gallery .portfolio-wrapper .portfolio-item > a::before {
+    opacity: 0;
+  }
 }
 
 .portfolio-quote h3 {
