@@ -600,13 +600,13 @@ input[type="button"]:hover {
 /************************************************************
 	c02 - Base - Placeholders
 *************************************************************/
-.vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
+.vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .related-portfolio, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
+  .vpadding, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .page-title-section, .cta-section.cta-about.cta-split, .cta-split.split-cta-service {
     padding-top: 67.5px;
     padding-bottom: 67.5px;
   }
@@ -765,7 +765,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 }
 
 .bgc-primary, .text-widget .contact-no a, .contact-box-widget > a, .pricing-table-type-3.featured .pricing-title, .post-single .like-count,
-.post-single .comment-count, .accordion.white-text .panel-heading.active, .accordion.white-text .tab.iconic-tab > .nav-tabs li.panel-heading, .tab.iconic-tab > .nav-tabs .accordion.white-text li.panel-heading, .image-box-wrapper figure, .service-tabs .nav-swiper .swiper-wrapper .selected, .portfolio-quote {
+.post-single .comment-count, .accordion.white-text .panel-heading.active, .accordion.white-text .tab.iconic-tab > .nav-tabs li.panel-heading, .tab.iconic-tab > .nav-tabs .accordion.white-text li.panel-heading, .image-box-wrapper figure, .service-tabs .nav-swiper .swiper-wrapper .selected {
   background-color: #947cb0;
 }
 
@@ -788,7 +788,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   background-color: transparent;
 }
 
-.bgc-offset, .tags-widget ul li a, .single-post-wrapper .post-single .post-tags ul li a, .pie-chart-wrapper.simple, .author-box, .single-portfolio-intro .portfolio-meta .counter-item .counter-wrapper, .single-portfolio-intro .portfolio-meta .counter-item .counter-wrapper > .counter-content, .single-portfolio-intro.type-1 .portfolio-summary-wrapper, .portfolio-nav, .related-portfolio {
+.bgc-offset, .tags-widget ul li a, .single-post-wrapper .post-single .post-tags ul li a, .pie-chart-wrapper.simple, .author-box, .single-portfolio-intro .portfolio-meta .counter-item .counter-wrapper, .single-portfolio-intro .portfolio-meta .counter-item .counter-wrapper > .counter-content, .single-portfolio-intro.type-1 .portfolio-summary-wrapper, .portfolio-nav {
   background-color: #F8F9FA;
 }
 
@@ -879,7 +879,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .mb0, .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle, .info-item.flip-card .back p:last-of-type, .services-carousel .media-wrapper p, .counter-item .counter-icon, .sidebar-widget p:last-of-type, .contact-box-widget h3, .testimonial-widget .client-meta .client-name h3, .widget-form-wrapper input,
 .widget-form-wrapper textarea, .portfolio-mini-desc h3, .team-member-card .team-details h2,
 .team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .post-single .simple-slider-container, .info-box-wrapper.type-2, .feature-box h3, .feature-box p:last-of-type, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
-.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote, .portfolio-quote p, .single-portfolio-details, .single-portfolio-details p:last-of-type, .related-portfolio, .related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-grid-wrapper .quote-wrapper, .blog-grid-wrapper .simple-slider-container, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section.type-2 .cta-content-wrapper .cta-content p:last-of-type, .features-section .info-item,
+.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .single-portfolio-intro .portfolio-images, .single-portfolio-intro.type-3, .portfolio-quote p, .single-portfolio-details p:last-of-type, .related-portfolio .related-portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-grid-wrapper .quote-wrapper, .blog-grid-wrapper .simple-slider-container, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section.type-2 .cta-content-wrapper .cta-content p:last-of-type, .features-section .info-item,
 .features-section .secondary-title, .contact-section .contact-item-wrapper p, .slider-section, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .contacts-form-section .contact-item:last-child p, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .error-404-wrapper {
   margin-bottom: 0;
 }
@@ -894,12 +894,12 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   }
 }
 
-.mt-full, .single-portfolio-intro, .single-portfolio-intro .portfolio-content, .single-portfolio-details, .portfolio-nav {
+.mt-full {
   margin-top: 90px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mt-full, .single-portfolio-intro, .single-portfolio-intro .portfolio-content, .single-portfolio-details, .portfolio-nav {
+  .mt-full {
     margin-top: 67.5px;
   }
 }
@@ -10202,6 +10202,24 @@ header.header-white .intelligent-header {
   box-shadow: none;
 }
 
+@media only screen and (max-width: 991px) {
+  .single-portfolio-intro .simple-slider-container {
+    min-height: 420px;
+    height: 420px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .single-portfolio-intro .simple-slider-container {
+    min-height: 350px;
+    height: 350px;
+  }
+  .single-portfolio-intro .simple-slider-container .image-placeholder {
+    min-height: 350px;
+  }
+}
+
 .single-portfolio-intro .carousel-arrow {
   width: 42px;
   height: 46px;
@@ -10341,6 +10359,33 @@ header.header-white .intelligent-header {
   border-left: 0;
 }
 
+@media only screen and (max-width: 991px) {
+  .single-portfolio-intro.type-1 .portfolio-summary-wrapper {
+    margin-left: 15px;
+    width: calc(100% - 30px);
+    border-left: 1px solid #ddd;
+    padding: 45px;
+    min-height: auto;
+    height: auto;
+  }
+  .single-portfolio-intro.type-1 .portfolio-summary-wrapper .portfolio-summary > div {
+    width: 49%;
+    display: inline-block;
+  }
+  .single-portfolio-intro.type-1 .portfolio-summary-wrapper .portfolio-summary > div:last-child {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .single-portfolio-intro.type-1 .portfolio-summary-wrapper {
+    padding: 20px;
+  }
+  .single-portfolio-intro.type-1 .portfolio-summary-wrapper .portfolio-summary > div {
+    width: 100%;
+  }
+}
+
 .single-portfolio-intro.type-2 .portfolio-summary-wrapper,
 .single-portfolio-intro.type-2 .portfolio-main-content {
   min-height: 400px;
@@ -10388,13 +10433,31 @@ header.header-white .intelligent-header {
   padding: 10px 20px;
 }
 
+@media only screen and (max-width: 767px) {
+  .single-portfolio-details .portfolio-details {
+    margin-bottom: 33.75px;
+  }
+  .single-portfolio-details img {
+    display: block;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .single-portfolio-details img {
+    max-width: 100%;
+  }
+}
+
 .portfolio-gallery .portfolio-wrapper .portfolio-item {
   margin-bottom: 30px;
 }
 
 .portfolio-quote h3 {
   font-style: italic;
-  font-size: CalculateRem(26px);
+  font-size: 1.625rem;
   line-height: 1.65em;
   font-weight: 400;
   position: relative;
@@ -10407,6 +10470,18 @@ header.header-white .intelligent-header {
   position: absolute;
   top: 0;
   left: -70px;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-quote h3 {
+    font-size: 1.375rem;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .portfolio-quote h3 {
+    font-size: 1.25rem;
+  }
 }
 
 .portfolio-quote p {
@@ -10469,6 +10544,19 @@ header.header-white .intelligent-header {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .portfolio-nav {
+    display: table;
+    width: 100%;
+    min-height: 70px;
+    height: 70px;
+  }
+  .portfolio-nav > div {
+    display: table-cell;
+    width: 50%;
+  }
+}
+
 .portfolio-nav .nav-link,
 .portfolio-nav span {
   display: block;
@@ -10518,6 +10606,12 @@ header.header-white .intelligent-header {
   -ms-transform: translateY(105%);
   -o-transform: translateY(105%);
   transform: translateY(105%);
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-nav .inner-media {
+    display: none;
+  }
 }
 
 .portfolio-nav .previous {
@@ -10576,16 +10670,29 @@ header.header-white .intelligent-header {
   -webkit-box-orient: vertical;
 }
 
-.related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc {
-  min-height: auto;
-  padding: 20px;
-  width: auto;
-  left: 15px;
-  right: 15px;
+@media only screen and (max-width: 767px) {
+  .portfolio-nav .portfolio-title {
+    display: none;
+  }
 }
 
-.related-portfolio .portfolio-wrapper figcaption.portfolio-mini-desc h3 {
+.related-portfolio {
+  margin-bottom: -30px;
+}
+
+.related-portfolio .related-portfolio-wrapper figure {
+  margin-bottom: 30px;
+}
+
+.related-portfolio .related-portfolio-wrapper figcaption.portfolio-mini-desc {
+  min-height: auto;
+  width: auto;
+}
+
+.related-portfolio .related-portfolio-wrapper figcaption.portfolio-mini-desc h3 {
   font-size: 0.875rem;
+  padding-top: 0;
+  line-height: 1.5;
 }
 
 /**

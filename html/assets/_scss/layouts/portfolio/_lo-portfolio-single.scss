@@ -18,12 +18,23 @@
 }
 
 .single-portfolio-intro {
-	@extend %mt-full;
 
 	.simple-slider-container {
 		min-height: 500px;
 		height: 500px;
 		@include cx-box-shadow('none');
+		@include media-only(notebook, max) {
+		    min-height: 420px;
+		    height: 420px;
+		    margin-bottom: 0;
+		}
+		@include respond-to(mobile) {
+		    min-height: 350px;
+		    height: 350px;
+		    .image-placeholder {
+		    	min-height: 350px;
+		    }
+		}
 	}
 
 	.carousel-arrow {
@@ -135,7 +146,6 @@
 	}
 
 	.portfolio-content {
-		@extend %mt-full;
 		@extend %clearfix;
 	}
 
@@ -197,6 +207,31 @@
 			margin-left: -15px;
 			border-left: 0;
 			@extend %bgc-offset;
+			@include media-only(notebook, max) {
+			    margin-left: 15px;
+			    width: calc(100% - 30px);
+			    border-left: 1px solid $cx-border-color;
+			    padding: 45px;
+			    min-height: auto;
+			    height: auto;
+			    .portfolio-summary {
+			    	> div {
+					    width: 49%;
+					    display: inline-block;
+					    &:last-child {
+					    	width: 100%;
+					    }
+			    	}
+			    }
+			}
+			@include media-only(small-mobile, max) {
+				padding: 20px;
+			    .portfolio-summary {
+			    	> div {
+			    		width: 100%;
+			    	}
+			    }
+			}
 		}
 	}
 
@@ -251,6 +286,25 @@
 
 }
 
+.single-portfolio-details {
+	@include respond-to(mobile) {
+		.portfolio-details {
+			margin-bottom: $cx-col-spacing-mob;
+		}
+		img {
+			display: block;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	@include media-only(small-mobile, max) {
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
 .portfolio-gallery {
 	.portfolio-wrapper {
 		.portfolio-item {
@@ -260,13 +314,10 @@
 }
 
 .portfolio-quote {
-	@extend %bgc-primary;
-	@extend %mb0;
-	@extend %vpadding;
 
 	h3 {
 	    font-style: italic;
-	    font-size: CalculateRem(26px);
+	    font-size: calculateRem(26px);
 	    line-height: 1.65em;
 	    font-weight: 400;
 	    position: relative;
@@ -280,6 +331,12 @@
 			top: 0;
 			left: -70px;
 		}
+		@include respond-to(mobile) {
+			font-size: calculateRem(22px);
+		}
+		@include media-only(small-mobile, max) {
+			font-size: calculateRem(20px);
+		}
 	}
 
 	p {
@@ -292,8 +349,6 @@
 }
 
 .single-portfolio-details {
-	@extend %mb0;
-	@extend %mt-full;
 
 	.row {
 		@include eqheight;
@@ -316,7 +371,17 @@
 	border: 1px solid $cx-border-color;
 	@include eqheight;
 	@extend %bgc-offset;
-	@extend %mt-full;
+	@include respond-to(mobile) {
+		display: table;
+		width: 100%;
+		min-height: 70px;
+		height: 70px;
+		> div {
+			display: table-cell;
+			width: 50%;
+		}
+	}
+
 	.nav-link,
 	span {
 		display: block;
@@ -355,6 +420,10 @@
 		    will-change: transform;
 			@include transform-translateY(105%);
 		    @extend %cx-transition;
+	    }
+
+	    @include respond-to(mobile) {
+	    	display: none;
 	    }
 	}
 
@@ -409,25 +478,30 @@
 	    text-overflow: ellipsis;
 	    -webkit-line-clamp: 1;
 	    -webkit-box-orient: vertical;
+	    @include respond-to(mobile) {
+		    display: none;
+	    }
 	}
 }
 
 .related-portfolio {
-	@extend %bgc-offset;
-	@extend %mb0;
-	@extend %vpadding;
-
-	.portfolio-wrapper {
+	margin-bottom: -30px;
+	.related-portfolio-wrapper {
+		figure {
+			margin-bottom: 30px;;
+		}
 		figcaption {
 			&.portfolio-mini-desc {
 				min-height: auto;
-				padding: 20px;
+				// padding: 20px;
 				width: auto;
-				left: 15px;
-				right: 15px;
+				// left: 15px;
+				// right: 15px;
 
 				h3 {
 					font-size: calculateRem(14px);
+					padding-top: 0;
+					line-height: 1.5;
 					@extend %mb0;
 				}
 			}
