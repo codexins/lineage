@@ -1,4 +1,5 @@
-// helpers
+// Padding Helpers
+
 %vpadding {
 	padding-top: $cx-section-spacing;
 	padding-bottom: $cx-section-spacing;
@@ -8,7 +9,49 @@
 	}
 }
 
-// helpers
+%pb-full {
+	padding-bottom: $cx-section-spacing;
+	@include respond-to(mobile) {
+		padding-bottom: $cx-section-spacing-mob;
+	}
+}
+
+%pt-full {
+	padding-top: $cx-section-spacing;
+	@include respond-to(mobile) {
+		padding-top: $cx-section-spacing-mob;
+	}
+}
+
+%pb-half {
+	padding-bottom: $cx-col-spacing;
+	@include respond-to(mobile) {
+		padding-bottom: $cx-col-spacing-mob;
+	}
+}
+
+%pt-half {
+	padding-top: $cx-col-spacing;
+	@include respond-to(mobile) {
+		padding-top: $cx-col-spacing-mob;
+	}
+}
+
+%padding-0 {
+	padding: 0;
+}
+
+%pt0 {
+	padding-top: 0;
+}
+
+%pb0 {
+	padding-bottom: 0;
+}
+
+
+// Margin Helpers
+
 %vmargin {
 	margin-top: $cx-section-spacing;
 	margin-bottom: $cx-section-spacing;
@@ -18,7 +61,49 @@
 	}
 }
 
+%mb-full {
+	margin-bottom: $cx-section-spacing;
+	@include respond-to(mobile) {
+		margin-bottom: $cx-section-spacing-mob;
+	}
+}
+
+%mt-full {
+	margin-top: $cx-section-spacing;
+	@include respond-to(mobile) {
+		margin-top: $cx-section-spacing-mob;
+	}
+}
+
+%mb-half {
+	margin-bottom: $cx-col-spacing;
+	@include respond-to(mobile) {
+		margin-bottom: $cx-col-spacing-mob;
+	}
+}
+
+%mt-half {
+	margin-top: $cx-col-spacing;
+	@include respond-to(mobile) {
+		margin-top: $cx-col-spacing-mob;
+	}
+}
+
+%margin-0 {
+	margin: 0;
+}
+
+%mt0 {
+	margin-top: 0;
+}
+
+%mb0 {
+	margin-bottom: 0;
+}
+
+
 // Hide an element
+
 %visuallyhidden {
 	margin: -1px;
 	padding: 0;
@@ -30,6 +115,8 @@
 	position: absolute;
 }
 
+
+// Common Helpers
 
 %clearfix {
 	&::before,
@@ -58,8 +145,16 @@
 	@include cx-transition($cx-transition)
 }
 
+%overflow-hidden {
+	overflow: hidden;
+}
 
-///* Vertically and Horizantally Centering */
+%rounded-corners {
+	@include border-radius(4px);
+}
+
+
+// Vertically and Horizantally Centering
 
 %display-flex {
 	@include flex;
@@ -75,7 +170,7 @@
 }
 
 
-///* Only vertical centering */
+// Only vertical centering
 
 %vcenter {
 	@extend %display-flex ;
@@ -88,7 +183,7 @@
 }
 
 
-// border placeholder
+// Border Helpers
 
 %cx-top-border {
 	@include cx-border(1px, 0, 0, 0);
@@ -106,7 +201,6 @@
 	@include cx-border(0, 0, 0, 1px);
 }
 
-
 %cx-right-bottom-border {
 	@include cx-border(0, 1px, 1px, 0);
 }
@@ -123,7 +217,8 @@
 	@include cx-border(1px, 0, 0, 1px);
 }
 
-// background placeholder
+
+// Background Helpers
 
 %bgc-primary {
 	background-color: $cx-primary-color;
@@ -158,7 +253,7 @@
 }
 
 
-// color
+// Color Helpers
 
 %color-primary {
 	color: $cx-primary-color;
@@ -189,108 +284,8 @@
 }
 
 
-// zero margin & padding
-
-%margin-0 {
-	margin:0;
-}
-
-%padding-0 {
-	padding:0;
-}
-
-%pt0 {
-	padding-top:0;
-}
-
-%pb0 {
-	padding-bottom:0;
-}
-
-%mt0 {
-	margin-top:0;
-}
-
-%mb0 {
-	margin-bottom:0;
-}
-
-// full margin & padding
-
-%mb-full {
-	margin-bottom: $cx-section-spacing;
-	@include respond-to(mobile) {
-		margin-bottom: $cx-section-spacing-mob;
-	}
-}
-
-%mt-full {
-	margin-top: $cx-section-spacing;
-	@include respond-to(mobile) {
-		margin-top: $cx-section-spacing-mob;
-	}
-}
-
-
-%pb-full {
-	padding-bottom: $cx-section-spacing;
-	@include respond-to(mobile) {
-		padding-bottom: $cx-section-spacing-mob;
-	}
-}
-
-%pt-full {
-	padding-top: $cx-section-spacing;
-	@include respond-to(mobile) {
-		padding-top: $cx-section-spacing-mob;
-	}
-}
-
-// half margin & padding
-
-%mb-half {
-	margin-bottom: $cx-col-spacing;
-	@include respond-to(mobile) {
-		margin-bottom: $cx-col-spacing-mob;
-	}
-}
-
-%mt-half {
-	margin-top: $cx-col-spacing;
-	@include respond-to(mobile) {
-		margin-top: $cx-col-spacing-mob;
-	}
-}
-
-
-%pb-half {
-	padding-bottom: $cx-col-spacing;
-	@include respond-to(mobile) {
-		padding-bottom: $cx-col-spacing-mob;
-	}
-}
-
-%pt-half {
-	padding-top: $cx-col-spacing;
-	@include respond-to(mobile) {
-		padding-top: $cx-col-spacing-mob;
-	}
-}
-
-// Border-radius
-
-%rounded-corners {
-	@include border-radius(4px);
-}
-
 // Equal height by display:table
 
 %eqheight {
 	@include eqheight;
-}
-
-// Overflow
-
-%overflow-hidden {
-	overflow: hidden;
 }

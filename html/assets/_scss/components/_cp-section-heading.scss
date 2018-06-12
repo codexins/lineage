@@ -1,5 +1,5 @@
 /**
- * Components Section heading
+ * Components Section-heading
  *
  */
 
@@ -20,16 +20,16 @@
     h4 {
         text-align: center;
         text-transform: uppercase;
-        font-size: 0.85em;
+        font-size: 0.85rem;
         margin: 0 auto;
         font-weight: 700;
         color: lighten($cx-text-color, 10%);
         margin-bottom: 0.4 * $cx-heading-margin-bottom;
         @include respond-to(mobile) {
-            font-size: 0.95em;
+            font-size: 0.95rem;
         }
         @include respond-to(small-mobile) {
-            font-size: 0.85em;
+            font-size: 0.85rem;
         }
 
         &::before,
@@ -180,14 +180,6 @@
         }
     }
 
-    &.white-text {
-        h2 {
-            &::before {
-                // background-image: url(../img/wave-white.png);
-            }
-        }
-    }
-
     &.type-3 {
         h2 {
             text-transform: uppercase;
@@ -248,7 +240,6 @@
 
         h2 + p {
             margin-top: 25px;
-            // font-size: calculateRem(24px);
         }
 
         h4 {
@@ -295,51 +286,3 @@
         }
     }
 }
-
-
-// .section-heading-left {
-//     @extend .section-heading;
-//     max-width:100%;
-//     text-align: left;
-//     @include respond-to(tablet) {
-//         max-width:100%;
-//     }
-
-//     @include respond-to(mobile) {
-//         max-width:100%;
-//     }
-// }
-
-// .title-bar {
-//     position:  relative ;
-//     &::after{
-//         @include  abs-position(auto,0,0,0);
-//         background:$cx-secondary-color;
-//         margin: auto;
-//         width: 45px;
-//         height: 2px;
-//         transform: translateY(-50%);
-//     }
-
-//     &.white-skin {
-//         &::after {
-//             background-color: #fff;
-//         }
-//     }
-// }
-
-
-// .title-bar-left {
-//     @extend .title-bar;
-//     &::after {
-//         margin-left: 0;
-//     }
-// }
-
-
-// .title-bar-right {
-//     @extend .title-bar;
-//     &::after {
-//         margin-right: 0;
-//     }
-// }

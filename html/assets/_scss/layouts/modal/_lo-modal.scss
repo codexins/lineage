@@ -1,0 +1,80 @@
+/**
+ * layout Modal/ Modal
+ *
+ */
+
+.vbox-inline {
+	border: 10px solid $cx-primary-color;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+	&::-webkit-scrollbar { 
+    	display: none;
+	}
+}
+
+ .modal-main-content {
+ 	padding: 30px;
+ 	border: 0;
+
+ 	@include respond-to(mobile) {
+ 		text-align: center;
+ 	}
+
+ 	@include media-only(small-mobile, max) {
+ 		padding: 15px;
+ 	}
+
+ 	img {
+ 		padding: 5px;
+ 		border: 1px solid $cx-border-color;
+ 		@include respond-to(mobile) {
+ 			margin-bottom: 20px;
+ 		}
+ 	}
+
+ 	.team-title-wrapper {
+ 		margin-bottom: 30px;
+ 		@extend %clearfix;
+
+ 		.team-title {
+ 			float: left;
+ 			h2 {
+ 				margin-bottom: 5px;
+ 				@include media-only(small-mobile, max) {
+ 					font-size: calculateRem(22px);
+ 				}
+ 			}
+ 			span {
+ 				font-style: italic;
+ 			}
+ 		}
+
+ 		.team-socials {
+ 			float: right;
+ 			margin-top: 15px;
+ 			@extend %mb0;
+ 			@extend .social-icon-large;
+ 		}
+		
+		@include respond-to(mobile) {
+			.team-title,
+			.team-socials {
+				float: none;
+			}
+
+			.team-socials {
+				display: inline-block;
+				margin-bottom: -8px;
+			}
+		}
+
+ 	}
+
+	.team-details {
+		p {
+			&:last-of-type {
+				@extend %mb0;
+			}
+		}
+	}
+ }

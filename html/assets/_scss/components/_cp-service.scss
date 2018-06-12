@@ -16,7 +16,6 @@
 		i {
 			padding-top: 6px;
 			font-size: 50px;
-	    	// color: lighten($cx-text-color, 10%);
 	    	color: darken($cx-secondary-color, 10%);
 	    	text-align: center;
 			@extend %cx-transition;
@@ -112,10 +111,6 @@
 				margin-right: auto;
 			}
 		}
-
-		// &.last {
-		// 	@extend %mb0;
-		// }
 
 		i {
 			font-size: 40px;

@@ -1,31 +1,135 @@
 /************************************************************
-	c20 - Layout - header
+	c20 - Layout - Header
 *************************************************************/
 @import 'header/lo-header';
 @import 'header/lo-main-menu';
 @import 'header/lo-intelligent-header';
 @import 'header/lo-socials';
 @import 'header/lo-header-top';
+
+
+/************************************************************
+	c21 - Layout - Various Sliders
+*************************************************************/
 @import 'slider/lo-slider';
 @import 'slider/lo-image-slider';
 @import 'slider/lo-tabbed-slider';
+
+
+/************************************************************
+	c22 - Layout - Various Footers
+*************************************************************/
 @import 'footer/lo-footer';
-@import 'home-1/lo-about';
-@import 'home-1/lo-counter-section';
-@import 'home-1/lo-split-section';
+
+
+/************************************************************
+	c23 - Layout - Portfolio Pages
+*************************************************************/
 @import 'portfolio/lo-recent-portfolio';
 @import 'portfolio/lo-portfolio';
 @import 'portfolio/lo-portfolio-list';
 @import 'portfolio/lo-portfolio-single';
+
+
+/************************************************************
+	c24 - Layout - Blog Pages
+*************************************************************/
 @import 'blog/lo-blog-grid';
 @import 'blog/lo-blog-list';
 @import 'blog/lo-blog-single';
+
+
+/************************************************************
+	c25 - Layout - Various Call to Actions
+*************************************************************/
 @import 'cta/lo-cta';
+
+
+/************************************************************
+	c26 - Layout - Various Teams
+*************************************************************/
 @import 'team/lo-team';
+
+
+/************************************************************
+	c27 - Layout - Newsletter Section
+*************************************************************/
+@import 'newsletter/lo-newsletter-section';
+
+
+/************************************************************
+	c28 - Layout - Contact Pages
+*************************************************************/
+@import 'contact/lo-contact-form';
+@import 'contact/lo-contact';
+
+
+/************************************************************
+	c29 - Layout - Various Clients
+*************************************************************/
+@import 'clients/lo-clients';
+
+
+/************************************************************
+	c30 - Layout - Page Titles
+*************************************************************/
+@import 'page-title/lo-page-title';
+
+
+/************************************************************
+	c31 - Layout - About Pages
+*************************************************************/
+@import 'about/lo-about';
+@import 'about/lo-history';
+
+
+/************************************************************
+	c32 - Layout - Services Pages
+*************************************************************/
+@import 'services/lo-service-promo';
+@import 'services/lo-services';
+@import 'services/lo-pricing';
+
+
+/************************************************************
+	c33 - Layout - Various Testimonials
+*************************************************************/
+@import 'testimonial/lo-testimonial';
+
+
+/************************************************************
+	c34 - Layout - Faq Pages
+*************************************************************/
+@import 'faq/lo-faq';
+
+
+/************************************************************
+	c35 - Layout - 404 Page
+*************************************************************/
+@import '404/lo-404';
+
+
+/************************************************************
+	c36 - Layout - Modal
+*************************************************************/
+@import 'modal/lo-modal';
+
+
+/************************************************************
+	c37 - Layout - Home 1
+*************************************************************/
+@import 'home-1/lo-about';
+@import 'home-1/lo-counter-section';
+@import 'home-1/lo-split-section';
 @import 'home-1/lo-reasons-to-choose';
 @import 'home-1/lo-testimonial';
 @import 'home-1/lo-clients';
 @import 'home-1/lo-features';
+
+
+/************************************************************
+	c38 - Layout - Home 2
+*************************************************************/
 @import 'home-2/lo-about-us';
 @import 'home-2/lo-services';
 @import 'home-2/lo-fun-facts';
@@ -33,6 +137,11 @@
 @import 'home-2/lo-testimonial';
 @import 'home-2/lo-video-section';
 @import 'home-2/lo-contact';
+
+
+/************************************************************
+	c39 - Layout - Home 3
+*************************************************************/
 @import 'home-3/lo-slider';
 @import 'home-3/lo-about';
 @import 'home-3/lo-features';
@@ -41,19 +150,3 @@
 @import 'home-3/lo-testimonials';
 @import 'home-3/lo-bg-video-section';
 @import 'home-3/lo-contact-us';
-@import 'newsletter/lo-newsletter-section';
-@import 'contact/lo-contact-form';
-@import 'contact/lo-contact';
-@import 'clients/lo-clients';
-@import 'page-title/lo-page-title';
-@import 'about/lo-about';
-@import 'about/lo-history';
-@import 'services/lo-service-promo';
-@import 'services/lo-services';
-@import 'services/lo-pricing';
-@import 'testimonial/lo-testimonial';
-@import 'faq/lo-faq';
-@import '404/lo-404';
-
-
-

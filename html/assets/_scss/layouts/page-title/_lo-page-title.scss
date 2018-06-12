@@ -1,5 +1,5 @@
 /**
- * layout page-title/ page-title
+ * layout Page-title/ Page-title
  *
  */
 
@@ -95,6 +95,10 @@
 		    @include cx-prefix('transform', 'skew(-77deg)');
 		    @include cx-prefix('transform-origin', '0 100%');
 		    z-index: 1;
+
+		    @include respond-to(mobile) {
+		    	content: none;
+		    }
 		}
 
 		&::after {

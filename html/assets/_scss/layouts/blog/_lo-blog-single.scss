@@ -1,5 +1,5 @@
 /**
- * layout blog / blog-single
+ * layout Blog / Blog-single
  *
  */
 
@@ -83,13 +83,6 @@
 			@extend .tags-widget;
 			padding-bottom: 0.5 * $cx-section-spacing;
 		}
-
-		// .post-footer-meta {
-		// 	padding: 20px 0;
-		//     border-bottom: 1px dashed $cx-border-color;
-		//     border-top: 1px dashed $cx-border-color;
-		//     @extend %clearfix;
-		// }
 
 		.post-share,
 		.post-like {

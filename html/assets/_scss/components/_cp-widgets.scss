@@ -38,24 +38,24 @@
 
 	::-webkit-input-placeholder {
 	  color: lighten($cx-text-color, 20%);
-	  font-size: 0.85em;
+	  font-size: 0.85rem;
 	}
 	::-moz-placeholder {
 	  color: lighten($cx-text-color, 20%);
-	  font-size: 0.85em;
+	  font-size: 0.85rem;
 	}
 	:-ms-input-placeholder {
 	  color: lighten($cx-text-color, 20%);
-	  font-size: 0.85em;
+	  font-size: 0.85rem;
 	}
 	:-moz-placeholder {
 	  color: lighten($cx-text-color, 20%);
-	  font-size: 0.85em;
+	  font-size: 0.85rem;
 	}
 }
 
 
-// Search Widget
+/* Search Widget */
 
 .search-widget {
 	form {
@@ -93,7 +93,8 @@
 	}
 }
 
-// Text Widget
+
+/* Text Widget */
 
 .text-widget {
 	p {
@@ -108,7 +109,6 @@
 			letter-spacing: 0.5px;
 			text-align: center;
 			text-shadow: 0 1px 1px #111;
-			// border: 1px dashed darken($cx-primary-color, 10%);
 			@extend %bgc-primary;
 			@extend %color-white;
 
@@ -120,7 +120,6 @@
 				@include border-radius(50%);
 				@include cx-box-shadow('inset 0 0 30px ' + darken($cx-primary-color, 20%) );
 				@extend %cx-transition;
-				// background: darken($cx-primary-color, 10%);
 			}
 
 
@@ -129,14 +128,14 @@
 
 				i {
 					@include cx-box-shadow('inset 0 0 30px ' + darken($cx-secondary-color, 20%) );
-					// background: darken($cx-secondary-color, 10%);
 				}
 			}
 		}
 	}
 }
 
-// Tab Widget
+
+/* Tab Widget */
 
 .tab {
 	&.widget-tab {
@@ -215,7 +214,8 @@
 	}
 }
 
-// Contact Box widget 
+
+/* Contact Box Widget */
 
 .contact-box-widget {
 	> a {
@@ -285,9 +285,8 @@
 }
 
 
+/* Recent Posts Widget */
 
-
-// Recent Posts Widget
 .posts-single {
 	padding-bottom: 15px;
 	padding-top: 15px;
@@ -331,11 +330,7 @@
 			margin-bottom: 3px;
 		    font-weight: 500;
 		    font-size: calculateRem(14px);
-	        display: -webkit-box;
-		    text-overflow: ellipsis;
-		    -webkit-line-clamp: 2;
-		    -webkit-box-orient: vertical;
-		    overflow: hidden;
+			@include cx-truncation(2, 1.5, #fff);
 
 		    a {
 		    	display: block;
@@ -373,7 +368,8 @@
 
 }
 
-// Tags Widget
+
+/* Tag Cloud Widget */
 
 .tags-widget {
 	padding-bottom: ($cx-col-spacing - 10px);
@@ -410,7 +406,8 @@
 	}
 }
 
-// Category and archives Widget
+
+/* Category and Archive Widgets */
 
 .archives-widget,
 .category-widget {
@@ -451,7 +448,7 @@
 }
 
 
-// Instagram Widget
+/* Instagram Widget */
 
 .instagram-widget {
 	@extend %clearfix;
@@ -503,7 +500,7 @@
 }
 
 
-// Testimonial Widget
+/* Testimonial Widget */
 
 .testimonial-widget {
 	.testimonial-content {
@@ -562,7 +559,8 @@
 	}
 }
 
-// Contact Widget
+
+/* Contact Widget */
 
 .widget-form-wrapper {
 	input,

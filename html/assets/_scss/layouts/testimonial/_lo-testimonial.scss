@@ -1,5 +1,5 @@
 /**
- * layout testimonial/ testimonial
+ * layout Testimonial/ Testimonial
  *
  */
 
@@ -21,7 +21,7 @@
 			& > div {
 				vertical-align: top;
 				@include respond-to(mobile) {
-					border:0;
+					border: 0;
 				}
 			} 
 		}

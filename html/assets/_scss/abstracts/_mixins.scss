@@ -312,14 +312,7 @@
 @mixin keyframes($animation-name) {
     @-webkit-keyframes #{$animation-name} {
         @content;
-    }
-    @-moz-keyframes #{$animation-name} {
-        @content;
-    }  
-
-    @-o-keyframes #{$animation-name} {
-        @content;
-    }  
+    } 
     @keyframes #{$animation-name} {
         @content;
     }
@@ -502,4 +495,39 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+//-------------------- Line Clamp --------------------//
+// Usage @include cx-truncation(2, #f1f1f1);
+
+@mixin cx-truncation($lines, $line_height, $bg) {
+
+    position: relative;
+    overflow: hidden;
+    line-height: $line_height;
+    max-height: 1em * $line_height * $lines;
+
+    &::after {
+        content: "";
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        height: $line_height+em;
+        background: linear-gradient(to right, rgba($bg, 0), rgba($bg, 1) 50%);
+    }
+
+    @supports (-webkit-line-clamp: $lines) {
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical; 
+        text-overflow: ellipsis;
+        max-height: 1em * ($line_height) * ($lines + 1);
+
+        &::after {
+            content: none;
+        }
+    }
 }

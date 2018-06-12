@@ -1,5 +1,5 @@
 /**
- * Components blog-list
+ * Components Blog-list
  *
  */
 
@@ -29,7 +29,7 @@
 	.post-meta {
 		p {
 			margin-bottom: 10px;
-			font-size: 15px;
+			font-size: calculateRem(14px);
 			font-style: italic;
 
 			.single-meta {

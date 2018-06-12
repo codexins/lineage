@@ -92,8 +92,8 @@ a:hover {
 }
 
 a:focus {
-    outline:0px solid;
-    color: initial  ;
+    outline: 0px solid;
+    color: initial;
 }
 
 textarea,
@@ -134,7 +134,7 @@ input[type="submit"] {
 button,
 input[type="submit"],
 input[type="button"] {
-    font-size: 12px;
+    font-size: calculateRem(12px);
     font-weight: 700;
     line-height: 1.5em;
     letter-spacing: 2px;
@@ -149,6 +149,7 @@ input:-ms-input-placeholder,
 input[placeholder] {
     color: lighten($cx-text-color,100%) ;
 }
+
 select:focus,
 button:focus,
 input:focus,

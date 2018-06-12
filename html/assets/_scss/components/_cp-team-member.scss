@@ -1,5 +1,5 @@
 /**
- * Components Team Member
+ * Components Team-member
  *
  */
 
@@ -39,6 +39,14 @@
 			@include media-only(notebook, max) {
 				font-size: 1rem;
 				margin-bottom: 0.3 * $cx-heading-margin-bottom;
+			}
+
+			a {
+				&:hover,
+				&:focus,
+				&:active {
+					color: $cx-secondary-color;
+				}
 			}
 		}
 		p {

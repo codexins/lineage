@@ -32,7 +32,8 @@ INDEX:
     s27 - Typed js Settings
     s28 - Pie Chart Settings
     s29 - Flip Settings
-    s30 - Animation Settings
+    s30 - Modal Settings
+    s31 - Animation Settings
 
 
 ******************************/
@@ -84,7 +85,9 @@ INDEX:
         $typedEl            = $(".typed-element"),
         $pieChart           = $(".pie-chart"),
         $pieChart2          = $(".pie-chart-type-2"),
-        $flipEl             = $(".flip-card");
+        $flipEl             = $(".flip-card"),
+        $inlineModalEl      = $(".venobox-inline"),
+        $iframeModalEl      = $(".venobox");
 
     // Check if element exists
     $.fn.cxExists = function() {
@@ -102,11 +105,11 @@ INDEX:
             outClass: 'fade-out',
             inDuration: 800,
             outDuration: 600,
-            linkElement: 'a:not([target="_blank"]):not([href^="#"]):not([href^="mailto:"]):not([href^="tel:"]):not(.img)',
+            linkElement: 'a:not([target="_blank"]):not([href^="#"]):not([href^="mailto:"]):not([href^="tel:"]):not(.venobox):not(.img)',
             loading: true,
             loadingParentElement: 'body',
-            loadingClass: 'cx-progress',
-            loadingInner: '<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>',
+            loadingClass: 'cx-pageloader-wrapper',
+            loadingInner: '<div class="cx-loader-inner"><div class="cx-loader"></div><div class="cx-loader"></div><div class="cx-loader"></div><div class="cx-loader"></div><div class="cx-loader"></div><div class="cx-loader"></div></div>',
             timeout: false,
             timeoutCountdown: 5000,
             onLoadEvent: true,
@@ -1064,6 +1067,30 @@ INDEX:
         }
     };
 
+
+    /************************************************************
+        s29 - Flip Settings
+    *************************************************************/
+
+    CODEXIN.modalSetting = function() {
+        if ($iframeModalEl.cxExists()) {
+            $iframeModalEl.venobox({
+                spinner: 'cube-grid',
+                titleattr: 'data-title'
+            });
+        }
+
+        if ($inlineModalEl.cxExists()) {
+            $inlineModalEl.venobox({
+                spinner: 'three-bounce',
+                titleattr: 'data-title',
+                framewidth: '800px',
+                frameheight: '425px',
+            });
+        }
+    };
+
+
     /************************************************************
         s30 - Animation Settings
     *************************************************************/
@@ -1128,6 +1155,7 @@ INDEX:
         CODEXIN.tiltSetting(),
         CODEXIN.flipSetting(),
         CODEXIN.placeHolders(),
+        CODEXIN.modalSetting(),
         CODEXIN.animationSetting();
     });
 
@@ -1135,31 +1163,5 @@ INDEX:
     $window.on('load resize', function() {
         CODEXIN.elementHeights();
     });
-
-
-    $("#modal-iframe").iziModal({
-        // top: 50,
-        headerColor: '#000',
-        background: 'black',
-        title: 'Video with iframe',
-        subtitle: 'Video example using the Vimeo embed.',
-        icon: 'icon-settings_system_daydream',
-        overlayClose: true,
-        iframe : true,
-        // iframeURL: 'https://www.youtube.com/embed/7e90gBu4pas?autoplay=1',
-        fullscreen: true,
-        openFullscreen: false,
-        borderBottom: false,
-    });
-
-
-    $(document).on('click', '.trigger-iframe', function(event) {
-        event.preventDefault();
-        $('#modal-iframe').iziModal('open', event);
-    });
-
-
-
-
 
 })(jQuery);

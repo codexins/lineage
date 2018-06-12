@@ -1,5 +1,5 @@
 /**
- * Layout header/ Main Menu
+ * Layout Header/ Main-menu
  *
  */
  
@@ -86,30 +86,12 @@
                 & > a {
                     padding-left: 10px;
                     padding-right: 10px;
-                    // font-weight: 700;
-                    // font-size: 12px;
                     @include respond-to(notebook) {
                         padding-left: 6px;
                         padding-right: 6px;
                         font-size: calculateRem(11.1px);
                     }
-                    // @include respond-to(tablet) {
-                    //     padding: 39px 4px;
-                    //     font-size: 12px;
-                    //     letter-spacing: 0;
-                    // }
                 }
-                // &.has-sub {
-                //     .sub-menu {
-                //         top: 85%;
-                //     }
-                //     > a {
-                //         &::after {
-                //             content: "\f107";
-                //             font-weight: normal;
-                //         }
-                //     }
-                // }
             }
         }
 

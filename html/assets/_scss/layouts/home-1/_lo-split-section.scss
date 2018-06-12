@@ -1,13 +1,11 @@
 /**
- * Layout home-1/ split section
+ * Layout Home-1/ Split-section
  *
  */
 
 .split-section {
     position: relative;
     z-index: 10;
-	// @extend %mb0;
-	// @extend %vpadding;
 	@include respond-to(tablet) {
 		.image-container {
 			> div {

@@ -1,5 +1,5 @@
 /**
- * Components testimonial
+ * Components Testimonial
  *
  */
 
@@ -56,7 +56,7 @@
 		    line-height: 80px;
 		    display: block;
 		    background: $cx-secondary-color;
-		    font-size: 2.5em;
+		    font-size: 2.5rem;
 		    text-align: center;
 		    z-index: 1;
 		    color: lighten($cx-text-color, 100%);
@@ -78,7 +78,7 @@
 			}
 
 			p {
-				font-size: 0.9em;
+				font-size: 0.9rem;
 				font-style: italic;
 				opacity: 0.7;
 				@extend %mb0;

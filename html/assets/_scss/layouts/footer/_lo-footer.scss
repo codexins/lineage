@@ -1,5 +1,5 @@
 /**
- * Layout footer/ footer
+ * Layout Footer/ Footer
  *
  */
 
@@ -12,7 +12,7 @@
 	    float: right;
 	    width: calc(100% - 200px);
 	    font-weight: 700;
-	    font-size: 12px;
+	    font-size: calculateRem(11.5px);
 	    text-transform: uppercase;
 	    letter-spacing: 2px;
 	    text-align: right;
@@ -69,7 +69,7 @@
 		a {
 			&.footer-logo {
 				display: inline-block;
-			    font-size: 2em;
+			    font-size: 2rem;
 			    text-transform: uppercase;
 			    letter-spacing: 2px;
 			    margin-bottom: 25px;
@@ -160,7 +160,7 @@
 		}
 
 		h4 {
-		    font-size: 1em;
+		    font-size: 1rem;
 		    color: lighten($cx-text-color, 100%);
 		    text-transform: uppercase;
 		    letter-spacing: 0.5px;
@@ -226,6 +226,16 @@
 			.post-brief {
 				p {
 					color: darken($cx-offset-color, 25%);
+				}
+			}
+		}
+
+		.posts-single {
+			.post-brief {
+				h3 {
+					&::after {
+						background: linear-gradient(to right, rgba($cx-tertiary-color, 0), rgba($cx-tertiary-color, 1) 50%);
+					}
 				}
 			}
 		}

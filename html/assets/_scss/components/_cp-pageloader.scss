@@ -3,77 +3,81 @@
  *
  */
 
-// .cx-pageloader {
-//     position: fixed;
-//     left: 0;
-//     top: 0;
-//     z-index: 999999;
-//     width: 100%;
-//     height: 100%;
-//     overflow: visible;
-//     background-color: #fff;
-//     // display: block !important;
+.cx-pageloader-wrapper {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: lighten($cx-text-color, 100%);
 
+    .cx-loader-inner {
+        height: 20px;
+        width: 250px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
 
-	.cx-progress {
-	    height: 40px;
-		@include cx-centered(both);
-	}
+        .cx-loader {
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            background-color: #000;
+            position: absolute;
+            border: 2px solid lighten($cx-text-color, 100%);
+            @include cx-prefix('animation', 'cx-dot-loader ease-in-out 3s infinite');
 
-	.cx-progress span {
-	    transition: all 500ms ease;
-	    background: $cx-grey-color;
-	    box-shadow: 1px 2px 3px #999;
-	    height: 10px;
-	    width: 10px;
-	    display: inline-block;
-	    border-radius: 10px;
-	    animation: wave 2s ease infinite;
-	}
+            &:first-child {
+                background-color: $facebook-color;
+                animation-delay: 0.5s;
+            }
 
-	.cx-progress span:nth-child(1) {
-	    animation-delay: 0;
-	}
+            &:nth-child(2) {
+                background-color: $gplus-color;
+                animation-delay: 0.4s;
+            }
 
-	.cx-progress span:nth-child(2) {
-	    animation-delay: 100ms;
-	}
+            &:nth-child(3) {
+                background-color: $reddit-color;
+                animation-delay: 0.3s;
+            }
 
-	.cx-progress span:nth-child(3) {
-	    animation-delay: 200ms;
-	}
+            &:nth-child(4) {
+                background-color: $cx-fourth-color;
+                animation-delay: 0.2s;
+            }
 
-	.cx-progress span:nth-child(4) {
-	    animation-delay: 300ms;
-	}
+            &:nth-child(5) {
+                background-color: $cx-secondary-color;
+                animation-delay: 0.1s;
+            }
 
-	.cx-progress span:nth-child(5) {
-	    animation-delay: 400ms;
-	}
+            &:nth-child(6) {
+                background-color: $cx-primary-color;
+                animation-delay: 0s;
+            }
+        }
+    }
+}
 
-	.cx-progress span:nth-child(6) {
-	    animation-delay: 500ms;
-	}
+@include keyframes(cx-dot-loader) {
+    15% {
+        @include cx-prefix('transform', 'translateX(0)');
+    }
 
-	.cx-progress span:nth-child(7) {
-	    animation-delay: 600ms;
-	}
+    45% {
+        @include cx-prefix('transform', 'translateX(230px)');
+    }
 
-	.cx-progress span:nth-child(8) {
-	    animation-delay: 700ms;
-	}
+    65% {
+        @include cx-prefix('transform', 'translateX(230px)');
+    }
 
-	@keyframes wave {
-	    0%,
-	    40%,
-	    100% {
-	        transform: translate(0, 0);
-	        background-color: $cx-primary-color;
-	    }
-	    10% {
-	        transform: translate(0, -15px);
-	        background-color: $cx-secondary-color;
-	    }
-	}
-
-// }
+    95% {
+        @include cx-prefix('transform', 'translateX(0)');
+    }
+}

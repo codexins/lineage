@@ -25,12 +25,20 @@ section {
 	}
 }
 
+.vbox-open {
+	overflow-y: scroll;
+}
+
+.vbox-container {
+	overflow-y: hidden;
+}
+
 .main-content-wrapper {
-	// overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 .lead {
-	font-size: 19px;
+	font-size: calculateRem(18px);
 }
 
 .whole-wrapper {
@@ -62,7 +70,7 @@ section {
 		text-transform: capitalize;
 		margin: 0;
 		padding: 0;
-	    font-size: 1em;
+	    font-size: calculateRem(13px);
 	    font-weight: normal;
 	    @extend %color-white;
 
@@ -84,7 +92,7 @@ section {
 .browserupgrade {
 	padding: 50px;
 	background: #dedede;
-	font-size: 22px;
+	font-size: calculateRem(20.5px);
 	text-align: center;
 }
 
@@ -201,7 +209,7 @@ section {
 	@extend %pb-half;
 }
 
-// padding 
+// Section with padding 
 
 .wrapper-with-right-padding {
 	padding-right: $cx-heading-margin-bottom;

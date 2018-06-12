@@ -1,5 +1,5 @@
 /**
- * components mobile menu
+ * components Mobile-menu
  *
  */
 
@@ -117,17 +117,14 @@
                 top: 33%;
                 left: 0;
                 right: 0;
-                color: #fff;
+                color: lighten($cx-text-color, 100%);
                 @include cx-transition(transform .3s ease-out);
             }
         }
         &.open {
             > .drawer-toggle {
                 i {
-                    -webkit-transform: rotate(180deg);
-                    -ms-transform: rotate(180deg);
-                    -o-transform: rotate(180deg);
-                    transform: rotate(180deg);
+                    @include cx-prefix('transform', ' rotate(180deg)')
                 }
             }
         }

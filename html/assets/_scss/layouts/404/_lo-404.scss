@@ -6,7 +6,6 @@
 .error-404-wrapper {
 	text-align: center;
 	@extend %clearfix;
-	@extend %mb0;
 	@extend .search-widget;
 	form {
 		max-width: 400px;
@@ -19,6 +18,10 @@
 	    font-weight: 600;
 	    font-size: calculateRem(26px);
 	    @extend %color-secondary;
+
+	    @include respond-to(mobile) {
+	    	font-size: calculateRem(23px);
+	    }
 	}
 
 	p {

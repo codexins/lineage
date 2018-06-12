@@ -1,5 +1,5 @@
 /**
- * Components Pie Chart
+ * Components Pie-chart
  *
  */
 
@@ -44,7 +44,7 @@
 	    margin: 0;
 	    color: lighten($cx-text-color, 100%);
 	    padding: $cx-heading-margin-bottom;
-	    @include bcg-linear-gradient(110deg, #d7706d, #9586a6);
+	    @include bcg-linear-gradient(110deg, $cx-secondary-color, $cx-primary-color);
 	    @extend %cx-transition;
 	    @extend %rounded-corners;
     }

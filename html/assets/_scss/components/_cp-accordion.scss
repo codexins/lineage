@@ -50,7 +50,7 @@
 		    font-family: FontAwesome;
 		    position: absolute;
 		    right: 20px;
-		    font-size: 14px;
+		    font-size: calculateRem(13.5px);
 		    color: $cx-secondary-color;
 		    top: 18px;
 		    @extend %cx-transition;

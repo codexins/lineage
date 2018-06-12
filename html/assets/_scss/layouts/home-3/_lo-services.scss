@@ -1,5 +1,5 @@
 /**
- * layout home-03/ Services
+ * layout Home-03/ Services
  *
  */
 
@@ -22,7 +22,7 @@
 		.right-bordered,
 		.left-bordered {
 			@include media-only(notebook, max) {
-				border:0;
+				border: 0;
 			}
 		}
 	}

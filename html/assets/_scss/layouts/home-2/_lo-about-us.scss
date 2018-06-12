@@ -1,5 +1,5 @@
 /**
- * layout home-2/ about-us
+ * layout Home-2/ About-us
  *
  */
 
@@ -31,13 +31,6 @@
         @include respond-to(notebook) {
             margin-top: 20px;
         }
-		// @include respond-to(mobile) {
-		// 	margin: 0;
-		// 	margin-bottom: $cx-col-spacing-mob;
-		// 	&.last {
-		// 		margin-bottom: 0;
-		// 	}
-		// }
 	}
 
 	.wrapper-with-left-padding:not(.mobile-text-left) {

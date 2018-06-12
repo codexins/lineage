@@ -174,7 +174,7 @@
 	min-width: 165px;
 	padding: 12px 32px;
     height: 44px;
-    font-size: 12px;
+    font-size: calculateRem(12px);
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: -6px;
@@ -208,7 +208,6 @@
 
 	@include respond-to(mobile) {
 	    padding: 12px 15px;
-	    font-size: calculateRem(12px);
 	    min-width: 135px;
 	    height: 40px;
 	    line-height: 1.4;
@@ -219,7 +218,7 @@
 	min-width: 165px;
 	padding: 12px 32px;
     height: 44px;
-    font-size: 12px;
+    font-size: calculateRem(12px);
     font-weight: 700;
     line-height: 1.6;
     letter-spacing: 2px;
@@ -241,7 +240,6 @@
 
 	@include respond-to(mobile) {
 	    padding: 12px 15px;
-	    font-size: calculateRem(12px);
 	    min-width: 135px;
 	    height: 40px;
 	    line-height: 1.4;
