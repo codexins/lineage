@@ -948,7 +948,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   color: #947cb0;
 }
 
-.color-secondary, .accordion.accordion-type-2 .panel-heading a:hover, .accordion.accordion-type-2 .panel-heading.active a, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a, .accordion.accordion-type-2 .panel-heading.active a::after, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a::after, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a::after, .accordion.rounded-corners .panel-heading.active .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .panel-heading.active .accordion-toggle, .accordion.rounded-corners .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs .accordion.rounded-corners li.panel-heading .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs #colophon.type-3 .footer-newsletter input.accordion li.panel-heading .accordion-toggle, .single-portfolio-intro .portfolio-summary a:hover, .single-portfolio-intro .portfolio-meta .counter-item p a:hover, .cta-section.type-2 .cta-content-wrapper i, .cta-section.type-2 .cta-content-wrapper h2, .contacts-form-section .contact-item a:hover, .contacts-form-section .transparent-input input[type="submit"]:hover, .contacts-form-section .transparent-input input[type="submit"]:focus, .feature-title-wrapper h4, .faq-list .icon-check a:hover, .error-404-wrapper h2 {
+.color-secondary, .widgetized-menu li a:hover, .accordion.accordion-type-2 .panel-heading a:hover, .accordion.accordion-type-2 .panel-heading.active a, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a, .accordion.accordion-type-2 .panel-heading.active a::after, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a::after, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a::after, .accordion.rounded-corners .panel-heading.active .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .panel-heading.active .accordion-toggle, .accordion.rounded-corners .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs .accordion.rounded-corners li.panel-heading .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs #colophon.type-3 .footer-newsletter input.accordion li.panel-heading .accordion-toggle, .single-portfolio-intro .portfolio-summary a:hover, .single-portfolio-intro .portfolio-meta .counter-item p a:hover, .cta-section.type-2 .cta-content-wrapper i, .cta-section.type-2 .cta-content-wrapper h2, .contacts-form-section .contact-item a:hover, .contacts-form-section .transparent-input input[type="submit"]:hover, .contacts-form-section .transparent-input input[type="submit"]:focus, .feature-title-wrapper h4, .faq-list .icon-check a:hover, .error-404-wrapper h2 {
   color: #d7706d;
 }
 
@@ -988,8 +988,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .accordion.white-text .accordion-toggle:hover,
 .accordion.white-text .accordion-toggle::after, .image-box-wrapper figure figcaption,
 .image-box-wrapper figure figcaption > a, .slider-pro h2.sp-layer,
-.slider-pro p.sp-layer, #primary-slider-with-particle h4,
-#primary-slider-with-video h4, .image-carousel-full-width .swiper-slide .icon-wrapper span, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .nav-swiper .swiper-slide, .service-tabs .tab-content-heading.white-text, .service-tabs .tab-content.white-text p,
+.slider-pro p.sp-layer, .slider-pro h4.sp-layer, .image-carousel-full-width .swiper-slide .icon-wrapper span, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .nav-swiper .swiper-slide, .service-tabs .tab-content-heading.white-text, .service-tabs .tab-content.white-text p,
 .service-tabs .tab-content.white-text li, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category a,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content h3 a,
@@ -3826,7 +3825,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .posts-single .post-brief p, .author-box .post-brief p {
   margin-bottom: 0;
-  color: #e0e5e9;
   font-style: italic;
   font-size: 0.8125rem;
 }
@@ -6625,6 +6623,12 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   }
 }
 
+@media only screen and (max-width: 479px) {
+  .blog-grid .post-category {
+    left: 20px;
+  }
+}
+
 .blog-grid .post-category a {
   padding: 5px;
   color: white;
@@ -6657,6 +6661,12 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-grid .post-meta {
+    padding: 12px 20px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
   .blog-grid .post-meta {
     padding: 12px 20px;
   }
@@ -6712,7 +6722,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .blog-grid.type-2 .post-category {
-  position: initial;
+  position: static;
   display: block;
   margin-bottom: 20px;
 }
@@ -6950,6 +6960,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   font-weight: 400;
   border: 2px solid white;
   cursor: pointer;
+  z-index: 1;
   -webkit-border-radius: 23px;
   -moz-border-radius: 23px;
   -ms-border-radius: 23px;
@@ -7334,23 +7345,24 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   list-style-type: none;
   position: relative;
   padding: 8px 0;
-  font-weight: 300;
+  font-size: 0.9375rem;
+  border-bottom: 1px solid #616161;
 }
 
-.widgetized-menu li::before {
-  height: 1px;
-  background: #616161;
-  content: "";
-  display: block;
-  position: absolute;
-  top: auto;
-  right: 30px;
-  bottom: 0;
-  left: 0;
+.widgetized-menu li:last-child {
+  border-bottom: 0;
 }
 
-.widgetized-menu li:last-child::before {
-  content: none;
+.widgetized-menu li a {
+  color: #545454;
+}
+
+.widgetized-menu:hover li a {
+  opacity: 0.5;
+}
+
+.widgetized-menu li:hover a {
+  opacity: 1;
 }
 
 /**
@@ -8486,6 +8498,23 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   color: #d7706d;
 }
 
+.slider-pro h4.sp-layer {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .slider-pro h4.sp-layer {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .slider-pro h4.sp-layer {
+    font-size: 0.875rem;
+  }
+}
+
 .slider-pro p.sp-layer {
   font-size: 1.40625rem;
   line-height: 32px;
@@ -8539,7 +8568,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   content: "\f104";
   font-family: FontAwesome;
   font-size: 30px;
-  color: #fff;
+  color: white;
   top: 0;
   left: 0;
 }
@@ -8954,9 +8983,20 @@ header.header-white .intelligent-header {
   margin-bottom: -101px;
 }
 
+.full-screen-slider-section .sp-slide.with-video {
+  overflow: hidden;
+}
+
 .full-screen-slider-section .full-width-video {
   width: 100%;
   height: auto;
+}
+
+@supports (object-fit: cover) {
+  .full-screen-slider-section .full-width-video {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 #primary-slider-with-particle .sp-video::after,
@@ -8964,35 +9004,52 @@ header.header-white .intelligent-header {
   display: none;
 }
 
-#primary-slider-with-particle h4,
-#primary-slider-with-video h4 {
-  text-transform: uppercase;
-  margin-bottom: 5px;
+#primary-slider-with-particle h2,
+#primary-slider-with-video h2 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 767px) {
-  #primary-slider-with-particle h4,
-  #primary-slider-with-video h4 {
-    margin-bottom: 15px;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #primary-slider-with-particle h2,
+  #primary-slider-with-video h2 {
+    font-size: 2.75rem;
   }
 }
 
-#primary-slider-with-particle h2,
-#primary-slider-with-video h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #primary-slider-with-particle h2,
+  #primary-slider-with-video h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #primary-slider-with-particle h2,
+  #primary-slider-with-video h2 {
+    font-size: 1.875rem;
+  }
 }
 
 @media only screen and (max-width: 479px) {
   #primary-slider-with-particle h2,
   #primary-slider-with-video h2 {
-    font-size: 1.5rem;
+    font-size: 1.3125rem;
   }
 }
 
-#primary-slider-with-particle p,
-#primary-slider-with-video p {
-  margin-bottom: 50px;
+@media only screen and (min-width: 992px) {
+  #primary-slider-with-particle p,
+  #primary-slider-with-video p {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  #primary-slider-with-particle p,
+  #primary-slider-with-video p {
+    font-size: 0.875rem;
+  }
 }
 
 #primary-slider-with-particle a,
@@ -9550,27 +9607,27 @@ header.header-white .intelligent-header {
   }
 }
 
-#colophon.footer-dark p {
-  font-weight: 300;
-}
-
-#colophon.footer-dark h4 {
+#colophon h4 {
   font-size: 1rem;
-  color: white;
+  color: #545454;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 600;
 }
 
-#colophon.footer-dark h4::after {
+#colophon h4::after {
   content: '';
   width: 2rem;
-  background: #bababa;
+  background: #a1a1a1;
   height: 0.125rem;
   margin: 0 9px;
   display: inline-block;
   position: relative;
   top: -.3rem;
+}
+
+#colophon.footer-dark p {
+  font-weight: 300;
 }
 
 #colophon.footer-dark a:focus, #colophon.footer-dark a:hover {
@@ -9608,6 +9665,18 @@ header.header-white .intelligent-header {
 
 #colophon.footer-dark .posts-single .post-brief h3::after, #colophon.footer-dark .author-box .post-brief h3::after {
   background: linear-gradient(to right, rgba(62, 62, 62, 0), #3e3e3e 50%);
+}
+
+#colophon.footer-dark .posts-single .post-brief p, #colophon.footer-dark .author-box .post-brief p {
+  color: #e0e5e9;
+}
+
+#colophon.footer-dark h4 {
+  color: white;
+}
+
+#colophon.footer-dark h4::after {
+  background: #bababa;
 }
 
 #colophon.type-2 .footer-top {
@@ -9710,7 +9779,6 @@ header.header-white .intelligent-header {
 }
 
 #colophon.type-3 .footer-newsletter h6 {
-  color: white;
   font-weight: 400;
 }
 
@@ -9759,6 +9827,10 @@ header.header-white .intelligent-header {
     -o-border-radius: 4px;
     border-radius: 4px;
   }
+}
+
+#colophon.type-3.footer-dark h6 {
+  color: white;
 }
 
 .copyright-section {

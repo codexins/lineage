@@ -198,25 +198,21 @@ INDEX:
                 fade: true,
                 reachVideoAction: 'playVideo',
                 breakpoints: {
-                    1199: {
-                        forceSize: 'fullWidth',
-                        height: 550,
-                    },
-                    991: {
+                    767: {
+                        reachVideoAction: 'none',
                         forceSize: 'fullWidth',
                         height: 500
                     },
-                    767: {
-                        forceSize: 'fullWidth',
-                        height: 450
-                    },
                     479: {
-                        height: 400,
+                        height: 480,
                         forceSize: 'fullWidth',
                     },
                 }
             });
             $(".sp-slide").append('<div class="video-section-overlay"></div>');
+            if ($window.width() > 767) {
+                $(".sp-slide.with-video .sp-image-container").css('display', 'none');
+            }
         }
 
         if ($pslider.cxExists()) {

@@ -182,7 +182,6 @@
 		@include cx-box-shadow('5px 5px 25px 0 rgba(46,61,73,.2);')
 	    @include respond-to(mobile) {
 			min-height: auto;
-			// max-height: 375px;
 	    }
 	}
 	.front {

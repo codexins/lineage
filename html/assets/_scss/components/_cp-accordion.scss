@@ -21,8 +21,6 @@
 		@extend %bgc-white;
 
 		&.active {
-			
-
 			.accordion-toggle {
 				&::after {
 					@include cx-prefix('transform', 'rotate(180deg)');

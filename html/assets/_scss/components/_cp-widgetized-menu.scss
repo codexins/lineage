@@ -9,21 +9,37 @@
 		list-style-type: none;
 		position: relative;
 		padding: 8px 0;
-	    font-weight: 300;
-		&::before {
-			height: 1px;
-			background: lighten($cx-text-color, 5%);
-			@include abs-position(auto, 30px, 0, 0);
-
-		}
+	    font-size: calculateRem(15px);
+	    border-bottom: 1px solid lighten($cx-text-color, 5%);
 
 		&:first-child {
 			@extend %pt0;
 		}
 
 		&:last-child {
-			&::before {
-				content: none;
+			border-bottom: 0;
+		}
+
+		a {
+			color: $cx-text-color;
+			&:hover {
+				@extend %color-secondary;
+			}
+		}
+	}
+
+	&:hover {
+		li {
+			a {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	li {
+		&:hover {
+			a {
+				opacity: 1;
 			}
 		}
 	}

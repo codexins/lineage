@@ -9,6 +9,7 @@
     font-weight: 400;
     border: 2px solid lighten($cx-text-color, 100%);
     cursor: pointer;
+    z-index: 1;
     @include border-radius(23px);
     @include abs-position(auto, auto, 30px, 50%);
     @include transform-translateX(-50%);

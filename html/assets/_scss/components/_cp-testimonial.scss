@@ -117,7 +117,6 @@
 	.testimonial-media {
 		margin-bottom: 10px;		
 		img {
-			// border: 1px solid $cx-grey-color;
 			@include box(80px);
 			@include border-radius(50%);
 		}
@@ -306,8 +305,6 @@
 	}
 
 	.author-desc {
-		// padding-left: 15px;
-		// border-left: 5px solid $cx-primary-color;
 		.author-name {
 			font-weight: bold;
 			display: block;

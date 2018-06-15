@@ -147,6 +147,25 @@
 		}
 	}
 
+	h4 {
+	    font-size: 1rem;
+	    color: $cx-text-color;
+	    text-transform: uppercase;
+	    letter-spacing: 0.5px;
+	    font-weight: 600;
+
+	    &::after {
+            content: '';
+            width: calculateRem(32px);
+            background: lighten($cx-text-color, 30%);
+            height: calculateRem(2px);
+            margin: 0 9px;
+            display: inline-block;
+            position: relative;
+            top: -.3rem;
+	    }
+	}
+
 	&.footer-dark {
 		@extend %bgc-tertiary;
 
@@ -157,25 +176,6 @@
 
 		p {
 			font-weight: 300;
-		}
-
-		h4 {
-		    font-size: 1rem;
-		    color: lighten($cx-text-color, 100%);
-		    text-transform: uppercase;
-		    letter-spacing: 0.5px;
-		    font-weight: 600;
-
-		    &::after {
-	            content: '';
-	            width: calculateRem(32px);
-	            background: lighten($cx-text-color, 40%);
-	            height: calculateRem(2px);
-	            margin: 0 9px;
-	            display: inline-block;
-	            position: relative;
-	            top: -.3rem;
-		    }
 		}
 
         a {
@@ -237,6 +237,17 @@
 						background: linear-gradient(to right, rgba($cx-tertiary-color, 0), rgba($cx-tertiary-color, 1) 50%);
 					}
 				}
+
+				p {
+					color: darken($cx-offset-color, 8%);
+				}
+			}
+		}
+
+		h4 {
+			color: lighten($cx-text-color, 100%);
+			&::after {
+				background: lighten($cx-text-color, 40%);
 			}
 		}
 	}
@@ -344,7 +355,6 @@
 			}
 
 			h6 {
-			    color: lighten($cx-text-color, 100%);
 			    font-weight: 400;
 			}
 
@@ -377,6 +387,12 @@
 				    margin-left: 0;
 				    @include cx-prefix('border-radius', '4px');
 			    }
+			}
+		}
+
+		&.footer-dark {
+			h6 {
+				color: lighten($cx-text-color, 100%);
 			}
 		}
 	}

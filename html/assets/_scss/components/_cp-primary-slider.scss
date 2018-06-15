@@ -41,6 +41,19 @@
 			}
 		}
 	}
+	h4 {
+		&.sp-layer {
+			text-transform: uppercase;
+			margin-bottom: 5px;
+			@extend %color-white;
+			@include respond-to(mobile) {
+				margin-bottom: 15px;
+			}
+			@include media-only(small-mobile, max) {
+				font-size: calculateRem(14px);
+			}
+		}
+	}
 	p {
 		&.sp-layer {
 			font-size: calculateRem(22.5px);
@@ -81,9 +94,9 @@
 	            content:"\f104";
 	            font-family: FontAwesome;
 	            font-size: 30px;
-	            color: #fff;
-	            top:0;
-	            left:0;
+	            color: lighten($cx-text-color, 100%);
+	            top: 0;
+	            left: 0;
 	        }
 
 	        &::after {

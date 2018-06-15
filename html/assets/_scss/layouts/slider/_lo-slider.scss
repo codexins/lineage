@@ -17,9 +17,19 @@
 	top: -101px;
 	margin-bottom: -101px;
 
+	.sp-slide {
+		&.with-video {
+			overflow: hidden;
+		}
+	}
+
 	.full-width-video {
 		width: 100%;
 		height: auto;
+	    @supports (object-fit: cover) {
+	    	height: 100%;
+			object-fit: cover;
+	    }
 	}
 }
 
@@ -32,25 +42,30 @@
 		}
 	}
 
-	h4 {
-		text-transform: uppercase;
-		margin-bottom: 5px;
-		@extend %color-white;
-		@include respond-to(mobile) {
-			margin-bottom: 15px;
-		}
-	}
-
 	h2 {
-		font-size: 2.5rem;
+		font-size: calculateRem(50px);
 		margin-bottom: 20px;
+		@include respond-to(notebook) {
+			font-size: calculateRem(44px);
+		}
+		@include respond-to(tablet) {
+			font-size: calculateRem(36px);
+		}
+		@include respond-to(mobile) {
+			font-size: calculateRem(30px);
+		}
 		@include media-only(small-mobile, max) {
-			font-size: 1.5rem;
+			font-size: calculateRem(21px);
 		}
 	}
 
 	p {
-		margin-bottom: 50px;
+		@include media-only(notebook, min) {
+			margin-bottom: 50px;
+		}
+		@include media-only(small-mobile, max) {
+			font-size: calculateRem(14px);
+		}
 	}
 
 	a {
