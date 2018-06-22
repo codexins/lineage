@@ -5839,7 +5839,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .pricing-table-type-3 .pricing-features li::before {
-  background-image: url(../img/close.png);
+  background-image: url(../img/icon-close.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -5864,7 +5864,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .pricing-table-type-3 .pricing-features li.active::before, .pricing-table-type-3 .pricing-features .tab.iconic-tab > .nav-tabs li::before, .tab.iconic-tab > .nav-tabs .pricing-table-type-3 .pricing-features li::before {
-  background-image: url(../img/check.png);
+  background-image: url(../img/icon-check.png);
 }
 
 .pricing-table-type-3 .pricing-button {

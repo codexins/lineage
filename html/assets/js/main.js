@@ -161,25 +161,23 @@ INDEX:
         if ($slider.cxExists()) {
             $slider.sliderPro({
                 width: '100%',
-                visibleSize: '100%',
+                height: '100vh',
                 arrows: true,
                 buttons: false,
                 waitForLayers: true,
                 slideDistance: 0,
-                forceSize: 'fullWindow',
-                autoplay: false,
+                autoplay: true,
+                autoplayDelay: 5000,
                 fade: true,
                 breakpoints: {
                     767: {
                         arrows: false,
-                        forceSize: 'fullWidth',
                         height: 500
                     },
                     479: {
                         arrows: false,
-                        height: 480,
-                        forceSize: 'fullWidth',
-                    },
+                        height: 480
+                    }
                 }
             });
             $(".sp-slide").append('<div class="section-overlay"></div>');
@@ -188,25 +186,23 @@ INDEX:
         if ($vslider.cxExists()) {
             $vslider.sliderPro({
                 width: '100%',
+                height: '100vh',
                 arrows: false,
-                visibleSize: '100%',
                 buttons: true,
                 waitForLayers: true,
                 slideDistance: 0,
-                forceSize: 'fullWindow',
-                autoplay: false,
+                autoplay: true,
+                autoplayDelay: 5000,
                 fade: true,
                 reachVideoAction: 'playVideo',
                 breakpoints: {
                     767: {
                         reachVideoAction: 'none',
-                        forceSize: 'fullWidth',
                         height: 500
                     },
                     479: {
-                        height: 480,
-                        forceSize: 'fullWidth',
-                    },
+                        height: 480
+                    }
                 }
             });
             $(".sp-slide").append('<div class="video-section-overlay"></div>');
@@ -219,7 +215,6 @@ INDEX:
             $pslider.sliderPro({
                 width: '100%',
                 height: 600,
-                forceSize: 'fullWidth',
                 arrows: false,
                 buttons: false,
                 touchSwipe: false,
@@ -229,7 +224,7 @@ INDEX:
                     },
                     479: {
                         height: 480
-                    },
+                    }
                 }
             });
             $(".sp-slide").append('<div class="particle-section-overlay"></div>');
@@ -264,12 +259,7 @@ INDEX:
     CODEXIN.mainNav = function() {
         $mainMenu.stellarNav({
             theme: 'plain',
-            breakpoint: 768,
-            phoneBtn: '+1234567890',
-            position: 'right',
-            showArrows: true,
-            closeBtn: false,
-            scrollbarFix: false
+            breakpoint: 768
         });
 
         // Submenu Intelligent hover functionality
@@ -312,7 +302,7 @@ INDEX:
         $accordionEl.on('click', function(){
             $(this).closest('.panel-group').children().each(function(){
                 $(this).find('>.panel-heading').removeClass('active');
-                });
+            });
 
             $(this).closest('.panel-heading').toggleClass('active');
         });
@@ -385,7 +375,7 @@ INDEX:
                 $this.addClass('active');
             });
 
-            //Targeting Portfolio a tag for click event
+            //Targeting Portfolio anchor tag for click event
             $(".portfolio").on('click', function(e) {
                 $(this).find("a.clickable").first().click();
             });
@@ -484,7 +474,7 @@ INDEX:
                 },
                 navigation: {
                     nextEl: '.arrow-right',
-                    prevEl: '.arrow-left',
+                    prevEl: '.arrow-left'
                 },
             })
         }
@@ -512,14 +502,14 @@ INDEX:
                 // Responsive breakpoints
                 breakpoints: {
                     991: {
-                        slidesPerView: 3,
+                        slidesPerView: 3
                     },
                     767: {
                         slidesPerView: 2,
-                        centeredSlides : false,
+                        centeredSlides : false
                     },
                     479: {
-                        slidesPerView: 1,
+                        slidesPerView: 1
                     }
                 }
             })
@@ -539,18 +529,17 @@ INDEX:
                 ele.addClass("selected");
             }
 
+            // Navigation section
             var navSwiper = new Swiper('.nav-swiper', {
                 slidesPerView: 6,
                 paginationClickable: true,
-                // freeMode: true,
                 loop: false,
                 simulateTouch: false,
-                    // touchRatio: 0.2,
-                    slideToClickedSlide: true,
-                    navigation: {
-                        nextEl: '.arrow-right',
-                        prevEl: '.arrow-left'
-                    },
+                slideToClickedSlide: true,
+                navigation: {
+                    nextEl: '.arrow-right',
+                    prevEl: '.arrow-left'
+                },
                 // Responsive breakpoints
                 breakpoints: {
                     991: {
@@ -561,17 +550,11 @@ INDEX:
                     },
                     479: {
                         slidesPerView: 2
-                    },
-                    // 767: {
-                    //     slidesPerView: 2,
-                    //     centeredSlides : false,
-                    // },
-                    // 479: {
-                    //     slidesPerView: 1,
-                    // }
+                    }
                 }
             });
 
+            // Binding Nav slider with click event
             navSwiper.slides.each(function(index,val){
                 var ele = $(this);
                 ele.on("click",function(){
@@ -580,6 +563,7 @@ INDEX:
                 });
             });
 
+            // Main content section
             var swiperContent = new Swiper ('.swiper-content', {
                 direction: 'horizontal',
                 loop: false,
@@ -589,15 +573,8 @@ INDEX:
                 // Responsive breakpoints
                 breakpoints: {
                     991: {
-                        simulateTouch: false,
-                    },
-                    // 767: {
-                    //     slidesPerView: 2,
-                    //     centeredSlides : false,
-                    // },
-                    // 479: {
-                    //     slidesPerView: 1,
-                    // }
+                        simulateTouch: false
+                    }
                 }
             });
         }
@@ -616,6 +593,10 @@ INDEX:
                 grabCursor: true,
                 parallax: true,
                 speed: 700,
+                autoplay: {
+                    delay: 5000
+                },
+
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true
@@ -623,8 +604,8 @@ INDEX:
 
                 navigation: {
                     nextEl: '.arrow-right',
-                    prevEl: '.arrow-left',
-                },
+                    prevEl: '.arrow-left'
+                }
             });
         }
 
@@ -636,6 +617,10 @@ INDEX:
                 slidesPerGroup: 3,
                 spaceBetween: 30,
                 grabCursor: true,
+                autoplay: {
+                    delay: 5000
+                },
+
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true
@@ -671,8 +656,8 @@ INDEX:
                     watchSlidesProgress: true,
                     navigation: {
                         nextEl: '.arrow-right',
-                        prevEl: '.arrow-left',
-                    },
+                        prevEl: '.arrow-left'
+                    }
                 };
             var mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
 
@@ -686,18 +671,20 @@ INDEX:
                     spaceBetween: 20,
                     touchRatio: 0.2,
                     slideToClickedSlide: true,
+                    autoplay: {
+                        delay: 5000
+                    },
                     // Responsive breakpoints
                     breakpoints: {
                         991: {
                             slidesPerView: 3,
-                            centeredSlides : true,
+                            centeredSlides : true
                         },
                         767: {
                             slidesPerView: 1,
                             centeredSlides : true
                         }
                     }
-
                 };
             var navSlider = new Swiper(navSliderSelector, navSliderOptions);
 
@@ -717,6 +704,9 @@ INDEX:
                 slidesPerView: 1,
                 spaceBetween: 30,
                 grabCursor: true,
+                autoplay: {
+                    delay: 5000
+                }
             });
         }
     };
@@ -746,7 +736,7 @@ INDEX:
                         spaceBetween: 40
                     },
                     767: {
-                        slidesPerView: 3,
+                        slidesPerView: 3
                     },
                     479: {
                         centeredSlides: false,
@@ -769,25 +759,21 @@ INDEX:
                 loop: true,
                 slidesPerView: 3,
                 spaceBetween: 30,
-                // centeredSlides: true,
                 grabCursor: true,
 
                 navigation: {
                     nextEl: '.swiper-arrow.next',
-                    prevEl: '.swiper-arrow.prev',
+                    prevEl: '.swiper-arrow.prev'
                 },
-                // autoplay: {
-                //     delay: 3000
-                // },
 
                 // Responsive breakpoints
                 breakpoints: {
                     991: {
                         slidesPerView: 2,
-                        centeredSlides: false,
+                        centeredSlides: false
                     },
                     550: {
-                        slidesPerView: 1,
+                        slidesPerView: 1
                     }
                 }
             })
@@ -810,18 +796,15 @@ INDEX:
                     el: '.swiper-pagination',
                     clickable: true
                 },
-                // autoplay: {
-                //     delay: 3000
-                // },
 
                 // Responsive breakpoints
                 breakpoints: {
                     991: {
-                        slidesPerView: 3,
+                        slidesPerView: 3
                     },
                     767: {
                         slidesPerView: 2,
-                        centeredSlides: false,
+                        centeredSlides: false
                     },
                     479: {
                         slidesPerView: 1
@@ -954,7 +937,7 @@ INDEX:
                 $tiltEl.tilt({
                     maxTilt: 15,
                     perspective: 1140,
-                    easing: "cubic-bezier(.2,1,.22,1)", // Easing on enter/exit.
+                    easing: "cubic-bezier(.2,1,.22,1)" // Easing on enter/exit.
                 });
             }
         }
@@ -974,7 +957,7 @@ INDEX:
 
                 $this = new Typed(".typed-element", {
                     strings: typedStrings,
-                    typeSpeed: 100,
+                    typeSpeed: 120,
                     startDelay: 100,
                     backSpeed: 30,
                     backDelay: 500,
@@ -983,7 +966,7 @@ INDEX:
                     showCursor: true,
                     cursorChar: "|",
                     attr: null,
-                    contentType: 'html',
+                    contentType: 'html'
                 });
             })
         }
@@ -1080,7 +1063,7 @@ INDEX:
                 spinner: 'three-bounce',
                 titleattr: 'data-title',
                 framewidth: '800px',
-                frameheight: '425px',
+                frameheight: '425px'
             });
         }
     };

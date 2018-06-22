@@ -371,7 +371,7 @@
 			opacity: 0.7;
 			font-size: calculateRem(14px);
 			&::before {
-			    background-image: url(../img/close.png);
+			    background-image: url(../img/icon-close.png);
 			    background-position: center;
 			    background-size: contain;
 			    background-repeat: no-repeat;
@@ -384,7 +384,7 @@
 			&.active {
 				opacity: 1;
 				&::before {
-					background-image: url(../img/check.png);
+					background-image: url(../img/icon-check.png);
 				}
 			}
 		}

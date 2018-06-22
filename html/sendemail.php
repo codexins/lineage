@@ -197,7 +197,7 @@
     <div id="whole" class="whole-site-wrapper o-wrapper animsition">
 
         <!-- Start of Header -->
-        <header class="header bgc-transparent">
+        <header class="header bgc-white header-white">
             <div class="intelligent-header header--fixed">
                 <div class="header-wrapper">
                     <div class="header-inline">
@@ -205,7 +205,7 @@
                             <div class="row">
                                 <div class="col-xs-8 col-md-3">
                                     <div class="logo">
-                                        <a href="index.html"><img src="assets/img/logo-white.png" alt="Logo"></a>
+                                        <a href="index.html"><img src="assets/img/logo.png" alt="Logo "></a>
                                     </div>
                                 </div> <!-- end of col -->
 
@@ -377,170 +377,93 @@
         <div class="intelligent-header-space"></div> <!-- empty placeholder div for header height-->
 
         <!-- Start of Page Title Section -->
-        <section class="page-title-section modern page-contact jarallax-default">
-            <div class="container">
+        <section class="page-title-section left-aligned page-about jarallax-default">
+            <div class="container text-center">
                 <div class="row">
-                    <div class="col-xs-12">
-                        <div class="page-title-container">
-                            <h1 class="page-title-heading">Contact <span>us</span></h1>
-                            <p class="page-subtitle">We are an award winning web design agency</p>
-                        </div> <!-- end of page-title-container -->
+                    <div class="page-title-wrapper">
+                        <div class="col-xs-12">
+                            <div class="page-title-container">
+                            <?php 
+                                if(!isset($_POST['send_message'])) { ?>
+                                    <h1 class="page-title-heading">Form <span>Not</span> Submitted!</h1>
+                                    <p class="page-subtitle">Please try again</p>
+                                
+                                <?php
+                                } else { ?>
 
-                        <div class="breadcrumb-container">
-                            <ul class="breadcrumb">
-                                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-                                <li><a href="#">Other Pages</a></li>
-                                <li class="active">Contact Us</li>
-                            </ul>
-                        </div> <!-- end of breadcrumb-container -->
-                    </div> <!-- end of col -->
+                                    <h1 class="page-title-heading">Thanks for <span>contacting us!</span></h1>
+                                    <p class="page-subtitle">Your submission is successfully received</p>
+
+                                <?php
+                                }
+                             ?>
+                            </div>
+                        </div>
+                    </div> <!-- end of page-title-wrapper -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
 
             <div class="page-title-overlay"></div>
-
-            <a href="#contact_intro" class="explore">
-                <span></span>
-            </a>
         </section>
         <!-- End of Page Title Section -->
-        
+
         <!-- Start of Main Content Wrapper -->
-        <main id="content" class="main-content-wrapper">
-
-            <!-- Start of Contact Section -->
-            <section id="contact_intro" class="contact-section mb0 pt-full">
+        <div id="content" class="main-content-wrapper">
+            <div class="feedback-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12">
-                            <div class="section-heading">
-                                <h4>Visit Us</h4>
-                                <h2>Are you ready to take your business to the next level?</h2>
-                                <p class="subtitle">We always look forward to working with companies who have a bold vision for success. Visit our office and we will get back to you as soon as we can.</p>
-                            </div>
-                        </div> <!-- end of col -->
-                    </div> <!-- end of row -->
-                </div> <!-- end of container -->
+                        <div class="col-xs-12 col-sm-8 col-sm-offset-2 text-center">
+                            <main id="primary" class="site-main">
+                                <section class="feedback-wrapper">
+                                    <div class="section-heading">
+                                        <?php
 
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div id="map_location" class="map-location">
-                                <div id="map">
-                                    <div id="gmap-wrap">
-                                        <div id="gmap">
-                                        </div>
+                                            if(isset($_POST['send_message'])) {
+                                                $status = 'Thanks for contacting us!';
+                                                $feedback = 'We will get back to you as quickly as possible.';
+
+                                                $name = @trim(stripslashes($_POST['name'])); 
+                                                $email = @trim(stripslashes($_POST['email'])); 
+                                                $subject = @trim(stripslashes($_POST['subject']));
+                                                $message = @trim(stripslashes($_POST['message']));
+                                                $notes = 'This email was sent from '.$_SERVER['HTTP_HOST'];
+                                                $email_from = $email;
+                                                $email_to = 'YOUR@EMAIL.HERE'; //replace with your email
+
+                                                $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' ."\n". $message . "\n\n\n\n" . $notes;
+                                                $success = @mail($email_to, $subject, $body, 'From: <'.$name.'>'); ?>
+
+                                                <h2><?php echo $status; ?></h2>
+                                                <p class="subtitle"><?php echo $feedback; ?></p>
+                                            <?php
+                                            } else { ?>
+
+                                                <h2><span style="color: #a94442">Form Not Submitted!</span></h2>
+                                                <p class="subtitle">Please make sure you entered the form information correctly.</p>
+
+                                            <?php
+                                            }
+                                        ?>
                                     </div>
-                                </div> <!-- end of #map -->
-                            </div> <!-- end of #map_location -->
-                        </div> <!-- end of col -->
 
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="contact-item-wrapper">
-                                <div class="content-inner animation-bottom">
-                                    <h2>Business Address</h2>
-                                    <span><i class="fi flaticon-location"></i></span>
-                                    <p>123 North Avenue, Santa Rosa, California</p>
-                                </div>
-                            </div> <!-- end of contact-item-wrapper -->
-                        </div> <!-- end of col -->
-
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="contact-item-wrapper last">
-                                <div class="content-inner animation-right">
-                                    <h2>Get in touch</h2>
-                                    <span><i class="fi fi flaticon-smartphone-1"></i></span>
-                                    <p><a href="tel:+1234567890"> Tel: (123) 456 7890</a></p>
-                                    <p><a href="mailto:test@example.com">Email: test@example.com</a></p>
-                                </div>
-                            </div> <!-- end of contact-item-wrapper -->
-                        </div> <!-- end of col -->
-                    </div> <!-- end of row -->
-                </div> <!-- end of container-fluid -->
-            </section>
-            <!-- End of Contact Section -->
-
-            <!-- Start of Contact Form Section -->
-            <section class="contact-form-section bgc-offset vpadding mb0">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="section-heading">
-                                <h4>Say Hello!</h4>
-                                <h2>Contact Us to Get Started</h2>
-                                <p class="subtitle">We would love to hear from you. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, mollitia!</p>
-                            </div>
-                        </div> <!-- end of col -->
-
-                        <div class="col-sm-12 col-md-8 col-md-offset-2">
-                            <div class="quote-form-wrapper animation-left">
-                                <form action="sendemail.php" method="post" class="primary-form" id="primary_form">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6 col-md-6">
-                                            <div class="full-width-input">
-                                                <input type="text" name="name" placeholder="Name*" value="" required>
-                                            </div>
-                                        </div> <!-- end of col -->
-                                        <div class="col-xs-12 col-sm-6 col-md-6">
-                                            <div class="full-width-input">
-                                                <input type="email" name="email" placeholder="Email*" value="" required>
-                                            </div>
-                                        </div> <!-- end of col -->
-                                    </div> <!-- end of row -->
-
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="full-width-input">
-                                                <input type="text" name="subject" placeholder="Subject" value="">
-                                            </div>
-                                        </div> <!-- end of col -->
-                                        <div class="col-md-12">
-                                            <div class="full-width-input">
-                                                <textarea name="message" placeholder="Message*" required></textarea>
-                                            </div>
-                                        </div> <!-- end of col -->
-                                        <div class="col-md-12 text-center">
-                                            <div class="full-width-input">
-                                                <input type="submit" name="send_message" value="Send Message" class="full-width">
-                                            </div>
-                                        </div> <!-- end of col -->
-                                    </div> <!-- end of row -->
-                                </form>
-                            </div> <!-- end of quote-form-wrapper -->
-                        </div> <!-- end of col -->
+                                    <div class="social-icons animation-bottom mt-full">
+                                        <h3 style="font-weight: normal">Follow Us:</h3>
+                                        <ul>
+                                            <li><a class="facebook" href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a class="twitter" href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a class="google-plus" href=""><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a class="instagram" href=""><i class="fa fa-instagram"></i></a></li>
+                                            <li><a class="pinterest" href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a class="linkedin" href=""><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </section> <!-- end of feedback-wrapper -->
+                            </main> <!-- end of #primary -->
+                        </div>
                     </div> <!-- end of row -->
                 </div> <!-- end of container -->
-            </section>
-            <!-- End of Contact Form Section -->
-
-            <!-- Start of Social Section -->
-            <section class="social-section mb0 vpadding jarallax-default">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="section-heading white-text">
-                                <h4>Get Social</h4>
-                                <h2>Connect with Us</h2>
-                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, numquam?</p>
-                            </div>
-                        </div> <!-- end of col -->
-                        
-                        <div class="col-sm-12 col-md-6 col-md-offset-3">
-                            <div class="social-icons text-center">
-                                <ul>
-                                    <li><a class="facebook" href=""><i class="fa fa-facebook"></i></a></li>
-                                    <li><a class="twitter" href=""><i class="fa fa-twitter"></i></a></li>
-                                    <li><a class="google-plus" href=""><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a class="instagram" href=""><i class="fa fa-instagram"></i></a></li>
-                                    <li><a class="pinterest" href=""><i class="fa fa-pinterest"></i></a></li>
-                                </ul>
-                            </div>
-                        </div> <!-- end of col -->
-                    </div> <!-- end of row -->
-                </div> <!-- end of container -->
-            </section>
-            <!-- End of Social Section -->
-        </main>
+            </div>
+        </div>
         <!-- End of Main Content Wrapper -->
 
         <!-- Start of Footer -->
@@ -645,15 +568,9 @@
     <!-- Plugins JS -->
     <script src="assets/js/plugins.js"></script>
 
-    <!-- google map api and gmaps JS -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcEM8z2_imGO8TMRmJEpDEahvZ7KYY_U"></script>
-    <script src="assets/js/gmaps.min.js"></script>
-    
-    <!-- Loading Map Custom Scripts -->
-    <script src="assets/js/custom-map.js"></script>
-
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 
 </body>
 </html>
+<?php  die; ?>
