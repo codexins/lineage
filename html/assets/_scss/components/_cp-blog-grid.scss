@@ -236,17 +236,17 @@
 		.post-category {
 			position: static;
 			display: block;
-			margin-bottom: 0.8 * $cx-heading-margin-bottom;
+			margin-bottom: 0.4 * $cx-heading-margin-bottom;
 
 			a {
 				border: none;
 				background: transparent;
 				color: $cx-secondary-color;
 				padding: 0;
-				padding-bottom: 5px;
+				padding-bottom: 3px;
 				text-transform: capitalize;
 				position: relative;
-				font-size: calculateRem(15px);
+				font-size: calculateRem(14px);
 				margin-right: 0.8 * $cx-heading-margin-bottom;;
 
 				&::before {

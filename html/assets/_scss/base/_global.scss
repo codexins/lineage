@@ -57,6 +57,10 @@ section {
 	background-color: inherit;
 }
 
+.pswp__counter {
+	@extend .visually-hidden;
+}
+
 .pswp__caption__center {
 	text-align: center;
 	i,

@@ -3,6 +3,10 @@
  *
  */
 
+.page-blog-grid {
+	@include cx-background('../img/page-titles/blog-title-bg.jpg');
+}
+
 .blog-grid-wrapper {
 	margin-bottom: - $cx-col-spacing;
 	.blog-grid {
@@ -82,6 +86,11 @@
     	font-style: italic;
     	opacity: 0.7;
     	@extend %mb0;
+    	@extend %cx-transition;
+
+    	&:hover {
+    		opacity: 1;
+    	}
     }
 }
 

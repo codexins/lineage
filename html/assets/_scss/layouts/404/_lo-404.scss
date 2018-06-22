@@ -3,6 +3,10 @@
  *
  */
 
+.page-404 {
+	@include cx-background('../img/page-titles/about-page-title.jpg');
+}
+
 .error-404-wrapper {
 	text-align: center;
 	@extend %clearfix;

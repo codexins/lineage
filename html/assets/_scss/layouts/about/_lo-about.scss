@@ -7,13 +7,17 @@
 	@include cx-background('../img/page-titles/about-page-title.jpg');
 }
 
+.page-about-2 {
+	@include cx-background('../img/page-titles/about-page-title-2.jpg');
+}
+
 .bgc-about {
 	@include cx-background('../img/page-titles/blog.jpg');
 }
 
 .cta-section {
 	&.cta-about {
-		@include cx-background('../img/background/counter-up.jpg');
+		@include cx-background('../img/background/testimonial.jpg');
 		@include cx-overlay(rgba(#000, 0.6));
 		&.cta-split {
 			@extend %vpadding;
@@ -35,7 +39,7 @@
 
 .testimonial-section {
 	&.testimonial-about {
-		@include cx-background('../img/background/counter-up.jpg');
+		@include cx-background('../img/background/testimonial.jpg');
 		
 		@include respond-to(mobile) {
 			.testimonial-container {
@@ -51,7 +55,7 @@
 
 .fun-facts-section {
 	&.facts-about {
-		@include cx-background('../img/background/counter-up.jpg');
+		@include cx-background('../img/background/testimonial.jpg');
 		@include cx-overlay(rgba($cx-primary-color, 0.92));
 		.counter-item {
 			&.type-3 {

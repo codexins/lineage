@@ -4,6 +4,6 @@
  */
 
 .client-section {
-	@include cx-background("../img/background/counter-up.jpg");
+	@include cx-background("../img/background/about.jpg");
 	@include cx-overlay(rgba(0,0,0, 0.5));
 }

@@ -4,8 +4,16 @@
  */
 
 
+.page-contact {
+	@include cx-background('../img/page-titles/contact-bg-1.jpg');
+}
+
+.page-contact-2 {
+	@include cx-background('../img/page-titles/contact-bg-2.jpg');
+}
+
 .social-section {
-	background-image: url("../img/background/counter-up.jpg");
+	background-image: url("../img/slider/home-1/slide-2.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -38,7 +46,7 @@
 
 .contacts-form-section {
 	@extend .social-section;
-	background-image: url("../img/background/counter-up.jpg");
+	background-image: url("../img/slider/home-2/slide-2.jpg");
 	&::before {
 		background: rgba(0, 0, 0, 0.55);
 	}

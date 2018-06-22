@@ -5,7 +5,7 @@
 
 .video-section {
 	@extend %overlay;
-	@include cx-background('../img/background/counter-up.jpg');
+	@include cx-background('../img/background/video-bg-1.jpg');
 
 	h3 {
 	    font-size: calculateRem(32px);

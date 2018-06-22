@@ -15,20 +15,20 @@
 	}
 
 	.wrapper-with-right-padding {
-		@include respond-to(tablet) {
+		@include media-only(notebook, max) {
 			text-align: center;
-		}
-		.section-heading {
-			&.type-3 {
-				h4,
-				h2,
-				.subtitle {
-					text-align: center;
-				}
-				h2 {
-					&::before,
-					&::after {
-						right: 0;
+			.section-heading {
+				&.type-3 {
+					h4,
+					h2,
+					.subtitle {
+						text-align: center;
+					}
+					h2 {
+						&::before,
+						&::after {
+							right: 0;
+						}
 					}
 				}
 			}

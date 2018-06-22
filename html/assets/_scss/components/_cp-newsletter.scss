@@ -25,6 +25,8 @@
 	    }
 
 		input[type="submit"] {
+			width: auto;
+			margin-right: 0;
 			color: lighten($cx-text-color, 100%);
 		}
 
@@ -39,8 +41,9 @@
     	form {
     		display: block;
     		max-width: 100%;
-
-    		input {
+			
+    		input,
+    		input[type="submit"] {
     			width: 100%;
     			max-width: 100%;
     		}

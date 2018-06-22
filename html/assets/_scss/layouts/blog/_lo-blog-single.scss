@@ -3,6 +3,26 @@
  *
  */
 
+.page-blog-single {
+	@include cx-background('../img/blog/blog-single-1-1-large.jpg');
+}
+
+.page-blog-gallery {
+	@include cx-background('../img/blog/blog-single-2-1-large.jpg');
+}
+
+.page-blog-video {
+	@include cx-background('../img/blog/blog-single-3-1.jpg');
+}
+
+.page-blog-quote {
+	@include cx-background('../img/blog/blog-single-4-1.jpg');
+}
+
+.page-blog-single-fw {
+	@include cx-background('../img/blog/blog-single-5-1-large.jpg');
+}
+
 .single-post-wrapper {
 	border-bottom: 1px solid $cx-border-color;
 	@extend %mb-half;
@@ -38,12 +58,25 @@
 				padding-top: 0.6 * $cx-section-spacing;
 				padding-bottom: 0.6 * $cx-section-spacing;
 				@extend %mb0;
+			    z-index: 0;
+				@include cx-background('../img/blog/blog-single-quote.jpg');
 				@include media-only(small-mobile, max) {
 					padding: 30px;
 				}
 
 				&::before {
 					top: 45px;
+				}
+
+				&::after {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					z-index: -1;
+					@include bcg-linear-gradient(45deg, rgba($cx-tertiary-color, 0.99), rgba(lighten($cx-tertiary-color, 20%), 0.8));
 				}
 			}
 			&:hover {

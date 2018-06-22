@@ -3,10 +3,12 @@
  *
  */
 
-.page-title-section {
-	&.page-portfolio-cl-1 {
-		@include cx-background('../img/page-titles/contact-bg-1.jpg');
-	}
+.page-portfolio-grid {
+	@include cx-background('../img/page-titles/portfolio-title-bg.jpg');
+}
+
+.page-portfolio-masonry {
+	@include cx-background('../img/page-titles/portfolio-title-bg-2.jpg');
 }
 
 .portfolio-wrapper {

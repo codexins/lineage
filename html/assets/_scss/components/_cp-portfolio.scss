@@ -319,7 +319,7 @@
 			max-width: 100%;
 			min-height: 100px;
 			padding: 25px;
-			background: rgba($cx-tertiary-color, 0.95);
+			background: rgba(darken($cx-tertiary-color, 8%), 0.95);
 			@include abs-position(auto, 0, 0, 0);
 			@include transform-translateY(110px);
 			@include media-only(notebook, max) {
@@ -360,6 +360,7 @@
 
 	&.hover-effect-type-3 {
 		.portfolio-item {
+			overflow: hidden;
 			.img {
 				&::before {
 					content: none;
@@ -377,32 +378,34 @@
 		    left: 0;
 		    width: 100%;
 		    max-width: 100%;
-		    padding: 1.2 * $cx-heading-margin-bottom;
+		    padding: 0.8 * $cx-heading-margin-bottom;
 		    opacity: 1;
 		    min-height: 70px;
-		    background: lighten($cx-text-color, 100%);
+		    overflow: hidden;
+		    background: rgba(#000, 0.8);
 		    color: $cx-text-color;
 		    margin-bottom: -1px;
-		    @include cx-prefix('transform', 'translate3d(0,110%,0)');
+		    display: table;
+		    width: 100%;
+		    @include cx-prefix('transform', 'translate(0, 120%)');
 		    @include cx-box-shadow('0 0 35px 0px rgba(0, 0, 0, 0.15)');
-		    @include respond-to(notebook) {
-		    	padding: $cx-heading-margin-bottom;;
-		    }
 		    @include respond-to(mobile) {
-		    	padding: 7px;
-		    	@include cx-prefix('transform', 'translate3d(0,0,0)');
+		    	padding: 15px;
+		    	@include cx-prefix('transform', 'translate(0, 0)');
 		    }
 
 		    h3 {
-	    	    display: inline-block;
-	    	    font-size: calculateRem(21px);
-    	        float: left;
+	    	    display: table-cell;
+	    	    vertical-align: middle;
+	    	    text-align: left;
+	    	    width: 80%;
+	    	    font-size: calculateRem(20px);
     	        margin: 0;
-	            word-spacing: -0.15em;
+	            word-spacing: -0.1em;
 			    font-weight: 400;
-			    padding-top: 3px;
+			    @extend %pt0;
 			    a {
-			    	color: $cx-text-color;
+			    	@extend %color-white;
 			    }
     	        span {
     	        	font-weight: 700;
@@ -411,7 +414,6 @@
     	        }
     	        @include respond-to(notebook) {
     	        	font-size: 1rem;
-    	        	padding-top: 6px;
     	        }
     	        @include respond-to(mobile) {
 				    font-size: 1rem;
@@ -423,16 +425,23 @@
 		    h3,
 		    span {
     	        @include cx-transition('transform 0.35s');
-    	        @include cx-prefix('transform', 'translate3d(0,200%,0)');
+    	        @include cx-prefix('transform', 'translate(0, 200%)');
     	        @include respond-to(mobile) {
-    	        	@include cx-prefix('transform', 'translate3d(0,0,0)');
+    	        	@include cx-prefix('transform', 'translate(0, 0)');
     	        }
 		    }
 
+		    h3,
 		    .icon-links {
-				letter-spacing: 1px;
-			    float: right;
-			    display: inline-block;
+				overflow: initial;
+		    }
+
+		    .icon-links {
+			    display: table-cell;
+			    vertical-align: middle;
+			    text-align: right;
+			    @extend %mt0;
+			    @extend %color-offset;
 			    @include respond-to(mobile) {
 					font-size: 12px;
 					margin-top: 5px;
@@ -440,30 +449,9 @@
 			    }
 			    span {
 			    	display: inline-block;
+			    	width: 50%;
 			    	font-size: calculateRem(14px);
-			    	margin-right: 20px;
 			    	cursor: pointer;
-					@include box(31px);
-					border: 1.2px solid $cx-text-color;
-					line-height: 30px;
-					@include border-radius(50%);
-					@include respond-to(notebook) {
-						margin-right: 10px;
-					}
-
-					@include respond-to(mobile) {
-					    width: 28px;
-					    height: 28px;
-					    line-height: 26px;
-					}
-			    	
-			    	&:last-child {
-			    		margin-right: 0;
-			    	}
-
-			    	a {
-			    		color: $cx-text-color;
-			    	}
 			    }
 		    }
 		}
@@ -473,21 +461,16 @@
 				figcaption,
 				h3,
 				a {
-				    @include cx-prefix('transform', 'translate3d(0,0,0)');
+				    @include cx-prefix('transform', 'translate(0, 0)');
 				}
 
 				h2 {
-				    @include cx-prefix('transition-delay', '0.05s');
+				    @include cx-prefix('transition-delay', '0.15s');
 				}
 
 				.icon-links {
 					span {
-						&:first-child {
-							@include cx-prefix('transition-delay', '0.15s');
-						}
-						&:last-child {
-							@include cx-prefix('transition-delay', '0.25s');
-						}
+						@include cx-prefix('transition-delay', '0.25s');
 					}
 				}
 			}

@@ -3,6 +3,10 @@
  *
  */
 
+.page-blog-list {
+	@include cx-background('../img/page-titles/blog-title-bg-2.jpg');
+}
+
 .blog-list-wrapper {
 	margin-bottom: - $cx-col-spacing;
 	@extend %clearfix;

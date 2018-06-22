@@ -3,6 +3,10 @@
  *
  */
 
+.page-faq {
+	@include cx-background('../img/page-titles/faq-title-bg.jpg');
+}
+
 .faq-tabs {
 	.nav-tabs {
 		border-top: 1px solid $cx-border-color;

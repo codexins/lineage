@@ -3,18 +3,17 @@
  *
  */
 
-.page-title-section {
-	&.page-portfolio-single-1 {
-		@include cx-background('../img/page-titles/contact-bg-2.jpg');
-	}
 
-	&.page-portfolio-single-2 {
-		@include cx-background('../img/page-titles/contact-bg-1.jpg');
-	}
+.page-portfolio-single-1 {
+	@include cx-background('../img/page-titles/single-portfolio-1.jpg');
+}
 
-	&.page-portfolio-single-3 {
-		@include cx-background('../img/background/counter-up-2.jpg');
-	}
+.page-portfolio-single-2 {
+	@include cx-background('../img/page-titles/single-portfolio-2.jpg');
+}
+
+.page-portfolio-single-3 {
+	@include cx-background('../img/page-titles/single-portfolio-3.jpg');
 }
 
 .single-portfolio-intro {

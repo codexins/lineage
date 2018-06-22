@@ -5,7 +5,7 @@
 
 .cta-section {
 	&.has-bg {
-		@include cx-background("../img/slider/home-1/slide-2.jpg");
+		@include cx-background("../img/cta/cta-bg-1.jpg");
 		@include cx-overlay(rgba(0, 0, 0, 0.65));
 		color: lighten($cx-text-color, 100%);
 	}
@@ -85,7 +85,7 @@
 	}
 
 	&.type-2 {
-		@include cx-background('../img/background/counter-up.jpg');
+		@include cx-background('../img/background/testimonial.jpg');
 		@extend %overlay;
 		&::before {
 			@include bcg-linear-gradient(to bottom right, rgba($cx-secondary-color, 0.95), rgba($cx-primary-color, 0.95));

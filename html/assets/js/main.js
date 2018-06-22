@@ -472,7 +472,7 @@ INDEX:
         if ($simpleSlider.cxExists()) {
             var imageSlider = new Swiper($simpleSlider, {
                 loop: true,
-                effect: "fade",
+                effect: 'fade',
                 speed: 1000,
                 roundLengths: true,
                 autoplay: {
@@ -802,7 +802,6 @@ INDEX:
     CODEXIN.teamCarousel = function() {
         if ($team.cxExists()) {
             var people = new Swiper($team, {
-                loop: true,
                 slidesPerView: 4,
                 spaceBetween: 30,
                 grabCursor: true,

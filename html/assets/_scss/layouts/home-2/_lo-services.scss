@@ -4,6 +4,6 @@
  */
 
 .services-section {
-	@include cx-background('../img/background/counter-up-2.jpg')
+	@include cx-background('../img/background/services-bg-2.jpg')
 	@include cx-overlay( linear-gradient(to left , $cx-primary-color, rgba($cx-text-color,0.8)));
 }

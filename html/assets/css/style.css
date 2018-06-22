@@ -678,7 +678,7 @@ input[type="button"]:hover {
   padding: 0;
 }
 
-.pt0, .blog-grid.type-2 .post-meta, .widgetized-menu li:first-child, #colophon.type-2 .widget-container .recent-posts-single:first-of-type {
+.pt0, .portfolio-wrapper.hover-effect-type-3 figcaption h3, .blog-grid.type-2 .post-meta, .widgetized-menu li:first-child, #colophon.type-2 .widget-container .recent-posts-single:first-of-type {
   padding-top: 0;
 }
 
@@ -719,13 +719,13 @@ input[type="button"]:hover {
 }
 
 .mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .single-portfolio-intro .portfolio-images img, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .intro-social-section .social-icons > p, .contacts-form-section .quote-form-wrapper,
-.contacts-form-section .contact-info-wrapper, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p {
+.contacts-form-section .contact-info-wrapper, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper, .background-video-section .video-content-wrapper p {
   margin-bottom: 45px;
 }
 
 @media only screen and (max-width: 767px) {
   .mb-half, .counter-item, .team-member, .team-member.type-3, .team-member-card, .pricing-table, .pricing-table-type-2, .pricing-table-type-3, .blog-item-grid, .blog-grid, .info-box-wrapper, .feature-box, .pie-chart-wrapper, .image-box-wrapper, #colophon.type-2 .widget-container, #colophon.type-2 .widget-title, .portfolio-list-wrapper > .portfolio, .single-portfolio-intro .portfolio-images img, .blog-grid-wrapper .blog-grid, .blog-list-wrapper .post-single, .single-post-wrapper, .intro-social-section .social-icons > p, .contacts-form-section .quote-form-wrapper,
-  .contacts-form-section .contact-info-wrapper, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper, .features-section .info-item, .background-video-section .video-content-wrapper p {
+  .contacts-form-section .contact-info-wrapper, .our-history .tab-general-wrapper, .our-features .simple-slider-wrapper, .background-video-section .video-content-wrapper p {
     margin-bottom: 33.75px;
   }
 }
@@ -744,19 +744,18 @@ input[type="button"]:hover {
   margin: 0;
 }
 
-.mt0, .pagination-wrapper .pagination {
+.mt0, .portfolio-wrapper.hover-effect-type-3 figcaption .icon-links, .pagination-wrapper .pagination {
   margin-top: 0;
 }
 
 .mb0, .section-heading .subtitle, .service-tabs .tab-content-heading .subtitle, .info-item.flip-card .back p:last-of-type, .services-carousel .media-wrapper p, .counter-item .counter-icon, .sidebar-widget p:last-of-type, .contact-box-widget h3, .testimonial-widget .client-meta .client-name h3, .widget-form-wrapper input,
 .widget-form-wrapper textarea, .portfolio-mini-desc h3, .team-member-card .team-details h2,
 .team-member-card .team-details p, .pricing-table .pricing-features, .pricing-table-type-3 .pricing-title, .testimonial-container .testimonial-content .client-meta p, .testimonial-container-type-2 .testimonial-content p, .testimonial-container-type-2 .client-meta h3, .testimonial-container-type-2 .client-meta p, .testimonial-with-thumbs .testimonial-content .client-meta p, .post-single .simple-slider-container, .info-box-wrapper.type-2, .feature-box h3, .feature-box p:last-of-type, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .swiper-content .row.last .info-item, .service-tabs .icon-check > li:last-child, .portfolio-list-wrapper .portfolio-content p:last-of-type, .portfolio-list-wrapper > .portfolio:last-of-type, .single-portfolio-intro .portfolio-summary p:last-of-type,
-.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .portfolio-quote p, .single-portfolio-details p:last-of-type, .related-portfolio .related-portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-grid-wrapper .quote-wrapper, .blog-grid-wrapper .simple-slider-container, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section.type-2 .cta-content-wrapper .cta-content p:last-of-type, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .contacts-form-section .contact-item:last-child p, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .modal-main-content .team-title-wrapper .team-socials, .modal-main-content .team-details p:last-of-type, .features-section .info-item,
-.features-section .secondary-title, .contact-section .contact-item-wrapper p {
+.single-portfolio-intro .portfolio-summary a:last-of-type, .single-portfolio-intro .portfolio-summary > div:last-of-type, .single-portfolio-intro .portfolio-summary h3, .single-portfolio-intro .portfolio-meta .counter-item p:last-of-type, .portfolio-quote p, .single-portfolio-details p:last-of-type, .related-portfolio .related-portfolio-wrapper figcaption.portfolio-mini-desc h3, .blog-grid-wrapper .quote-wrapper, .blog-grid-wrapper .simple-slider-container, .quote-wrapper p, .single-post-wrapper .post-single .post-media > .quote-wrapper, .single-post-wrapper .post-single .post-meta p, .cta-section.type-2 .cta-content-wrapper .cta-content p:last-of-type, .intro-social-section .social-icons li, .contacts-form-section .contact-item:last-child, .contacts-form-section .contact-item:last-child p, .page-title-section .page-subtitle, .page-title-section .breadcrumb, .service-promo .col-sm-8 p:last-child, .service-promo .icon-check > li:last-child, .feature-title-wrapper p, .testimonial-simple .testimonial-simple-container, .single-faq p:last-of-type, .modal-main-content .team-title-wrapper .team-socials, .modal-main-content .team-details p:last-of-type, .features-section .secondary-title, .contact-section .contact-item-wrapper p {
   margin-bottom: 0;
 }
 
-.visually-hidden, .section-heading.left-aligned h4::before, .service-tabs .left-aligned.tab-content-heading h4::before, .skillbar-wrapper.with-stripes .skill-bar-percent {
+.visually-hidden, .pswp__counter, .section-heading.left-aligned h4::before, .service-tabs .left-aligned.tab-content-heading h4::before, .skillbar-wrapper.with-stripes .skill-bar-percent {
   margin: -1px;
   padding: 0;
   width: 1px;
@@ -816,7 +815,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .post-single .post-comments, .pie-chart-wrapper, .pie-chart-wrapper h6, .accordion .panel-heading, .accordion .accordion-toggle::after, .client-single, #toTop, #toTop i, .image-box-wrapper figure img, .image-box-wrapper figure figcaption h2, .image-box-wrapper figure figcaption p, #social-share-btn .popover .popover-content a.share-google-plus::after, .slider-pro .sp-arrows .sp-arrow, .slider-pro .sp-buttons .sp-button, .logo img, .c-button, header .intelligent-header.scrolling-up img, .top-content a, .image-carousel-full-width .swiper-slide .icon-wrapper, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .nav-swiper .swiper-slide, #colophon nav li, .portfolio-list-wrapper .portfolio-media, .portfolio-list-wrapper .portfolio-content::before, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category a,
 .portfolio-list-wrapper > .portfolio:hover .portfolio-content h3 a,
-.portfolio-list-wrapper > .portfolio:hover .portfolio-content p, .portfolio-nav .inner-media img, .single-post-wrapper .post-single .post-media .image-overlay, .client-carousel .item-brand, .trigger-iframe::before, .trigger-iframe i, .contact-section .contact-item-wrapper i, .contact-us-section .box-wrapper i {
+.portfolio-list-wrapper > .portfolio:hover .portfolio-content p, .portfolio-nav .inner-media img, .quote-wrapper p, .single-post-wrapper .post-single .post-media .image-overlay, .client-carousel .item-brand, .trigger-iframe::before, .trigger-iframe i, .contact-section .contact-item-wrapper i, .contact-us-section .box-wrapper i {
   -webkit-transition: all 0.7s cubic-bezier(0.2, 1, 0.22, 1);
   -moz-transition: all 0.7s cubic-bezier(0.2, 1, 0.22, 1);
   -ms-transition: all 0.7s cubic-bezier(0.2, 1, 0.22, 1);
@@ -964,7 +963,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   color: transparent;
 }
 
-.color-offset, #colophon.footer-dark h4,
+.color-offset, .portfolio-wrapper.hover-effect-type-3 figcaption .icon-links, #colophon.footer-dark h4,
 #colophon.footer-dark p, #colophon.footer-dark a, #colophon.footer-dark nav a:hover, .cta-section.cta-split.has-bg h2,
 .cta-section.cta-split.has-bg p, .page-title-section .breadcrumb .active, .page-title-section .breadcrumb .tab.iconic-tab > .nav-tabs li, .tab.iconic-tab > .nav-tabs .page-title-section .breadcrumb li {
   color: #F8F9FA;
@@ -976,7 +975,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .info-item.flip-card .back p, .cta-centered.white-text,
 .cta-centered .white-text, .counter-item.type-3.white-text, .tab .nav-tabs > li.active > a, .tab.iconic-tab > .nav-tabs > li > a,
 .tab .nav-tabs > li.active a:focus, .tab.iconic-tab > .nav-tabs > li a:focus,
-.tab .nav-tabs > li.active a:hover, .tab.iconic-tab > .nav-tabs > li a:hover, .tab .nav-tabs > li.active > a:hover, .tab.iconic-tab > .nav-tabs > li > a:hover, .text-widget .contact-no a, .contact-box-widget h3, .contact-box-widget p, .contact-box-widget .icon-wrapper i, .team-member-card .team-details h2,
+.tab .nav-tabs > li.active a:hover, .tab.iconic-tab > .nav-tabs > li a:hover, .tab .nav-tabs > li.active > a:hover, .tab.iconic-tab > .nav-tabs > li > a:hover, .text-widget .contact-no a, .contact-box-widget h3, .contact-box-widget p, .contact-box-widget .icon-wrapper i, .portfolio-wrapper.hover-effect-type-3 figcaption h3 a, .team-member-card .team-details h2,
 .team-member-card .team-details p, .pricing-table-type-3 .pricing-title, .accordion.white-text h1,
 .accordion.white-text h2,
 .accordion.white-text h3,
@@ -2269,6 +2268,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
+  line-height: 45px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2675,15 +2675,17 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.198);
+  -moz-transform: scale(1.198);
+  -ms-transform: scale(1.198);
+  -o-transform: scale(1.198);
+  transform: scale(1.198);
 }
 
 .services-carousel .media-thumb i {
-  font-size: 40px;
+  font-size: 42px;
+  position: relative;
+  top: -5px;
   color: #cc4945;
 }
 
@@ -2697,11 +2699,11 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .services-carousel .service-single:hover img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.098);
+  -moz-transform: scale(1.098);
+  -ms-transform: scale(1.098);
+  -o-transform: scale(1.098);
+  transform: scale(1.098);
 }
 
 .services-carousel .service-single:hover .media-thumb {
@@ -2710,10 +2712,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   -ms-transform: scale(0.8);
   -o-transform: scale(0.8);
   transform: scale(0.8);
-}
-
-.services-carousel .service-single:hover img {
-  filter: grayscale(0);
 }
 
 .swiper-arrow {
@@ -3031,11 +3029,11 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .counter-item:hover .counter-wrapper i {
   color: #d7706d;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.198);
+  -moz-transform: scale(1.198);
+  -ms-transform: scale(1.198);
+  -o-transform: scale(1.198);
+  transform: scale(1.198);
 }
 
 .counter-item.type-3 {
@@ -3276,7 +3274,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 @media only screen and (max-width: 479px) {
   .tab.iconic-tab > .nav.nav-tabs > li {
     width: auto;
-    padding-right: 47px;
+    padding-right: 40px;
   }
   .tab.iconic-tab > .nav.nav-tabs > li:last-child {
     padding-right: 0;
@@ -4505,7 +4503,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   max-width: 100%;
   min-height: 100px;
   padding: 25px;
-  background: rgba(62, 62, 62, 0.95);
+  background: rgba(42, 42, 42, 0.95);
   content: "";
   display: block;
   position: absolute;
@@ -4578,6 +4576,10 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   transform: none;
 }
 
+.portfolio-wrapper.hover-effect-type-3 .portfolio-item {
+  overflow: hidden;
+}
+
 .portfolio-wrapper.hover-effect-type-3 .portfolio-item .img::before {
   content: none;
 }
@@ -4592,17 +4594,20 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   left: 0;
   width: 100%;
   max-width: 100%;
-  padding: 30px;
+  padding: 20px;
   opacity: 1;
   min-height: 70px;
-  background: white;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8);
   color: #545454;
   margin-bottom: -1px;
-  -webkit-transform: translate3d(0,110%,0);
-  -moz-transform: translate3d(0,110%,0);
-  -ms-transform: translate3d(0,110%,0);
-  -o-transform: translate3d(0,110%,0);
-  transform: translate3d(0,110%,0);
+  display: table;
+  width: 100%;
+  -webkit-transform: translate(0, 120%);
+  -moz-transform: translate(0, 120%);
+  -ms-transform: translate(0, 120%);
+  -o-transform: translate(0, 120%);
+  transform: translate(0, 120%);
   -webkit-box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.15);
   -ms-box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.15);
@@ -4610,35 +4615,26 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0.15);
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .portfolio-wrapper.hover-effect-type-3 figcaption {
-    padding: 25px;
-  }
-}
-
 @media only screen and (max-width: 767px) {
   .portfolio-wrapper.hover-effect-type-3 figcaption {
-    padding: 7px;
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    -o-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    padding: 15px;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 }
 
 .portfolio-wrapper.hover-effect-type-3 figcaption h3 {
-  display: inline-block;
-  font-size: 1.3125rem;
-  float: left;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  width: 80%;
+  font-size: 1.25rem;
   margin: 0;
-  word-spacing: -0.15em;
+  word-spacing: -0.1em;
   font-weight: 400;
-  padding-top: 3px;
-}
-
-.portfolio-wrapper.hover-effect-type-3 figcaption h3 a {
-  color: #545454;
 }
 
 .portfolio-wrapper.hover-effect-type-3 figcaption h3 span {
@@ -4650,7 +4646,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .portfolio-wrapper.hover-effect-type-3 figcaption h3 {
     font-size: 1rem;
-    padding-top: 6px;
   }
 }
 
@@ -4669,28 +4664,33 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   -ms-transition: transform 0.35s;
   -o-transition: transform 0.35s;
   transition: transform 0.35s;
-  -webkit-transform: translate3d(0,200%,0);
-  -moz-transform: translate3d(0,200%,0);
-  -ms-transform: translate3d(0,200%,0);
-  -o-transform: translate3d(0,200%,0);
-  transform: translate3d(0,200%,0);
+  -webkit-transform: translate(0, 200%);
+  -moz-transform: translate(0, 200%);
+  -ms-transform: translate(0, 200%);
+  -o-transform: translate(0, 200%);
+  transform: translate(0, 200%);
 }
 
 @media only screen and (max-width: 767px) {
   .portfolio-wrapper.hover-effect-type-3 figcaption h3,
   .portfolio-wrapper.hover-effect-type-3 figcaption span {
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    -o-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 }
 
+.portfolio-wrapper.hover-effect-type-3 figcaption h3,
 .portfolio-wrapper.hover-effect-type-3 figcaption .icon-links {
-  letter-spacing: 1px;
-  float: right;
-  display: inline-block;
+  overflow: initial;
+}
+
+.portfolio-wrapper.hover-effect-type-3 figcaption .icon-links {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
 }
 
 @media only screen and (max-width: 767px) {
@@ -4703,64 +4703,22 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .portfolio-wrapper.hover-effect-type-3 figcaption .icon-links span {
   display: inline-block;
+  width: 50%;
   font-size: 0.875rem;
-  margin-right: 20px;
   cursor: pointer;
-  width: 31px;
-  height: 31px;
-  text-align: center;
-  line-height: 31px;
-  display: inline-block;
-  border: 1.2px solid #545454;
-  line-height: 30px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .portfolio-wrapper.hover-effect-type-3 figcaption .icon-links span {
-    margin-right: 10px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .portfolio-wrapper.hover-effect-type-3 figcaption .icon-links span {
-    width: 28px;
-    height: 28px;
-    line-height: 26px;
-  }
-}
-
-.portfolio-wrapper.hover-effect-type-3 figcaption .icon-links span:last-child {
-  margin-right: 0;
-}
-
-.portfolio-wrapper.hover-effect-type-3 figcaption .icon-links span a {
-  color: #545454;
 }
 
 .portfolio-wrapper.hover-effect-type-3 .portfolio-item:hover figcaption,
 .portfolio-wrapper.hover-effect-type-3 .portfolio-item:hover h3,
 .portfolio-wrapper.hover-effect-type-3 .portfolio-item:hover a {
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .portfolio-wrapper.hover-effect-type-3 .portfolio-item:hover h2 {
-  -webkit-transition-delay: 0.05s;
-  -moz-transition-delay: 0.05s;
-  -ms-transition-delay: 0.05s;
-  -o-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-
-.portfolio-wrapper.hover-effect-type-3 .portfolio-item:hover .icon-links span:first-child {
   -webkit-transition-delay: 0.15s;
   -moz-transition-delay: 0.15s;
   -ms-transition-delay: 0.15s;
@@ -4768,7 +4726,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   transition-delay: 0.15s;
 }
 
-.portfolio-wrapper.hover-effect-type-3 .portfolio-item:hover .icon-links span:last-child {
+.portfolio-wrapper.hover-effect-type-3 .portfolio-item:hover .icon-links span {
   -webkit-transition-delay: 0.25s;
   -moz-transition-delay: 0.25s;
   -ms-transition-delay: 0.25s;
@@ -5069,7 +5027,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .team-member-card .back img {
   width: 80px;
-  height: auto;
+  height: 80px;
   margin-bottom: 20px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -5436,6 +5394,8 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .newsletter-form-wrapper form input[type="submit"] {
+  width: auto;
+  margin-right: 0;
   color: white;
 }
 
@@ -5453,7 +5413,8 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
     display: block;
     max-width: 100%;
   }
-  .newsletter-form-wrapper form input {
+  .newsletter-form-wrapper form input,
+  .newsletter-form-wrapper form input[type="submit"] {
     width: 100%;
     max-width: 100%;
   }
@@ -6724,7 +6685,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .blog-grid.type-2 .post-category {
   position: static;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .blog-grid.type-2 .post-category a {
@@ -6732,10 +6693,10 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   background: transparent;
   color: #d7706d;
   padding: 0;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   text-transform: capitalize;
   position: relative;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   margin-right: 20px;
 }
 
@@ -7935,7 +7896,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .image-box-wrapper figure figcaption a {
-  z-index: 1000;
+  z-index: 100;
   text-indent: 200%;
   white-space: nowrap;
   font-size: 0;
@@ -9960,8 +9921,15 @@ header.header-white .intelligent-header {
  * layout Portfolio / Portfolio
  *
  */
-.page-title-section.page-portfolio-cl-1 {
-  background-image: url("../img/page-titles/contact-bg-1.jpg");
+.page-portfolio-grid {
+  background-image: url("../img/page-titles/portfolio-title-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-portfolio-masonry {
+  background-image: url("../img/page-titles/portfolio-title-bg-2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9991,6 +9959,13 @@ header.header-white .intelligent-header {
  * layout Portfolio / Portfolio-list
  *
  */
+.page-portfolio-list {
+  background-image: url("../img/page-titles/portfolio-title-bg-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .portfolio-section {
   overflow-y: hidden;
 }
@@ -10197,22 +10172,22 @@ header.header-white .intelligent-header {
  * layout Portfolio / Portfolio-single
  *
  */
-.page-title-section.page-portfolio-single-1 {
-  background-image: url("../img/page-titles/contact-bg-2.jpg");
+.page-portfolio-single-1 {
+  background-image: url("../img/page-titles/single-portfolio-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.page-title-section.page-portfolio-single-2 {
-  background-image: url("../img/page-titles/contact-bg-1.jpg");
+.page-portfolio-single-2 {
+  background-image: url("../img/page-titles/single-portfolio-2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.page-title-section.page-portfolio-single-3 {
-  background-image: url("../img/background/counter-up-2.jpg");
+.page-portfolio-single-3 {
+  background-image: url("../img/page-titles/single-portfolio-3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10810,6 +10785,13 @@ header.header-white .intelligent-header {
  * layout Blog / Blog-grid
  *
  */
+.page-blog-grid {
+  background-image: url("../img/page-titles/blog-title-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .blog-grid-wrapper {
   margin-bottom: -45px;
 }
@@ -10912,6 +10894,10 @@ header.header-white .intelligent-header {
   opacity: 0.7;
 }
 
+.quote-wrapper p:hover {
+  opacity: 1;
+}
+
 blockquote {
   margin: 0;
   padding: 0;
@@ -10939,6 +10925,13 @@ blockquote {
  * layout Blog / Blog-list
  *
  */
+.page-blog-list {
+  background-image: url("../img/page-titles/blog-title-bg-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .blog-list-wrapper {
   margin-bottom: -45px;
 }
@@ -11004,6 +10997,41 @@ blockquote {
  * layout Blog / Blog-single
  *
  */
+.page-blog-single {
+  background-image: url("../img/blog/blog-single-1-1-large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-blog-gallery {
+  background-image: url("../img/blog/blog-single-2-1-large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-blog-video {
+  background-image: url("../img/blog/blog-single-3-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-blog-quote {
+  background-image: url("../img/blog/blog-single-4-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-blog-single-fw {
+  background-image: url("../img/blog/blog-single-5-1-large.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .single-post-wrapper {
   border-bottom: 1px solid #ddd;
 }
@@ -11053,6 +11081,11 @@ blockquote {
 .single-post-wrapper .post-single .post-media > .quote-wrapper {
   padding-top: 54px;
   padding-bottom: 54px;
+  z-index: 0;
+  background-image: url("../img/blog/blog-single-quote.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 479px) {
@@ -11063,6 +11096,22 @@ blockquote {
 
 .single-post-wrapper .post-single .post-media > .quote-wrapper::before {
   top: 45px;
+}
+
+.single-post-wrapper .post-single .post-media > .quote-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(62, 62, 62, 0.99);
+  background: -webkit-linear-gradient(45deg, rgba(62, 62, 62, 0.99), rgba(113, 113, 113, 0.8));
+  background: -moz-linear-gradient(45deg, rgba(62, 62, 62, 0.99), rgba(113, 113, 113, 0.8));
+  background: -ms-linear-gradient(45deg, rgba(62, 62, 62, 0.99), rgba(113, 113, 113, 0.8));
+  background: -o-linear-gradient(45deg, rgba(62, 62, 62, 0.99), rgba(113, 113, 113, 0.8));
+  background: linear-gradient(45deg, rgba(62, 62, 62, 0.99), rgba(113, 113, 113, 0.8));
 }
 
 .single-post-wrapper .post-single .post-media:hover .image-overlay {
@@ -11121,7 +11170,7 @@ blockquote {
  *
  */
 .cta-section.has-bg {
-  background-image: url("../img/slider/home-1/slide-2.jpg");
+  background-image: url("../img/cta/cta-bg-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11237,7 +11286,7 @@ blockquote {
 }
 
 .cta-section.type-2 {
-  background-image: url("../img/background/counter-up.jpg");
+  background-image: url("../img/background/testimonial.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11428,8 +11477,22 @@ blockquote {
  * Layout Contact/ Contact
  *
  */
+.page-contact {
+  background-image: url("../img/page-titles/contact-bg-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-contact-2 {
+  background-image: url("../img/page-titles/contact-bg-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .social-section, .contacts-form-section {
-  background-image: url("../img/background/counter-up.jpg");
+  background-image: url("../img/slider/home-1/slide-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11456,7 +11519,7 @@ blockquote {
 }
 
 .contacts-form-section {
-  background-image: url("../img/background/counter-up.jpg");
+  background-image: url("../img/slider/home-2/slide-2.jpg");
 }
 
 .contacts-form-section::before {
@@ -11885,6 +11948,13 @@ blockquote {
   background-repeat: no-repeat;
 }
 
+.page-about-2 {
+  background-image: url("../img/page-titles/about-page-title-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .bgc-about {
   background-image: url("../img/page-titles/blog.jpg");
   background-position: center;
@@ -11893,7 +11963,7 @@ blockquote {
 }
 
 .cta-section.cta-about {
-  background-image: url("../img/background/counter-up.jpg");
+  background-image: url("../img/background/testimonial.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11925,7 +11995,7 @@ blockquote {
 }
 
 .testimonial-section.testimonial-about {
-  background-image: url("../img/background/counter-up.jpg");
+  background-image: url("../img/background/testimonial.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11941,7 +12011,7 @@ blockquote {
 }
 
 .fun-facts-section.facts-about {
-  background-image: url("../img/background/counter-up.jpg");
+  background-image: url("../img/background/testimonial.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12176,7 +12246,14 @@ blockquote {
  *
  */
 .page-service {
-  background-image: url("../img/page-titles/contact-bg-1.jpg");
+  background-image: url("../img/page-titles/services-page-title.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-service-2 {
+  background-image: url("../img/page-titles/services-page-title-2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12191,8 +12268,7 @@ blockquote {
 
 .feature-title-wrapper {
   padding: 30px 15px;
-  border: 1px solid #F8F9FA;
-  border-top: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .feature-title-wrapper p {
@@ -12243,21 +12319,17 @@ blockquote {
 }
 
 .cta-split.split-cta-service {
-  background-image: url("../img/background/counter-up.jpg");
+  background-image: url("../img/background/testimonial.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .testimonials-section.service-testimonial {
-  background-image: url("../img/page-titles/contact-bg-1.jpg");
+  background-image: url("../img/page-titles/contact-bg-2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.newsletter-section.newsletter-service {
-  background-image: url("../img/background/counter-up.jpg");
 }
 
 @media only screen and (max-width: 767px) {
@@ -12371,6 +12443,13 @@ blockquote {
  * Layout Faq/ Faq
  *
  */
+.page-faq {
+  background-image: url("../img/page-titles/faq-title-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .faq-tabs .nav-tabs {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -12436,6 +12515,13 @@ blockquote {
  * Layout 404/ 404
  *
  */
+.page-404 {
+  background-image: url("../img/page-titles/about-page-title.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .error-404-wrapper {
   text-align: center;
 }
@@ -12560,7 +12646,7 @@ blockquote {
  *
  */
 .about-section {
-  background-image: url("../img/background/counter-up.jpg");
+  background-image: url("../img/background/about.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -12719,7 +12805,7 @@ blockquote {
  *
  */
 .client-section {
-  background-image: url("../img/background/counter-up.jpg");
+  background-image: url("../img/background/about.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12805,7 +12891,7 @@ blockquote {
  *
  */
 .services-section {
-  background-image: url("../img/background/counter-up-2.jpg");
+  background-image: url("../img/background/services-bg-2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12901,7 +12987,7 @@ blockquote {
  *
  */
 .video-section {
-  background-image: url("../img/background/counter-up.jpg");
+  background-image: url("../img/background/video-bg-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13056,7 +13142,7 @@ blockquote {
   color: white;
   display: table;
   width: 100%;
-  background-image: url("../img/slider/home-4/slide-2.jpg");
+  background-image: url("../img/contact/contact-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13139,7 +13225,7 @@ blockquote {
 }
 
 .contact-section .contact-item-wrapper.last {
-  background-image: url("../img/slider/home-4/slide-1.jpg");
+  background-image: url("../img/contact/contact-2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13262,7 +13348,7 @@ blockquote {
  *
  */
 .our-features {
-  background-image: url("../img/background/counter-up.jpg");
+  background-image: url("../img/background/about.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13342,24 +13428,22 @@ blockquote {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   .our-values-section .wrapper-with-right-padding {
     text-align: center;
   }
-}
-
-.our-values-section .wrapper-with-right-padding .section-heading.type-3 h4, .our-values-section .wrapper-with-right-padding .service-tabs .type-3.tab-content-heading h4, .service-tabs .our-values-section .wrapper-with-right-padding .type-3.tab-content-heading h4,
-.our-values-section .wrapper-with-right-padding .section-heading.type-3 h2,
-.our-values-section .wrapper-with-right-padding .service-tabs .type-3.tab-content-heading h2, .service-tabs
-.our-values-section .wrapper-with-right-padding .type-3.tab-content-heading h2,
-.our-values-section .wrapper-with-right-padding .section-heading.type-3 .subtitle,
-.our-values-section .wrapper-with-right-padding .service-tabs .type-3.tab-content-heading .subtitle, .service-tabs
-.our-values-section .wrapper-with-right-padding .type-3.tab-content-heading .subtitle {
-  text-align: center;
-}
-
-.our-values-section .wrapper-with-right-padding .section-heading.type-3 h2::before, .our-values-section .wrapper-with-right-padding .service-tabs .type-3.tab-content-heading h2::before, .service-tabs .our-values-section .wrapper-with-right-padding .type-3.tab-content-heading h2::before, .our-values-section .wrapper-with-right-padding .section-heading.type-3 h2::after, .our-values-section .wrapper-with-right-padding .service-tabs .type-3.tab-content-heading h2::after, .service-tabs .our-values-section .wrapper-with-right-padding .type-3.tab-content-heading h2::after {
-  right: 0;
+  .our-values-section .wrapper-with-right-padding .section-heading.type-3 h4, .our-values-section .wrapper-with-right-padding .service-tabs .type-3.tab-content-heading h4, .service-tabs .our-values-section .wrapper-with-right-padding .type-3.tab-content-heading h4,
+  .our-values-section .wrapper-with-right-padding .section-heading.type-3 h2,
+  .our-values-section .wrapper-with-right-padding .service-tabs .type-3.tab-content-heading h2, .service-tabs
+  .our-values-section .wrapper-with-right-padding .type-3.tab-content-heading h2,
+  .our-values-section .wrapper-with-right-padding .section-heading.type-3 .subtitle,
+  .our-values-section .wrapper-with-right-padding .service-tabs .type-3.tab-content-heading .subtitle, .service-tabs
+  .our-values-section .wrapper-with-right-padding .type-3.tab-content-heading .subtitle {
+    text-align: center;
+  }
+  .our-values-section .wrapper-with-right-padding .section-heading.type-3 h2::before, .our-values-section .wrapper-with-right-padding .service-tabs .type-3.tab-content-heading h2::before, .service-tabs .our-values-section .wrapper-with-right-padding .type-3.tab-content-heading h2::before, .our-values-section .wrapper-with-right-padding .section-heading.type-3 h2::after, .our-values-section .wrapper-with-right-padding .service-tabs .type-3.tab-content-heading h2::after, .service-tabs .our-values-section .wrapper-with-right-padding .type-3.tab-content-heading h2::after {
+    right: 0;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -13398,6 +13482,13 @@ blockquote {
  * layout Home-3/ Video-section
  *
  */
+.background-video-section {
+  background-image: url("../img/slider/home-2/video-poster.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .background-video-section .video-container {
   min-height: 450px;
 }

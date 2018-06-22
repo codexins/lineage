@@ -21,6 +21,8 @@
 			@extend %cx-transition;
 	    	@include box(64px,64px);
 	    	@include cx-prefix('backface-visibility', 'hidden');
+
+	    	line-height: 45px;
 			@include respond-to(mobile) {
 				padding-top: 6px;
 			}

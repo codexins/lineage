@@ -4,7 +4,11 @@
  */
 
 .page-service {
-	@include cx-background('../img/page-titles/contact-bg-1.jpg');
+	@include cx-background('../img/page-titles/services-page-title.jpg');
+}
+
+.page-service-2 {
+	@include cx-background('../img/page-titles/services-page-title-2.jpg');
 }
 
 .our-features{
@@ -19,8 +23,7 @@
 
 .feature-title-wrapper {
 	padding: 30px 15px;
-	border: 1px solid $cx-offset-color;
-	border-top: 0;
+    background: rgba(0, 0, 0, 0.5);
 	p {
 		text-align: center;
 		@extend %color-white;
@@ -70,20 +73,14 @@
 .cta-split {
 	&.split-cta-service {
 		@extend %vpadding;
-		@include cx-background('../img/background/counter-up.jpg');
+		@include cx-background('../img/background/testimonial.jpg');
 		@extend %overlay;
 	}
 }
 
 .testimonials-section {
 	&.service-testimonial {
-		@include cx-background('../img/page-titles/contact-bg-1.jpg');
-	}
-}
-
-.newsletter-section {
-	&.newsletter-service {
-	    background-image: url('../img/background/counter-up.jpg');
+		@include cx-background('../img/page-titles/contact-bg-2.jpg');
 	}
 }
 

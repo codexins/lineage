@@ -3,6 +3,10 @@
  *
  */
 
+.page-portfolio-list {
+	@include cx-background('../img/page-titles/portfolio-title-bg-3.jpg');
+}
+
 .portfolio-section {
 	overflow-y: hidden;
 }

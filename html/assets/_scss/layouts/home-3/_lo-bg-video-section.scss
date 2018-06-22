@@ -5,6 +5,8 @@
 
 .background-video-section {
 
+	@include cx-background('../img/slider/home-2/video-poster.jpg');
+
 	.video-container {
 		min-height: 450px;
 		@include cx-overlay(rgba(#000, 0.75));

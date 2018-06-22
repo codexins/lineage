@@ -5,7 +5,7 @@
 
 .our-features {
 	@include cx-overlay(rgba(0, 0, 0, 0.7));
-	@include cx-background('../img/background/counter-up.jpg');
+	@include cx-background('../img/background/about.jpg');
 	@include media-only(small-mobile, max) {
 		hr{
 			+ .row {

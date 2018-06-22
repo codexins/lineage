@@ -23,7 +23,7 @@
 		text-align: center;
 		color: lighten($cx-text-color, 100%);
 		@include eqheight;
-		@include cx-background('../img/slider/home-4/slide-2.jpg');
+		@include cx-background('../img/contact/contact-1.jpg');
 		@include cx-overlay(rgba(darken($cx-primary-color, 10%), 0.9));
 		@include respond-to(mobile) {
 			min-height: auto;
@@ -63,7 +63,7 @@
 		}
 
 		&.last {
-			@include cx-background('../img/slider/home-4/slide-1.jpg');
+			@include cx-background('../img/contact/contact-2.jpg');
 			@include cx-overlay(rgba(darken($cx-secondary-color, 10%), 0.9));
 		}
 
