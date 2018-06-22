@@ -12,11 +12,15 @@
 }
 
 .page-blog-video {
-	@include cx-background('../img/blog/blog-single-3-1.jpg');
+	@include cx-background('../img/page-titles/blog-title-bg-3.jpg');
+}
+
+.page-blog-audio {
+	@include cx-background('../img/page-titles/blog-title-bg-5.jpg');
 }
 
 .page-blog-quote {
-	@include cx-background('../img/blog/blog-single-4-1.jpg');
+	@include cx-background('../img/page-titles/blog-title-bg-4.jpg');
 }
 
 .page-blog-single-fw {

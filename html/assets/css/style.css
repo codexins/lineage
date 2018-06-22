@@ -1571,7 +1571,7 @@ to a reusable component.
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 99999;
   background-color: white;
 }
 
@@ -11012,14 +11012,21 @@ blockquote {
 }
 
 .page-blog-video {
-  background-image: url("../img/blog/blog-single-3-1.jpg");
+  background-image: url("../img/page-titles/blog-title-bg-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-blog-audio {
+  background-image: url("../img/page-titles/blog-title-bg-5.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .page-blog-quote {
-  background-image: url("../img/blog/blog-single-4-1.jpg");
+  background-image: url("../img/page-titles/blog-title-bg-4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
