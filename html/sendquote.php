@@ -428,7 +428,7 @@
                                                 $service_type = @trim(stripslashes($_POST['service-type']));
                                                 $subject = @trim(stripslashes($_POST['subject']));
                                                 $notes = 'This email was sent from '.$_SERVER['HTTP_HOST'];
-                                                $service_name= '';
+                                                $service_name = '';
                                                 switch ($service_type) {
                                                     case 'bb':
                                                         $service_name = 'Business Branding';
