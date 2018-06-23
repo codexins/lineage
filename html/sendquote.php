@@ -450,8 +450,7 @@
                                                 $message = @trim(stripslashes($_POST['message'])); 
 
                                                 $email_from = $email;
-                                                // $email_to = 'YOUR@EMAIL.HERE'; //replace with your email
-                                                $email_to = 's.m.rafiz@gmail.com'; //replace with your email
+                                                $email_to = 'YOUR@EMAIL.HERE'; //replace with your email
 
                                                 $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Phone: ' . $phone . "\n\n" . 'Service Type: ' . $service_name . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' ."\n". $message . "\n\n\n\n" . $notes;
                                                 $success = @mail($email_to, $subject, $body, 'From: <'.$name.'>'); ?>
