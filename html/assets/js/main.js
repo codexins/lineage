@@ -288,7 +288,7 @@ INDEX:
 
         if ($(".fixed-footer").cxExists()) {
             if ($window.width() > 767) {
-                $("#whole").css('margin-bottom', footerHeight);
+                $("#whole").css('padding-bottom', footerHeight);
             }
         }
     };
@@ -494,6 +494,7 @@ INDEX:
                 slidesPerView: 5,
                 centeredSlides : true,
                 grabCursor: true,
+                spaceBetween: 0,
                 roundLengths: true,
                 autoplay: {
                     delay: 3000
@@ -522,12 +523,13 @@ INDEX:
     *************************************************************/
 
     CODEXIN.tabbledSlider = function() {
-        if ($tabbedCarousel.cxExists()) {
 
-            function setCurrentSlide(ele,index){
-                $(".nav-swiper .swiper-slide").removeClass("selected");
-                ele.addClass("selected");
-            }
+        function setCurrentSlide(ele,index){
+            $(".nav-swiper .swiper-slide").removeClass("selected");
+            ele.addClass("selected");
+        }
+
+        if ($tabbedCarousel.cxExists()) {
 
             // Navigation section
             var navSwiper = new Swiper('.nav-swiper', {

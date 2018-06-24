@@ -41,7 +41,11 @@ section {
 	font-size: calculateRem(18px);
 }
 
-.whole-wrapper {
+#whole {
+	z-index: 0;
+}
+
+.main-content-wrapper {
 	@extend %clearfix;
 }
 

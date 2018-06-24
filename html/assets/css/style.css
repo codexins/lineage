@@ -102,6 +102,10 @@ section {
   font-size: 1.125rem;
 }
 
+#whole {
+  z-index: 0;
+}
+
 #primary,
 #secondary {
   margin-bottom: 90px;
@@ -766,16 +770,16 @@ input[type="button"]:hover {
   position: absolute;
 }
 
-.whole-wrapper, .instagram-widget, .cx-pagination, .comments-area ol li, .single-portfolio-intro .portfolio-content, .single-portfolio-intro .portfolio-meta, .single-portfolio-intro .portfolio-images, .blog-list-wrapper, .error-404-wrapper, .modal-main-content .team-title-wrapper {
+.main-content-wrapper, .instagram-widget, .cx-pagination, .comments-area ol li, .single-portfolio-intro .portfolio-content, .single-portfolio-intro .portfolio-meta, .single-portfolio-intro .portfolio-images, .blog-list-wrapper, .error-404-wrapper, .modal-main-content .team-title-wrapper {
   zoom: 1;
 }
 
-.whole-wrapper::before, .instagram-widget::before, .cx-pagination::before, .comments-area ol li::before, .single-portfolio-intro .portfolio-content::before, .single-portfolio-intro .portfolio-meta::before, .single-portfolio-intro .portfolio-images::before, .blog-list-wrapper::before, .error-404-wrapper::before, .modal-main-content .team-title-wrapper::before, .whole-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after, .blog-list-wrapper::after, .error-404-wrapper::after, .modal-main-content .team-title-wrapper::after {
+.main-content-wrapper::before, .instagram-widget::before, .cx-pagination::before, .comments-area ol li::before, .single-portfolio-intro .portfolio-content::before, .single-portfolio-intro .portfolio-meta::before, .single-portfolio-intro .portfolio-images::before, .blog-list-wrapper::before, .error-404-wrapper::before, .modal-main-content .team-title-wrapper::before, .main-content-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after, .blog-list-wrapper::after, .error-404-wrapper::after, .modal-main-content .team-title-wrapper::after {
   content: "";
   display: table;
 }
 
-.whole-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after, .blog-list-wrapper::after, .error-404-wrapper::after, .modal-main-content .team-title-wrapper::after {
+.main-content-wrapper::after, .instagram-widget::after, .cx-pagination::after, .comments-area ol li::after, .single-portfolio-intro .portfolio-content::after, .single-portfolio-intro .portfolio-meta::after, .single-portfolio-intro .portfolio-images::after, .blog-list-wrapper::after, .error-404-wrapper::after, .modal-main-content .team-title-wrapper::after {
   clear: both;
 }
 
