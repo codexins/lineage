@@ -17,10 +17,13 @@
         outline: 0;
         @include cx-box-shadow('none');
     }
+}
 
-    .popover {
+.social-share-btn {
+    &.popover {
         padding: 0;
         border: 0;
+        z-index: 100;
         @include cx-box-shadow('none');
         @include border-radius(0);
         .popover-content {

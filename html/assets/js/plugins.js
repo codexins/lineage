@@ -1,10 +1,10 @@
 /******************************
-All plugins JS here
+All plugins JS are here
 
 INDEX:
 
 	v00 - jQuery.appear
-	v01 - Stellarnav Manu
+	v01 - Stellarnav Menu
 	v02 - Slider-pro
 	v03 - imagesLoaded PACKAGED
 	v04 - Isotope PACKAGED

@@ -139,11 +139,11 @@ INDEX:
         $socialShare.each(function() {
             $(this).popover({
                 html : true,
-                container : '#social-share-btn',
+                container : 'body',
                 content: function() {
                     return $('#share-hidden-content').html();
                 },
-                template: '<div class="popover" role="tooltip"><div class="popover-content"></div></div>'
+                template: '<div class="popover social-share-btn" role="tooltip"><div class="popover-content"></div></div>'
             });
         });
 
@@ -192,7 +192,7 @@ INDEX:
                 waitForLayers: true,
                 slideDistance: 0,
                 autoplay: true,
-                autoplayDelay: 5000,
+                autoplayDelay: 8000,
                 fade: true,
                 reachVideoAction: 'playVideo',
                 breakpoints: {

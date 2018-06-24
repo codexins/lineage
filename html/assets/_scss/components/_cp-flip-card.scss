@@ -17,9 +17,11 @@
 
 	&.info-item {
 		min-height: auto;
+		height: 280px;
 		.front,
 		.back {
 			min-height: 280px;
+			height: 280px;
 		}
 	}
 }
