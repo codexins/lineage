@@ -343,7 +343,7 @@
 
                                 <hr>
                                 <h4 id="section_2_2">CSS Structure</h4>
-                                <p>Here is a list of all the <strong>general CSS used in the template:</strong></p>
+                                <p>Here is a list of all the <strong>general CSS</strong> used in the template:</p>
 
                                 <pre class="brush: html">
                                     &lt;!-- CSS files
@@ -360,7 +360,8 @@
                                     <link rel="stylesheet" href="assets/css/plugins.css">
 
                                     &lt;!-- Master stylesheet --&gt;
-                                    <link rel="stylesheet" id="mastersheet" href="assets/css/style.css">
+                                    <link rel="stylesheet" href="assets/css/style.css">
+
                                 </pre>
 
                                 <p>
@@ -377,23 +378,38 @@
 
                                 <hr>
                                 <h4 id="section_2_3">Javascript Structure</h4>
-                                <p>Here is a list of all the <strong>general Javascript used in the template:</strong></p>
+                                <p>Here is a list of all the <strong>general Javascript</strong> used in the template:</p>
 
                                 <pre class="brush: html">
-                                    <!-- JS
-                                    ============================================ -->
+                                    &lt;!-- JS
+                                    ============================================ --&gt;
 
-                                    <!-- jQuery JS -->
+								    &lt;!-- modernizr JS
+								    ============================================ --&gt;
+								    <script src="assets/js/modernizr-custom.min.js"></script>
+
+                                    &lt;!-- jQuery JS --&gt;
                                     <script src="assets/js/jquery.1.12.4.min.js"></script>
 
-                                    <!-- Bootstrap JS -->
+                                    &lt;!-- Bootstrap JS --&gt;
                                     <script src="assets/js/bootstrap.min.js"></script>
 
-                                    <!-- Plugins JS -->
+                                    &lt;!-- Plugins JS --&gt;
                                     <script src="assets/js/plugins.js"></script>
 
-                                    <!-- Main JS -->
+								    &lt;!-- google map api and gmaps JS --&gt;
+								    <script src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAP_API"></script>
+								    <script src="assets/js/gmaps.min.js"></script>
+								    
+								    &lt;!-- Loading Map Custom Scripts --&gt;
+								    <script src="assets/js/custom-map.js"></script>
+
+								    &lt;!-- Particles JS --&gt;
+								    <script src="assets/js/particles.min.js"></script>
+
+                                    &lt;!-- Main JS --&gt;
                                     <script src="assets/js/main.js"></script>
+
                                  </pre>
                             </div>
                             <!-- end col -->
