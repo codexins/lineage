@@ -127,6 +127,7 @@
                                     <li><a href="#section_6_15">Contact &amp; Quote Forms</a></li>
                                     <li><a href="#section_6_16">Scroll to Top</a></li>
                                     <li><a href="#section_6_17">Smooth Scrolling</a></li>
+                                    <li><a href="#section_6_18">Animated Typing</a></li>
                                 </ul>
                             </li>
                             <li><a href="#section_7">Portfolio</a>
@@ -173,10 +174,10 @@
                                                 <li><strong>Item Version : </strong> v1.0</li>
                                                 <li><strong>Created On : </strong> 24-Jun-18</li>
                                                 <li><strong>Last Modified On: </strong> 24-Jun-18</li>
-                                                <li><strong>Author  : </strong> <a href="https://themeitems.com" target="_blank">Codexin</a></li>
+                                                <li><strong>Author  : </strong> <a href="#" target="_blank">Codexin</a></li>
                                                 <li><strong>Support Email: </strong> <a href="mailto:support@codexin.com" target="_blank">support@themeitems.com</a></li>
-                                                <li><strong>Template Demo  : </strong> <a href="https://themeitems.com/template/lineage-preview" target="_blank">View Demo</a></li>
-                                                <li><strong>Online Documentation : </strong> <a href="https://themeitems.com/template/lineage-doc" target="_blank">Click here to view the online documentation</a></li>
+                                                <li><strong>Template Demo  : </strong> <a href="https://codexin.com/template/lineage-preview" target="_blank">View Demo</a></li>
+                                                <li><strong>Online Documentation : </strong> <a href="https://codexin.com/template/lineage-doc" target="_blank">Click here to view the online documentation</a></li>
                                             </ul>
                                         </div>
 
@@ -488,7 +489,7 @@
                                 <p>You can show Interactive loader to your Visitors while the Pages of you Website loads in the background & then Reveal your Pages with CSS3 Transitions. Page Loading Transition is enabled by default. </p>
 								
                                 <h5 class="subtitle">Disabling Page Transition</h5>
-                                <p>To disable the Transition, you can simply remove <code>animsition</code> class from the &lt;div&gt; that contains <code>whole-site-wrapper</code> class and <code>whole</code> ID as demonstrated below:</p>
+                                <p>To disable the Transition, you can simply remove <code>animsition</code> class from all pages from the &lt;div&gt; that contains <code>whole-site-wrapper</code> class and <code>whole</code> ID as demonstrated below:</p>
                                 <pre class="brush: html">
 
 								    &lt;!-- Start of Whole Site Wrapper with mobile menu support --&gt;
@@ -544,6 +545,7 @@
 
                                 <p>So you can customize the codes as per your preferences.</p>
                                 <p><span class="label label-danger">Note:</span> If you need to change the page loader, replace the contents of <code>loadingInner</code> parameter. Or if you want no page loader, only need to show the page transition animation, delete the <code>loadingInner</code> parameter content i.e. put <code>loadingInner: ''</code>.</p>
+                                <p>If you need more assistance, please check out the <a href="http://git.blivesta.com/animsition/" target="_blank">official documentation of the plugin</a>.</p>
 
                                 <hr>
                                 <h4 id="section_2_6">Logo Settings</h4>
@@ -2434,6 +2436,18 @@
                                 </pre>
 
                                 <p><span class="label label-danger">Note:</span> The <code>data-percent</code> attribute value is responsible for skills animation. You can put any preferable value in it. Also if you want stripe animation, you can add <code>with-stripes</code> class in <code>skillbar-wrapper</code>.</p>
+                                <p>If you want to further customize the element, you need to go to <code>assets/js/main.js</code> and find the code block after comment <code>s12 - Skill Bars</code>.</p>
+                                <pre class="brush:js">
+
+                                    $elem.skillBars({
+                                        from: 0,
+                                        speed: 2500,
+                                        interval: 100,
+                                        decimals: 0
+                                    });
+
+                                </pre>
+                                <p>If you want further assistance, you can check you the <a href="https://github.com/umarwebdeveloper/jquery-css-skills-bar" target="_blank">official documentation of the plugin.</p>
 
 								<hr>
 								<h4 id="section_6_11">Pie Chart</h4>
@@ -2708,12 +2722,56 @@
 
 								<hr>
 								<h4 id="section_6_17">Smooth Scrolling</h4>
-								<p>You can use smooth scrolling on any Page Element for Intra Navigation purposes. Just add the class <code>sm-scroll</code> to the anchor tag containing the href of the intra element and you are done.</p>
+								<p>You can use smooth scrolling on any section for Intra Page Navigation purposes. Just add the class <code>sm-scroll</code> to the anchor tag containing the href of the intra element and you are done.</p>
                                 <pre class="brush:html">
 
 								    <!-- Smooth Scrolling -->
 									<a href="#go_to_section" class="sm-scroll">Click here</a>
                                 </pre>
+                                <hr>
+                                <h4 id="section_6_18">Animated Typing</h4>
+                                <p>Lineage comes with beautiful animated typing. You can enter any string, and watch it type at the speed you've set, backspace what it's typed, and begin a new sentence for however many strings you've set. To setup animate typing, please check the below sample code:</p>
+                                <pre class="brush:html">
+
+                                    <!-- Animated Typing -->
+                                    <span class="typed-element" data-typed-strings="Developers^500, Designers^500, People^500, Lineage^2000"></span>
+
+                                </pre>
+                                <p>The class <code>typed-element</code> is required to trigger the animated typing. The <code>data-typed-strings</code> attribute is responsible for the strings for animated typing. The words that you want to animate, need to be seperated by comma (,) inside the <code>data-typed-strings</code> attribute. Also, if you can pause the animation in the middle of a string for a given amount of time by including an escape character (^).</p>
+                                <p>If you want to further customize the functionality, go to <code>assets/js/main.js</code> and find the code block after the comment <code>s27 - Typed js Settings</code> as demonstrated below:</p>
+                                <pre class="brush:js">
+
+                                    $this = new Typed(".typed-element", {
+                                        strings: typedStrings,
+                                        typeSpeed: 120,
+                                        startDelay: 100,
+                                        backSpeed: 30,
+                                        backDelay: 500,
+                                        loop: true,
+                                        loopCount: Infinity,
+                                        showCursor: true,
+                                        cursorChar: "|",
+                                        attr: null,
+                                        contentType: 'html'
+                                    });
+
+                                </pre>
+
+                                <ul>
+                                    <li>Details of the javascript:</li>
+                                    <li>-------------------------------</li>
+                                </ul>
+                                <ul class="default-list">
+                                    <li><code>typeSpeed</code> - Type speed in milliseconds.</li>
+                                    <li><code>startDelay</code> - Time before typing starts in milliseconds.</li>
+                                    <li><code>backSpeed</code> - Backspacing speed in milliseconds.</li>
+                                    <li><code>backDelay</code> - Time before backspacing in milliseconds.</li>
+                                    <li><code>showCursor</code> - Show typing cursor.</li>
+                                    <li><code>cursorChar</code> - Character for typing cursor.</li>
+                                </ul>
+                                <p>Here you can edit the parameters as per your preferences.</p>
+                                <p>If you need further assistance, please check out the <a href="https://github.com/mattboldt/typed.js" target="_blank">official documentation of the plugin</a>.</p>
+
                             </div>
                         </div>
                         <!-- end row -->
