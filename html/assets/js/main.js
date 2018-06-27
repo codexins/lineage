@@ -167,7 +167,7 @@ INDEX:
                 waitForLayers: true,
                 slideDistance: 0,
                 autoplay: true,
-                autoplayDelay: 5000,
+                autoplayDelay: 9000,
                 fade: true,
                 breakpoints: {
                     767: {
@@ -192,7 +192,7 @@ INDEX:
                 waitForLayers: true,
                 slideDistance: 0,
                 autoplay: true,
-                autoplayDelay: 8000,
+                autoplayDelay: 9000,
                 fade: true,
                 reachVideoAction: 'playVideo',
                 breakpoints: {
