@@ -73,6 +73,8 @@
 			li {
 				margin-right: 0;
 				padding-right: $cx-section-spacing;
+				color: $cx-primary-color;
+				border-color: $cx-primary-color;
 				position: relative;
 				a {
 					&.first {
@@ -90,10 +92,26 @@
 						border-color: $cx-grey-color;
 					}
 
+					&.fourth {
+						background: $cx-primary-color;
+						border-color: $cx-primary-color;
+					}
+
+					&.fifth {
+						background: $cx-secondary-color;
+						border-color: $cx-secondary-color;
+					}
+
+					&.sixth {
+						background: $cx-grey-color;
+						border-color: $cx-grey-color;
+					}
+
 					&:hover,
 					&:focus {
 						background: inherit;
 						border-color: inherit;
+						color: inherit;
 					}
 				}
 				&.active,
@@ -169,9 +187,31 @@
 	}
 
 	&.white-text {
+		h1,
+		h2,
 		h3,
+		h4,
+		h5,
+		h6,
 		p {
 			color: $cx-offset-color;
+		}
+
+		&:not(.iconic-tab) {
+			> .nav-tabs {
+				> li {
+					> a {
+						color: $cx-offset-color;
+						border-color: $cx-offset-color;
+
+						&.active,
+						&:hover,
+						&:focus {
+							border-color: $cx-primary-color;
+						}
+					}
+				}
+			}
 		}
 
 		&.iconic-tab {
@@ -185,6 +225,14 @@
 					&::before {
 						color: $cx-offset-color;
 					}
+
+					&.active,
+					&:hover,
+					&:focus {
+						border-color: $cx-offset-color;
+						color: $cx-offset-color;
+					}
+
 				}
 			}
 		}

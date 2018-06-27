@@ -831,7 +831,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   overflow: hidden;
 }
 
-.rounded-corners, #colophon.type-3 .footer-newsletter input, .portfolio-filter.type-3 li, .pie-chart-wrapper, .pie-chart-wrapper h6, .accordion.rounded-corners .panel-heading, #colophon.type-3 .footer-newsletter input.accordion .panel-heading {
+.rounded-corners, #colophon.type-3 .footer-newsletter input, .portfolio-filter.type-3 li, .accordion.rounded-corners .panel-heading, #colophon.type-3 .footer-newsletter input.accordion .panel-heading {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -935,7 +935,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   background-color: transparent;
 }
 
-.bgc-offset, .tags-widget ul li a, .single-post-wrapper .post-single .post-tags ul li a, .pie-chart-wrapper.simple, .author-box, .single-portfolio-intro .portfolio-meta .counter-item .counter-wrapper, .single-portfolio-intro .portfolio-meta .counter-item .counter-wrapper > .counter-content, .single-portfolio-intro.type-1 .portfolio-summary-wrapper, .portfolio-nav {
+.bgc-offset, .tags-widget ul li a, .single-post-wrapper .post-single .post-tags ul li a, .author-box, .single-portfolio-intro .portfolio-meta .counter-item .counter-wrapper, .single-portfolio-intro .portfolio-meta .counter-item .counter-wrapper > .counter-content, .single-portfolio-intro.type-1 .portfolio-summary-wrapper, .portfolio-nav {
   background-color: #F8F9FA;
 }
 
@@ -951,7 +951,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   color: #947cb0;
 }
 
-.color-secondary, .widgetized-menu li a:hover, .accordion.accordion-type-2 .panel-heading a:hover, .accordion.accordion-type-2 .panel-heading.active a, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a, .accordion.accordion-type-2 .panel-heading.active a::after, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a::after, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a::after, .accordion.rounded-corners .panel-heading.active .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .panel-heading.active .accordion-toggle, .accordion.rounded-corners .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs .accordion.rounded-corners li.panel-heading .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs #colophon.type-3 .footer-newsletter input.accordion li.panel-heading .accordion-toggle, .single-portfolio-intro .portfolio-summary a:hover, .single-portfolio-intro .portfolio-meta .counter-item p a:hover, .cta-section.type-2 .cta-content-wrapper i, .cta-section.type-2 .cta-content-wrapper h2, .contacts-form-section .contact-item a:hover, .contacts-form-section .transparent-input input[type="submit"]:hover, .contacts-form-section .transparent-input input[type="submit"]:focus, .feature-title-wrapper h4, .faq-list .icon-check a:hover, .error-404-wrapper h2 {
+.color-secondary, .widgetized-menu li a:hover, .accordion.accordion-type-2 .panel-heading a:hover, .accordion.accordion-type-2 .panel-heading.active a, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a, .accordion.accordion-type-2 .panel-heading.active a::after, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a::after, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a::after, .accordion.accordion-type-2.white-text .panel-heading.active a::after, .accordion.rounded-corners .panel-heading.active .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .panel-heading.active .accordion-toggle, .accordion.rounded-corners .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs .accordion.rounded-corners li.panel-heading .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs #colophon.type-3 .footer-newsletter input.accordion li.panel-heading .accordion-toggle, .single-portfolio-intro .portfolio-summary a:hover, .single-portfolio-intro .portfolio-meta .counter-item p a:hover, .cta-section.type-2 .cta-content-wrapper i, .cta-section.type-2 .cta-content-wrapper h2, .contacts-form-section .contact-item a:hover, .contacts-form-section .transparent-input input[type="submit"]:hover, .contacts-form-section .transparent-input input[type="submit"]:focus, .feature-title-wrapper h4, .faq-list .icon-check a:hover, .error-404-wrapper h2 {
   color: #d7706d;
 }
 
@@ -989,7 +989,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
 .accordion.white-text p,
 .accordion.white-text .accordion-toggle,
 .accordion.white-text .accordion-toggle:hover,
-.accordion.white-text .accordion-toggle::after, .image-box-wrapper figure figcaption,
+.accordion.white-text .accordion-toggle::after, .accordion.accordion-type-2.white-text .panel-heading a::after, .image-box-wrapper figure figcaption,
 .image-box-wrapper figure figcaption > a, .slider-pro h2.sp-layer,
 .slider-pro p.sp-layer, .slider-pro h4.sp-layer, .image-carousel-full-width .swiper-slide .icon-wrapper span, .image-carousel-full-width .swiper-slide figcaption h3, .service-tabs .nav-swiper .swiper-slide, .service-tabs .tab-content-heading.white-text, .service-tabs .tab-content.white-text p,
 .service-tabs .tab-content.white-text li, .portfolio-list-wrapper > .portfolio:hover .portfolio-content .portfolio-category,
@@ -3203,6 +3203,8 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .tab.iconic-tab > .nav-tabs li {
   margin-right: 0;
   padding-right: 90px;
+  color: #947cb0;
+  border-color: #947cb0;
   position: relative;
 }
 
@@ -3221,9 +3223,25 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   border-color: #9aabb8;
 }
 
+.tab.iconic-tab > .nav-tabs li a.fourth {
+  background: #947cb0;
+  border-color: #947cb0;
+}
+
+.tab.iconic-tab > .nav-tabs li a.fifth {
+  background: #d7706d;
+  border-color: #d7706d;
+}
+
+.tab.iconic-tab > .nav-tabs li a.sixth {
+  background: #9aabb8;
+  border-color: #9aabb8;
+}
+
 .tab.iconic-tab > .nav-tabs li a:hover, .tab.iconic-tab > .nav-tabs li a:focus {
   background: inherit;
   border-color: inherit;
+  color: inherit;
 }
 
 .tab.iconic-tab > .nav-tabs li.active > a, .tab.iconic-tab > .nav-tabs li > a, .tab.iconic-tab > .nav-tabs li:hover > a, .tab.iconic-tab > .nav-tabs li:focus > a {
@@ -3292,9 +3310,23 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   text-decoration: underline;
 }
 
+.tab.white-text h1,
+.tab.white-text h2,
 .tab.white-text h3,
+.tab.white-text h4,
+.tab.white-text h5,
+.tab.white-text h6,
 .tab.white-text p {
   color: #F8F9FA;
+}
+
+.tab.white-text:not(.iconic-tab) > .nav-tabs > li > a {
+  color: #F8F9FA;
+  border-color: #F8F9FA;
+}
+
+.tab.white-text:not(.iconic-tab) > .nav-tabs > li > a.active, .tab.white-text:not(.iconic-tab) > .nav-tabs > li > a:hover, .tab.white-text:not(.iconic-tab) > .nav-tabs > li > a:focus {
+  border-color: #947cb0;
 }
 
 .tab.white-text.iconic-tab > .nav-tabs li::before, .tab.white-text.iconic-tab > .nav-tabs li::after {
@@ -3302,6 +3334,11 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .tab.white-text.iconic-tab > .nav-tabs li::before {
+  color: #F8F9FA;
+}
+
+.tab.white-text.iconic-tab > .nav-tabs li.active, .tab.white-text.iconic-tab > .nav-tabs li, .tab.white-text.iconic-tab > .nav-tabs li:hover, .tab.white-text.iconic-tab > .nav-tabs li:focus {
+  border-color: #F8F9FA;
   color: #F8F9FA;
 }
 
@@ -7388,6 +7425,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 .pie-chart-wrapper {
   border-top: 0;
   overflow: hidden;
+  text-align: center;
 }
 
 .pie-chart-wrapper h6 {
@@ -7414,7 +7452,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .pie-chart-wrapper.simple {
   overflow: visible;
-  border: 1px solid #ddd;
+  border: 1px solid transparent;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -7430,7 +7468,6 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .pie-chart-wrapper.simple:hover {
-  border-color: #947cb0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -ms-box-shadow: none;
@@ -7441,27 +7478,21 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0);
+}
+
+.pie-chart-wrapper.simple.with-border {
+  border-color: #ddd;
+}
+
+.pie-chart-wrapper.simple.with-border:hover {
+  border-color: #947cb0;
 }
 
 .pie-chart-wrapper.default {
-  border: 1px solid #545454;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-}
-
-.pie-chart-wrapper.default h6 {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  border: 1px solid transparent;
 }
 
 .pie-chart-wrapper.default:hover {
-  border-color: #947cb0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -ms-box-shadow: none;
@@ -7472,6 +7503,14 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0);
+}
+
+.pie-chart-wrapper.default.with-border {
+  border-color: #545454;
+}
+
+.pie-chart-wrapper.default.with-border:hover {
+  border-color: #947cb0;
 }
 
 /**
@@ -7578,6 +7617,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 .accordion.accordion-type-2 .panel-heading {
   border: 0;
+  background: transparent;
 }
 
 .accordion.accordion-type-2 .panel-heading a {

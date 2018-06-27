@@ -937,9 +937,12 @@ INDEX:
         if ($tiltEl.cxExists()) {
             if ($window.width() > 768) {
                 $tiltEl.tilt({
-                    maxTilt: 15,
-                    perspective: 1140,
-                    easing: "cubic-bezier(.2,1,.22,1)" // Easing on enter/exit.
+                    maxTilt: 18,
+                    perspective: 1140,                  // Transform perspective, the lower the more extreme the tilt gets.
+                    speed: 800,                         // Speed of the enter/exit transition.
+                    glare: true,                        // Enables glare effect
+                    maxGlare: 0.2,                      // From 0 - 1.
+                    easing: "cubic-bezier(.2,1,.22,1)"  // Easing on enter/exit.
                 });
             }
         }
@@ -1040,39 +1043,39 @@ INDEX:
     CODEXIN.flipSetting = function() {
         if ($flipEl.cxExists()) {
             $flipEl.flip({
-                axis: 'y',
-                trigger: 'hover',
-                reverse: true
+                axis: 'y',          // The axis that you want to rotate around
+                trigger: 'hover',   // Event that activates the flip action.
+                reverse: true       // Set to true if you want to reverse the direction of the flip.
             });
         }
     };
 
 
     /************************************************************
-        s29 - Flip Settings
+        s30 - Modal Settings
     *************************************************************/
 
     CODEXIN.modalSetting = function() {
         if ($iframeModalEl.cxExists()) {
             $iframeModalEl.venobox({
-                spinner: 'cube-grid',
-                titleattr: 'data-title'
+                spinner: 'cube-grid',       // Preloader type
+                titleattr: 'data-title'     // Specific attribute to display a title (e.g. 'data-title')
             });
         }
 
         if ($inlineModalEl.cxExists()) {
             $inlineModalEl.venobox({
-                spinner: 'three-bounce',
-                titleattr: 'data-title',
-                framewidth: '800px',
-                frameheight: '425px'
+                spinner: 'three-bounce',    // Preloader type
+                titleattr: 'data-title',    // Specific attribute to display a title (e.g. 'data-title')
+                framewidth: '800px',        // Static window width
+                frameheight: '425px'        // Static window height
             });
         }
     };
 
 
     /************************************************************
-        s30 - Animation Settings
+        s31 - Animation Settings
     *************************************************************/
 
     CODEXIN.animationSetting = function() {
@@ -1081,6 +1084,7 @@ INDEX:
             sr.reveal('.animation-left', { origin: 'left', delay: 100 });
             sr.reveal('.animation-right', { origin: 'right', delay: 150 });
             sr.reveal('.animation-bottom', { origin: 'bottom', delay: 200 });
+            sr.reveal('.animation-top', { origin: 'top', delay: 200 });
             sr.reveal('.section-heading:not(.no-animation) h4', { origin: 'left', delay: 100 });
             sr.reveal('.section-heading:not(.no-animation) h2', { origin: 'right', delay: 150 });
             sr.reveal('.section-heading:not(.no-animation) .subtitle', { origin: 'bottom', delay: 200 });
@@ -1093,7 +1097,7 @@ INDEX:
             sr.reveal('.feature-box:not(.no-animation)', { origin: 'right' }, 200);
             sr.reveal('.member-wrapper .team-member, .team-member-card', { origin: 'bottom' }, 150);
             sr.reveal('.pricing-table, .pricing-table-type-2, .pricing-table-type-3', { origin: 'bottom' }, 200);
-            sr.reveal('.blog-item-grid, .blog-grid', { origin: 'bottom' }, 200);
+            sr.reveal('.blog-item-grid, .blog-grid, .image-box-wrapper', { origin: 'bottom' }, 200);
             sr.reveal('.info-box-wrapper', { origin: 'bottom' }, 200);
             sr.reveal('.tab .nav-tabs:not(.no-animation) li', { origin: 'right' }, 200);
         }

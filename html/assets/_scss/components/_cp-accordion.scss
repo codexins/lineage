@@ -109,6 +109,7 @@
 		}
 		.panel-heading {
 			border: 0;
+			background: transparent;
 
 			a {
 				font-size: calculateRem(14px);
@@ -147,6 +148,20 @@
 		&.white-text {
 			.panel-heading {
 				background: transparent;
+
+				a {
+					&::after {
+						@extend %color-white;
+					}
+				}
+
+				&.active {
+					a {
+						&::after {
+							@extend %color-secondary;
+						}
+					}
+				}
 			}
 
 			.panel {

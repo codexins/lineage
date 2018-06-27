@@ -34,8 +34,8 @@
 .pie-chart-wrapper {
     border-top: 0;
     overflow: hidden;
+    text-align: center;
     @extend %cx-transition;
-    @extend %rounded-corners;
     @extend %mb-half;
 
     h6 {
@@ -46,7 +46,6 @@
 	    padding: $cx-heading-margin-bottom;
 	    @include bcg-linear-gradient(110deg, $cx-secondary-color, $cx-primary-color);
 	    @extend %cx-transition;
-	    @extend %rounded-corners;
     }
 
     &:hover {
@@ -56,9 +55,8 @@
 
     &.simple {
 		overflow: visible;
-		border: 1px solid $cx-border-color;
+		border: 1px solid transparent;
 		@include border-radius(0);
-		@extend %bgc-offset;
 		h6 {
 		    background: transparent;
 		    color: $cx-text-color;
@@ -67,23 +65,32 @@
 		}
 
 	    &:hover {
-	    	border-color: $cx-primary-color;
 	    	@include cx-box-shadow('none');
 	    	@include transform-translateY(0);
+	    }
+
+	    &.with-border {
+	    	border-color: $cx-border-color;
+	    	&:hover {
+	    		border-color: $cx-primary-color;
+	    	}
 	    }
     }
 
     &.default {
-    	border: 1px solid $cx-text-color;
-    	@include border-radius(0);
-		h6 {
-			@include border-radius(0);
-		}
+    	border: 1px solid transparent;
 
     	&:hover {
-    		border-color: $cx-primary-color;
 	    	@include cx-box-shadow('none');
 	    	@include transform-translateY(0);
     	}
+		
+		&.with-border {
+			border-color: $cx-text-color;
+			&:hover {
+				border-color: $cx-primary-color;
+			}
+		}
+
     }
 }
