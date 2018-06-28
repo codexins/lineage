@@ -16,7 +16,6 @@
 		img {
 			max-width: 100%;
 			max-height: 80px;
-			height: 100%;
 			@include push-center;
 			@include respond-to(notebook) {
 				max-height: 60px;

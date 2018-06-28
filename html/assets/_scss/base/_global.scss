@@ -2,11 +2,8 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
 	@include box-sizing(border-box);
-}
-
-html {
-    height: 100%;
 }
 
 body {
@@ -475,3 +472,22 @@ $border-colors-count: length($border-colors);
 .flip-effect {
     @include cx-prefix('transform', 'translateZ(30px)');
 }
+
+// .jarallax-default,
+// .jarallax-slow {
+//     position: relative;
+//     z-index: 0;
+// }
+
+// .jarallax-default > img,
+// .jarallax-slow > img {
+//     position: absolute;
+//     object-fit: cover;
+//     support for plugin https://github.com/bfred-it/object-fit-images
+//     font-family: 'object-fit: cover;';
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: -1;
+// }

@@ -281,14 +281,14 @@ INDEX:
     *************************************************************/
 
     CODEXIN.elementHeights = function() {
-        var headerHeight = $intelHeader.outerHeight();
-        var footerHeight = $footer.outerHeight();
+        var headerHeight = $intelHeader[0].getBoundingClientRect().height;
+        var footerHeight = $footer[0].getBoundingClientRect().height;
 
         $(".intelligent-header-space").height(headerHeight);
 
         if ($(".fixed-footer").cxExists()) {
             if ($window.width() > 767) {
-                $("#whole").css('padding-bottom', footerHeight);
+                $("#whole").css({"padding-bottom": footerHeight, "min-height": "100%"});
             }
         }
     };
@@ -899,7 +899,7 @@ INDEX:
     CODEXIN.parallaxInit = function() {
         if ($window.width() > 768) {
             $parallax.jarallax({
-                speed: 0.6
+                speed: 0.5
             });
 
             $parallaxSlow.jarallax({

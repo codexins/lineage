@@ -56,15 +56,12 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-html {
-  height: 100%;
 }
 
 body {
@@ -3245,7 +3242,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 }
 
 .tab.iconic-tab > .nav-tabs li.active > a, .tab.iconic-tab > .nav-tabs li > a, .tab.iconic-tab > .nav-tabs li:hover > a, .tab.iconic-tab > .nav-tabs li:focus > a {
-  min-width: auto;
+  min-width: 0;
   margin: 0;
   padding: 0;
   font-size: 30px;
@@ -9913,7 +9910,7 @@ header.header-white .intelligent-header {
 
 .fixed-footer {
   position: fixed;
-  bottom: 1px;
+  bottom: 0;
   width: 100%;
   z-index: -1;
 }
@@ -11719,7 +11716,6 @@ blockquote {
 .client-carousel .item-brand img {
   max-width: 100%;
   max-height: 80px;
-  height: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
