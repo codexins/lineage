@@ -9132,6 +9132,12 @@ header.header-white .intelligent-header {
   cursor: url(../img/openhand.cur), move;
 }
 
+@media only screen and (max-width: 479px) {
+  .image-carousel-full-width .swiper-slide a > img {
+    width: 100%;
+  }
+}
+
 .image-carousel-full-width .swiper-slide .icon-wrapper {
   width: 100%;
   height: 100%;

@@ -8,6 +8,11 @@
 		overflow: hidden;
 		a {
 			cursor: url(../img/openhand.cur), move;
+			> img {
+				@include media-only(small-mobile, max) {
+					width: 100%;
+				}
+			}
 		}
 		.icon-wrapper {
 		    width: 100%;
