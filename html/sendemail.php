@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="Bootstrap 3, Clean, HTML5, Responsive, Corporate, Multipurpose, Simple, Office, Flat, Fast loading, Portfolio, Business, Multi Page, Professional, Agency">
+    <meta name="keywords" content="Bootstrap 3, Creative, Clean, HTML5, Responsive, Corporate, Multipurpose, Simple, Office, Flat, Fast loading, Portfolio, Business, Multi Page, Professional, Agency">
     <title>Lineage - Responsive Multipurpose HTML Template</title>
 
     <!-- favicon
@@ -449,12 +449,12 @@
                                     <div class="social-icons animation-bottom mt-full">
                                         <h3 style="font-weight: normal">Follow Us:</h3>
                                         <ul>
-                                            <li><a class="facebook" href=""><i class="fa fa-facebook"></i></a></li>
-                                            <li><a class="twitter" href=""><i class="fa fa-twitter"></i></a></li>
-                                            <li><a class="google-plus" href=""><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a class="instagram" href=""><i class="fa fa-instagram"></i></a></li>
-                                            <li><a class="pinterest" href=""><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a class="linkedin" href=""><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
                                         </ul>
                                     </div>
                                 </section> <!-- end of feedback-wrapper -->
@@ -487,7 +487,7 @@
                         <p>Professionally deliver revolutionary innovation after standards compliant partnerships.</p>
                         <div class="actions">
                             <a href="#" class="default-btn">(123) 456 7890</a>
-                            <a href="#" class="default-btn">Get in touch</a>
+                            <a href="contact-1.html" class="default-btn">Get in touch</a>
                         </div>
                         <div class="socials social-icon-large">
                             <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -501,7 +501,7 @@
             </div> <!-- end of container -->
 
             <div class="copyright-section">
-                <p>&copy; Copyright - 2018. All rights reserverd by <a href="#" target="_blank" rel="nofollow">themeitems.com</a></p>
+                <p>&copy; Copyright - 2018. All rights reserverd by <a href="#" target="_blank" rel="nofollow"><i>Codexin</i></a>.</p>
             </div> <!-- end of copyright-section -->
         </footer>
         <!-- End of Footer -->

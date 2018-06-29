@@ -51,7 +51,8 @@
         border: 1px solid;
         border-top: 2px solid $cx-primary-color;
         border-color: $cx-primary-color lighten(rgb(0, 0, 0), 15%) lighten(rgb(0, 0, 0), 15%);
-        background: $cx-tertiary-color;
+        // background: $cx-tertiary-color;
+        @extend %bgc-tertiary;
         li {
             > a {
                 padding: 9px 15px;
@@ -107,7 +108,7 @@
 
                 &.active {
                     > a {
-                        color: $cx-secondary-color;
+                        @extend %color-secondary;
                     }
                 }
             }
@@ -125,7 +126,7 @@
             li {
                 &.active {
                     > a {
-                        color: $cx-secondary-color;
+                        @extend %color-secondary;
                     }
                 }
             }

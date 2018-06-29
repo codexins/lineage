@@ -944,16 +944,22 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   border-left: 1px solid #ddd;
 }
 
-.bgc-primary, .text-widget .contact-no a, .contact-box-widget > a, .pricing-table-type-3.featured .pricing-title, .post-single .like-count,
+.bgc-primary, .c-menu--slide-left .c-menu__link:hover, .c-menu--slide-left .c-menu__link:focus,
+.c-menu--slide-right .c-menu__link:hover,
+.c-menu--slide-right .c-menu__link:focus,
+.c-menu--push-left .c-menu__link:hover,
+.c-menu--push-left .c-menu__link:focus,
+.c-menu--push-right .c-menu__link:hover,
+.c-menu--push-right .c-menu__link:focus, .c-menu__close, .text-widget .contact-no a, .contact-box-widget > a, .pricing-table-type-3.featured .pricing-title, .post-single .like-count,
 .post-single .comment-count, .accordion.white-text .panel-heading.active, .accordion.white-text .tab.iconic-tab > .nav-tabs li.panel-heading, .tab.iconic-tab > .nav-tabs .accordion.white-text li.panel-heading, .image-box-wrapper figure figcaption p, .service-tabs .nav-swiper .swiper-wrapper .selected {
   background-color: #947cb0;
 }
 
-.bgc-secondary, .section-heading.type-2 h2::after, .service-tabs .type-2.tab-content-heading h2::after, .text-widget .contact-no a:hover, .pricing-table-type-3 .pricing-title, .single-portfolio-intro .portfolio-summary ul li a:hover {
+.bgc-secondary, .c-button, .section-heading.type-2 h2::after, .service-tabs .type-2.tab-content-heading h2::after, .text-widget .contact-no a:hover, .pricing-table-type-3 .pricing-title, .single-portfolio-intro .portfolio-summary ul li a:hover {
   background-color: #d7706d;
 }
 
-.bgc-tertiary, .team-member-card .team-details, .service-tabs .nav-swiper .swiper-slide, #colophon.footer-dark {
+.bgc-tertiary, .team-member-card .team-details, #main-nav .sub-menu, .service-tabs .nav-swiper .swiper-slide, #colophon.footer-dark {
   background-color: #3e3e3e;
 }
 
@@ -980,11 +986,11 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   background-color: #fff;
 }
 
-.color-primary, .contact-box-widget:hover .icon-wrapper i, .single-portfolio-intro .portfolio-summary h3, .contacts-form-section .contact-item h4 {
+.color-primary, .c-button, .contact-box-widget:hover .icon-wrapper i, .single-portfolio-intro .portfolio-summary h3, .contacts-form-section .contact-item h4 {
   color: #947cb0;
 }
 
-.color-secondary, .widgetized-menu li a:hover, .accordion.accordion-type-2 .panel-heading a:hover, .accordion.accordion-type-2 .panel-heading.active a, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a, .accordion.accordion-type-2 .panel-heading.active a::after, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a::after, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a::after, .accordion.accordion-type-2.white-text .panel-heading.active a::after, .accordion.rounded-corners .panel-heading.active .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .panel-heading.active .accordion-toggle, .accordion.rounded-corners .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs .accordion.rounded-corners li.panel-heading .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs #colophon.type-3 .footer-newsletter input.accordion li.panel-heading .accordion-toggle, .single-portfolio-intro .portfolio-summary a:hover, .single-portfolio-intro .portfolio-meta .counter-item p a:hover, .cta-section.type-2 .cta-content-wrapper i, .cta-section.type-2 .cta-content-wrapper h2, .contacts-form-section .contact-item a:hover, .contacts-form-section .transparent-input input[type="submit"]:hover, .contacts-form-section .transparent-input input[type="submit"]:focus, .feature-title-wrapper h4, .faq-list .icon-check a:hover, .error-404-wrapper h2 {
+.color-secondary, .widgetized-menu li a:hover, .accordion.accordion-type-2 .panel-heading a:hover, .accordion.accordion-type-2 .panel-heading.active a, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a, .accordion.accordion-type-2 .panel-heading.active a::after, .accordion.accordion-type-2 .tab.iconic-tab > .nav-tabs li.panel-heading a::after, .tab.iconic-tab > .nav-tabs .accordion.accordion-type-2 li.panel-heading a::after, .accordion.accordion-type-2.white-text .panel-heading.active a::after, .accordion.rounded-corners .panel-heading.active .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .panel-heading.active .accordion-toggle, .accordion.rounded-corners .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs .accordion.rounded-corners li.panel-heading .accordion-toggle, #colophon.type-3 .footer-newsletter input.accordion .tab.iconic-tab > .nav-tabs li.panel-heading .accordion-toggle, .tab.iconic-tab > .nav-tabs #colophon.type-3 .footer-newsletter input.accordion li.panel-heading .accordion-toggle, .header-white #main-nav ul:not(.sub-menu) > li.active > a, .header-white #main-nav .tab.iconic-tab > .nav-tabs ul:not(.sub-menu) > li > a, .tab.iconic-tab > .nav-tabs .header-white #main-nav ul:not(.sub-menu) > li > a, #main-nav.stellarnav li li.active > a, #main-nav.stellarnav li .tab.iconic-tab > .nav-tabs li > a, .tab.iconic-tab > .nav-tabs #main-nav.stellarnav li li > a, .single-portfolio-intro .portfolio-summary a:hover, .single-portfolio-intro .portfolio-meta .counter-item p a:hover, .cta-section.type-2 .cta-content-wrapper i, .cta-section.type-2 .cta-content-wrapper h2, .contacts-form-section .contact-item a:hover, .contacts-form-section .transparent-input input[type="submit"]:hover, .contacts-form-section .transparent-input input[type="submit"]:focus, .feature-title-wrapper h4, .faq-list .icon-check a:hover, .error-404-wrapper h2 {
   color: #d7706d;
 }
 
@@ -1079,11 +1085,6 @@ to a reusable component.
   text-transform: capitalize;
 }
 
-.c-button {
-  color: #947cb0;
-  background: #d7706d;
-}
-
 .o-header-nav {
   background-color: #947cb0;
 }
@@ -1106,20 +1107,6 @@ to a reusable component.
 .c-menu--push-left .c-menu__item,
 .c-menu--push-right .c-menu__item {
   border-bottom: 1px solid #434343;
-}
-
-.c-menu--slide-left .c-menu__link:hover, .c-menu--slide-left .c-menu__link:focus,
-.c-menu--slide-right .c-menu__link:hover,
-.c-menu--slide-right .c-menu__link:focus,
-.c-menu--push-left .c-menu__link:hover,
-.c-menu--push-left .c-menu__link:focus,
-.c-menu--push-right .c-menu__link:hover,
-.c-menu--push-right .c-menu__link:focus {
-  background: #947cb0;
-}
-
-.c-menu__close {
-  background-color: #947cb0;
 }
 
 #c-menu--slide-left .c-menu__items ul,
@@ -8877,7 +8864,6 @@ section:hover .tab-content-heading h4::after {
   border: 1px solid;
   border-top: 2px solid #947cb0;
   border-color: #947cb0 #262626 #262626;
-  background: #3e3e3e;
 }
 
 #main-nav .sub-menu li > a {
@@ -8928,16 +8914,8 @@ section:hover .tab-content-heading h4::after {
   text-shadow: none;
 }
 
-.header-white #main-nav ul:not(.sub-menu) > li.active > a, .header-white #main-nav .tab.iconic-tab > .nav-tabs ul:not(.sub-menu) > li > a, .tab.iconic-tab > .nav-tabs .header-white #main-nav ul:not(.sub-menu) > li > a {
-  color: #d7706d;
-}
-
 #main-nav.stellarnav li.active > a, #main-nav.stellarnav .tab.iconic-tab > .nav-tabs li > a, .tab.iconic-tab > .nav-tabs #main-nav.stellarnav li > a {
   color: #ffcb5e;
-}
-
-#main-nav.stellarnav li li.active > a, #main-nav.stellarnav li .tab.iconic-tab > .nav-tabs li > a, .tab.iconic-tab > .nav-tabs #main-nav.stellarnav li li > a {
-  color: #d7706d;
 }
 
 .intelligent-header.scrolling-up #main-nav li > a {

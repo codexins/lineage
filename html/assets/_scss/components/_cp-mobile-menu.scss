@@ -12,8 +12,8 @@
 }
 
 .c-button {
-    color: $cx-primary-color;
-    background: $cx-secondary-color;
+    @extend %color-primary;
+    @extend %bgc-secondary;
 }
 
 
@@ -47,12 +47,12 @@
 .c-menu--push-right .c-menu__link {
     &:hover,
     &:focus {
-        background: $cx-primary-color;
+        @extend %bgc-primary;
     }
 }
 
 .c-menu__close {
-    background-color: $cx-primary-color;
+    @extend %bgc-primary;
 }
 
 
