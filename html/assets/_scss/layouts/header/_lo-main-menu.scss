@@ -104,6 +104,30 @@
                     color: $cx-text-color;
                     text-shadow: none;
                 }
+
+                &.active {
+                    > a {
+                        color: $cx-secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &.stellarnav {
+        li {
+            &.active {
+                > a {
+                    color: $cx-fourth-color;
+                }
+            }
+
+            li {
+                &.active {
+                    > a {
+                        color: $cx-secondary-color;
+                    }
+                }
             }
         }
     }

@@ -5,6 +5,10 @@
 
 .c-menu {
     background-color: lighten($cx-tertiary-color, 5%);
+
+    a {
+        text-transform: capitalize;
+    }
 }
 
 .c-button {
@@ -43,7 +47,7 @@
 .c-menu--push-right .c-menu__link {
     &:hover,
     &:focus {
-        color: $cx-secondary-color;
+        background: $cx-primary-color;
     }
 }
 
@@ -125,6 +129,16 @@
             > .drawer-toggle {
                 i {
                     @include cx-prefix('transform', ' rotate(180deg)')
+                }
+            }
+        }
+    }
+
+    .c-menu {
+        li {
+            &.active {
+                > a {
+                    color: $cx-fourth-color;
                 }
             }
         }

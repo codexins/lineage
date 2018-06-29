@@ -128,6 +128,15 @@
 			margin-left: 0;
 		}
 
+		.post-like {
+			cursor: pointer;
+
+			&:hover,
+			&:focus {
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+		}
+
 		&:hover {
 			.post-media {
 				img {

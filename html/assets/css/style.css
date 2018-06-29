@@ -976,7 +976,7 @@ input[type="submit"], .default-btn, .default-btn.white-btn, .animated-btn, .anim
   background-color: #9aabb8;
 }
 
-.bgc-white, .section-heading.white-text h4::before, .service-tabs .white-text.tab-content-heading h4::before, .section-heading.white-text h4::after, .service-tabs .white-text.tab-content-heading h4::after, .counter-item.type-2 .counter-wrapper, .counter-item.type-2 .counter-wrapper .counter-content, .tab.type-2 .tab-content, .contact-box-widget:hover .icon-wrapper i, .team-member .team-details, .pricing-table .pricing-features, .pricing-table-type-2 .pricing-button, .pricing-table-type-3, .accordion .panel-heading, .client-single, .c-button .icon-bar, .cta-section.type-2 .cta-content-wrapper, .client-carousel .item-brand, .page-title-section.modern {
+.bgc-white, .section-heading.white-text h4::before, .service-tabs .white-text.tab-content-heading h4::before, .section-heading.white-text h4::after, .service-tabs .white-text.tab-content-heading h4::after, .section-heading.type-2.white-text h2::after, .service-tabs .type-2.white-text.tab-content-heading h2::after, .counter-item.type-2 .counter-wrapper, .counter-item.type-2 .counter-wrapper .counter-content, .tab.type-2 .tab-content, .contact-box-widget:hover .icon-wrapper i, .team-member .team-details, .pricing-table .pricing-features, .pricing-table-type-2 .pricing-button, .pricing-table-type-3, .accordion .panel-heading, .client-single, .c-button .icon-bar, .cta-section.type-2 .cta-content-wrapper, .client-carousel .item-brand, .page-title-section.modern {
   background-color: #fff;
 }
 
@@ -1075,6 +1075,10 @@ to a reusable component.
   background-color: #4b4b4b;
 }
 
+.c-menu a {
+  text-transform: capitalize;
+}
+
 .c-button {
   color: #947cb0;
   background: #d7706d;
@@ -1111,7 +1115,7 @@ to a reusable component.
 .c-menu--push-left .c-menu__link:focus,
 .c-menu--push-right .c-menu__link:hover,
 .c-menu--push-right .c-menu__link:focus {
-  color: #d7706d;
+  background: #947cb0;
 }
 
 .c-menu__close {
@@ -1226,6 +1230,10 @@ to a reusable component.
   -ms-transform:  rotate(180deg);
   -o-transform:  rotate(180deg);
   transform:  rotate(180deg);
+}
+
+.mobile-menu .c-menu li.active > a, .mobile-menu .c-menu .tab.iconic-tab > .nav-tabs li > a, .tab.iconic-tab > .nav-tabs .mobile-menu .c-menu li > a {
+  color: #ffcb5e;
 }
 
 /**
@@ -8920,6 +8928,18 @@ section:hover .tab-content-heading h4::after {
   text-shadow: none;
 }
 
+.header-white #main-nav ul:not(.sub-menu) > li.active > a, .header-white #main-nav .tab.iconic-tab > .nav-tabs ul:not(.sub-menu) > li > a, .tab.iconic-tab > .nav-tabs .header-white #main-nav ul:not(.sub-menu) > li > a {
+  color: #d7706d;
+}
+
+#main-nav.stellarnav li.active > a, #main-nav.stellarnav .tab.iconic-tab > .nav-tabs li > a, .tab.iconic-tab > .nav-tabs #main-nav.stellarnav li > a {
+  color: #ffcb5e;
+}
+
+#main-nav.stellarnav li li.active > a, #main-nav.stellarnav li .tab.iconic-tab > .nav-tabs li > a, .tab.iconic-tab > .nav-tabs #main-nav.stellarnav li li > a {
+  color: #d7706d;
+}
+
 .intelligent-header.scrolling-up #main-nav li > a {
   padding-top: 26px;
   padding-bottom: 26px;
@@ -9143,6 +9163,20 @@ header.header-white .intelligent-header {
   .full-screen-slider-section .full-width-video {
     height: 100%;
     object-fit: cover;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .full-screen-slider-section .full-width-video {
+    /* IE10+ CSS styles */
+    height: auto;
+  }
+}
+
+@supports (position: -ms-page) {
+  .full-screen-slider-section .full-width-video {
+    /* Edge CSS styles */
+    height: auto;
   }
 }
 
@@ -11356,6 +11390,14 @@ blockquote {
   margin-left: 0;
 }
 
+.single-post-wrapper .post-single .post-like {
+  cursor: pointer;
+}
+
+.single-post-wrapper .post-single .post-like:hover, .single-post-wrapper .post-single .post-like:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .single-post-wrapper .post-single:hover .post-media img {
   -webkit-transform: none;
   -moz-transform: none;
@@ -11772,7 +11814,7 @@ blockquote {
 @media only screen and (max-width: 479px) {
   .contacts-form-section .quote-form-wrapper,
   .contacts-form-section .contact-info-wrapper {
-    padding: 15px;
+    padding: 20px;
   }
 }
 
@@ -12851,6 +12893,10 @@ blockquote {
 .modal-main-content .team-title-wrapper .team-socials {
   float: right;
   margin-top: 15px;
+}
+
+.modal-main-content .team-title-wrapper .team-socials a {
+  margin-right: 5px;
 }
 
 @media only screen and (max-width: 767px) {

@@ -273,6 +273,15 @@ INDEX:
                 });
             }
         });
+
+        // Adding active class to nav menu dependent on page
+        var pageUrl = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
+        $("#main-nav a, .c-menu a").each(function() {
+            if ($(this).attr("href") === pageUrl || $(this).attr("href") === '') {
+                $(this).closest('li').addClass("active");
+                $(this).parents('li').addClass('active');
+            }
+        })
     };
 
 

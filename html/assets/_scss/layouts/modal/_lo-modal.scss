@@ -49,6 +49,9 @@
  			margin-top: 15px;
  			@extend %mb0;
  			@extend .social-icon-large;
+ 			a {
+ 				margin-right: 5px;
+ 			}
  		}
 		
 		@include respond-to(mobile) {

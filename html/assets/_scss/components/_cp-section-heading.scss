@@ -178,6 +178,14 @@
                 max-width: 100%;
             }
         }
+
+        &.white-text {
+            h2 {
+                &::after {
+                    @extend %bgc-white;
+                }
+            }
+        }
     }
 
     &.type-3 {
