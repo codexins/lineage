@@ -584,6 +584,11 @@ input[type="submit"] {
   height: 44px;
   background: #947cb0;
   color: white;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
 }
 
 button,
@@ -595,7 +600,11 @@ input[type="button"] {
   letter-spacing: 2px;
   padding: 8px 20px;
   text-transform: uppercase;
-  transition: all 0.3s;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
 }
 
 input::-webkit-input-placeholder,

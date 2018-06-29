@@ -128,6 +128,7 @@ input[type="submit"] {
     background: $cx-primary-color;
     color: lighten($cx-text-color, 100%);
     @extend %cx-transition;
+    @include border-radius(0);
 }
 
 
@@ -140,7 +141,7 @@ input[type="button"] {
     letter-spacing: 2px;
     padding: 8px 20px;
     text-transform: uppercase;
-    transition: all 0.3s;
+    @include border-radius(0);
 }
 
 input::-webkit-input-placeholder,
