@@ -5,12 +5,15 @@
 
 .our-history {
 	#tab_panel_three {
+		margin-bottom: - $cx-col-spacing-mob;
+		float: left;
 		.media-wrapper {
 			margin-bottom: $cx-col-spacing-mob;
 		}
 	}
 	#tab_panel_two {
 		margin-bottom: -45px;
+		float: left;
 		@include respond-to(mobile) {
 			margin-bottom: -33.75px;
 		}
@@ -20,6 +23,7 @@
 		> .row {
 			&:last-child {
 				margin-bottom: -45px;
+				float: left;
 				@include respond-to(mobile) {
 					margin-bottom: -33.75px;
 				}

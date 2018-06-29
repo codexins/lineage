@@ -2249,7 +2249,13 @@ section:hover .section-heading.type-3 h2::after, section:hover .service-tabs .ty
   }
 }
 
-section:hover .section-heading h4::before, section:hover .service-tabs .tab-content-heading h4::before, .service-tabs section:hover .tab-content-heading h4::before, section:hover .section-heading h4::after, section:hover .service-tabs .tab-content-heading h4::after, .service-tabs section:hover .tab-content-heading h4::after {
+.section:hover .section-heading h4::before, .section:hover .service-tabs .tab-content-heading h4::before, .service-tabs .section:hover .tab-content-heading h4::before, .section:hover .section-heading h4::after, .section:hover .service-tabs .tab-content-heading h4::after, .service-tabs .section:hover .tab-content-heading h4::after,
+section:hover .section-heading h4::before,
+section:hover .service-tabs .tab-content-heading h4::before, .service-tabs
+section:hover .tab-content-heading h4::before,
+section:hover .section-heading h4::after,
+section:hover .service-tabs .tab-content-heading h4::after, .service-tabs
+section:hover .tab-content-heading h4::after {
   width: 2rem;
 }
 
@@ -3485,7 +3491,7 @@ section:hover .section-heading h4::before, section:hover .service-tabs .tab-cont
 
 @media only screen and (max-width: 479px) {
   .tab.type-2 .tab-content {
-    padding: 15px;
+    padding: 20px;
   }
 }
 
@@ -12305,12 +12311,18 @@ blockquote {
  * Layout About/ History
  *
  */
+.our-history #tab_panel_three {
+  margin-bottom: -33.75px;
+  float: left;
+}
+
 .our-history #tab_panel_three .media-wrapper {
   margin-bottom: 33.75px;
 }
 
 .our-history #tab_panel_two {
   margin-bottom: -45px;
+  float: left;
 }
 
 @media only screen and (max-width: 767px) {
@@ -12322,6 +12334,7 @@ blockquote {
 .our-history #tab_panel_four > .row:last-child,
 .our-history #tab_panel_five > .row:last-child {
   margin-bottom: -45px;
+  float: left;
 }
 
 @media only screen and (max-width: 767px) {
