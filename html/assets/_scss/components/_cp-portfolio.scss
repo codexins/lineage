@@ -449,7 +449,7 @@
 			    }
 			    span {
 			    	display: inline-block;
-			    	width: 50%;
+			    	// width: 50%;
 			    	font-size: calculateRem(14px);
 			    	cursor: pointer;
 			    }
@@ -487,6 +487,16 @@
 
 		.portfolio-mini-desc {
 			max-width: calc(100% - 15px);
+		}
+
+		&.hover-effect-type-3 {
+			.portfolio-mini-desc {
+				@media not all and (min-resolution:.001dpcm) { 
+					@supports (-webkit-appearance: none) {
+						max-width: 100%;
+				    }
+				}
+			}
 		}
 	}
 

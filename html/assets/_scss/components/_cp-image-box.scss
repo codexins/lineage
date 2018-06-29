@@ -8,7 +8,7 @@
 	overflow: hidden;
 	@extend %mb-half;
 	figure {
-		@extend %bgc-primary;
+		// @extend %bgc-primary;
 		img {
 			position: relative;
 			width: 100%;
@@ -70,6 +70,7 @@
 			p {
 				opacity: 0;
 				font-size: calculateRem(14px);
+				@extend %bgc-primary;
 				@extend %mb0;
 				@include cx-prefix('transform', 'translate3d(0,60px,0)');
 				@extend %cx-transition;
@@ -86,7 +87,7 @@
 
 		&:hover {
 			img {
-				@include cx-prefix('transform', 'translate3d(0,-77px,0)');
+				@include cx-prefix('transform', 'translate3d(0,-70px,0)');
 			}
 
 			h2 {

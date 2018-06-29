@@ -109,7 +109,7 @@ INDEX:
             loading: true,
             loadingParentElement: 'body',
             loadingClass: 'cx-pageloader-wrapper',
-            loadingInner: '<div class="cx-loader-inner"><div class="cx-loader"></div><div class="cx-loader"></div><div class="cx-loader"></div><div class="cx-loader"></div><div class="cx-loader"></div><div class="cx-loader"></div></div>',
+            loadingInner: '<div class="cx-loader-inner"><svg class="circular" viewBox="25 25 50 50"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div>',
             timeout: false,
             timeoutCountdown: 5000,
             onLoadEvent: true,
@@ -897,7 +897,7 @@ INDEX:
     *************************************************************/
 
     CODEXIN.parallaxInit = function() {
-        if ($window.width() > 768) {
+        if ($window.width() > 1024) {
             $parallax.jarallax({
                 speed: 0.5
             });

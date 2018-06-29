@@ -242,6 +242,11 @@
 		    min-width: 120px;
 		    padding: 12px 25px;
 		    height: auto;
+			@media not all and (min-resolution:.001dpcm) { 
+				@supports (-webkit-appearance: none) {
+					margin-bottom: 30px;
+			    }
+			}
 		}
 	}
 

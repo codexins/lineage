@@ -406,8 +406,20 @@ $border-colors-count: length($border-colors);
 
 .flex-eq-height {
 	@include media-only(notebook, min) {
-		@include cx-prefix('display', 'flex');
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
 		@include cx-prefix('flex-wrap', 'wrap');
+	}
+	@media not all and (min-resolution:.001dpcm) { 
+		@supports (-webkit-appearance: none) {
+			> div[class^='col'], 
+			> div[class*=' col'] {
+				-webkit-flex: 1 25%;
+			}
+	    }
 	}
 }
 
@@ -473,21 +485,21 @@ $border-colors-count: length($border-colors);
     @include cx-prefix('transform', 'translateZ(30px)');
 }
 
-// .jarallax-default,
-// .jarallax-slow {
-//     position: relative;
-//     z-index: 0;
-// }
 
-// .jarallax-default > img,
-// .jarallax-slow > img {
-//     position: absolute;
-//     object-fit: cover;
-//     support for plugin https://github.com/bfred-it/object-fit-images
-//     font-family: 'object-fit: cover;';
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: -1;
-// }
+.jarallax-default,
+.jarallax-slow {
+    position: relative;
+    z-index: 0;
+}
+
+.jarallax-default > img,
+.jarallax-slow > img {
+    position: absolute;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

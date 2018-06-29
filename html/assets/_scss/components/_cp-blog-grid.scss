@@ -17,6 +17,7 @@
 
 	.post-content {
 	    padding: 12px 0px;
+	    width: 100%;
 	    -webkit-box-pack: justify;
 	    -webkit-box-orient: vertical;
 	    -webkit-box-direction: normal;
@@ -89,6 +90,23 @@
 		.post-media {
 			width: 100%;
 			margin-bottom: 10px;
+		}
+	}
+}
+
+.no-flexbox {
+	.flex-wrapper {
+		display: block;
+		overflow: hidden;
+		.post-media {
+			float: left;
+		}
+		.post-content {
+			width: 60%;
+			float: right;
+		}
+		.post-title {
+			margin-bottom: 20px;
 		}
 	}
 }

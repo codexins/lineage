@@ -13,71 +13,78 @@
     background-color: lighten($cx-text-color, 100%);
 
     .cx-loader-inner {
-        height: 20px;
-        width: 250px;
+        width: 100px;
+        top: 50%;
+        left: 50%;
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
+        margin-left: -50px;
+        margin-top: -50px;
 
-        .cx-loader {
-            height: 20px;
-            width: 20px;
-            border-radius: 100%;
-            background-color: #000;
-            position: absolute;
-            border: 2px solid lighten($cx-text-color, 100%);
-            @include cx-prefix('animation', 'cx-dot-loader ease-in-out 3s infinite');
-
-            &:first-child {
-                background-color: $facebook-color;
-                animation-delay: 0.5s;
-            }
-
-            &:nth-child(2) {
-                background-color: $gplus-color;
-                animation-delay: 0.4s;
-            }
-
-            &:nth-child(3) {
-                background-color: $reddit-color;
-                animation-delay: 0.3s;
-            }
-
-            &:nth-child(4) {
-                background-color: $cx-fourth-color;
-                animation-delay: 0.2s;
-            }
-
-            &:nth-child(5) {
-                background-color: $cx-secondary-color;
-                animation-delay: 0.1s;
-            }
-
-            &:nth-child(6) {
-                background-color: $cx-primary-color;
-                animation-delay: 0s;
-            }
+        &::before {
+            content: '';
+            display: block;
+            padding-top: 100%;
         }
+
+        .circular {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            @include cx-prefix('animation', 'rotate 2s linear infinite');
+            @include cx-prefix('transform-origin', 'center center');
+        }
+
+        .path {
+            stroke-dasharray: 1, 200;
+            stroke-dashoffset: 0;
+            stroke-linecap: round;
+            @include cx-prefix('animation', 'dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite');
+        }
+
+
     }
 }
 
-@include keyframes(cx-dot-loader) {
-    15% {
-        @include cx-prefix('transform', 'translateX(0)');
-    }
 
-    45% {
-        @include cx-prefix('transform', 'translateX(230px)');
+@include keyframes(rotate) {
+    100% {
+        @include cx-prefix('transform', 'rotate(360deg)');
     }
+}
 
-    65% {
-        @include cx-prefix('transform', 'translateX(230px)');
+@include keyframes(dash) {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
     }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
 
-    95% {
-        @include cx-prefix('transform', 'translateX(0)');
+@include keyframes(color) {
+    100%,
+    0% {
+        stroke: $cx-primary-color;
+    }
+    40% {
+        stroke: $gplus-color;
+    }
+    66% {
+        stroke: $twitter-color;
+    }
+    80%,
+    90% {
+        stroke: $youtube-color;
     }
 }

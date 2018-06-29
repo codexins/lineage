@@ -150,3 +150,23 @@
 		}
 	}
 }
+
+.no-flexbox .cta-content-wrapper {
+	display: block;
+	overflow: hidden;
+
+	i {
+		float: left;
+	}
+
+	.cta-content {
+		width: 65%;
+	}
+
+	.default-btn,
+	.animated-btn,
+	.shadow-btn,
+	.fancy-btn {
+		float: right;
+	}
+}

@@ -184,6 +184,11 @@
 	overflow: hidden;
 	position: relative;
 	background: $cx-primary-color;
+	@media not all and (min-resolution:.001dpcm) { 
+		@supports (-webkit-appearance: none) {
+			margin-bottom: 0;
+	    }
+	}
 	&::before {
 	    width: 0%;
 	    height: 100%;

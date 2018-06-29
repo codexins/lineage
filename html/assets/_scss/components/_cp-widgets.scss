@@ -14,7 +14,25 @@
 	    text-transform: capitalize;
 	    color: $cx-primary-color;
 	    position: relative;
-	    text-shadow: 4px 4px 1px rgba($cx-grey-color, 0.35);
+	    padding-left: 20px;
+	    &::before,
+	    &::after {
+			background: $cx-primary-color;
+	    }
+
+	    &::before {
+			width: 1.5px;
+			@include abs-position(0, auto, 0, 0);
+			@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+				/* IE10+ CSS styles */
+				width: 1.2px;
+			}
+	    }
+
+	    &::after {
+			width: 1.2px;
+			@include abs-position(5px, auto, 5px, 5px);
+	    }
 	}
 	&:first-child {
 		padding-top: 0;
