@@ -29,7 +29,7 @@
 			}
 			@include respond-to(mobile) {
 			    width: 100%;
-			    margin: 0 0 10px!important;
+			    margin: 0 0 10px;
 			}
 			@include respond-to(small-mobile) {
 				width: 100%;

@@ -138,6 +138,14 @@ section {
   font-weight: normal;
 }
 
+.feedback-wrapper .no-submit {
+  color: #a94442;
+}
+
+.feedback-wrapper .social-icons h3 {
+  font-weight: normal;
+}
+
 .browserupgrade {
   padding: 50px;
   background: #dedede;
@@ -427,24 +435,6 @@ section {
   -ms-transform: translateZ(30px);
   -o-transform: translateZ(30px);
   transform: translateZ(30px);
-}
-
-.jarallax-default,
-.jarallax-slow {
-  position: relative;
-  z-index: 0;
-}
-
-.jarallax-default > img,
-.jarallax-slow > img {
-  position: absolute;
-  object-fit: cover;
-  font-family: 'object-fit: cover;';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 /************************************************************
@@ -9620,7 +9610,7 @@ header.header-white .intelligent-header {
 @media only screen and (max-width: 767px) {
   #colophon nav li {
     width: 100%;
-    margin: 0 0 10px !important;
+    margin: 0 0 10px;
   }
 }
 

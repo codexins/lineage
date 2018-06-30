@@ -438,7 +438,7 @@
                                             <?php
                                             } else { ?>
 
-                                                <h2><span style="color: #a94442">Form Not Submitted!</span></h2>
+                                                <h2><span class="no-submit">Form Not Submitted!</span></h2>
                                                 <p class="subtitle">Please make sure you entered the form information correctly.</p>
 
                                             <?php
@@ -447,7 +447,7 @@
                                     </div>
 
                                     <div class="social-icons animation-bottom mt-full">
-                                        <h3 style="font-weight: normal">Follow Us:</h3>
+                                        <h3>Follow Us:</h3>
                                         <ul>
                                             <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                             <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
