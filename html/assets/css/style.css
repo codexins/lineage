@@ -4446,7 +4446,7 @@ section:hover .tab-content-heading h4::after {
   cursor: pointer;
   position: relative;
   padding: 7px 0;
-  margin: 0 15px;
+  margin: 0 15px 5px;
   font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -4535,7 +4535,7 @@ section:hover .tab-content-heading h4::after {
 }
 
 .portfolio-filter.type-3 li {
-  margin: 0 5px;
+  margin: 0 5px 5px;
   padding: 8px 12px;
   background: #9aabb8;
   color: white;
