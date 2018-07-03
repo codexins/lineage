@@ -72,6 +72,7 @@
 }
 
 .portfolio-wrapper {
+	@extend %cx-transition;
 	.portfolio-item {
 		@include respond-to(small-mobile) {
 			&:last-child {
